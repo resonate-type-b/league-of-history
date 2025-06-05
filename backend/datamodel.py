@@ -1,11 +1,9 @@
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-from sqlalchemy import Integer, String
+from sqlalchemy import Integer, String, Date
 from typing import Any
 
-from conn import engine
 
-
-class BaseModel(DeclarativeBase):
+class BaseORM(DeclarativeBase):
     pass
 
 
@@ -14,10 +12,11 @@ def stat_mapped_column(*args: Any, **kwargs: Any) -> Mapped[Any]:
     return mapped_column(Integer, default=None, nullable=True, *args, **kwargs)
 
 
-class Item(BaseModel):
+class Item(BaseORM):
     __tablename__ = "items"
 
-    item_name: Mapped[str] = mapped_column(String(50), primary_key=True, unique=True)
+    item_id: Mapped[int] = mapped_column(Integer, primary_key=True, unique=True)
+    item_name: Mapped[str] = mapped_column(String(50), unique=True)
     patch_version: Mapped[str] = mapped_column(String(20), nullable=False)
     gold_cost: Mapped[int] = mapped_column(Integer, nullable=False)
     hp: Mapped[int] = stat_mapped_column()
@@ -52,4 +51,9 @@ class Item(BaseModel):
     unique_passive_3_name: Mapped[str] = mapped_column(String(20), nullable=True)
 
 
-BaseModel.metadata.create_all(engine)
+class Patch(BaseORM):
+    __tablename__ = "patch"
+
+    patch_version: Mapped[str] = mapped_column(String(20), primary_key=True, unique=True)
+    patch_date: Mapped[str] = mapped_column(Date, nullable=False)
+    season: Mapped[int] = mapped_column(Integer, nullable=False)
