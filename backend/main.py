@@ -1,37 +1,58 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
 from typing import Optional
+from sqlalchemy import select, desc
 
-from conn import engine, initialise_sqlite
-from datamodel import BaseORM
+from conn import engine, initialise_sqlite, session_factory
+from datamodel import BaseORM, Patch, Item
 from patch_history_data import import_patch_history_data
 from items import format_single_item_data, insert_items_data
 from items_library import all_items
 
 
-if __name__ == "__main__":
-    initialise_sqlite()
+# ====== data loading stuff here ======
+initialise_sqlite()
 
 BaseORM.metadata.create_all(engine)
 import_patch_history_data()
 
-d = format_single_item_data(all_items[0])
-insert_items_data(d)
+for item in all_items:
+    insert_items_data(format_single_item_data(item))
+
+with session_factory.begin() as session:
+    latest_patch: str = str(session.scalar(select(Patch.patch_version).order_by(desc(Patch.patch_date)).limit(1)))
 
 
-class Item(BaseModel):
-    item_id: int
-    q: Optional[str] = None
-
-
+# ====== fastAPI stuff here ======
 app = FastAPI()
 
 
 @app.get("/")
-async def read_root():
-    return {"Hello": "World"}
+def read_root():
+    return "Welcome to the League of Legends Items API!"
 
 
-@app.get("/items/{item_id}", response_model=Item)
-async def read_item(item_id: int, q: Optional[str] = None):
-    return Item(item_id=item_id, q=q)
+# note that patch_version, even if provided, will be ignored if item_id is specified,
+# as there is no use case for specifying both paremeters.
+@app.get("/items/")
+def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) -> list[dict[str, str | int]]:
+    if item_id is not None:
+        # fetch timeline of item
+        stmt = (
+            select(Item)
+            .join(Patch, Item.patch_version == Patch.patch_version)
+            .where(Item.item_id == item_id)
+            .order_by(desc(Patch.patch_date))
+        )
+    else:
+        # return all items on specified patch
+        stmt = (
+            select(Item)
+            .join(Patch, Item.patch_version == Patch.patch_version)
+            .where(Item.patch_version == patch_version)
+            .order_by(desc(Patch.patch_date))
+        )
+
+    with session_factory() as session:
+        item_data = [item.to_dense_dict() for item in session.scalars(stmt).all()]
+
+    return item_data

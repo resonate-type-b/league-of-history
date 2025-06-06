@@ -1,5 +1,6 @@
 *.code-workspace
 *.sqlite
+terminal.ps1
 
 # stolen from https://github.com/github/gitignore/blob/main/Python.gitignore, thank you
 # Byte-compiled / optimized / DLL files

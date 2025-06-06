@@ -22,6 +22,8 @@ def format_single_item_data(data: ItemFullInfoType) -> list[StatDictType]:
     return_list: list[StatDictType] = []
 
     definition_idx = 0
+    # these don't change through patches, so we can set them once
+    # would satisfy some higher NF if this link was moved to a separate table, but who cares
     curr_definition: StatDictType = {
         "item_id": item_id,
         "item_name": item_name,
@@ -33,6 +35,7 @@ def format_single_item_data(data: ItemFullInfoType) -> list[StatDictType]:
 
             if definition_idx + 1 < len(item_definition_list):
                 # if there is another definition, get ready to check for that patch version in the next loop
+                # if there isn't then it doesn't matter anyway because we're on latest version.
                 definition_idx += 1
         curr_definition["patch_version"] = patch
         return_list.append(curr_definition.copy())
