@@ -5,12 +5,17 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import os
 
-# TODO: we want to eventually just use in memory sqlite, currently using a file for debugging
-sqlite_db_path = Path(config['PATH']['BASE']) / Path(config["PATH"]["sqlite_path"])
-if sqlite_db_path.exists():
-    os.remove(sqlite_db_path)
 
-sqlite3.connect(sqlite_db_path)
+sqlite_db_path = Path(config['PATH']['BASE']) / Path(config["PATH"]["sqlite_path"])
+
+
+def initialise_sqlite():
+    # TODO: we want to eventually just use in memory sqlite, currently using a file for debugging
+    if sqlite_db_path.exists():
+        os.remove(sqlite_db_path)
+
+    sqlite3.connect(sqlite_db_path)
+
 
 engine = create_engine("sqlite:///" + str(sqlite_db_path))
 session_factory = sessionmaker(bind=engine)
