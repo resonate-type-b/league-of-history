@@ -47,7 +47,7 @@ class Item(BaseORM):
     mp5: Mapped[int] = stat_mapped_column()
     movespeed_flat: Mapped[int] = stat_mapped_column()
     movespeed_percent: Mapped[int] = stat_mapped_column()
-    gp5: Mapped[int] = stat_mapped_column()
+    gp10: Mapped[int] = stat_mapped_column()
     unique_passive_1: Mapped[str] = mapped_column(String(200), nullable=True)
     unique_passive_1_name: Mapped[str] = mapped_column(String(20), nullable=True)
     unique_passive_2: Mapped[str] = mapped_column(String(200), nullable=True)

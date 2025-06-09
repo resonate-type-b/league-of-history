@@ -19,8 +19,6 @@ export default function Home() {
     return "Loading...";
   }
 
-  console.log(data);
-
   return (
     <div>
       <title>Hell Yeah Simulator</title>

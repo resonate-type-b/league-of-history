@@ -18,10 +18,10 @@ patch_list: ItemHistoryType = [
     }),
     ItemDefinition("20090710", {
         "aspd": None,
-        "gp5": 2
+        "gp10": 2
     }),
     ItemDefinition("0.8.21.110", {
-        "gp5": 1,
+        "gp10": 1,
     })
 
     # placeholder example to show removed item

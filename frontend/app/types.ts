@@ -28,7 +28,7 @@ export interface LeagueItem {
     mp5?: number;
     movespeed_flat?: number;
     movespeed_percent?: number;
-    gp5?: number;
+    gp10?: number;
     unique_passive_1?: string | null;
     unique_passive_1_name?: string | null;
     unique_passive_2?: string | null;
