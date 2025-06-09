@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from typing import Optional
 from sqlalchemy import select, desc
+from fastapi.middleware.cors import CORSMiddleware
 
 from conn import engine, initialise_sqlite, session_factory
 from datamodel import BaseORM, Patch, Item
@@ -23,7 +24,20 @@ with session_factory.begin() as session:
 
 
 # ====== fastAPI stuff here ======
+allowed_origins = [
+    "http://localhost:5173",
+    "https://localhost:5173",
+    "http://localhost",
+    "https://localhost"
+]
+
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_headers=["*"]
+)
 
 
 @app.get("/")
