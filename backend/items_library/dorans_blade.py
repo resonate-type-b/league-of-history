@@ -1,11 +1,11 @@
-from ._helpers import ItemHistoryType, ItemDefinition
+from ._helpers import ItemDefinition
 
 
 item_name = "Doran's Blade"
 item_id = 1055
 
 
-patch_list: ItemHistoryType = [
+patch_list: list[ItemDefinition] = [
     ItemDefinition("20090509", {
         "gold_cost": 475,
         "hp": 150,

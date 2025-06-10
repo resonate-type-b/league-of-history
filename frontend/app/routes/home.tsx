@@ -1,4 +1,5 @@
 import type { LeagueItem } from "../types";
+import ItemInfoBox from "~/itemInfoBox";
 import { queryClient, fetchData } from "../queryClient";
 import { useSearchParams } from "react-router";
 import { useQuery } from "@tanstack/react-query";
@@ -19,11 +20,14 @@ export default function Home() {
     return "Loading...";
   }
 
+  const name = Object.values(data)[0].item_name; // Maybe change the backend so it gives me the item name directly and only once...
+
   return (
     <div>
-      <title>Hell Yeah Simulator</title>
+      <title>{`History: ${name}`}</title>
+      <h1>{name}</h1>
       {data.map((item) => {
-        return <p key={item.patch_version}>{JSON.stringify(item)}</p>;
+        return <ItemInfoBox key={item.patch_version} item={item} />;
       })}
     </div>
   );
