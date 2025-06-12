@@ -1,4 +1,4 @@
-export interface LeagueItem {
+export type LeagueItem = {
     item_id: number;
     patch_version: string; // foreign key, primary key part
     item_name: string;
@@ -28,12 +28,11 @@ export interface LeagueItem {
     mp5?: number;
     movespeed_flat?: number;
     movespeed_percent?: number;
-    gp5?: number;
+    gp10?: number;
     unique_passive_1?: string | null;
     unique_passive_1_name?: string | null;
     unique_passive_2?: string | null;
     unique_passive_2_name?: string | null;
     unique_passive_3?: string | null;
     unique_passive_3_name?: string | null;
-
 }
