@@ -1,11 +1,11 @@
 import type { LeagueItem } from "../types";
-import ItemInfoBox from "~/itemInfoBox";
+import ItemInfoBox from "../itemInfoBox";
 import { queryClient, fetchData } from "../queryClient";
 import { useSearchParams } from "react-router";
 import { useQuery } from "@tanstack/react-query";
 // const res = await fetch(import.meta.env.VITE_API_URL + `/api/products/${params.patch_version}`);
 
-export default function Home() {
+export default function ItemHistory() {
   const [searchParams, setSearchParams] = useSearchParams("?item_id=1055");
 
   const result = useQuery({
