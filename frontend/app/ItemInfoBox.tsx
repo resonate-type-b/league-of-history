@@ -1,53 +1,57 @@
-import type { LeagueItem } from "./types";
+import type { LeagueItem, FormatterMap } from "./types";
 import type * as React from "react";
 
-type ItemMap = {
-  [key: string]: (value: any) => [string, string];
-};
+const itemMap: FormatterMap = {
+  item_id: (value) => ["Item ID: ", `${value}`],
+  patch_version: (value) => ["Patch: ", `${value}`],
+  item_name: (value) => ["Name: ", `${value}`],
+  gold_cost: (value) => ["Gold Cost: ", `${value}`],
+  hp: (value) => ["Health: ", `${value}`],
+  hp5: (value) => ["HP Regen per 5: ", `${value}`],
+  armor: (value) => ["Armor: ", `${value}`],
+  magic_resist: (value) => ["Magic Resist: ", `${value}`],
+  tenacity: (value) => ["Tenacity: ", `${value}%`],
+  slow_resist: (value) => ["Slow Resist: ", `${value}%`],
+  aspd: (value) => ["Attack Speed: ", `${value}%`],
+  ad: (value) => ["Attack Damage: ", `${value}`],
+  ap: (value) => ["Ability Power: ", `${value}`],
+  crit_chance: (value) => ["Critical Strike Chance: ", `${value}%`],
+  armor_pen_flat: (value) => ["Armor Penetration: ", `${value}`],
+  lethality: (value) => ["Lethality: ", `${value}`],
+  armor_pen_percent: (value) => ["Armor Penetration: ", `${value}%`],
+  magic_pen_flat: (value) => ["Magic Penetration: ", `${value}`],
+  magic_pen_percent: (value) => ["Magic Penetration: ", `${value}%`],
+  lifesteal: (value) => ["Lifesteal: ", `${value}%`],
+  physical_vamp: (value) => ["Physical Vamp: ", `${value}%`],
+  magic_vamp: (value) => ["Magic Vamp: ", `${value}%`],
+  omnivamp: (value) => ["Omnivamp: ", `${value}%`],
+  cdr: (value) => ["Cooldown Reduction: ", `${value}%`],
+  haste: (value) => ["Ability Haste: ", `${value}`],
+  mp: (value) => ["Mana: ", `${value}`],
+  mp5: (value) => ["Mana Regen per 5: ", `${value}`],
+  movespeed_flat: (value) => ["Move Speed: ", `${value}`],
+  movespeed_percent: (value) => ["Move Speed: ", `${value}%`],
+  gp10: (value) => ["Gold per 10: ", `${value}`],
+  unique_passive_1: (value) => ["", `${value}`],
+  unique_passive_1_name: (value) => ["", `${value}`],
+  unique_passive_2: (value) => ["", `${value}`],
+  unique_passive_2_name: (value) => ["", `${value}`],
+  unique_passive_3: (value) => ["", `${value}`],
+  unique_passive_3_name: (value) => ["", `${value}`],
+} as const;
 
-const itemMap: ItemMap = {
-  item_id: (value: number) => ["Item ID: ", `${value}`],
-  patch_version: (value: string) => ["Patch: ", `${value}`],
-  item_name: (value: string) => ["Name: ", `${value}`],
-  gold_cost: (value: number) => ["Gold Cost: ", `${value}`],
-  hp: (value: number) => ["Health: ", `${value}`],
-  hp5: (value: number) => ["HP Regen per 5: ", `${value}`],
-  armor: (value: number) => ["Armor: ", `${value}`],
-  magic_resist: (value: number) => ["Magic Resist: ", `${value}`],
-  tenacity: (value: number) => ["Tenacity: ", `${value}%`],
-  slow_resist: (value: number) => ["Slow Resist: ", `${value}%`],
-  aspd: (value: number) => ["Attack Speed: ", `${value}%`],
-  ad: (value: number) => ["Attack Damage: ", `${value}`],
-  ap: (value: number) => ["Ability Power: ", `${value}`],
-  crit_chance: (value: number) => ["Critical Strike Chance: ", `${value}%`],
-  armor_pen_flat: (value: number) => ["Armor Penetration: ", `${value}`],
-  lethality: (value: number) => ["Lethality: ", `${value}`],
-  armor_pen_percent: (value: number) => ["Armor Penetration: ", `${value}%`],
-  magic_pen_flat: (value: number) => ["Magic Penetration: ", `${value}`],
-  magic_pen_percent: (value: number) => ["Magic Penetration: ", `${value}%`],
-  lifesteal: (value: number) => ["Lifesteal: ", `${value}%`],
-  physical_vamp: (value: number) => ["Physical Vamp: ", `${value}%`],
-  magic_vamp: (value: number) => ["Magic Vamp: ", `${value}%`],
-  omnivamp: (value: number) => ["Omnivamp: ", `${value}%`],
-  cdr: (value: number) => ["Cooldown Reduction: ", `${value}%`],
-  haste: (value: number) => ["Ability Haste: ", `${value}`],
-  mp: (value: number) => ["Mana: ", `${value}`],
-  mp5: (value: number) => ["Mana Regen per 5: ", `${value}`],
-  movespeed_flat: (value: number) => ["Move Speed: ", `${value}`],
-  movespeed_percent: (value: number) => ["Move Speed: ", `${value}%`],
-  gp10: (value: number) => ["Gold per 10: ", `${value}`],
-  unique_passive_1: (value: string) => ["", `${value}`],
-  unique_passive_1_name: (value: string) => ["", `${value}`],
-  unique_passive_2: (value: string) => ["", `${value}`],
-  unique_passive_2_name: (value: string) => ["", `${value}`],
-  unique_passive_3: (value: string) => ["", `${value}`],
-  unique_passive_3_name: (value: string) => ["", `${value}`],
-};
+function formatStat<K extends keyof LeagueItem>(item: LeagueItem, statName: K) {
+  // apparently the fact that LeagueItem and FormatterMap have the same keys is too difficult for the type checker to grasp
+  // despite one being a mapping of the other, so we have to tell it manually
+  // I assume this is not a good way to do it but I can't figure out another way...
+  const formatter = itemMap[statName] as (value: LeagueItem[K]) => [string, string];
+  return formatter(item[statName]);
+}
 
 type ItemLineProps = {
   descriptor: string;
   value: string;
-  className?: any;
+  className?: string | null;
 };
 
 function ItemLine({ descriptor, value, className = null }: ItemLineProps) {
@@ -64,21 +68,20 @@ type ItemInfoBoxProps = {
 };
 
 export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
-  const itemName = item.item_name;
   const patchVersion = item.patch_version;
 
   const statJSXList: React.JSX.Element[] = [];
+
   // we want to make sure gold cost is always on top
-  const [gold_cost_desc, gold_cost_value] = itemMap.gold_cost(item.gold_cost);
+  const [gold_cost_desc, gold_cost_value] = formatStat(item, "gold_cost");
+
   statJSXList.push(
     <ItemLine descriptor={gold_cost_desc} value={gold_cost_value} key="gold_cost" className="text-yellow-300" />
   );
 
-  for (const statName of Object.keys(item)) {
-    const itemKey = statName as keyof LeagueItem;
-    const mappingKey = statName as keyof ItemMap;
-    const [descriptor, value] = itemMap[mappingKey](item[itemKey] as string);
-
+  for (const statName of Object.keys(item) as (keyof LeagueItem)[]) {
+    formatStat(item, statName);
+    const [descriptor, value] = formatStat(item, statName);
     if (!["item_id", "item_name", "patch_version", "gold_cost"].includes(statName)) {
       statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
     }
