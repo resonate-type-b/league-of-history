@@ -27,8 +27,8 @@ with session_factory.begin() as session:
 allowed_origins = [
     "http://localhost:5173",
     "https://localhost:5173",
-    "http://localhost",
-    "https://localhost"
+    "http://localhost:3000",
+    "https://localhost:3000"
 ]
 
 app = FastAPI()

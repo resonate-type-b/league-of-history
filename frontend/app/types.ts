@@ -1,38 +1,47 @@
-export type LeagueItem = {
-    item_id: number;
-    patch_version: string; // foreign key, primary key part
-    item_name: string;
-    gold_cost: number;
-    hp?: number;
-    hp5?: number;
-    armor?: number;
-    magic_resist?: number;
-    tenacity?: number;
-    slow_resist?: number;
-    aspd?: number;
-    ad?: number;
-    ap?: number;
-    crit_chance?: number;
-    armor_pen_flat?: number;
-    lethality?: number;
-    armor_pen_percent?: number;
-    magic_pen_flat?: number;
-    magic_pen_percent?: number;
-    lifesteal?: number;
-    physical_vamp?: number;
-    magic_vamp?: number;
-    omnivamp?: number;
-    cdr?: number;
-    haste?: number;
-    mp?: number;
-    mp5?: number;
-    movespeed_flat?: number;
-    movespeed_percent?: number;
-    gp10?: number;
-    unique_passive_1?: string | null;
-    unique_passive_1_name?: string | null;
-    unique_passive_2?: string | null;
-    unique_passive_2_name?: string | null;
-    unique_passive_3?: string | null;
-    unique_passive_3_name?: string | null;
-}
+import { z } from "zod/v4";
+
+export const LeagueItemSchema = z.object({
+  item_id: z.number(),
+  patch_version: z.string(),
+  item_name: z.string(),
+  gold_cost: z.number(),
+  hp: z.number().optional(),
+  hp5: z.number().optional(),
+  armor: z.number().optional(),
+  magic_resist: z.number().optional(),
+  tenacity: z.number().optional(),
+  slow_resist: z.number().optional(),
+  aspd: z.number().optional(),
+  ad: z.number().optional(),
+  ap: z.number().optional(),
+  crit_chance: z.number().optional(),
+  armor_pen_flat: z.number().optional(),
+  lethality: z.number().optional(),
+  armor_pen_percent: z.number().optional(),
+  magic_pen_flat: z.number().optional(),
+  magic_pen_percent: z.number().optional(),
+  lifesteal: z.number().optional(),
+  physical_vamp: z.number().optional(),
+  magic_vamp: z.number().optional(),
+  omnivamp: z.number().optional(),
+  cdr: z.number().optional(),
+  haste: z.number().optional(),
+  mp: z.number().optional(),
+  mp5: z.number().optional(),
+  movespeed_flat: z.number().optional(),
+  movespeed_percent: z.number().optional(),
+  gp10: z.number().optional(),
+  unique_passive_1: z.string().nullable().optional(),
+  unique_passive_1_name: z.string().nullable().optional(),
+  unique_passive_2: z.string().nullable().optional(),
+  unique_passive_2_name: z.string().nullable().optional(),
+  unique_passive_3: z.string().nullable().optional(),
+  unique_passive_3_name: z.string().nullable().optional(),
+});
+
+export type LeagueItem = z.infer<typeof LeagueItemSchema>;
+
+// requires all possible keys from T, optional or not, and requires that value provided must not be null
+export type FormatterMap = {
+  [K in keyof LeagueItem]-?: (value: LeagueItem[K]) => [string, string];
+};

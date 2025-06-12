@@ -1,4 +1,6 @@
+import { LeagueItemSchema } from "../types";
 import type { LeagueItem } from "../types";
+import { z } from "zod/v4";
 import ItemInfoBox from "../ItemInfoBox";
 import { fetchData } from "../queryClient";
 import { useSearchParams } from "react-router";
@@ -6,20 +8,18 @@ import { useQuery } from "@tanstack/react-query";
 // const res = await fetch(import.meta.env.VITE_API_URL + `/api/products/${params.patch_version}`);
 
 export default function ItemHistory() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const item_id = searchParams.get("item_id");
   const result = useQuery({
-    queryKey: ["item", item_id],
+    queryKey: ["patch", item_id],
     queryFn: async () => fetchData(`/items/?item_id=${item_id}`),
   });
-
   const isPending = result.isPending;
-  const data: LeagueItem[] = result.data;
 
   if (isPending) {
     return "Loading...";
   }
-
+  const data: LeagueItem[] = z.array(LeagueItemSchema).parse(result.data);
   const name = Object.values(data)[0].item_name; // Maybe change the backend so it gives me the item name directly and only once...
 
   return (

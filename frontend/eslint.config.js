@@ -4,15 +4,25 @@ import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 import css from "@eslint/css";
 import { defineConfig } from "eslint/config";
-import pluginQuery from '@tanstack/eslint-plugin-query'
+// import pluginQuery from '@tanstack/eslint-plugin-query'
 
 export default defineConfig([
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"], plugins: { js }, extends: ["js/recommended"] },
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"], languageOptions: { globals: globals.browser } },
   { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
-  tseslint.configs.recommendedTypeChecked,
   pluginReact.configs.flat.recommended,
-  ...pluginQuery.configs['flat/recommended'],
+  ...tseslint.config(
+    {
+      files: ['**/*.{ts,tsx}'],
+      languageOptions: {
+        parserOptions: {
+          project: './tsconfig.json',
+        },
+      },
+      extends: tseslint.configs.recommendedTypeChecked,
+    }
+  ),
+
   {
     plugins: {
       "@typescript-eslint": tseslint.plugin,
