@@ -9,7 +9,7 @@ export default function ItemHistory() {
   const [searchParams, setSearchParams] = useSearchParams();
   const item_id = searchParams.get("item_id");
   const result = useQuery({
-    queryKey: ["item", item_id],
+    queryKey: ["patch", item_id],
     queryFn: async () => fetchData(`/items/?item_id=${item_id}`),
   });
 
