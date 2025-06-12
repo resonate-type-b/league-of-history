@@ -1,16 +1,16 @@
 import type { LeagueItem } from "../types";
-import ItemInfoBox from "../itemInfoBox";
-import { queryClient, fetchData } from "../queryClient";
+import ItemInfoBox from "../ItemInfoBox";
+import { fetchData } from "../queryClient";
 import { useSearchParams } from "react-router";
 import { useQuery } from "@tanstack/react-query";
 // const res = await fetch(import.meta.env.VITE_API_URL + `/api/products/${params.patch_version}`);
 
 export default function ItemHistory() {
-  const [searchParams, setSearchParams] = useSearchParams("?item_id=1055");
-
+  const [searchParams, setSearchParams] = useSearchParams();
+  const item_id = searchParams.get("item_id");
   const result = useQuery({
-    queryKey: ["item", searchParams.get("item_id")],
-    queryFn: async () => fetchData(`/items/?${searchParams.toString()}`),
+    queryKey: ["item", item_id],
+    queryFn: async () => fetchData(`/items/?item_id=${item_id}`),
   });
 
   const isPending = result.isPending;

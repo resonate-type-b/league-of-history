@@ -70,7 +70,9 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
   const statJSXList: React.JSX.Element[] = [];
   // we want to make sure gold cost is always on top
   const [gold_cost_desc, gold_cost_value] = itemMap.gold_cost(item.gold_cost);
-  statJSXList.push(<ItemLine descriptor={gold_cost_desc} value={gold_cost_value} className="text-yellow-300" />);
+  statJSXList.push(
+    <ItemLine descriptor={gold_cost_desc} value={gold_cost_value} key="gold_cost" className="text-yellow-300" />
+  );
 
   for (const statName of Object.keys(item)) {
     const itemKey = statName as keyof LeagueItem;
