@@ -37,11 +37,21 @@ export const LeagueItemSchema = z.object({
   unique_passive_2_name: z.string().nullable().optional(),
   unique_passive_3: z.string().nullable().optional(),
   unique_passive_3_name: z.string().nullable().optional(),
+  motd: z.string().nullable().optional(),
 });
 
 export type LeagueItem = z.infer<typeof LeagueItemSchema>;
 
 // requires all possible keys from T, optional or not, and requires that value provided must not be null
 export type FormatterMap = {
-  [K in keyof LeagueItem]-?: (value: LeagueItem[K]) => [string, string];
+  [K in Exclude<
+    keyof LeagueItem,
+    | "unique_passive_1"
+    | "unique_passive_1_name"
+    | "unique_passive_2"
+    | "unique_passive_2_name"
+    | "unique_passive_3"
+    | "unique_passive_3_name"
+    | "motd"
+  >]-?: (value: LeagueItem[K]) => [string, string];
 };
