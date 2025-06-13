@@ -1,4 +1,4 @@
-import type { LeagueItem, FormatterMap } from "./types";
+import type { FormatterMap, LeagueItem } from "./types";
 
 const itemMap: FormatterMap = {
   item_id: (value) => ["Item ID: ", `${value}`],
@@ -43,9 +43,7 @@ function formatStat<K extends keyof LeagueItem>(item: LeagueItem, statName: K) {
   // apparently the fact that LeagueItem and FormatterMap have the same keys is too difficult for the type checker to grasp
   // despite one being a mapping of the other, so we have to tell it manually
   // I assume this is not a good way to do it but I can't figure out another way...
-  const formatter = itemMap[statName] as (
-    value: LeagueItem[K]
-  ) => [string, string];
+  const formatter = itemMap[statName] as (value: LeagueItem[K]) => [string, string];
   return formatter(item[statName]);
 }
 
@@ -69,8 +67,6 @@ type ItemInfoBoxProps = {
 };
 
 export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
-  const patchVersion = item.patch_version;
-
   const statJSXList: React.JSX.Element[] = [];
 
   // we want to make sure gold cost is always on top
@@ -88,18 +84,18 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
   for (const statName of Object.keys(item) as (keyof LeagueItem)[]) {
     formatStat(item, statName);
     const [descriptor, value] = formatStat(item, statName);
-    if (
-      !["item_id", "item_name", "patch_version", "gold_cost"].includes(statName)
-    ) {
-      statJSXList.push(
-        <ItemLine descriptor={descriptor} value={value} key={statName} />
-      );
+    if (!["item_id", "item_name", "patch_version", "gold_cost"].includes(statName)) {
+      statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
     }
   }
 
   return (
-    <div className="border-t border-blue-200 pt-5 pb-5 pl-3">
-      <h3>{patchVersion}</h3>
+    <div className="border-t border-blue-200 pt-3 pb-5 pl-3">
+      <a
+        href={`/patch/?patch_version=${item.patch_version}`}
+        className="text-lg text-blue-300 font-medium hover:font-semibold hover:text-blue-200 hover:underline transition">
+        {item.patch_version}
+      </a>
       {statJSXList}
     </div>
   );

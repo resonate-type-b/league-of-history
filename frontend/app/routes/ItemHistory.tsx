@@ -1,10 +1,10 @@
-import { LeagueItemSchema } from "../types";
-import type { LeagueItem } from "../types";
+import { useQuery } from "@tanstack/react-query";
+import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
 import ItemInfoBox from "../ItemInfoBox";
 import { fetchData } from "../queryClient";
-import { useSearchParams } from "react-router";
-import { useQuery } from "@tanstack/react-query";
+import type { LeagueItem } from "../types";
+import { LeagueItemSchema } from "../types";
 // const res = await fetch(import.meta.env.VITE_API_URL + `/api/products/${params.patch_version}`);
 
 export default function ItemHistory() {
@@ -23,7 +23,7 @@ export default function ItemHistory() {
 
   return (
     <>
-      <h1 className="text-5xl text-center">{name}</h1>
+      <h1 className="text-5xl text-center pt-5">{name}</h1>
       <div className="flex flex-row flex-grow flex-nowrap pt-16">
         <title>{`History: ${name}`}</title>
         <div className="hidden sm:block lg:flex-1/3"></div>

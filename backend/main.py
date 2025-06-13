@@ -47,6 +47,7 @@ def read_root():
 
 # note that patch_version, even if provided, will be ignored if item_id is specified,
 # as there is no use case for specifying both paremeters.
+# //TODO: querying an non existing item or patch should return an error message instead of empty
 @app.get("/items/")
 def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) -> list[dict[str, str | int]]:
     if item_id is not None:
