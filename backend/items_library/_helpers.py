@@ -2,7 +2,7 @@ from typing import NamedTuple
 
 # most basic type: simply a dictionary of stat:values for the Item ORM
 # no mandatory keys as this is just for syntactic sugar as necessary
-type StatDictType = dict[str, str | int | None]
+type StatDictType = dict[str, str | int | float | None]
 
 
 # self explanatory. Used to define the changes in the source data .pys

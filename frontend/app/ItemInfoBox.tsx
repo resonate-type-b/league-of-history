@@ -31,15 +31,9 @@ const itemMap: FormatterMap = {
   movespeed_flat: (value) => ["Move Speed: ", `${value}`],
   movespeed_percent: (value) => ["Move Speed: ", `${value}%`],
   gp10: (value) => ["Gold per 10: ", `${value}`],
-  unique_passive_1: (value) => ["", `${value}`],
-  unique_passive_1_name: (value) => ["", `${value}`],
-  unique_passive_2: (value) => ["", `${value}`],
-  unique_passive_2_name: (value) => ["", `${value}`],
-  unique_passive_3: (value) => ["", `${value}`],
-  unique_passive_3_name: (value) => ["", `${value}`],
 } as const;
 
-function formatStat<K extends keyof LeagueItem>(item: LeagueItem, statName: K) {
+function formatStat<K extends keyof FormatterMap>(item: LeagueItem, statName: K) {
   // apparently the fact that LeagueItem and FormatterMap have the same keys is too difficult for the type checker to grasp
   // despite one being a mapping of the other, so we have to tell it manually
   // I assume this is not a good way to do it but I can't figure out another way...
@@ -82,10 +76,41 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
   );
 
   for (const statName of Object.keys(item) as (keyof LeagueItem)[]) {
-    formatStat(item, statName);
-    const [descriptor, value] = formatStat(item, statName);
-    if (!["item_id", "item_name", "patch_version", "gold_cost"].includes(statName)) {
+    if (
+      !["item_id", "item_name", "patch_version", "gold_cost", "motd"].includes(statName) &&
+      !statName.startsWith("unique_passive")
+    ) {
+      const [descriptor, value] = formatStat(item, statName);
       statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
+    }
+  }
+
+  // now we check if there is any passive/motd to show
+  const textJSXList: React.JSX.Element[] = [];
+  if (item["motd"] != null) {
+    const firstWord = item["motd"].split(" ")[0];
+    textJSXList.push(
+      <>
+        <p className="font-bold text-sm text-slate-400">{firstWord}</p>
+        <p className="text-sm ml-10">{item["motd"].slice(firstWord.length)}</p>
+      </>
+    );
+  }
+
+  for (const i of [1, 2, 3]) {
+    const passive = `unique_passive_${i}` as keyof LeagueItem;
+    const passiveName = `unique_passive_${i}_name` as keyof LeagueItem;
+
+    if (item[passive] != null) {
+      const formattedPassive = item[passive] as string;
+      const formattedName = item[passiveName] != null ? (item[passiveName] as string) : "Passive";
+
+      textJSXList.push(
+        <>
+          <p className="font-bold text-sm text-slate-400">{`${formattedName}:`}</p>
+          <p className="text-sm ml-10">{formattedPassive}</p>
+        </>
+      );
     }
   }
 
@@ -97,6 +122,8 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
         {item.patch_version}
       </a>
       {statJSXList}
+      <hr className="pb-3 invisible" />
+      {textJSXList}
     </div>
   );
 }

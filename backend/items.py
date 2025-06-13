@@ -41,6 +41,9 @@ def format_single_item_data(data: ItemFullInfoType) -> list[StatDictType]:
         curr_definition["patch_version"] = patch
         return_list.append(curr_definition.copy())
 
+        # bugfixes/hotfix messages are not persisted to future patches
+        curr_definition["motd"] = None
+
     return return_list
 
 
