@@ -1,16 +1,18 @@
-import { useSearchParams } from "react-router";
 import { useQuery } from "@tanstack/react-query";
-import { fetchData } from "../queryClient";
+import { useSearchParams } from "react-router";
+import { z } from "zod/v4";
+import { getItemIcon } from "~/helpers";
 import type { LeagueItem } from "~/types";
 import { LeagueItemSchema } from "~/types";
-import { z } from "zod/v4";
+import { fetchData } from "../queryClient";
 
 export default function PatchOverview() {
   const [searchParams] = useSearchParams();
   let patch_version = searchParams.get("patch_version");
   const result = useQuery({
     queryKey: ["item", patch_version],
-    queryFn: async () => fetchData(patch_version == null ? "/items/" : `/items/?patch_version=${patch_version}`),
+    queryFn: async () =>
+      fetchData(patch_version == null ? "/items/" : `/items/?patch_version=${patch_version}`),
   });
 
   if (result.isPending) {
@@ -38,12 +40,14 @@ export default function PatchOverview() {
 }
 
 function IconBox({ item }: { item: LeagueItem }) {
-  const itemIcon = `/icons/${item.item_id}.png`;
+  const itemIcon = getItemIcon(item);
 
   return (
-    <div className="py-2">
-      <p className="text-center">{item.item_name}</p>
-      <img className="mx-auto" src={itemIcon} width="64" height="64" alt={item.item_name} />
-    </div>
+    <a href={`/item/?item_id=${item.item_id}`}>
+      <div className="py-2 hover:bg-gray-700 transition">
+        <p className="text-center">{item.item_name}</p>
+        <img className="mx-auto" src={itemIcon} width="64" height="64" alt={item.item_name} />
+      </div>
+    </a>
   );
 }
