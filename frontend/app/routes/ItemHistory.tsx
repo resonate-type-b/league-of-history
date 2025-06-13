@@ -14,26 +14,27 @@ export default function ItemHistory() {
     queryKey: ["patch", item_id],
     queryFn: async () => fetchData(`/items/?item_id=${item_id}`),
   });
-  const isPending = result.isPending;
 
-  if (isPending) {
+  if (result.isPending) {
     return "Loading...";
   }
   const data: LeagueItem[] = z.array(LeagueItemSchema).parse(result.data);
   const name = Object.values(data)[0].item_name; // Maybe change the backend so it gives me the item name directly and only once...
 
   return (
-    <div className="flex flex-row flex-grow flex-nowrap">
-      <title>{`History: ${name}`}</title>
-      <div className="hidden sm:block lg:flex-1/3"></div>
-      <div className="flex-auto sm:flex-1/2 md:flex-1/3 min-w-52 max-w-96 ">
-        <h1>{name}</h1>
-        {data.map((item) => {
-          return <ItemInfoBox key={item.patch_version} item={item} />;
-        })}
-      </div>
+    <>
+      <h1 className="text-5xl text-center">{name}</h1>
+      <div className="flex flex-row flex-grow flex-nowrap pt-16">
+        <title>{`History: ${name}`}</title>
+        <div className="hidden sm:block lg:flex-1/3"></div>
+        <div className="flex-auto sm:flex-1/2 md:flex-1/3 min-w-52 max-w-96 ">
+          {data.map((item) => {
+            return <ItemInfoBox key={item.patch_version} item={item} />;
+          })}
+        </div>
 
-      <div className="hidden sm:block md:flex-1/2 lg:flex-1/3"></div>
-    </div>
+        <div className="hidden sm:block md:flex-1/2 lg:flex-1/3"></div>
+      </div>
+    </>
   );
 }
