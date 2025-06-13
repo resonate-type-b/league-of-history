@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
-import { getItemIcon } from "~/helpers";
+import { Icon } from "~/Icon";
 import type { LeagueItem } from "~/types";
 import { LeagueItemSchema } from "~/types";
 import { fetchData } from "../queryClient";
@@ -40,13 +40,11 @@ export default function PatchOverview() {
 }
 
 function IconBox({ item }: { item: LeagueItem }) {
-  const itemIcon = getItemIcon(item);
-
   return (
     <a href={`/item/?item_id=${item.item_id}`}>
       <div className="py-2 hover:bg-gray-700 transition">
+        <Icon className="mx-auto" item={item} />
         <p className="text-center">{item.item_name}</p>
-        <img className="mx-auto" src={itemIcon} width="64" height="64" alt={item.item_name} />
       </div>
     </a>
   );
