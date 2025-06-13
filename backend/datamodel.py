@@ -1,5 +1,5 @@
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
-from sqlalchemy import Integer, String, Date
+from sqlalchemy import Integer, String, Date, Boolean
 from typing import Any
 from sqlalchemy import ForeignKey
 from sqlalchemy.inspection import inspect
@@ -71,4 +71,5 @@ class Patch(BaseORM):
     patch_version: Mapped[str] = mapped_column(String(20), primary_key=True, unique=True)
     patch_date: Mapped[str] = mapped_column(Date, nullable=False)
     season: Mapped[int] = mapped_column(Integer, nullable=False)
+    preseason: Mapped[bool] = mapped_column(Boolean, nullable=False)
     items: Mapped[list[Item]] = relationship(back_populates="patches_existing")

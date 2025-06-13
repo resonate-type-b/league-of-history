@@ -22,11 +22,13 @@ def import_patch_history_data():
             patch_version = row[0]
             patch_date = date.fromisoformat(row[1])
             season = int(row[2])
+            preseason = (False if row[3] == "false" else True)
 
             insert_list.append({
                 "patch_version": patch_version,
                 "patch_date": patch_date,
-                "season": season
+                "season": season,
+                "preseason": preseason
             })
 
         with session_factory.begin() as session:

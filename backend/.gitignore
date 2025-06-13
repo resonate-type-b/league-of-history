@@ -1,3 +1,6 @@
+patch_raw/
+_!parse_patch.py
+
 # stolen from https://github.com/github/gitignore/blob/main/Python.gitignore, thank you
 # Byte-compiled / optimized / DLL files
 __pycache__/
