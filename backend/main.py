@@ -16,8 +16,8 @@ initialise_sqlite()
 BaseORM.metadata.create_all(engine)
 import_patch_history_data()
 
-for item in all_items:
-    insert_items_data(format_single_item_data(item))
+for item_history in all_items:
+    insert_items_data(format_single_item_data(item_history))
 
 with session_factory.begin() as session:
     latest_patch: str = str(session.scalar(select(Patch.patch_version).order_by(desc(Patch.patch_date)).limit(1)))
@@ -42,14 +42,15 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return "Welcome to the League of Legends Items API!"
+    msg = "Welcome to the League of Legends Items API! Go to /docs for available endpoints"
+
+    return msg
 
 
 # note that patch_version, even if provided, will be ignored if item_id is specified,
 # as there is no use case for specifying both paremeters.
-# //TODO: querying an non existing item or patch should return an error message instead of empty
 @app.get("/items/")
-def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) -> list[dict[str, str | int]]:
+def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) -> list[dict[str, str | int]] | str:
     if item_id is not None:
         # fetch timeline of item
         stmt = (
@@ -69,5 +70,7 @@ def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) -
 
     with session_factory() as session:
         item_data = [item.to_dense_dict() for item in session.scalars(stmt).all()]
+    if not item_data:
+        item_data = "Error: No matching items found"
 
     return item_data

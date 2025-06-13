@@ -10,7 +10,7 @@ def format_single_item_data(data: ItemFullInfoType) -> list[StatDictType]:
     The returned list of dicts will have k:v pairs ready to be passed to the Items constructor, aka ready to be inserted into the table.
     there will be one dictionary for every patch verion in the patch table. An unchanged item will be duplicated from the previous patch.
     If an item does not exist on a particular patch, there will not be an entry.
-    """
+    """  # noqa: E501
 
     with session_factory.begin() as session:
         patch_versions: list[str] = list(session.scalars(select(Patch.patch_version).order_by(Patch.patch_date)).all())
@@ -35,7 +35,8 @@ def format_single_item_data(data: ItemFullInfoType) -> list[StatDictType]:
 
             if definition_idx + 1 < len(item_definition_list):
                 # if there is another definition, get ready to check for that patch version in the next loop
-                # if there isn't then it doesn't matter anyway because we're on latest version.
+                # if there isn't then we won't iterate so the patch versions will never match again
+                # which is correct because we're on latest version.
                 definition_idx += 1
         curr_definition["patch_version"] = patch
         return_list.append(curr_definition.copy())
