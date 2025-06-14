@@ -14,7 +14,6 @@ def stat_mapped_column(*args: Any, **kwargs: Any) -> Mapped[Any]:
     return mapped_column(Float, default=None, nullable=True, *args, **kwargs)
 
 
-# TODO: add a 'reworked' flag to indicate major patches of interest on the frontend
 class Item(BaseORM):
     __tablename__ = "items"
 
@@ -55,17 +54,11 @@ class Item(BaseORM):
     unique_passive_2_name: Mapped[str] = mapped_column(String(20), nullable=True)
     unique_passive_3: Mapped[str] = mapped_column(String(200), nullable=True)
     unique_passive_3_name: Mapped[str] = mapped_column(String(20), nullable=True)
+    unique_passive_4: Mapped[str] = mapped_column(String(200), nullable=True)
+    unique_passive_4_name: Mapped[str] = mapped_column(String(20), nullable=True)
     motd: Mapped[str] = mapped_column(String(200), nullable=True)  # for bugfix/hotfix messages
     reworked: Mapped[bool] = mapped_column(Boolean, nullable=True)
     patches_existing: Mapped["Patch"] = relationship(back_populates="items")
-
-    # dense, in that None columns are not included, aka only returns stats it actually has
-    def to_dense_dict(self) -> dict[str, str | int | float]:
-        return {
-            column.key: getattr(self, column.key)
-            for column in inspect(self).mapper.column_attrs
-            if getattr(self, column.key) is not None
-        }
 
 
 class Patch(BaseORM):

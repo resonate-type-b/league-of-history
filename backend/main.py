@@ -6,7 +6,8 @@ from sqlalchemy import select, desc
 from fastapi.middleware.cors import CORSMiddleware
 
 from conn import engine, initialise_sqlite, session_factory
-from datamodel import BaseORM, Patch, Item
+from orm_model import BaseORM, Patch, Item
+from pydantic_model import ItemModel
 from patch_history_data import import_patch_history_data
 from items_data import format_item_from_json, insert_items_data
 
@@ -14,6 +15,7 @@ from items_data import format_item_from_json, insert_items_data
 # ====== data loading stuff here ======
 initialise_sqlite()
 
+# models come from orm_model
 BaseORM.metadata.create_all(engine)
 import_patch_history_data()
 
@@ -57,7 +59,7 @@ def read_root():
 # as there is no use case for specifying both paremeters.
 @app.get("/items/")
 def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) \
- -> list[dict[str, str | int | float]] | str:
+ -> list[dict[str, str | int | float | bool]] | str:
     if item_id is not None:
         # fetch timeline of item
         stmt = (
@@ -76,7 +78,8 @@ def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) \
         )
 
     with session_factory() as session:
-        item_data = [item.to_dense_dict() for item in session.scalars(stmt).all()]
+        items = session.scalars(stmt).all()
+        item_data = [ItemModel.model_validate(item).model_dump(exclude_none=True) for item in items]
     if not item_data:
         item_data = "Error: No matching items found"
 

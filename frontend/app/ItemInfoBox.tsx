@@ -1,9 +1,6 @@
 import type { FormatterMap, LeagueItem } from "./types";
 
 const itemMap: FormatterMap = {
-  item_id: (value) => ["Item ID: ", `${value}`],
-  patch_version: (value) => ["Patch: ", `${value}`],
-  item_name: (value) => ["Name: ", `${value}`],
   gold_cost: (value) => ["Gold Cost: ", `${value}`],
   hp: (value) => ["Health: ", `${value}`],
   hp5: (value) => ["HP Regen per 5: ", `${value}`],
@@ -77,7 +74,8 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
 
   for (const statName of Object.keys(item) as (keyof LeagueItem)[]) {
     if (
-      !["item_id", "item_name", "patch_version", "gold_cost", "motd"].includes(statName) &&
+      statName in itemMap &&
+      !["gold_cost"].includes(statName) &&
       !statName.startsWith("unique_passive")
     ) {
       const [descriptor, value] = formatStat(item, statName as keyof FormatterMap);
@@ -90,14 +88,14 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
   if (item["motd"] != null) {
     const firstWord = item["motd"].split(" ")[0];
     textJSXList.push(
-      <>
+      <div key="motd" className="pb-2">
         <p className="font-bold text-sm text-slate-400">{firstWord}</p>
         <p className="text-sm ml-10">{item["motd"].slice(firstWord.length)}</p>
-      </>
+      </div>
     );
   }
 
-  for (const i of [1, 2, 3]) {
+  for (const i of [1, 2, 3, 4]) {
     const passive = `unique_passive_${i}` as keyof LeagueItem;
     const passiveName = `unique_passive_${i}_name` as keyof LeagueItem;
 
@@ -106,10 +104,10 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
       const formattedName = item[passiveName] != null ? (item[passiveName] as string) : "Passive";
 
       textJSXList.push(
-        <>
+        <div key={"passive" + i} className="pb-2">
           <p className="font-bold text-sm text-slate-400">{`${formattedName}:`}</p>
           <p className="text-sm ml-10">{formattedPassive}</p>
-        </>
+        </div>
       );
     }
   }

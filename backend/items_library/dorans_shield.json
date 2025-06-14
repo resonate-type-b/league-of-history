@@ -7,8 +7,8 @@
   },
   {
     "patch_version": "14.6",
-    "unique_passive_3_name": "STARTER",
-    "unique_passive_3": "Limited to 1 Starter item."
+    "unique_passive_4_name": "STARTER",
+    "unique_passive_4": "Limited to 1 Starter item."
   },
   {
     "patch_version": "14.1",
@@ -20,8 +20,8 @@
     "unique_passive_1": null,
     "unique_passive_2_name": "ENDURING FOCUS",
     "unique_passive_2": "After taking damage from a champion or large monster, gain health regeneration equal to 0 – 45 (based on current missing health) health over 8 seconds. Reduced to 66% effectiveness if owned by ranged champions or when triggered by area of effect, damage over time, or proc. Basic attacks deal 5 bonus physical damage on-hit against minions.",
-    "unique_passive_3_name": "DORAN",
-    "unique_passive_3": "Limited to 1 Doran item."
+    "unique_passive_3_name": null,
+    "unique_passive_3": null
   },
   {
     "patch_version": "13.20",
