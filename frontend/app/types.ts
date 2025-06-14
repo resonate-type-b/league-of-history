@@ -5,6 +5,8 @@ export const LeagueItemSchema = z.object({
   patch_version: z.string(),
   item_name: z.string(),
   gold_cost: z.number(),
+  icon_version: z.number(),
+  reworked: z.boolean().optional(),
   hp: z.number().optional(),
   hp5: z.number().optional(),
   armor: z.number().optional(),
@@ -37,6 +39,8 @@ export const LeagueItemSchema = z.object({
   unique_passive_2_name: z.string().nullable().optional(),
   unique_passive_3: z.string().nullable().optional(),
   unique_passive_3_name: z.string().nullable().optional(),
+  unique_passive_4: z.string().nullable().optional(),
+  unique_passive_4_name: z.string().nullable().optional(),
   motd: z.string().nullable().optional(),
 });
 
@@ -46,12 +50,19 @@ export type LeagueItem = z.infer<typeof LeagueItemSchema>;
 export type FormatterMap = {
   [K in Exclude<
     keyof LeagueItem,
+    | "item_id"
+    | "item_name"
+    | "patch_version"
+    | "icon_version"
     | "unique_passive_1"
     | "unique_passive_1_name"
     | "unique_passive_2"
     | "unique_passive_2_name"
     | "unique_passive_3"
     | "unique_passive_3_name"
+    | "unique_passive_4"
+    | "unique_passive_4_name"
     | "motd"
+    | "reworked"
   >]-?: (value: LeagueItem[K]) => [string, string];
 };

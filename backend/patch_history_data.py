@@ -6,7 +6,7 @@ from sqlalchemy import insert
 
 from config import config
 from conn import session_factory
-from datamodel import Patch
+from orm_model import Patch
 
 
 def import_patch_history_data():
