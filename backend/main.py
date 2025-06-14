@@ -1,3 +1,5 @@
+from pathlib import Path
+import json
 from fastapi import FastAPI
 from typing import Optional
 from sqlalchemy import select, desc
@@ -6,8 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from conn import engine, initialise_sqlite, session_factory
 from datamodel import BaseORM, Patch, Item
 from patch_history_data import import_patch_history_data
-from items import format_single_item_data, insert_items_data
-from items_library import all_items
+from items_data import format_item_from_json, insert_items_data
 
 
 # ====== data loading stuff here ======
@@ -16,11 +17,16 @@ initialise_sqlite()
 BaseORM.metadata.create_all(engine)
 import_patch_history_data()
 
-for item_history in all_items:
-    insert_items_data(format_single_item_data(item_history))
-
 with session_factory.begin() as session:
-    latest_patch: str = str(session.scalar(select(Patch.patch_version).order_by(desc(Patch.patch_date)).limit(1)))
+    patch_versions: list[str] = list(session.scalars(select(Patch.patch_version).order_by(Patch.patch_date)).all())
+    latest_patch: str = patch_versions[-1]
+
+p = Path(__file__).parent
+for file in (p/"items_library").iterdir():
+    if file.suffix == ".json":
+        with open(file, "r", encoding="utf-8") as f:
+            json_data = json.load(f)
+            insert_items_data(format_item_from_json(json_data, patch_versions))
 
 
 # ====== fastAPI stuff here ======

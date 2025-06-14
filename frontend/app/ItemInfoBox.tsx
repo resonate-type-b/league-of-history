@@ -80,7 +80,7 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
       !["item_id", "item_name", "patch_version", "gold_cost", "motd"].includes(statName) &&
       !statName.startsWith("unique_passive")
     ) {
-      const [descriptor, value] = formatStat(item, statName);
+      const [descriptor, value] = formatStat(item, statName as keyof FormatterMap);
       statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
     }
   }

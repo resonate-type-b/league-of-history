@@ -56,6 +56,7 @@ class Item(BaseORM):
     unique_passive_3: Mapped[str] = mapped_column(String(200), nullable=True)
     unique_passive_3_name: Mapped[str] = mapped_column(String(20), nullable=True)
     motd: Mapped[str] = mapped_column(String(200), nullable=True)  # for bugfix/hotfix messages
+    reworked: Mapped[bool] = mapped_column(Boolean, nullable=True)
     patches_existing: Mapped["Patch"] = relationship(back_populates="items")
 
     # dense, in that None columns are not included, aka only returns stats it actually has
