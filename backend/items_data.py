@@ -48,7 +48,11 @@ def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -
         # these once off values are not persisted to future patches
         curr_definition["motd"] = None
         curr_definition["reworked"] = None
-
+    # make sure we matched every single entry in the json
+    try:
+        assert definition_idx + 1 == len(data)
+    except AssertionError:
+        print(f"{curr_definition["item_name"]} json not fully processed. Last good entry: {data[definition_idx]}")
     return return_list
 
 

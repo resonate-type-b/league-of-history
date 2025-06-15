@@ -32,13 +32,13 @@ export default function ItemHistory() {
       <div className="flex flex-row flex-grow flex-nowrap pt-16">
         <title>{`History: ${name}`}</title>
         <div className="hidden sm:block lg:flex-1/3"></div>
-        <div className="flex-auto sm:flex-1/2 md:flex-1/3 min-w-52 max-w-96 ">
+        <div className="flex-auto mx-auto sm:flex-2/3 min-w-64 max-w-128">
           {data.map((item) => {
             return <ItemInfoBox key={item.patch_version} item={item} />;
           })}
         </div>
 
-        <div className="hidden sm:block md:flex-1/2 lg:flex-1/3"></div>
+        <div className="hidden sm:block sm:flex-1/3 lg:flex-1/3"></div>
       </div>
     </>
   );

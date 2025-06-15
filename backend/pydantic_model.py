@@ -12,6 +12,7 @@ class ItemModel(BaseModel):
     icon_version: int
     hp: Optional[float] = None
     hp5: Optional[float] = None
+    hp_regen: Optional[float] = None
     armor: Optional[float] = None
     magic_resist: Optional[float] = None
     tenacity: Optional[float] = None
@@ -33,18 +34,19 @@ class ItemModel(BaseModel):
     haste: Optional[float] = None
     mp: Optional[float] = None
     mp5: Optional[float] = None
+    mp_regen: Optional[float] = None
     movespeed_flat: Optional[float] = None
     movespeed_percent: Optional[float] = None
     gp10: Optional[float] = None
-    unique_passive_1: Optional[str] = Field(max_length=500, default=None)
-    unique_passive_1_name: Optional[str] = Field(max_length=20, default=None)
-    unique_passive_2: Optional[str] = Field(max_length=500, default=None)
-    unique_passive_2_name: Optional[str] = Field(max_length=20, default=None)
-    unique_passive_3: Optional[str] = Field(max_length=500, default=None)
-    unique_passive_3_name: Optional[str] = Field(max_length=20, default=None)
-    unique_passive_4: Optional[str] = Field(max_length=500, default=None)
-    unique_passive_4_name: Optional[str] = Field(max_length=20, default=None)
-    motd: Optional[str] = Field(max_length=500, default=None)  # for bugfix/hotfix messages = None
+    unique_passive_1: Optional[str] = Field(max_length=1000, default=None)
+    unique_passive_1_name: Optional[str] = Field(max_length=50, default=None)
+    unique_passive_2: Optional[str] = Field(max_length=1000, default=None)
+    unique_passive_2_name: Optional[str] = Field(max_length=50, default=None)
+    unique_passive_3: Optional[str] = Field(max_length=1000, default=None)
+    unique_passive_3_name: Optional[str] = Field(max_length=50, default=None)
+    unique_passive_4: Optional[str] = Field(max_length=1000, default=None)
+    unique_passive_4_name: Optional[str] = Field(max_length=50, default=None)
+    motd: Optional[str] = Field(max_length=1000, default=None)  # for bugfix/hotfix messages = None
     reworked: Optional[bool] = None
 
     model_config = ConfigDict(from_attributes=True)

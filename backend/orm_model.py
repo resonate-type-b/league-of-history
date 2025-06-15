@@ -2,7 +2,6 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy import Integer, String, Date, Boolean, Float
 from typing import Any
 from sqlalchemy import ForeignKey
-from sqlalchemy.inspection import inspect
 
 
 class BaseORM(DeclarativeBase):
@@ -24,6 +23,7 @@ class Item(BaseORM):
     icon_version: Mapped[int] = mapped_column(Integer, nullable=False)
     hp: Mapped[float] = stat_mapped_column()
     hp5: Mapped[float] = stat_mapped_column()
+    hp_regen: Mapped[float] = stat_mapped_column()
     armor: Mapped[float] = stat_mapped_column()
     magic_resist: Mapped[float] = stat_mapped_column()
     tenacity: Mapped[float] = stat_mapped_column()
@@ -45,18 +45,19 @@ class Item(BaseORM):
     haste: Mapped[float] = stat_mapped_column()
     mp: Mapped[float] = stat_mapped_column()
     mp5: Mapped[float] = stat_mapped_column()
+    mp_regen: Mapped[float] = stat_mapped_column()
     movespeed_flat: Mapped[float] = stat_mapped_column()
     movespeed_percent: Mapped[float] = stat_mapped_column()
     gp10: Mapped[float] = stat_mapped_column()
-    unique_passive_1: Mapped[str] = mapped_column(String(200), nullable=True)
-    unique_passive_1_name: Mapped[str] = mapped_column(String(20), nullable=True)
-    unique_passive_2: Mapped[str] = mapped_column(String(200), nullable=True)
-    unique_passive_2_name: Mapped[str] = mapped_column(String(20), nullable=True)
-    unique_passive_3: Mapped[str] = mapped_column(String(200), nullable=True)
-    unique_passive_3_name: Mapped[str] = mapped_column(String(20), nullable=True)
-    unique_passive_4: Mapped[str] = mapped_column(String(200), nullable=True)
-    unique_passive_4_name: Mapped[str] = mapped_column(String(20), nullable=True)
-    motd: Mapped[str] = mapped_column(String(200), nullable=True)  # for bugfix/hotfix messages
+    unique_passive_1: Mapped[str] = mapped_column(String(1000), nullable=True)
+    unique_passive_1_name: Mapped[str] = mapped_column(String(50), nullable=True)
+    unique_passive_2: Mapped[str] = mapped_column(String(1000), nullable=True)
+    unique_passive_2_name: Mapped[str] = mapped_column(String(50), nullable=True)
+    unique_passive_3: Mapped[str] = mapped_column(String(1000), nullable=True)
+    unique_passive_3_name: Mapped[str] = mapped_column(String(50), nullable=True)
+    unique_passive_4: Mapped[str] = mapped_column(String(1000), nullable=True)
+    unique_passive_4_name: Mapped[str] = mapped_column(String(50), nullable=True)
+    motd: Mapped[str] = mapped_column(String(1000), nullable=True)  # for bugfix/hotfix messages
     reworked: Mapped[bool] = mapped_column(Boolean, nullable=True)
     patches_existing: Mapped["Patch"] = relationship(back_populates="items")
 

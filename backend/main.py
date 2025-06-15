@@ -74,7 +74,7 @@ def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) \
             select(Item)
             .join(Patch, Item.patch_version == Patch.patch_version)
             .where(Item.patch_version == patch_version)
-            .order_by(desc(Item.gold_cost))
+            .order_by(desc(Item.gold_cost), Item.item_id)
         )
 
     with session_factory() as session:

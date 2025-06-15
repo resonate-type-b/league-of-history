@@ -1,0 +1,113 @@
+[
+  {
+    "patch_version": "14.16",
+    "hp": 80,
+    "lifesteal": 3
+  },
+  {
+    "patch_version": "14.6",
+    "unique_passive_2_name": "STARTER",
+    "unique_passive_2": "Limited to 1 STARTER item."
+  },
+  {
+    "patch_version": "14.1",
+    "lifesteal": 3.5,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "13.20",
+    "ad": 10,
+    "health": 100,
+    "unique_passive_2_name": "DORAN",
+    "unique_passive_2": "Limited to 1 DORAN item."
+  },
+  {
+    "patch_version": "10.24",
+    "icon_version": 2
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "icon_version": 1,
+    "gold_cost": 450,
+    "lifesteal": null,
+    "unique_passive_1_name": "WARMONGER",
+    "unique_passive_1": "+2.5% omni vamp",
+    "motd": "Hotfix-Bugfix: Fixed a bug where users would retain omnivamp after selling it."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 450,
+    "ad": 8,
+    "health": 80
+  },
+  {
+    "patch_version": "4.10",
+    "health": 70,
+    "ad": 7,
+    "unique_passive_1": null,
+    "lifesteal": 3
+  },
+  {
+    "patch_version": "3.14",
+    "gold_cost": 440,
+    "ad": 8,
+    "unique_passive_1": "Basic attacks restore [5|3] health each time they hit an enemy."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "lifesteal": null,
+    "unique_passive_1": "Basic attacks restore 5 health each time they hit an enemy."
+  },
+  {
+    "patch_version": "1.0.0.138",
+    "hp": 80
+  },
+  {
+    "patch_version": "1.0.0.113",
+    "gold_cost": 475,
+    "ad": 10,
+    "motd": "Bugfix: Fixed a bug where it was granting an unintended 1 gold per 10 seconds."
+  },
+  {
+    "patch_version": "1.0.0.110",
+    "gold_cost": 475,
+    "ad": 9
+  },
+  {
+    "patch_version": "1.0.0.106",
+    "ad": 8,
+    "hp": 100,
+    "lifesteal": 3
+  },
+  {
+    "patch_version": "1.0.0.70",
+    "hp": 120,
+    "lifesteal": 4,
+    "gp10": null
+  },
+  {
+    "patch_version": "0.8.21.110",
+    "gp10": 1
+  },
+  {
+    "patch_version": "20090710",
+    "aspd": null,
+    "gp10": 2
+  },
+  {
+    "patch_version": "20090515",
+    "gold_cost": 435,
+    "hp": 130
+  },
+  {
+    "patch_version": "20090509",
+    "item_name": "Doran's Blade",
+    "item_id": 1055,
+    "gold_cost": 475,
+    "hp": 150,
+    "ad": 6,
+    "aspd": 6
+  }
+]
