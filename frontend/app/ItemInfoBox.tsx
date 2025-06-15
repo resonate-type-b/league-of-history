@@ -1,9 +1,11 @@
+import Markdown from "react-markdown";
 import type { FormatterMap, LeagueItem } from "./types";
 
 const itemMap: FormatterMap = {
   gold_cost: (value) => ["Gold Cost: ", `${value}`],
   hp: (value) => ["Health: ", `${value}`],
   hp5: (value) => ["HP Regen per 5: ", `${value}`],
+  hp_regen: (value) => ["Health regen: ", `${value}%`],
   armor: (value) => ["Armor: ", `${value}`],
   magic_resist: (value) => ["Magic Resist: ", `${value}`],
   tenacity: (value) => ["Tenacity: ", `${value}%`],
@@ -25,6 +27,7 @@ const itemMap: FormatterMap = {
   haste: (value) => ["Ability Haste: ", `${value}`],
   mp: (value) => ["Mana: ", `${value}`],
   mp5: (value) => ["Mana Regen per 5: ", `${value}`],
+  mp_regen: (value) => ["Mana regen: ", `${value}%`],
   movespeed_flat: (value) => ["Move Speed: ", `${value}`],
   movespeed_percent: (value) => ["Move Speed: ", `${value}%`],
   gp10: (value) => ["Gold per 10: ", `${value}`],
@@ -105,15 +108,28 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
 
       textJSXList.push(
         <div key={"passive" + i} className="pb-2">
-          <p className="font-bold text-sm text-slate-400">{`${formattedName}:`}</p>
-          <p className="text-sm ml-10">{formattedPassive}</p>
+          <div className="font-bold text-sm text-slate-400">
+            <Markdown>{`${formattedName}:`}</Markdown>
+          </div>
+          <div className="text-sm ml-10">
+            <Markdown
+              components={{
+                p: ({ children, ...props }) => {
+                  return (
+                    <p className="pb-2" {...props}>
+                      {children}
+                    </p>
+                  );
+                },
+              }}>{`${formattedPassive}`}</Markdown>
+          </div>
         </div>
       );
     }
   }
 
   return (
-    <div className="border-t border-blue-200 pt-3 pb-5 pl-3">
+    <div className="border-t border-blue-200 py-4 pl-3 pr-8 sm:pr-3">
       <a
         href={`/patch/?patch_version=${item.patch_version}`}
         className="text-lg text-blue-300 font-medium hover:font-semibold hover:text-blue-200 hover:underline transition">

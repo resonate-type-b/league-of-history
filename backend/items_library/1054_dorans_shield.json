@@ -8,7 +8,7 @@
   {
     "patch_version": "14.6",
     "unique_passive_4_name": "STARTER",
-    "unique_passive_4": "Limited to 1 Starter item."
+    "unique_passive_4": "Limited to 1 STARTER item."
   },
   {
     "patch_version": "14.1",
@@ -72,7 +72,7 @@
   {
     "patch_version": "7.9",
     "gold_cost": 400,
-    "unique_passive_2_name": "Unique",
+    "unique_passive_2_name": "UNIQUE",
     "unique_passive_2": "Restores 20 health over 10 seconds after taking damage from an enemy champion.",
     "unique_passive_1_name": null,
     "unique_passive_1": "Basic attacks deal an additional 5 physical damage to minions on hit."
@@ -110,7 +110,7 @@
     "hp": 100,
     "armor": 5,
     "hp5": 5,
-    "unique_passive_1_name": "Unique",
+    "unique_passive_1_name": "UNIQUE",
     "unique_passive_1": "Blocks 6 damage from champion basic attacks."
   },
   {

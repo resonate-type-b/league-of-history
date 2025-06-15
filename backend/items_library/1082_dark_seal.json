@@ -1,0 +1,55 @@
+[
+  {
+    "patch_version": "14.1",
+    "unique_passive_1": "Gain 2 stacks for each champion kill and 1 stack for each assist, up to a maximum of 10 stacks. Lose 5 stacks on death. For every stack, gain 4 ability power, up to 40 at maximum stacks. Stacks are preserved when upgrading to Mejai's Soulstealer.",
+    "unique_passive_2_name": null,
+    "unique_passive_2": null
+  },
+  {
+    "patch_version": "13.20",
+    "health": 50
+  },
+  {
+    "patch_version": "11.16",
+    "unique_passive_1": "Gain 2 stacks for each champion kill, 1 for assists, up to a maximum of 10. Lose 5 stacks on death. Stacks are preserved when upgrading to Mejai's Soulstealer.",
+    "unique_passive_2": "Gain 4 ability power for each stack of *Glory*."
+  },
+  {
+    "icon_version": 1,
+    "patch_version": "10.23",
+    "ap": 15,
+    "mana": null,
+    "health": 40,
+    "unique_passive_1_name": "GLORY",
+    "unique_passive_1": "Gain 2 stacks for each champion kill, 1 for assists, up to a maximum of 10. Lose 4 stacks on death. Stacks are preserved when upgrading to Mejai's Soulstealer.",
+    "unique_passive_2_name": "DREAD",
+    "unique_passive_2": "Gain 5 ability power for each stack of *Glory*.",
+    "unique_passive_3_name": "GLORY",
+    "unique_passive_3": "Limited to 1 GLORY item."
+  },
+  {
+    "patch_version": "9.19",
+    "item_name": "Dark Seal"
+  },
+  {
+    "patch_version": "9.7",
+    "ap": 10
+  },
+  {
+    "patch_version": "6.2",
+    "gold_cost": 350
+  },
+  {
+    "patch_version": "5.22",
+    "item_name": "The Dark Seal",
+    "item_id": 1082,
+    "gold_cost": 400,
+    "ap": 15,
+    "mana": 100,
+    "unique_passive_1": "+25% increased healing from potions.",
+    "unique_passive_2_name": "DREAD",
+    "unique_passive_2": "Grants +3 ability power per *Glory*.",
+    "unique_passive_3_name": "DO OR DIE",
+    "unique_passive_3": "Grants 2 *Glory* for a champion kill or 1 *Glory* for an assist, up to 10 *Glory*. Lose 4 *Glory* on death."
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "patch_version": "14.6",
+    "unique_passive_3_name": "JUNGLE/SUPPORT/STARTER",
+    "unique_passive_3": "Limited to 1 JUNGLE/SUPPORT/STARTER item."
+  },
+  {
+    "patch_version": "13.20",
+    "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Scorchclaw's Slash* buff:\n\n• Gain 3 *Ember* stacks every 0.5 seconds, up to 100. Killing a large monster grants maximum stacks. When fully stacked, your next damaging basic attack or instance of ability damage against an enemy champion burns them and all enemies within 250 units of them, dealing bonus true damage equal to 4% of the target's maximum health over 4 seconds and slowing them by 30% decaying over 2 seconds.",
+    "motd": "Note: In practice, this means the burn no longer applied from damage that does not apply spell effects, with the exception of basic attack damage."
+  },
+  {
+    "patch_version": "12.22",
+    "item_name": "Scorchclaw Pup",
+    "item_id": 1101,
+    "gold_cost": 450,
+    "unique_passive_1_name": "JUNGLE COMPANIONS",
+    "unique_passive_1": "Summon a *Scorchclaw Pup* companion to assist you in combat against monsters.",
+    "unique_passive_2_name": "SCORCHCLAW'S SLASH",
+    "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Scorchclaw's Slash* buff:\n\n• Gain 3 *Ember* stacks every 0.5 seconds, up to 100. Killing a large monster grants maximum stacks. When fully stacked, your next instance of damage against an enemy champion burns them and all enemies within 250 units of them, dealing bonus true damage equal to 4% of the target's maximum health over 4 seconds and slowing them by 30% decaying over 2 seconds.",
+    "unique_passive_3_name": "JUNGLE/SUPPORT",
+    "unique_passive_3": "Limited to 1 JUNGLE/SUPPORT item."
+  }
+]

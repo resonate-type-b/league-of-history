@@ -1,0 +1,30 @@
+[
+  {
+    "patch_version": "11.10",
+    "motd": "Bugfix: When a player completes Reap's minion kill requirement via their ally's Relic Shield's Spoils of War, the player now properly gains 350 gold."
+  },
+  {
+    "patch_version": "11.5",
+    "motd": "Bugfix: Relic Shield's Spoils of War kills now properly count towards Cull stacks."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "unique_passive_2_name": "REAP"
+  },
+  {
+    "patch_version": "6.2",
+    "ad": 7,
+    "unique_passive_2": "Killing a minion grants +1 gold, up to a maximum of 100 gold. After having killed 100 minions, grants an additional 350 gold and permanently disables this passive."
+  },
+  {
+    "patch_version": "5.22",
+    "item_name": "Cull",
+    "item_id": 1083,
+    "gold_cost": 450,
+    "ad": 5,
+    "unique_passive_1": "+3 health on-hit",
+    "unique_passive_2_name": "UNIQUE",
+    "unique_passive_2": "Killing a minion grants +1 gold, up to a maximum of 100 gold. After having killed 100 minions, grants an additional 300 gold and permanently disables this passive."
+  }
+]
