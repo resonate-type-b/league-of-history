@@ -35,18 +35,24 @@ export const LeagueItemSchema = z.object({
   movespeed_flat: z.number().optional(),
   movespeed_percent: z.number().optional(),
   gp10: z.number().optional(),
-  unique_passive_1: z.string().nullable().optional(),
-  unique_passive_1_name: z.string().nullable().optional(),
-  unique_passive_2: z.string().nullable().optional(),
-  unique_passive_2_name: z.string().nullable().optional(),
-  unique_passive_3: z.string().nullable().optional(),
-  unique_passive_3_name: z.string().nullable().optional(),
-  unique_passive_4: z.string().nullable().optional(),
-  unique_passive_4_name: z.string().nullable().optional(),
-  motd: z.string().nullable().optional(),
+  unique_passive_1: z.string().optional(),
+  unique_passive_1_name: z.string().optional(),
+  unique_passive_2: z.string().optional(),
+  unique_passive_2_name: z.string().optional(),
+  unique_passive_3: z.string().optional(),
+  unique_passive_3_name: z.string().optional(),
+  unique_passive_4: z.string().optional(),
+  unique_passive_4_name: z.string().optional(),
+  motd: z.string().optional(),
 });
 
 export type LeagueItem = z.infer<typeof LeagueItemSchema>;
+
+// every key except patch_version/motd, used to compare items
+// motd field is a special case that needs to be checked manually for existence, not compared.
+export const LeagueItemCompareKeys: (keyof LeagueItem)[] = Object.keys(
+  LeagueItemSchema.shape
+).filter((element) => element !== "patch_version" && element !== "motd") as (keyof LeagueItem)[];
 
 // requires all possible keys from T, optional or not, and requires that value provided must not be null
 export type FormatterMap = {

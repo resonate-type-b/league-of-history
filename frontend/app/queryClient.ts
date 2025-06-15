@@ -8,7 +8,6 @@ queryClient.setDefaultOptions({
 });
 
 export async function fetchData(path: string): Promise<unknown> {
-  console.log(import.meta.env.VITE_API_URL + path);
   const response = await fetch(import.meta.env.VITE_API_URL + path);
   if (!response.ok) {
     throw new Error(`fetching ${path} failed`);

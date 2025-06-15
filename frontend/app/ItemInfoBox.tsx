@@ -60,7 +60,7 @@ type ItemInfoBoxProps = {
   item: LeagueItem;
 };
 
-export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
+export function ItemInfoBox({ item }: ItemInfoBoxProps) {
   const statJSXList: React.JSX.Element[] = [];
 
   // we want to make sure gold cost is always on top
@@ -88,21 +88,12 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
 
   // now we check if there is any passive/motd to show
   const textJSXList: React.JSX.Element[] = [];
-  if (item["motd"] != null) {
-    const firstWord = item["motd"].split(" ")[0];
-    textJSXList.push(
-      <div key="motd" className="pb-2">
-        <p className="font-bold text-sm text-slate-400">{firstWord}</p>
-        <p className="text-sm ml-10">{item["motd"].slice(firstWord.length)}</p>
-      </div>
-    );
-  }
 
   for (const i of [1, 2, 3, 4]) {
     const passive = `unique_passive_${i}` as keyof LeagueItem;
     const passiveName = `unique_passive_${i}_name` as keyof LeagueItem;
 
-    if (item[passive] != null) {
+    if (item[passive] !== undefined) {
       const formattedPassive = item[passive] as string;
       const formattedName = item[passiveName] != null ? (item[passiveName] as string) : "Passive";
 
@@ -127,14 +118,18 @@ export default function ItemInfoBox({ item }: ItemInfoBoxProps) {
       );
     }
   }
+  if (item["motd"] !== undefined) {
+    const firstWord = item["motd"].split(" ")[0];
+    textJSXList.push(
+      <div key="motd" className="pb-2">
+        <p className="font-bold text-sm text-cyan-400">{firstWord}</p>
+        <p className="text-sm ml-10 text-cyan-100">{item["motd"].slice(firstWord.length)}</p>
+      </div>
+    );
+  }
 
   return (
-    <div className="border-t border-blue-200 py-4 pl-3 pr-8 sm:pr-3">
-      <a
-        href={`/patch/?patch_version=${item.patch_version}`}
-        className="text-lg text-blue-300 font-medium hover:font-semibold hover:text-blue-200 hover:underline transition">
-        {item.patch_version}
-      </a>
+    <div className="border-t border-blue-200 pt-5 pb-14 pl-3 pr-8 sm:pr-3">
       {statJSXList}
       <hr className="pb-3 invisible" />
       {textJSXList}

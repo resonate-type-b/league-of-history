@@ -12,15 +12,24 @@ export default function PatchOverview() {
   const result = useQuery({
     queryKey: ["item", patch_version],
     queryFn: async () =>
-      fetchData(patch_version == null ? "/items/" : `/items/?patch_version=${patch_version}`),
+      fetchData(patch_version === null ? "/items/" : `/items/?patch_version=${patch_version}`),
   });
 
   if (result.isPending) {
     return "Loading...";
   }
 
-  const itemList: LeagueItem[] = z.array(LeagueItemSchema).parse(result.data);
-  if (patch_version == null) {
+  let itemList: LeagueItem[];
+  try {
+    itemList = z.array(LeagueItemSchema).parse(result.data);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return "Patch doesn't exist!";
+    }
+    throw error;
+  }
+
+  if (patch_version === null) {
     patch_version = itemList[0].patch_version;
   }
 

@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
+import React, { useState } from "react";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
 import { Icon } from "~/Icon";
-import ItemInfoBox from "../ItemInfoBox";
+import { ItemInfoBox } from "../ItemInfoBox";
 import { fetchData } from "../queryClient";
 import type { LeagueItem } from "../types";
-import { LeagueItemSchema } from "../types";
-// const res = await fetch(import.meta.env.VITE_API_URL + `/api/products/${params.patch_version}`);
+import { LeagueItemCompareKeys, LeagueItemSchema } from "../types";
 
 export default function ItemHistory() {
   const [searchParams] = useSearchParams();
@@ -19,27 +19,137 @@ export default function ItemHistory() {
   if (result.isPending) {
     return "Loading...";
   }
-  const data: LeagueItem[] = z.array(LeagueItemSchema).parse(result.data);
-  const name = data[0].item_name; // Maybe change the backend so it gives me the item name directly and only once...
+  let itemList: LeagueItem[];
+  try {
+    itemList = z.array(LeagueItemSchema).parse(result.data);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return "Item doesn't exist!";
+    }
+    throw error;
+  }
+  const name = itemList[0].item_name; // Maybe change the backend so it gives me the item name directly and only once...
 
+  const InfoBoxJSXList: React.JSX.Element[] = [];
+
+  // list store the patch versions where the current iteration of has existed unchanged
+  const patchesUnchanged: string[] = [];
+
+  // logic here is: compare item with last item. If different, group everything up to the last item then push into JSXList.
+  // note itemList comes in reverse chronological order, so lastItem.patch_version > item.patch_version
+  let lastItem: LeagueItem | null = null;
+  for (const item of itemList) {
+    if (compareItem(lastItem, item) && lastItem !== null) {
+      InfoBoxJSXList.push(
+        <React.Fragment key={lastItem.patch_version}>
+          <ExpandablePatchList patchList={[...patchesUnchanged]} />
+          <ItemInfoBox item={lastItem} />
+        </React.Fragment>
+      );
+      patchesUnchanged.length = 0;
+    }
+    patchesUnchanged.push(item.patch_version);
+    lastItem = item;
+  }
+
+  if (lastItem !== null) {
+    InfoBoxJSXList.push(
+      <React.Fragment key={lastItem.patch_version}>
+        <ExpandablePatchList patchList={[...patchesUnchanged]} />
+        <ItemInfoBox item={lastItem} />
+      </React.Fragment>
+    );
+  }
+
+  // TODO: display all versions of icon next to title, not just latest
   return (
     <>
       <div className="flex flex-row justify-center items-center pt-5 gap-5">
-        <Icon className="w-16 h-16 flex-shrink" item={data[0]} />
+        <Icon className="w-16 h-16 flex-shrink" item={itemList[0]} />
         <h1 className="text-5xl leading-none">{name}</h1>
       </div>
 
       <div className="flex flex-row flex-grow flex-nowrap pt-16">
         <title>{`History: ${name}`}</title>
         <div className="hidden sm:block lg:flex-1/3"></div>
-        <div className="flex-auto mx-auto sm:flex-2/3 min-w-64 max-w-128">
-          {data.map((item) => {
-            return <ItemInfoBox key={item.patch_version} item={item} />;
-          })}
-        </div>
+        <div className="flex-auto mx-auto sm:flex-2/3 min-w-64 max-w-128">{InfoBoxJSXList}</div>
 
         <div className="hidden sm:block sm:flex-1/3 lg:flex-1/3"></div>
       </div>
     </>
   );
+}
+
+function ExpandablePatchList({ patchList }: { patchList: string[] }) {
+  const [expand, setExpand] = useState(false);
+  const anchorJSXList: React.JSX.Element[] = [];
+  for (let i = 0; i < patchList.length; i++) {
+    const text = i === patchList.length - 1 ? patchList[i] : `${patchList[i]}`;
+    anchorJSXList.push(
+      <a
+        className="hover:text-blue-200 hover:underline transition"
+        href={`/patch/?patch_version=${patchList[i]}`}>
+        {text}
+      </a>
+    );
+  }
+  anchorJSXList.reverse();
+  const first = anchorJSXList[0];
+  const last = anchorJSXList[anchorJSXList.length - 1];
+  return (
+    <span className="font-medium text-blue-300">
+      {!expand ? (
+        <div className="flex flex-row items-end">
+          <span className="text-2xl flex-grow">
+            {first}
+            {anchorJSXList.length >= 2 && " – "}
+            {anchorJSXList.length >= 2 && last}
+          </span>
+          {anchorJSXList.length >= 3 && (
+            <span
+              onClick={() => setExpand(true)}
+              className="text-md hover:text-blue-200 hover:underline transition">
+              {" expand all..."}
+            </span>
+          )}
+        </div>
+      ) : (
+        <div className="flex flex-row items-end">
+          <span className="flex-grow text-lg">
+            {anchorJSXList.map((link, i) => (
+              <span key={i}>{link}; </span>
+            ))}
+          </span>
+
+          {
+            <span
+              onClick={() => setExpand(false)}
+              className="text-md hover:text-blue-200 hover:underline transition">
+              {" collapse..."}
+            </span>
+          }
+        </div>
+      )}
+    </span>
+  );
+}
+
+/*
+note the naming is confusing, because itemList is in reverse chronological order
+so, 'olderItem' is the previous version, aka the 'new' object we are comparing against the known 'newerItem'
+if different -> return true, at which point the caller should emit items up to newerItem,
+then set olderItem as the new cached item to consider
+*/
+function compareItem(newerItem: LeagueItem | null, olderItem: LeagueItem) {
+  // first of all if it's the first item, or if theres an motd, then we always want to show it
+  if (newerItem === null || olderItem.motd !== undefined) {
+    return true;
+  }
+
+  for (const key of LeagueItemCompareKeys) {
+    if (newerItem[key] !== olderItem[key]) {
+      return true;
+    }
+  }
+  return false;
 }
