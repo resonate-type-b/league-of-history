@@ -1,3 +1,4 @@
+import { type Change } from "diff";
 import { z } from "zod/v4";
 
 export const LeagueItemSchema = z.object({
@@ -7,6 +8,7 @@ export const LeagueItemSchema = z.object({
   gold_cost: z.number(),
   icon_version: z.number(),
   reworked: z.boolean().optional(),
+
   hp: z.number().optional(),
   hp5: z.number().optional(),
   hp_regen: z.number().optional(),
@@ -35,36 +37,34 @@ export const LeagueItemSchema = z.object({
   movespeed_flat: z.number().optional(),
   movespeed_percent: z.number().optional(),
   gp10: z.number().optional(),
-  unique_passive_1: z.string().nullable().optional(),
-  unique_passive_1_name: z.string().nullable().optional(),
-  unique_passive_2: z.string().nullable().optional(),
-  unique_passive_2_name: z.string().nullable().optional(),
-  unique_passive_3: z.string().nullable().optional(),
-  unique_passive_3_name: z.string().nullable().optional(),
-  unique_passive_4: z.string().nullable().optional(),
-  unique_passive_4_name: z.string().nullable().optional(),
-  motd: z.string().nullable().optional(),
+  unique_passive_1: z.string().optional(),
+  unique_passive_1_name: z.string().optional(),
+  unique_passive_2: z.string().optional(),
+  unique_passive_2_name: z.string().optional(),
+  unique_passive_3: z.string().optional(),
+  unique_passive_3_name: z.string().optional(),
+  unique_passive_4: z.string().optional(),
+  unique_passive_4_name: z.string().optional(),
+  motd: z.string().optional(),
 });
 
 export type LeagueItem = z.infer<typeof LeagueItemSchema>;
 
-// requires all possible keys from T, optional or not, and requires that value provided must not be null
-export type FormatterMap = {
-  [K in Exclude<
-    keyof LeagueItem,
-    | "item_id"
-    | "item_name"
-    | "patch_version"
-    | "icon_version"
-    | "unique_passive_1"
-    | "unique_passive_1_name"
-    | "unique_passive_2"
-    | "unique_passive_2_name"
-    | "unique_passive_3"
-    | "unique_passive_3_name"
-    | "unique_passive_4"
-    | "unique_passive_4_name"
-    | "motd"
-    | "reworked"
-  >]-?: (value: LeagueItem[K]) => [string, string];
+// every key except patch_version/motd/reworked, used to compare items
+// motd field is a special case that needs to be checked manually for existence, not compared.
+export const LeagueItemCompareKeys: (keyof LeagueItem)[] = Object.keys(
+  LeagueItemSchema.shape
+).filter(
+  (element) => !["patch_version", "motd", "reworked"].includes(element)
+) as (keyof LeagueItem)[];
+
+// a league item where each value is a ChangeObject from diffWords instead of a string
+export type DiffLeagueItem = {
+  // when constructing a DiffLeagueitem, we set the value to the string value if the strings are identical
+  // this way we can continue to display the unchanged parts of the item
+  [K in keyof LeagueItem]?: K extends "motd"
+    ? string
+    : K extends "item_id"
+    ? number
+    : Change[] | string;
 };

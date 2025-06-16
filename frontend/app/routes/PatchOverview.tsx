@@ -2,25 +2,36 @@ import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
 import { Icon } from "~/Icon";
-import type { LeagueItem } from "~/types";
-import { LeagueItemSchema } from "~/types";
+import type { LeagueItem } from "~/leagueItem";
+import { LeagueItemSchema } from "~/leagueItem";
+import useFavicon from "~/useFavicon";
 import { fetchData } from "../queryClient";
 
 export default function PatchOverview() {
+  useFavicon("/item_favicon.ico");
   const [searchParams] = useSearchParams();
   let patch_version = searchParams.get("patch_version");
   const result = useQuery({
     queryKey: ["item", patch_version],
     queryFn: async () =>
-      fetchData(patch_version == null ? "/items/" : `/items/?patch_version=${patch_version}`),
+      fetchData(patch_version === null ? "/items/" : `/items/?patch_version=${patch_version}`),
   });
 
   if (result.isPending) {
     return "Loading...";
   }
 
-  const itemList: LeagueItem[] = z.array(LeagueItemSchema).parse(result.data);
-  if (patch_version == null) {
+  let itemList: LeagueItem[];
+  try {
+    itemList = z.array(LeagueItemSchema).parse(result.data);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return "Patch doesn't exist!";
+    }
+    throw error;
+  }
+
+  if (patch_version === null) {
     patch_version = itemList[0].patch_version;
   }
 
@@ -29,6 +40,7 @@ export default function PatchOverview() {
   // easier in this use case to just magic number
   return (
     <>
+      <title>{`Patch ${patch_version}`}</title>
       <h1 className="text-5xl text-center pt-5 pb-10">Patch {patch_version}</h1>
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:max-w-[96rem] mx-auto text-xs lg:text-sm 2xl:text-base">
         {itemList.map((item) => {
