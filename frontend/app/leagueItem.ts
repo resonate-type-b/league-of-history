@@ -1,3 +1,4 @@
+import { type Change } from "diff";
 import { z } from "zod/v4";
 
 export const LeagueItemSchema = z.object({
@@ -54,23 +55,7 @@ export const LeagueItemCompareKeys: (keyof LeagueItem)[] = Object.keys(
   LeagueItemSchema.shape
 ).filter((element) => element !== "patch_version" && element !== "motd") as (keyof LeagueItem)[];
 
-// requires all possible keys from T, optional or not, and requires that value provided must not be null
-export type FormatterMap = {
-  [K in Exclude<
-    keyof LeagueItem,
-    | "item_id"
-    | "item_name"
-    | "patch_version"
-    | "icon_version"
-    | "unique_passive_1"
-    | "unique_passive_1_name"
-    | "unique_passive_2"
-    | "unique_passive_2_name"
-    | "unique_passive_3"
-    | "unique_passive_3_name"
-    | "unique_passive_4"
-    | "unique_passive_4_name"
-    | "motd"
-    | "reworked"
-  >]-?: (value: LeagueItem[K]) => [string, string];
+// a league item where each value is a ChangeObject from diffWords instead of a string
+export type DiffLeagueItem = {
+  [K in keyof LeagueItem]: Change[];
 };

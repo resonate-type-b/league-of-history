@@ -1,37 +1,6 @@
 import Markdown from "react-markdown";
-import type { FormatterMap, LeagueItem } from "./types";
-
-const itemMap: FormatterMap = {
-  gold_cost: (value) => ["Gold Cost: ", `${value}`],
-  hp: (value) => ["Health: ", `${value}`],
-  hp5: (value) => ["HP Regen per 5: ", `${value}`],
-  hp_regen: (value) => ["Health regen: ", `${value}%`],
-  armor: (value) => ["Armor: ", `${value}`],
-  magic_resist: (value) => ["Magic Resist: ", `${value}`],
-  tenacity: (value) => ["Tenacity: ", `${value}%`],
-  slow_resist: (value) => ["Slow Resist: ", `${value}%`],
-  aspd: (value) => ["Attack Speed: ", `${value}%`],
-  ad: (value) => ["Attack Damage: ", `${value}`],
-  ap: (value) => ["Ability Power: ", `${value}`],
-  crit_chance: (value) => ["Critical Strike Chance: ", `${value}%`],
-  armor_pen_flat: (value) => ["Armor Penetration: ", `${value}`],
-  lethality: (value) => ["Lethality: ", `${value}`],
-  armor_pen_percent: (value) => ["Armor Penetration: ", `${value}%`],
-  magic_pen_flat: (value) => ["Magic Penetration: ", `${value}`],
-  magic_pen_percent: (value) => ["Magic Penetration: ", `${value}%`],
-  lifesteal: (value) => ["Lifesteal: ", `${value}%`],
-  physical_vamp: (value) => ["Physical Vamp: ", `${value}%`],
-  magic_vamp: (value) => ["Magic Vamp: ", `${value}%`],
-  omnivamp: (value) => ["Omnivamp: ", `${value}%`],
-  cdr: (value) => ["Cooldown Reduction: ", `${value}%`],
-  haste: (value) => ["Ability Haste: ", `${value}`],
-  mp: (value) => ["Mana: ", `${value}`],
-  mp5: (value) => ["Mana Regen per 5: ", `${value}`],
-  mp_regen: (value) => ["Mana regen: ", `${value}%`],
-  movespeed_flat: (value) => ["Move Speed: ", `${value}`],
-  movespeed_percent: (value) => ["Move Speed: ", `${value}%`],
-  gp10: (value) => ["Gold per 10: ", `${value}`],
-} as const;
+import type { LeagueItem } from "../leagueItem";
+import { itemMap, type FormatterMap } from "./itemFormatMap";
 
 function formatStat<K extends keyof FormatterMap>(item: LeagueItem, statName: K) {
   // apparently the fact that LeagueItem and FormatterMap have the same keys is too difficult for the type checker to grasp

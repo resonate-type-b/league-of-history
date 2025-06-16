@@ -2,8 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
 import { Icon } from "~/Icon";
-import type { LeagueItem } from "~/types";
-import { LeagueItemSchema } from "~/types";
+import type { LeagueItem } from "~/leagueItem";
+import { LeagueItemSchema } from "~/leagueItem";
 import { fetchData } from "../queryClient";
 
 export default function PatchOverview() {

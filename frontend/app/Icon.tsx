@@ -1,4 +1,4 @@
-import type { LeagueItem } from "./types";
+import type { LeagueItem } from "./leagueItem";
 
 type IconProps = {
   item: LeagueItem;

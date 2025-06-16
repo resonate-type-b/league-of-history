@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
 import { Icon } from "~/Icon";
-import { ItemInfoBox } from "../ItemInfoBox";
+import { ItemInfoBox } from "../itemInfoBox/ItemInfoBox";
+import type { LeagueItem } from "../leagueItem";
+import { LeagueItemCompareKeys, LeagueItemSchema } from "../leagueItem";
 import { fetchData } from "../queryClient";
-import type { LeagueItem } from "../types";
-import { LeagueItemCompareKeys, LeagueItemSchema } from "../types";
 
 export default function ItemHistory() {
   const [searchParams] = useSearchParams();
