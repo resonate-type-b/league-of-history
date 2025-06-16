@@ -11,7 +11,7 @@ export function ItemLine({ descriptor, value, className = null }: ItemLineProps)
   return (
     <div className={`${className} flex flex-row flex-nowrap px-5 md:px-10`}>
       <p className="flex-grow">{`${descriptor}`}</p>
-      <p className="w-10">{value}</p>
+      <p className="min-w-10 w-fit">{value}</p>
     </div>
   );
 }

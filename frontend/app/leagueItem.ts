@@ -62,5 +62,9 @@ export const LeagueItemCompareKeys: (keyof LeagueItem)[] = Object.keys(
 export type DiffLeagueItem = {
   // when constructing a DiffLeagueitem, we set the value to the string value if the strings are identical
   // this way we can continue to display the unchanged parts of the item
-  [K in keyof LeagueItem]?: K extends "motd" ? string : Change[] | string;
+  [K in keyof LeagueItem]?: K extends "motd"
+    ? string
+    : K extends "item_id"
+    ? number
+    : Change[] | string;
 };

@@ -1,5 +1,6 @@
 import { type Change } from "diff";
 import Markdown from "react-markdown";
+import { Icon } from "~/Icon";
 import type { DiffLeagueItem } from "../leagueItem";
 import { FormatMotd, ItemLine } from "./_common";
 import { itemMap, type FormatterMap } from "./itemFormatMap";
@@ -61,8 +62,9 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps) {
     const passiveName = `unique_passive_${i}_name` as keyof DiffLeagueItem;
 
     if (item[passive] !== undefined) {
-      const formattedPassive = item[passive];
-      const formattedName = item[passiveName] !== undefined ? item[passiveName] : "Passive";
+      const formattedPassive = item[passive] as Change[];
+      const formattedName =
+        item[passiveName] !== undefined ? (item[passiveName] as Change[]) : "Passive";
 
       textJSXList.push(
         <div key={"passive" + i} className="pb-2">
@@ -72,9 +74,16 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps) {
       );
     }
   }
+
   return (
     <div className={`border-t border-blue-200 pt-5 pb-14 pl-3 pr-8 sm:pr-3 ${className}`}>
-      {statJSXList}
+      <div className="flex flex-row">
+        <div className="flex-grow"> {statJSXList}</div>
+        <Icon
+          item={item}
+          className={typeof item.icon_version === "object" ? "border-yellow-200" : ""}
+        />
+      </div>
       <hr className="pb-3 invisible" />
       {textJSXList}
       {item["motd"] !== undefined && <FormatMotd motd={item.motd} highlight={true} />}

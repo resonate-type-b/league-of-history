@@ -6,6 +6,7 @@ import { z } from "zod/v4";
 import { Icon } from "~/Icon";
 import type { ItemDiffBoxProps } from "~/itemInfoBox/ItemDiffBox";
 import { ItemDiffBox } from "~/itemInfoBox/ItemDiffBox";
+import useFavicon from "~/useFavicon";
 import type { ItemInfoBoxProps } from "../itemInfoBox/ItemInfoBox";
 import { ItemInfoBox } from "../itemInfoBox/ItemInfoBox";
 import type { DiffLeagueItem, LeagueItem } from "../leagueItem";
@@ -13,6 +14,7 @@ import { LeagueItemCompareKeys, LeagueItemSchema } from "../leagueItem";
 import { fetchData } from "../queryClient";
 
 export default function ItemHistory() {
+  useFavicon("/item_favicon.ico");
   const [searchParams] = useSearchParams();
   const item_id = searchParams.get("item_id");
   const result = useQuery({
@@ -191,8 +193,13 @@ function createDiffItem(newerItem: LeagueItem, olderItem: LeagueItem): DiffLeagu
   }
 
   const diffItem: DiffLeagueItem = {};
+  // item_id -> always directly use
+  // motd -> directly use if being added, but do not include if being deleted
+  // everything else -> change object
   for (const key of allExistingKeys) {
-    if (key !== "motd" && key !== "patch_version") {
+    if (key === "item_id") {
+      diffItem[key] = newerItem[key];
+    } else if (key !== "motd" && key !== "patch_version") {
       const oldStr = oldKeys.includes(key) ? olderItem[key]!.toString() : "";
       const newStr = newKeys.includes(key) ? newerItem[key]!.toString() : "";
       diffItem[key] = oldStr === newStr ? oldStr : diffWords(oldStr, newStr);

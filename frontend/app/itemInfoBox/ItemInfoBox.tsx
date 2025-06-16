@@ -1,4 +1,5 @@
 import Markdown from "react-markdown";
+import { Icon } from "~/Icon";
 import type { LeagueItem } from "../leagueItem";
 import { FormatMotd, ItemLine } from "./_common";
 import { itemMap, type FormatterMap } from "./itemFormatMap";
@@ -74,7 +75,10 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
 
   return (
     <div className={`border-t border-blue-200 pt-5 pb-14 pl-3 pr-8 sm:pr-3 ${className}`}>
-      {statJSXList}
+      <div className="flex flex-row">
+        <div className="flex-grow"> {statJSXList}</div>
+        <Icon item={item} />
+      </div>
       <hr className="pb-3 invisible" />
       {textJSXList}
       {item["motd"] !== undefined && <FormatMotd motd={item.motd} />}
