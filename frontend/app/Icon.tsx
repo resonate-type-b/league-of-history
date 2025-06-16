@@ -17,7 +17,6 @@ export function Icon({ item, className, ...imgProps }: IconProps) {
       onError={(e) => {
         const target = e.target as HTMLImageElement;
         if (!target.dataset.fallback) {
-          console.info("This error is safe to ignore if not followed by a similar .png error");
           target.dataset.fallback = "true";
           target.onerror = null;
           target.src = `/icons/${item.item_id}_${item.icon_version}.png`;

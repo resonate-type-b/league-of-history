@@ -4,9 +4,11 @@ import { z } from "zod/v4";
 import { Icon } from "~/Icon";
 import type { LeagueItem } from "~/leagueItem";
 import { LeagueItemSchema } from "~/leagueItem";
+import useFavicon from "~/useFavicon";
 import { fetchData } from "../queryClient";
 
 export default function PatchOverview() {
+  useFavicon("/item_favicon.ico");
   const [searchParams] = useSearchParams();
   let patch_version = searchParams.get("patch_version");
   const result = useQuery({
@@ -38,6 +40,7 @@ export default function PatchOverview() {
   // easier in this use case to just magic number
   return (
     <>
+      <title>{`Patch ${patch_version}`}</title>
       <h1 className="text-5xl text-center pt-5 pb-10">Patch {patch_version}</h1>
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:max-w-[96rem] mx-auto text-xs lg:text-sm 2xl:text-base">
         {itemList.map((item) => {

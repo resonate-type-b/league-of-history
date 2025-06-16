@@ -1,35 +1,19 @@
 import Markdown from "react-markdown";
 import type { LeagueItem } from "../leagueItem";
+import { FormatMotd, ItemLine } from "./_common";
 import { itemMap, type FormatterMap } from "./itemFormatMap";
 
 function formatStat<K extends keyof FormatterMap>(item: LeagueItem, statName: K) {
-  // apparently the fact that LeagueItem and FormatterMap have the same keys is too difficult for the type checker to grasp
-  // despite one being a mapping of the other, so we have to tell it manually
-  // I assume this is not a good way to do it but I can't figure out another way...
-  const formatter = itemMap[statName] as (value: LeagueItem[K]) => [string, string];
-  return formatter(item[statName]);
+  const formatter = itemMap[statName];
+  return formatter(item[statName]!);
 }
 
-type ItemLineProps = {
-  descriptor: string;
-  value: string;
-  className?: string | null;
-};
-
-function ItemLine({ descriptor, value, className = null }: ItemLineProps) {
-  return (
-    <div className={`${className} flex flex-row flex-nowrap px-5 md:px-10`}>
-      <p className="flex-grow">{`${descriptor}`}</p>
-      <p className="w-10">{`${value}`}</p>
-    </div>
-  );
-}
-
-type ItemInfoBoxProps = {
+export type ItemInfoBoxProps = {
   item: LeagueItem;
+  className?: string;
 };
 
-export function ItemInfoBox({ item }: ItemInfoBoxProps) {
+export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
   const statJSXList: React.JSX.Element[] = [];
 
   // we want to make sure gold cost is always on top
@@ -63,13 +47,13 @@ export function ItemInfoBox({ item }: ItemInfoBoxProps) {
     const passiveName = `unique_passive_${i}_name` as keyof LeagueItem;
 
     if (item[passive] !== undefined) {
-      const formattedPassive = item[passive] as string;
-      const formattedName = item[passiveName] != null ? (item[passiveName] as string) : "Passive";
+      const formattedPassive = item[passive];
+      const formattedName = item[passiveName] !== undefined ? item[passiveName] : "Passive";
 
       textJSXList.push(
         <div key={"passive" + i} className="pb-2">
           <div className="font-bold text-sm text-slate-400">
-            <Markdown>{`${formattedName}:`}</Markdown>
+            <Markdown>{`${formattedName}`}</Markdown>
           </div>
           <div className="text-sm ml-10">
             <Markdown
@@ -87,21 +71,13 @@ export function ItemInfoBox({ item }: ItemInfoBoxProps) {
       );
     }
   }
-  if (item["motd"] !== undefined) {
-    const firstWord = item["motd"].split(" ")[0];
-    textJSXList.push(
-      <div key="motd" className="pb-2">
-        <p className="font-bold text-sm text-cyan-400">{firstWord}</p>
-        <p className="text-sm ml-10 text-cyan-100">{item["motd"].slice(firstWord.length)}</p>
-      </div>
-    );
-  }
 
   return (
-    <div className="border-t border-blue-200 pt-5 pb-14 pl-3 pr-8 sm:pr-3">
+    <div className={`border-t border-blue-200 pt-5 pb-14 pl-3 pr-8 sm:pr-3 ${className}`}>
       {statJSXList}
       <hr className="pb-3 invisible" />
       {textJSXList}
+      {item["motd"] !== undefined && <FormatMotd motd={item.motd} />}
     </div>
   );
 }

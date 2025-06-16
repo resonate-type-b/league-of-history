@@ -1,10 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
+import { diffWords } from "diff";
 import React, { useState } from "react";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
 import { Icon } from "~/Icon";
+import type { ItemDiffBoxProps } from "~/itemInfoBox/ItemDiffBox";
+import { ItemDiffBox } from "~/itemInfoBox/ItemDiffBox";
+import type { ItemInfoBoxProps } from "../itemInfoBox/ItemInfoBox";
 import { ItemInfoBox } from "../itemInfoBox/ItemInfoBox";
-import type { LeagueItem } from "../leagueItem";
+import type { DiffLeagueItem, LeagueItem } from "../leagueItem";
 import { LeagueItemCompareKeys, LeagueItemSchema } from "../leagueItem";
 import { fetchData } from "../queryClient";
 
@@ -43,7 +47,12 @@ export default function ItemHistory() {
       InfoBoxJSXList.push(
         <React.Fragment key={lastItem.patch_version}>
           <ExpandablePatchList patchList={[...patchesUnchanged]} />
-          <ItemInfoBox item={lastItem} />
+          <InfoBoxSwitcher
+            infoBox={ItemInfoBox}
+            diffBox={ItemDiffBox}
+            infoItem={lastItem}
+            diffItem={createDiffItem(lastItem, item)}
+          />
         </React.Fragment>
       );
       patchesUnchanged.length = 0;
@@ -60,7 +69,6 @@ export default function ItemHistory() {
       </React.Fragment>
     );
   }
-
   // TODO: display all versions of icon next to title, not just latest
   return (
     <>
@@ -80,6 +88,7 @@ export default function ItemHistory() {
   );
 }
 
+// generates a clickable, expandable heading of the patches in the patchList
 function ExpandablePatchList({ patchList }: { patchList: string[] }) {
   const [expand, setExpand] = useState(false);
   const anchorJSXList: React.JSX.Element[] = [];
@@ -134,6 +143,24 @@ function ExpandablePatchList({ patchList }: { patchList: string[] }) {
   );
 }
 
+type InfoBoxSwitcherProps = {
+  infoBox: ({ item, className }: ItemInfoBoxProps) => React.JSX.Element;
+  diffBox: ({ item, className }: ItemDiffBoxProps) => React.JSX.Element;
+  infoItem: LeagueItem;
+  diffItem: DiffLeagueItem;
+};
+
+function InfoBoxSwitcher({ infoBox, diffBox, infoItem, diffItem }: InfoBoxSwitcherProps) {
+  const [showDiff, setShowDiff] = useState(false);
+  return (
+    <div onClick={() => setShowDiff((x) => !x)} className="relative hover:bg-gray-800 transition">
+      {infoBox({ item: infoItem, className: showDiff ? "blur-sm brightness-50" : "" })}
+      {showDiff &&
+        diffBox({ item: diffItem, className: "absolute w-full top-0 bg-gray-900 z-999" })}
+    </div>
+  );
+}
+
 /*
 note the naming is confusing, because itemList is in reverse chronological order
 so, 'olderItem' is the previous version, aka the 'new' object we are comparing against the known 'newerItem'
@@ -142,7 +169,7 @@ then set olderItem as the new cached item to consider
 */
 function compareItem(newerItem: LeagueItem | null, olderItem: LeagueItem) {
   // first of all if it's the first item, or if theres an motd, then we always want to show it
-  if (newerItem === null || olderItem.motd !== undefined) {
+  if (newerItem === null || newerItem.motd !== undefined) {
     return true;
   }
 
@@ -152,4 +179,27 @@ function compareItem(newerItem: LeagueItem | null, olderItem: LeagueItem) {
     }
   }
   return false;
+}
+
+function createDiffItem(newerItem: LeagueItem, olderItem: LeagueItem): DiffLeagueItem {
+  const oldKeys = Object.keys(olderItem) as (keyof LeagueItem)[];
+  const newKeys = Object.keys(newerItem) as (keyof LeagueItem)[];
+  const allExistingKeys = Array.from(new Set([...oldKeys, ...newKeys]));
+
+  if (olderItem.patch_version === "1.0.0.99") {
+    console.log(allExistingKeys);
+  }
+
+  const diffItem: DiffLeagueItem = {};
+  for (const key of allExistingKeys) {
+    if (key !== "motd" && key !== "patch_version") {
+      const oldStr = oldKeys.includes(key) ? olderItem[key]!.toString() : "";
+      const newStr = newKeys.includes(key) ? newerItem[key]!.toString() : "";
+      diffItem[key] = oldStr === newStr ? oldStr : diffWords(oldStr, newStr);
+    } else if (key === "motd" && newKeys.includes("motd")) {
+      diffItem[key] = newerItem[key];
+    }
+  }
+
+  return diffItem;
 }
