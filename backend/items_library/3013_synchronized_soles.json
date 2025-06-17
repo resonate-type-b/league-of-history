@@ -19,7 +19,7 @@
     "item_name": "Synchronized Souls",
     "components": [3010],
     "quest_reward": true,
-    "gold_cost": -1,
+    "gold_cost": 900,
     "movespeed_flat": 45,
     "unique_passive_1_name": "UNIQUE",
     "unique_passive_1": "Gain Empowered Recall.",

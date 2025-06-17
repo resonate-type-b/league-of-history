@@ -27,7 +27,7 @@ export type FormatterMap = {
 export const itemMap: FormatterMap = {
   gold_cost: (value) => [
     "Gold Cost: ",
-    <React.Fragment key="goldCost">{value === -1 ? "Quest Reward" : value}</React.Fragment>,
+    <React.Fragment key="goldCost">{value === -1 ? "Quest" : value}</React.Fragment>,
   ],
   hp: (value) => ["Health: ", <React.Fragment key="hp">{value}</React.Fragment>],
   hp5: (value) => ["HP Regen per 5: ", <React.Fragment key="hp5">{value}</React.Fragment>],
