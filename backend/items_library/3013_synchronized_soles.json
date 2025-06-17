@@ -1,0 +1,33 @@
+[
+  {
+    "patch_version": "25.S1.1",
+    "unique_passive_4_name": "TRIUMPHANT",
+    "unique_passive_4": "Triumphant version grants +5 movement speed."
+  },
+  {
+    "patch_version": "14.12",
+    "unique_passive_1_name": "VOIDBORN",
+    "unique_passive_2_name": "SYNCHRONY"
+  },
+  {
+    "patch_version": "14.11",
+    "motd": "Bugfix: Attacking a ward no longer incorrectly removes the additional out-of-combat movement speed."
+  },
+  {
+    "patch_version": "14.10",
+    "item_id": 3013,
+    "item_name": "Synchronized Souls",
+    "components": [3010],
+    "quest_reward": true,
+    "gold_cost": -1,
+    "movespeed_flat": 45,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "Gain Empowered Recall.",
+    "unique_passive_2_name": "UNIQUE",
+    "unique_passive_2": "Gain 45 bonus movement speed while out-of-combat.",
+    "unique_passive_3_name": "BOOTS",
+    "unique_passive_3": "Limited to 1 BOOTS item.",
+
+    "motd": "Base movement speed reduced to 70 from 75."
+  }
+]

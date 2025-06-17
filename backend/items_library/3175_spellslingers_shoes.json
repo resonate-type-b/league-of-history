@@ -1,0 +1,22 @@
+[
+  {
+    "patch_version": "25.09",
+    "gold_cost": 1600,
+    "magic_pen_percent": 6
+  },
+  {
+    "patch_version": "25.S1.1",
+    "item_id": 3175,
+    "item_name": "Spellslinger's Shoes",
+    "components": [3020],
+    "gold_cost": 1850,
+    "movespeed_flat": 50,
+    "magic_pen_flat": 18,
+    "magic_pen_percent": 8,
+    "unique_passive_1_name": "BOOTS",
+    "unique_passive_1": "Limited to 1 BOOTS item.",
+    "motd": "Hotfix: • Flat magic penetration reduced to 18 from 19. \n\n  • Percentage magic penetration reduced to 8% from 10%.",
+    "unique_passive_4_name": "REQUIREMENT",
+    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
+  }
+]

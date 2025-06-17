@@ -32,63 +32,69 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps) {
   const statJSXList: React.JSX.Element[] = [];
 
   // we want to make sure gold cost is always on top
-  const [gold_cost_desc, gold_cost_value] = formatStat(item, "gold_cost");
+  if (item.gold_cost === "-1") {
+    // this is extremely extremely hacky...
+    // but basically, if an item's gold cost is -1 (quest reward),
+    // hijack it here manually pass -1 to the formatter so it can catch it
+    // because otherwise, the next step is to diffWord() it at which point it's wrapped in <span> and impossible to work with
+    const [gold_cost_desc, gold_cost_value] =
+      item.gold_cost === "-1" ? itemMap["gold_cost"](-1) : formatStat(item, "gold_cost");
+    statJSXList.push(
+      <ItemLine
+        descriptor={gold_cost_desc}
+        value={gold_cost_value}
+        key="gold_cost"
+        className="text-yellow-300"
+      />
+    );
 
-  statJSXList.push(
-    <ItemLine
-      descriptor={gold_cost_desc}
-      value={gold_cost_value}
-      key="gold_cost"
-      className="text-yellow-300"
-    />
-  );
-
-  for (const statName of Object.keys(item) as (keyof DiffLeagueItem)[]) {
-    if (
-      statName in itemMap &&
-      !["gold_cost"].includes(statName) &&
-      !statName.startsWith("unique_passive")
-    ) {
-      const [descriptor, value] = formatStat(item, statName as keyof FormatterMap);
-      statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
+    for (const statName of Object.keys(item) as (keyof DiffLeagueItem)[]) {
+      if (
+        statName in itemMap &&
+        !["gold_cost"].includes(statName) &&
+        !statName.startsWith("unique_passive")
+      ) {
+        const [descriptor, value] = formatStat(item, statName as keyof FormatterMap);
+        statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
+      }
     }
-  }
 
-  // now we check if there is any passive/motd to show
-  const textJSXList: React.JSX.Element[] = [];
+    // now we check if there is any passive/motd to show
+    const textJSXList: React.JSX.Element[] = [];
 
-  for (const i of [1, 2, 3, 4]) {
-    const passive = `unique_passive_${i}` as keyof DiffLeagueItem;
-    const passiveName = `unique_passive_${i}_name` as keyof DiffLeagueItem;
+    for (const i of [1, 2, 3, 4]) {
+      const passive = `unique_passive_${i}` as keyof DiffLeagueItem;
+      const passiveName = `unique_passive_${i}_name` as keyof DiffLeagueItem;
 
-    if (item[passive] !== undefined) {
-      const formattedPassive = item[passive] as Change[];
-      const formattedName =
-        item[passiveName] !== undefined ? (item[passiveName] as Change[]) : "Passive";
+      if (item[passive] !== undefined) {
+        const formattedPassive = item[passive] as Change[];
+        const formattedName =
+          item[passiveName] !== undefined ? (item[passiveName] as Change[]) : "Passive";
 
-      textJSXList.push(
-        <div key={"passive" + i} className="pb-2">
-          <div className="font-bold text-sm text-slate-400">{diffText(formattedName)}</div>
-          <div className="text-sm ml-10 pb-2">{diffText(formattedPassive)}</div>
+        textJSXList.push(
+          <div key={"passive" + i} className="pb-2">
+            <div className="font-bold text-sm text-slate-400">{diffText(formattedName)}</div>
+            <div className="text-sm ml-10 pb-2">{diffText(formattedPassive)}</div>
+          </div>
+        );
+      }
+    }
+
+    return (
+      <div className={`border-t border-blue-200 pt-5 pb-14 pl-3 pr-8 sm:pr-3 ${className}`}>
+        <div className="flex flex-row">
+          <div className="flex-grow"> {statJSXList}</div>
+          <Icon
+            item={item}
+            className={typeof item.icon_version === "object" ? "border-yellow-200" : ""}
+          />
         </div>
-      );
-    }
-  }
-
-  return (
-    <div className={`border-t border-blue-200 pt-5 pb-14 pl-3 pr-8 sm:pr-3 ${className}`}>
-      <div className="flex flex-row">
-        <div className="flex-grow"> {statJSXList}</div>
-        <Icon
-          item={item}
-          className={typeof item.icon_version === "object" ? "border-yellow-200" : ""}
-        />
+        <hr className="pb-3 invisible" />
+        {textJSXList}
+        {item["motd"] !== undefined && <FormatMotd motd={item.motd} highlight={true} />}
       </div>
-      <hr className="pb-3 invisible" />
-      {textJSXList}
-      {item["motd"] !== undefined && <FormatMotd motd={item.motd} highlight={true} />}
-    </div>
-  );
+    );
+  }
 }
 
 // if changeObj is a string -> the stat wasn't changed. Return it back as is in a span

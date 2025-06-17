@@ -1,0 +1,32 @@
+[
+  {
+    "patch_version": "25.10",
+    "motd": "Bugfix: Obtaining Hand of Baron with this item no longer permanently grants Empowered Recall."
+  },
+  {
+    "patch_version": "25.09",
+    "unique_passive_1_name": "SYNCHRONY",
+    "unique_passive_1": "Gain 10 bonus movement speed while out-of-combat."
+  },
+  {
+    "patch_version": "25.04",
+    "movespeed_flat": 40
+  },
+  {
+    "patch_version": "14.12",
+    "unique_passive_1_name": "VOIDBORN",
+    "unique_passive_2_name": "SYMBIOSIS"
+  },
+  {
+    "patch_version": "14.10",
+    "item_id": 3010,
+    "item_name": "Symbiotic Soles",
+    "components": [1001],
+    "movespeed_flat": 35,
+    "gold_cost": 900,
+    "unique_passive_1": "Gain Empowered Recall.",
+    "unique_passive_2": "After traveling for a total of 150,000 units of distance, capped at 500 at a time, upgrade this item to An icon for the item Synchronized Souls Synchronized Souls.",
+    "unique_passive_3_name": "BOOTS",
+    "unique_passive_3": "Limited to 1 BOOTS item."
+  }
+]

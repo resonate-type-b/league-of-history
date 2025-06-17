@@ -188,10 +188,6 @@ function createDiffItem(newerItem: LeagueItem, olderItem: LeagueItem): DiffLeagu
   const newKeys = Object.keys(newerItem) as (keyof LeagueItem)[];
   const allExistingKeys = Array.from(new Set([...oldKeys, ...newKeys]));
 
-  if (olderItem.patch_version === "1.0.0.99") {
-    console.log(allExistingKeys);
-  }
-
   const diffItem: DiffLeagueItem = {};
   // item_id -> always directly use
   // motd -> directly use if being added, but do not include if being deleted

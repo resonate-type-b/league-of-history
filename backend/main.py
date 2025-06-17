@@ -59,6 +59,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
+
 @app.head("/", include_in_schema=False)
 @app.get("/", include_in_schema=False)
 def read_root():

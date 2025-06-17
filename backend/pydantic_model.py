@@ -47,7 +47,8 @@ class ItemModel(BaseModel):
     unique_passive_3_name: Optional[str] = Field(max_length=50, default=None)
     unique_passive_4: Optional[str] = Field(max_length=1000, default=None)
     unique_passive_4_name: Optional[str] = Field(max_length=50, default=None)
-    motd: Optional[str] = Field(max_length=1000, default=None)  # for bugfix/hotfix messages = None
+    motd: Optional[str] = Field(max_length=1000, default=None)  # for bugfix/hotfix messages
+    quest_reward: Optional[bool] = None
     reworked: Optional[bool] = None
 
     model_config = ConfigDict(from_attributes=True)

@@ -1,0 +1,69 @@
+[
+  {
+    "patch_version": "25.S1.1",
+    "unique_passive_4_name": "TRIUMPHANT",
+    "unique_passive_4": "Triumphant version grants +5% attack speed."
+  },
+  {
+    "patch_version": "14.19",
+    "aspd": 25
+  },
+  {
+    "patch_version": "14.15",
+    "aspd": 30
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "icon_version": 1,
+    "gold_cost": 1100,
+    "movespeed_flat": 45,
+    "aspd": 35,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "7.23",
+    "unique_passive_2_name": "BOOTS",
+    "unique_passive_2": "Limited to 1 BOOTS item."
+  },
+  {
+    "patch_version": "6.11",
+    "aspd": 35
+  },
+  {
+    "patch_version": "6.9",
+    "motd": "Note: Boots enchantments have been removed from the game."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1100,
+    "aspd": 30
+  },
+  {
+    "patch_version": "4.10",
+    "aspd": 25,
+    "gold_cost": 1000
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 900,
+    "aspd": 20,
+    "unique_passive_1": "+45 flat movement speed"
+  },
+  {
+    "patch_version": "20090515",
+    "gold_cost": 920,
+    "aspd": 25
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3006,
+    "item_name": "Berserker's Greaves",
+    "components": [1001, 1042],
+    "gold_cost": 920,
+    "aspd": 30,
+    "unique_passive_1_name": "ENHANCED MOVEMENT",
+    "unique_passive_1": "+70 flat movement speed"
+  }
+]

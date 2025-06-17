@@ -1,0 +1,40 @@
+[
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "icon_version": 1,
+    "item_name": "Boots",
+    "movespeed_flat": 25,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "7.23",
+    "unique_passive_2_name": "BOOTS",
+    "unique_passive_2": "Limited to 1 BOOTS item."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 300
+  },
+  {
+    "patch_version": "3.8",
+    "gold_cost": 325
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "unique_passive_1": "+25 flat movement speed"
+  },
+  {
+    "patch_version": "20090515",
+    "gold_cost": 350
+  },
+  {
+    "patch_version": "initial",
+    "item_name": "Boots of Speed",
+    "item_id": 1001,
+    "gold_cost": 250,
+    "unique_passive_1_name": "ENHANCED MOVEMENT",
+    "unique_passive_1": "+50 flat movement speed"
+  }
+]

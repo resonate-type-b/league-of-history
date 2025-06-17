@@ -46,6 +46,7 @@ export const LeagueItemSchema = z.object({
   unique_passive_3_name: z.string().optional(),
   unique_passive_4: z.string().optional(),
   unique_passive_4_name: z.string().optional(),
+  quest_reward: z.boolean().optional(),
   motd: z.string().optional(),
 });
 
