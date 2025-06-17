@@ -1,5 +1,6 @@
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy import Integer, String, Date, Boolean, Float
+from sqlalchemy.dialects.postgresql import ARRAY
 from typing import Any
 from sqlalchemy import ForeignKey
 
@@ -21,12 +22,14 @@ class Item(BaseORM):
     item_name: Mapped[str] = mapped_column(String(50))
     gold_cost: Mapped[int] = mapped_column(Integer, nullable=False)
     icon_version: Mapped[int] = mapped_column(Integer, nullable=False)
+    components: Mapped[list[int]] = mapped_column(ARRAY(Integer), nullable=True)
     hp: Mapped[float] = stat_mapped_column()
     hp5: Mapped[float] = stat_mapped_column()
     hp_regen: Mapped[float] = stat_mapped_column()
     armor: Mapped[float] = stat_mapped_column()
     magic_resist: Mapped[float] = stat_mapped_column()
     tenacity: Mapped[float] = stat_mapped_column()
+    # slow resist seems to always appear as a named passive... confirm and remove?
     slow_resist: Mapped[float] = stat_mapped_column()
     aspd: Mapped[float] = stat_mapped_column()
     ad: Mapped[float] = stat_mapped_column()
@@ -59,6 +62,7 @@ class Item(BaseORM):
     unique_passive_4_name: Mapped[str] = mapped_column(String(50), nullable=True)
     motd: Mapped[str] = mapped_column(String(1000), nullable=True)  # for bugfix/hotfix messages
     reworked: Mapped[bool] = mapped_column(Boolean, nullable=True)
+    quest_reward: Mapped[bool] = mapped_column(Boolean, nullable=True)
     patches_existing: Mapped["Patch"] = relationship(back_populates="items")
 
 

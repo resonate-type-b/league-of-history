@@ -7,6 +7,7 @@ export const LeagueItemSchema = z.object({
   item_name: z.string(),
   gold_cost: z.number(),
   icon_version: z.number(),
+  components: z.array(z.number()).optional(),
   reworked: z.boolean().optional(),
 
   hp: z.number().optional(),
@@ -45,6 +46,7 @@ export const LeagueItemSchema = z.object({
   unique_passive_3_name: z.string().optional(),
   unique_passive_4: z.string().optional(),
   unique_passive_4_name: z.string().optional(),
+  quest_reward: z.boolean().optional(),
   motd: z.string().optional(),
 });
 
@@ -52,10 +54,11 @@ export type LeagueItem = z.infer<typeof LeagueItemSchema>;
 
 // every key except patch_version/motd/reworked, used to compare items
 // motd field is a special case that needs to be checked manually for existence, not compared.
+// components currently not used, so pass, but will be implemented later
 export const LeagueItemCompareKeys: (keyof LeagueItem)[] = Object.keys(
   LeagueItemSchema.shape
 ).filter(
-  (element) => !["patch_version", "motd", "reworked"].includes(element)
+  (element) => !["patch_version", "motd", "reworked", "components"].includes(element)
 ) as (keyof LeagueItem)[];
 
 // a league item where each value is a ChangeObject from diffWords instead of a string

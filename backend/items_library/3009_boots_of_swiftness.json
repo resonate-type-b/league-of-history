@@ -1,0 +1,88 @@
+[
+  {
+    "patch_version": "25.09",
+    "movespeed_flat": 55
+  },
+  {
+    "patch_version": "25.S1.1",
+    "unique_passive_4_name": "TRIUMPHANT",
+    "unique_passive_4": "Triumphant version grants +5 movement speed."
+  },
+  {
+    "patch_version": "14.15",
+    "gold_cost": 1000
+  },
+  {
+    "patch_version": "14.12",
+    "unique_passive_2_name": "FLEETFOOTED"
+  },
+  {
+    "patch_version": "14.3",
+    "motd": "Bugfix: Now properly grants 25% slow resist instead of 40.",
+    "unique_passive_2": "Movement slowing effects are reduced by 25%."
+  },
+  {
+    "patch_version": "14.1",
+    "motd": "Bug: Undocumented change",
+    "unique_passive_2": "Movement slowing effects are reduced by 40%."
+  },
+  {
+    "reworked": true,
+    "icon_version": 1,
+    "patch_version": "10.23",
+    "gold_cost": 900,
+    "movespeed_flat": 60,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null,
+    "unique_passive_2_name": null
+  },
+  {
+    "patch_version": "10.5",
+    "unique_passive_1": "+60 flat movement speed"
+  },
+  {
+    "patch_version": "8.21",
+    "motd": "Bugfix: Now properly reduce the self-slow on Pyke's Bone Skewer."
+  },
+  {
+    "patch_version": "7.23",
+    "unique_passive_3_name": "BOOTS",
+    "unique_passive_3": "Limited to 1 BOOTS item."
+  },
+  {
+    "patch_version": "6.11",
+    "unique_passive_1": "+55 flat movement speed"
+  },
+  {
+    "patch_version": "6.9",
+    "motd": "Note: Boots enchantments have been removed from the game."
+  },
+  {
+    "patch_version": "6.4",
+    "unique_passive_1": "+65 flat movement speed"
+  },
+  {
+    "patch_version": "6.3",
+    "gold_cost": 900
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 800,
+    "unique_passive_1": "+65 flat movement speed"
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "unique_passive_1": "+60 flat movement speed",
+    "unique_passive_2_name": "SLOW RESIST",
+    "unique_passive_2": "Movement slowing effects are reduced by 25%."
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3009,
+    "item_name": "Boots of Swiftness",
+    "components": [1001],
+    "gold_cost": 1000,
+    "unique_passive_1_name": "ENHANCED MOVEMENT",
+    "unique_passive_1": "+90 flat movement speed"
+  }
+]

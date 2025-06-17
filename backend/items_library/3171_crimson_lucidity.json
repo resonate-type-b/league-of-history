@@ -1,0 +1,33 @@
+[
+  {
+    "patch_version": "25.S1.1",
+    "unique_passive_4_name": "TRIUMPHANT",
+    "unique_passive_4": "Triumphant version grants +5 ability haste."
+  },
+  {
+    "patch_version": "25.09",
+    "gold_cost": 1400
+  },
+
+  {
+    "patch_version": "25.S1.2",
+    "motd": "Bugfix: Ionian Insight now grants the proper, 10 summoner spell haste instead of 0.1."
+  },
+  {
+    "patch_version": "25.S1.1",
+    "item_id": 3171,
+    "item_name": "Crimson Lucidity",
+    "components": [3158],
+    "gold_cost": 1650,
+    "movespeed_flat": 50,
+    "haste": 25,
+    "unique_passive_1_name": "IONIAN INSIGHT",
+    "unique_passive_1": "Gain 10 summoner spell haste.",
+    "unique_passive_2_name": "NOXIAN HASTE",
+    "unique_passive_2": "Healing, shielding or buffing an ally, damaging abilities against champions, and using summoner spells grants you [10%|8%] bonus movement speed for 4 seconds. This can be triggered from the same cast instance only once every 4 seconds.",
+    "unique_passive_3_name": "BOOTS",
+    "unique_passive_3": "Limited to 1 BOOTS item.",
+    "unique_passive_4_name": "REQUIREMENT",
+    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
+  }
+]

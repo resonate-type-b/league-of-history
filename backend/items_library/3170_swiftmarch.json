@@ -1,0 +1,24 @@
+[
+  {
+    "patch_version": "25.09",
+    "gold_cost": 1500,
+    "unique_passive_2": "Gain adaptive force equal to 5% of your total movement speed."
+  },
+  {
+    "patch_version": "25.S1.1",
+    "item_id": 3170,
+    "item_name": "Swiftmarch",
+    "components": [3009],
+    "gold_cost": 1750,
+    "movespeed_flat": 70,
+    "unique_passive_1_name": "FLEETFOOTED",
+    "unique_passive_1": "Gain 25% slow resist.",
+    "unique_passive_2_name": "NOXIAN FERVOR",
+    "unique_passive_2": "Gain 4% bonus total movement speed.",
+    "unique_passive_3_name": "BOOTS",
+    "unique_passive_3": "Limited to 1 BOOTS item.",
+    "unique_passive_4_name": "REQUIREMENT",
+    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped.",
+    "motd": "Base movement speed reduced to 70 from 75."
+  }
+]

@@ -19,11 +19,16 @@ export type FormatterMap = {
     | "unique_passive_4_name"
     | "motd"
     | "reworked"
+    | "components"
+    | "quest_reward"
   >]-?: (value: string | number | React.JSX.Element[]) => [string, React.JSX.Element];
 };
 
 export const itemMap: FormatterMap = {
-  gold_cost: (value) => ["Gold Cost: ", <React.Fragment key="goldCost">{value}</React.Fragment>],
+  gold_cost: (value) => [
+    "Gold Cost: ",
+    <React.Fragment key="goldCost">{value === -1 ? "Quest" : value}</React.Fragment>,
+  ],
   hp: (value) => ["Health: ", <React.Fragment key="hp">{value}</React.Fragment>],
   hp5: (value) => ["HP Regen per 5: ", <React.Fragment key="hp5">{value}</React.Fragment>],
   hp_regen: (value) => ["Health regen: ", <React.Fragment key="hpRegen">{value}%</React.Fragment>],

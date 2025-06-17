@@ -1,0 +1,113 @@
+[
+  {
+    "patch_version": "25.04",
+    "unique_passive_2": "Reduces incoming damage from all basic attacks by 10% (excluding turret shots)."
+  },
+  {
+    "patch_version": "25.S1.1",
+    "unique_passive_4_name": "TRIUMPHANT",
+    "unique_passive_4": "Triumphant version grants +5 armor."
+  },
+  {
+    "patch_version": "14.19",
+    "unique_passive_2": "Reduces incoming damage from all basic attacks by 12% (excluding turret shots)."
+  },
+  {
+    "patch_version": "14.15",
+    "gold_cost": 1200,
+    "unique_passive_2": "Reduces incoming damage from all basic attacks by 10% (excluding turret shots)."
+  },
+  {
+    "patch_version": "14.12",
+    "unique_passive_2_name": "PLATING"
+  },
+  {
+    "patch_version": "14.10",
+    "gold_cost": 1000,
+    "armor": 25,
+    "unique_passive_2": "Reduces incoming damage from all basic attacks by 8% (excluding turret shots)."
+  },
+  {
+    "patch_version": "13.5",
+    "motd": "Change: Now also reduces instances of basic damage that apply proc damage or spell effects in the same damage instance"
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "icon_version": 1,
+    "item_name": "Plated Steelcaps",
+    "movespeed_flat": 45,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null,
+    "unique_passive_2": "Reduces incoming damage from all basic attacks by 12% (excluding turret shots)."
+  },
+  {
+    "patch_version": "8.7",
+    "armor": 20,
+    "unique_passive_2": "Reduces the damage taken from non-turret basic attacks by 12%."
+  },
+  {
+    "patch_version": "7.23",
+    "unique_passive_3_name": "BOOTS",
+    "unique_passive_3": "Limited to 1 BOOTS item."
+  },
+  {
+    "patch_version": "7.11",
+    "unique_passive_2": "Reduces the damage taken from non-turret basic attacks by 10%."
+  },
+  {
+    "patch_version": "6.13",
+    "motd": "Bugfix: Fixed a few cases where Ninja Tabi weren't properly reducing damage from empowered basic attacks"
+  },
+  {
+    "patch_version": "6.11",
+    "unique_passive_2": "Reduces the damage taken from non-turret basic attacks by 12%."
+  },
+  {
+    "patch_version": "6.9",
+    "motd": "Boots enchantments have been removed from the game."
+  },
+  {
+    "patch_version": "5.22",
+    "armor": 30,
+    "gold_cost": 1100
+  },
+
+  {
+    "patch_version": "1.0.0.154",
+    "unique_passive_2": "Reduces the damage taken from non-turret basic attacks by 10%."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "movespeed_flat": 45,
+    "gold_cost": 1000,
+    "unique_passive_2": "Reduces the damage taken from champion basic attacks by 10%."
+  },
+  {
+    "patch_version": "1.0.0.132",
+    "unique_passive_2": "Reduces the damage taken from non-turret basic attacks by 10%."
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "armor": 25,
+    "unique_passive_2": "+12% dodge chance"
+  },
+  {
+    "patch_version": "20090515",
+    "armor": 23,
+    "unique_passive_2": "+11% dodge chance"
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3047,
+    "gold_cost": 850,
+    "item_name": "Ninja Tabi",
+    "components": [1001, 1029],
+    "armor": 20,
+    "unique_passive_1_name": "ENHANCED MOVEMENT",
+    "unique_passive_1": "+70 flat movement speed",
+    "unique_passive_2_name": "UNIQUE",
+
+    "unique_passive_2": "+10% dodge chance"
+  }
+]

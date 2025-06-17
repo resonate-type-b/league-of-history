@@ -3,7 +3,6 @@ import { diffWords } from "diff";
 import React, { useState } from "react";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
-import { Icon } from "~/Icon";
 import type { ItemDiffBoxProps } from "~/itemInfoBox/ItemDiffBox";
 import { ItemDiffBox } from "~/itemInfoBox/ItemDiffBox";
 import useFavicon from "~/useFavicon";
@@ -17,6 +16,9 @@ export default function ItemHistory() {
   useFavicon("/item_favicon.ico");
   const [searchParams] = useSearchParams();
   const item_id = searchParams.get("item_id");
+  if (item_id === null) {
+    window.location.href = "/patch/";
+  }
   const result = useQuery({
     queryKey: ["patch", item_id],
     queryFn: async () => fetchData(`/items/?item_id=${item_id}`),
@@ -57,6 +59,17 @@ export default function ItemHistory() {
           />
         </React.Fragment>
       );
+
+      if (lastItem.item_name !== item.item_name) {
+        InfoBoxJSXList.push(
+          <div
+            key={lastItem.patch_version + "name"}
+            className={"text-3xl text-center font-medium bg-blue-950"}>
+            {item.item_name}
+          </div>
+        );
+      }
+
       patchesUnchanged.length = 0;
     }
     patchesUnchanged.push(item.patch_version);
@@ -74,9 +87,8 @@ export default function ItemHistory() {
   // TODO: display all versions of icon next to title, not just latest
   return (
     <>
-      <div className="flex flex-row justify-center items-center pt-5 gap-5">
-        <Icon className="w-16 h-16 flex-shrink" item={itemList[0]} />
-        <h1 className="text-5xl leading-none">{name}</h1>
+      <div className="flex flex-row justify-center items-center pt-10 gap-5">
+        <h1 className="text-5xl font-medium leading-none">{name}</h1>
       </div>
 
       <div className="flex flex-row flex-grow flex-nowrap pt-16">
@@ -187,10 +199,6 @@ function createDiffItem(newerItem: LeagueItem, olderItem: LeagueItem): DiffLeagu
   const oldKeys = Object.keys(olderItem) as (keyof LeagueItem)[];
   const newKeys = Object.keys(newerItem) as (keyof LeagueItem)[];
   const allExistingKeys = Array.from(new Set([...oldKeys, ...newKeys]));
-
-  if (olderItem.patch_version === "1.0.0.99") {
-    console.log(allExistingKeys);
-  }
 
   const diffItem: DiffLeagueItem = {};
   // item_id -> always directly use

@@ -1,0 +1,70 @@
+[
+  {
+    "patch_version": "25.S1.1",
+    "unique_passive_4_name": "TRIUMPHANT",
+    "unique_passive_4": "Triumphant version grants +2 magic penetration.",
+    "motd": "Hotfix: Triumphant bonus magic penetration reduced to +2 from +4."
+  },
+  {
+    "patch_version": "14.21",
+    "magic_pen_flat": 12
+  },
+  {
+    "patch_version": "14.15",
+    "magic_pen_flat": 15
+  },
+  {
+    "patch_version": "10.24",
+    "icon_version": 2
+  },
+
+  {
+    "reworked": true,
+    "icon_version": 1,
+    "patch_version": "10.23",
+    "magic_pen_flat": 18,
+    "movespeed_flat": 45,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "7.23",
+    "unique_passive_3_name": "BOOTS",
+    "unique_passive_3": "Limited to 1 BOOTS item."
+  },
+  {
+    "patch_version": "7.22",
+    "magic_pen_flat": 18
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "magic_pen_flat": 15,
+    "unique_passive_1": "+45 flat movement speed"
+  },
+  {
+    "patch_version": "1.0.0.61",
+    "magic_pen_flat": 20
+  },
+  {
+    "patch_version": "1.0.0.52",
+    "ap": null,
+    "magic_pen_flat": 15,
+    "components": [1001],
+    "motd": "Note: The gold cost before this was ~900, but the patch notes never tracked it. Amplifying Tome is also assumed to have been removed from the build path here."
+  },
+  {
+    "patch_version": "20090515",
+    "ap": 33
+  },
+
+  {
+    "patch_version": "initial",
+    "item_id": 3020,
+    "item_name": "Sorcerer's Shoes",
+    "components": [1001, 1052],
+    "gold_cost": 1100,
+    "ap": 35,
+    "unique_passive_1_name": "ENHANCED MOVEMENT",
+    "unique_passive_1": "+70 flat movement speed"
+  }
+]

@@ -19,7 +19,6 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
 
   // we want to make sure gold cost is always on top
   const [gold_cost_desc, gold_cost_value] = formatStat(item, "gold_cost");
-
   statJSXList.push(
     <ItemLine
       descriptor={gold_cost_desc}
@@ -47,30 +46,9 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
     const passive = `unique_passive_${i}` as keyof LeagueItem;
     const passiveName = `unique_passive_${i}_name` as keyof LeagueItem;
 
-    if (item[passive] !== undefined) {
-      const formattedPassive = item[passive];
-      const formattedName = item[passiveName] !== undefined ? item[passiveName] : "Passive";
-
-      textJSXList.push(
-        <div key={"passive" + i} className="pb-2">
-          <div className="font-bold text-sm text-slate-400">
-            <Markdown>{`${formattedName}`}</Markdown>
-          </div>
-          <div className="text-sm ml-10">
-            <Markdown
-              components={{
-                p: ({ children, ...props }) => {
-                  return (
-                    <p className="pb-2" {...props}>
-                      {children}
-                    </p>
-                  );
-                },
-              }}>{`${formattedPassive}`}</Markdown>
-          </div>
-        </div>
-      );
-    }
+    textJSXList.push(
+      <PassiveLine key={`passive_${i}`} heading={item[passiveName]} body={item[passive]} />
+    );
   }
 
   return (
@@ -82,6 +60,38 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
       <hr className="pb-3 invisible" />
       {textJSXList}
       {item["motd"] !== undefined && <FormatMotd motd={item.motd} />}
+    </div>
+  );
+}
+
+type PassiveLineProps = {
+  heading: LeagueItem[keyof LeagueItem];
+  body: LeagueItem[keyof LeagueItem];
+};
+
+function PassiveLine({ heading, body }: PassiveLineProps): React.JSX.Element {
+  if (body === undefined) {
+    return <></>;
+  }
+  heading = heading as string;
+  body = body as string;
+
+  heading = heading === undefined ? "Passive" : heading;
+  return (
+    <div className="pb-2">
+      <div className="font-bold text-sm text-slate-400">{`${heading}`}</div>
+      <div className="text-sm ml-10">
+        <Markdown
+          components={{
+            p: ({ children, ...props }) => {
+              return (
+                <p className="pb-2" {...props}>
+                  {children}
+                </p>
+              );
+            },
+          }}>{`${body}`}</Markdown>
+      </div>
     </div>
   );
 }

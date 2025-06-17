@@ -1,0 +1,21 @@
+[
+  {
+    "patch_version": "25.09",
+    "gold_cost": 1600
+  },
+  {
+    "item_id": 3172,
+    "item_name": "Gunmetal Greaves",
+    "components": [3006],
+    "gold_cost": 1850,
+    "patch_version": "25.S1.1",
+    "aspd": 40,
+    "movespeed_flat": 50,
+    "unique_passive_1_name": "NOXIAN GAIT",
+    "unique_passive_1": "Basic attacks on-hit against champions grant you [15%/10%] bonus movement speed decaying over 2 seconds.",
+    "unique_passive_2_name": "BOOTS",
+    "unique_passive_2": "Limited to 1 BOOTS item.",
+    "unique_passive_4_name": "REQUIREMENT",
+    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
+  }
+]
