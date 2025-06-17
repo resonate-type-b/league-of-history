@@ -44,10 +44,12 @@ if os.getenv("ENV") == "dev":
         "https://localhost:3000",
         "https://resonate.moe"
     ]
-else:
+elif os.getenv("ENV") == "prod":
     allowed_origins = [
         "https://resonate.moe"
     ]
+else:
+    raise ValueError("no environment specified")
 
 app = FastAPI()
 app.add_middleware(
