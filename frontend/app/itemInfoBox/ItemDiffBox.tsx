@@ -99,14 +99,13 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps): React.J
 function diffText(changeObj: Change[] | string): React.JSX.Element[] {
   if (typeof changeObj === "string") {
     return [
-      <span key={changeObj}>
-        <Markdown
-          components={{
-            p: ({ children }) => <>{children}</>, // strip <p>
-          }}>
-          {changeObj}
-        </Markdown>
-      </span>,
+      <Markdown
+        key={changeObj}
+        components={{
+          p: ({ children }) => <p className="pb-1">{children}</p>,
+        }}>
+        {changeObj}
+      </Markdown>,
     ];
   }
 

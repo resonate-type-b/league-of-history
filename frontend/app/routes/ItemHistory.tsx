@@ -119,41 +119,37 @@ function ExpandablePatchList({ patchList }: { patchList: string[] }) {
   anchorJSXList.reverse();
   const first = anchorJSXList[0];
   const last = anchorJSXList[anchorJSXList.length - 1];
-  return (
-    <span className="font-medium text-blue-300">
-      {!expand ? (
-        <div className="flex flex-row items-end">
-          <span className="text-2xl flex-grow">
-            {first}
-            {anchorJSXList.length >= 2 && " – "}
-            {anchorJSXList.length >= 2 && last}
-          </span>
-          {anchorJSXList.length >= 3 && (
-            <span
-              onClick={() => setExpand(true)}
-              className="text-md hover:text-blue-200 hover:underline transition">
-              {" expand all..."}
-            </span>
-          )}
-        </div>
-      ) : (
-        <div className="flex flex-row items-end">
-          <span className="flex-grow text-lg">
-            {anchorJSXList.map((link, i) => (
-              <span key={i}>{link}; </span>
-            ))}
-          </span>
-
-          {
-            <span
-              onClick={() => setExpand(false)}
-              className="text-md hover:text-blue-200 hover:underline transition">
-              {" collapse..."}
-            </span>
-          }
-        </div>
+  return !expand ? (
+    <div className="flex flex-row items-end font-medium text-blue-300">
+      <span className="text-2xl flex-grow">
+        {first}
+        {anchorJSXList.length >= 2 && " – "}
+        {anchorJSXList.length >= 2 && last}
+      </span>
+      {anchorJSXList.length >= 3 && (
+        <span
+          onClick={() => setExpand(true)}
+          className="text-md hover:text-blue-200 hover:underline transition">
+          {" expand all..."}
+        </span>
       )}
-    </span>
+    </div>
+  ) : (
+    <div className="flex flex-row items-end font-medium text-blue-300">
+      <span className="flex-grow text-lg">
+        {anchorJSXList.map((link, i) => (
+          <span key={i}>{link}; </span>
+        ))}
+      </span>
+
+      {
+        <span
+          onClick={() => setExpand(false)}
+          className="text-md hover:text-blue-200 hover:underline transition">
+          {" collapse..."}
+        </span>
+      }
+    </div>
   );
 }
 
