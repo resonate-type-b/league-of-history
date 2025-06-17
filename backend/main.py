@@ -1,11 +1,16 @@
+# make sure this goes on top to load the .env!
+import env_config  # type:ignore  # noqa: F401
+
+
 from pathlib import Path
 import json
 from fastapi import FastAPI
 from typing import Optional
 from sqlalchemy import select, desc
 from fastapi.middleware.cors import CORSMiddleware
+import os
 
-from conn import engine, initialise_sqlite, session_factory
+from conn import engine, session_factory
 from orm_model import BaseORM, Patch, Item
 from pydantic_model import ItemModel
 from patch_history_data import import_patch_history_data
@@ -13,11 +18,9 @@ from items_data import format_item_from_json, insert_items_data
 
 
 # ====== data loading stuff here ======
-initialise_sqlite()
-
 # models come from orm_model
 BaseORM.metadata.create_all(engine)
-import_patch_history_data()
+import_patch_history_data("./patch_history.csv")
 
 with session_factory.begin() as session:
     patch_versions: list[str] = list(session.scalars(select(Patch.patch_version).order_by(Patch.patch_date)).all())
@@ -32,12 +35,19 @@ for file in (p/"items_library").iterdir():
 
 
 # ====== fastAPI stuff here ======
-allowed_origins = [
-    "http://localhost:5173",
-    "https://localhost:5173",
-    "http://localhost:3000",
-    "https://localhost:3000"
-]
+
+if os.getenv("ENV") == "dev":
+    allowed_origins = [
+        "http://localhost:5173",
+        "https://localhost:5173",
+        "http://localhost:3000",
+        "https://localhost:3000",
+        "https://resonate.moe"
+    ]
+else:
+    allowed_origins = [
+        "https://resonate.moe"
+    ]
 
 app = FastAPI()
 app.add_middleware(

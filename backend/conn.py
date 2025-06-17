@@ -1,21 +1,15 @@
-from config import config
-from pathlib import Path
-import sqlite3
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy import MetaData
 import os
 
 
-sqlite_db_path = Path(config['PATH']['BASE']) / Path(config["PATH"]["sqlite_path"])
+db_path = os.getenv("DATABASE_URL")
 
+# clear the database on start
+engine = create_engine(db_path)  # type: ignore because if None, just letting it crash is the wanted behaviour
+m = MetaData()
+m.reflect(engine)
+m.drop_all(engine)
 
-def initialise_sqlite():
-    # TODO: we want to eventually just use in memory sqlite, currently using a file for debugging
-    if sqlite_db_path.exists():
-        os.remove(sqlite_db_path)
-
-    sqlite3.connect(sqlite_db_path)
-
-
-engine = create_engine("sqlite:///" + str(sqlite_db_path))
 session_factory = sessionmaker(bind=engine)
