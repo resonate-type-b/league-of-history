@@ -1,17 +1,12 @@
 import logging
 from datetime import date
-from pathlib import Path
 import csv
 from sqlalchemy import insert
-
-from config import config
 from conn import session_factory
 from orm_model import Patch
 
 
-def import_patch_history_data():
-    filepath = Path(config["PATH"]["BASE"]) / Path(config["PATH"]["patch_history_path"])
-
+def import_patch_history_data(filepath: str):
     insert_list: list[dict[str, str | date | int]] = []
 
     with open(filepath, mode='r', newline='') as csvfile:

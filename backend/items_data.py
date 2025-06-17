@@ -49,10 +49,10 @@ def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -
         curr_definition["motd"] = None
         curr_definition["reworked"] = None
     # make sure we matched every single entry in the json
-    try:
-        assert definition_idx + 1 == len(data)
-    except AssertionError:
-        print(f"{curr_definition["item_name"]} json not fully processed. Last good entry: {data[definition_idx]}")
+    if definition_idx + 1 != len(data):
+        raise ValueError(
+            f"{curr_definition["item_name"]} json not fully processed. Last good entry: {data[definition_idx]}")
+
     return return_list
 
 
