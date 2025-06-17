@@ -59,8 +59,8 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-
-@app.get("/")
+@app.head("/", include_in_schema=False)
+@app.get("/", include_in_schema=False)
 def read_root():
     msg = "Welcome to the League of Legends Items API! Go to /docs for available endpoints"
 
