@@ -16,6 +16,9 @@ export default function ItemHistory() {
   useFavicon("/item_favicon.ico");
   const [searchParams] = useSearchParams();
   const item_id = searchParams.get("item_id");
+  if (item_id === null) {
+    window.location.href = "/patch/";
+  }
   const result = useQuery({
     queryKey: ["patch", item_id],
     queryFn: async () => fetchData(`/items/?item_id=${item_id}`),
