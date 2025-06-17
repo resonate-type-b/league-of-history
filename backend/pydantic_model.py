@@ -10,6 +10,7 @@ class ItemModel(BaseModel):
     item_name: str = Field(max_length=50)
     gold_cost: int
     icon_version: int
+    components: Optional[list[int]] = None
     hp: Optional[float] = None
     hp5: Optional[float] = None
     hp_regen: Optional[float] = None

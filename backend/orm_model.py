@@ -1,5 +1,6 @@
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy import Integer, String, Date, Boolean, Float
+from sqlalchemy.dialects.postgresql import ARRAY
 from typing import Any
 from sqlalchemy import ForeignKey
 
@@ -21,6 +22,7 @@ class Item(BaseORM):
     item_name: Mapped[str] = mapped_column(String(50))
     gold_cost: Mapped[int] = mapped_column(Integer, nullable=False)
     icon_version: Mapped[int] = mapped_column(Integer, nullable=False)
+    components: Mapped[list[int]] = mapped_column(ARRAY(Integer), nullable=True)
     hp: Mapped[float] = stat_mapped_column()
     hp5: Mapped[float] = stat_mapped_column()
     hp_regen: Mapped[float] = stat_mapped_column()

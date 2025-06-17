@@ -19,6 +19,7 @@ export type FormatterMap = {
     | "unique_passive_4_name"
     | "motd"
     | "reworked"
+    | "components"
   >]-?: (value: string | number | React.JSX.Element[]) => [string, React.JSX.Element];
 };
 

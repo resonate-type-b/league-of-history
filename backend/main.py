@@ -71,7 +71,7 @@ def read_root():
 # as there is no use case for specifying both paremeters.
 @app.get("/items/")
 def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) \
- -> list[dict[str, str | int | float | bool]] | str:
+ -> list[dict[str, str | int | float | bool | list[int]]] | str:
     if item_id is not None:
         # fetch timeline of item
         stmt = (

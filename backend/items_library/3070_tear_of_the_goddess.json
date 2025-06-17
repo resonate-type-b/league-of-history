@@ -32,6 +32,7 @@
     "reworked": true,
     "icon_version": 1,
     "gold_cost": 400,
+    "components": null,
     "mp": 150,
     "unique_passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 450 bonus mana.",
     "unique_passive_2_name": "FOCUS",
@@ -126,6 +127,7 @@
     "item_name": "Tear of the Goddess",
     "item_id": 3070,
     "gold_cost": 980,
+    "components": [1004, 1027],
     "mp": 350,
     "mp5": 5,
     "unique_passive_1": "Each time you cast a spell, your maximum mana increases by 4."
