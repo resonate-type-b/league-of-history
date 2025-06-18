@@ -1,0 +1,40 @@
+[
+  {
+    "patch_version": "12.4",
+    "gold_cost": 300,
+    "hp_regen": 100
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 150
+  },
+  {
+    "patch_version": "4.20",
+    "hp_regen": 50,
+    "hp5": null
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 180,
+    "hp5": 5
+  },
+  {
+    "patch_version": "0.9.25.24",
+    "hp5": 8
+  },
+  {
+    "patch_version": "20090425",
+    "gold_cost": 250
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1006,
+    "item_name": "Rejuvenation Bead",
+    "gold_cost": 200,
+    "hp5": 10
+  }
+]

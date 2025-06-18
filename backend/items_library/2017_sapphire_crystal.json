@@ -1,0 +1,23 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 300,
+    "mp": 300
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 350,
+    "mp": 250
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1027,
+    "item_name": "Sapphire Crystal",
+    "gold_cost": 400,
+    "mp": 200
+  }
+]

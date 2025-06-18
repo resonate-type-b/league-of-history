@@ -3,6 +3,7 @@ from sqlalchemy import Integer, String, Date, Boolean, Float
 from sqlalchemy.dialects.postgresql import ARRAY
 from typing import Any
 from sqlalchemy import ForeignKey
+from datetime import date
 
 
 class BaseORM(DeclarativeBase):
@@ -70,7 +71,7 @@ class Patch(BaseORM):
     __tablename__ = "patches"
 
     patch_version: Mapped[str] = mapped_column(String(20), primary_key=True, unique=True)
-    patch_date: Mapped[str] = mapped_column(Date, nullable=False)
+    patch_date: Mapped[date] = mapped_column(Date, nullable=False)
     season: Mapped[int] = mapped_column(Integer, nullable=False)
     preseason: Mapped[bool] = mapped_column(Boolean, nullable=False)
     items: Mapped[list[Item]] = relationship(back_populates="patches_existing")

@@ -23,10 +23,6 @@
     "unique_passive_2": "Limited to 1 DORAN item."
   },
   {
-    "patch_version": "10.24",
-    "icon_version": 2
-  },
-  {
     "patch_version": "10.23",
     "reworked": true,
     "icon_version": 1,

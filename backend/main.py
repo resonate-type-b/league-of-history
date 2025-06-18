@@ -9,6 +9,7 @@ from typing import Optional
 from sqlalchemy import select, desc
 from fastapi.middleware.cors import CORSMiddleware
 import os
+from datetime import date
 
 from conn import engine, session_factory
 from orm_model import BaseORM, Patch, Item
@@ -97,3 +98,16 @@ def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) \
         item_data = "Error: No matching items found"
 
     return item_data
+
+
+@app.get("/patch_versions/")
+def get_patch_list() -> list[tuple[str, int, date]]:
+    stmt = (
+        select(Patch)
+        .order_by(desc(Patch.patch_date))
+    )
+
+    with session_factory() as session:
+        patches = session.scalars(stmt).all()
+        patches = [(patch.patch_version, patch.season, patch.patch_date) for patch in patches]
+    return patches

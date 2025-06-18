@@ -1,0 +1,29 @@
+[
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 350
+  },
+  {
+    "patch_version": "3.14",
+    "gold_cost": 360
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 400
+  },
+  {
+    "patch_version": "alpha6",
+    "gold_cost": 415
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1036,
+    "item_name": "Long Sword",
+    "gold_cost": 350,
+    "ad": 10
+  }
+]

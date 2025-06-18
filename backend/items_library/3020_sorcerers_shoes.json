@@ -14,11 +14,6 @@
     "magic_pen_flat": 15
   },
   {
-    "patch_version": "10.24",
-    "icon_version": 2
-  },
-
-  {
     "reworked": true,
     "icon_version": 1,
     "patch_version": "10.23",

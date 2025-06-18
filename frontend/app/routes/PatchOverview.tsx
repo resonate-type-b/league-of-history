@@ -31,9 +31,7 @@ export default function PatchOverview() {
     throw error;
   }
 
-  if (patch_version === null) {
-    patch_version = itemList[0].patch_version;
-  }
+  patch_version = patch_version ?? itemList[0].patch_version;
 
   // 96rem: the breakpoint for tailwind's 2xl screen size.
   // tailwind prases at build time, so setting it dynamically would require creating custom css variables and setting them at runtime
@@ -54,7 +52,7 @@ export default function PatchOverview() {
 function IconBox({ item }: { item: LeagueItem }) {
   return (
     <a href={`/item/?item_id=${item.item_id}`}>
-      <div className="py-2 hover:bg-gray-700 transition">
+      <div className="py-2 hover:bg-gray-700 active:bg-gray-700 transition">
         <Icon className="mx-auto" item={item} />
         <p className="text-center">{item.item_name}</p>
       </div>

@@ -39,10 +39,6 @@
     "motd": "Bugfix: Champions now properly benefit from the Endure passive."
   },
   {
-    "patch_version": "10.24",
-    "icon_version": 2
-  },
-  {
     "patch_version": "10.23",
     "reworked": true,
     "icon_version": 1,

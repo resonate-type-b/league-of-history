@@ -1,0 +1,29 @@
+[
+  {
+    "patch_version": "14.1",
+    "ap": 45
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.13",
+    "gold_cost": 850
+  },
+  {
+    "patch_version": "0.9.25.24",
+    "gold_cost": 860
+  },
+  {
+    "patch_version": "20090626",
+    "gold_cost": 880
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1026,
+    "item_name": "Blasting Wand",
+    "gold_cost": 800,
+    "ap": 40
+  }
+]
