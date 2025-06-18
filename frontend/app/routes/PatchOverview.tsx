@@ -40,7 +40,7 @@ export default function PatchOverview() {
     <>
       <title>{`Patch ${patch_version}`}</title>
       <h1 className="text-5xl text-center pt-5 pb-10">Patch {patch_version}</h1>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:max-w-[96rem] mx-auto text-xs lg:text-sm 2xl:text-base">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:max-w-[96rem] mx-auto px-3 text-xs lg:text-sm 2xl:text-base">
         {itemList.map((item) => {
           return <IconBox item={item} key={item.item_id} />;
         })}
@@ -51,11 +51,11 @@ export default function PatchOverview() {
 
 function IconBox({ item }: { item: LeagueItem }) {
   return (
-    <a href={`/item/?item_id=${item.item_id}`}>
-      <div className="py-2 hover:bg-gray-700 active:bg-gray-700 transition">
-        <Icon className="mx-auto" item={item} />
-        <p className="text-center">{item.item_name}</p>
-      </div>
+    <a
+      href={`/item/?item_id=${item.item_id}`}
+      className="py-2 px-1 text-sm md:text-md hover:bg-gray-700 active:bg-gray-700 rounded-lg transition">
+      <Icon className="mx-auto" item={item} />
+      <p className="text-center">{item.item_name}</p>
     </a>
   );
 }
