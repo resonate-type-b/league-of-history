@@ -1,0 +1,21 @@
+[
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 875
+  },
+  {
+    "patch_version": "alpha6",
+    "gold_cost": 975
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1037,
+    "item_name": "Pickaxe",
+    "gold_cost": 825,
+    "ad": 25
+  }
+]

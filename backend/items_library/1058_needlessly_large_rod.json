@@ -1,0 +1,27 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 1200,
+    "ap": 65
+  },
+  {
+    "patch_version": "14.1",
+    "ap": 70
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.13",
+    "ap": 60,
+    "gold_cost": 1250
+  },
+  {
+    "patch_version": "1.0.0.87",
+    "item_id": 1058,
+    "item_name": "Needlessly Large Rod",
+    "gold_cost": 1600,
+    "ap": 80
+  }
+]

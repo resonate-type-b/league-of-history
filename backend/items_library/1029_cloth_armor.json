@@ -1,0 +1,22 @@
+[
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "armor": 15
+  },
+  {
+    "patch_version": "20090509",
+    "armor": 18,
+    "motd": "Note: The change was made at some point before this, but the exact patch is unknown."
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1029,
+    "item_name": "Cloth Armor",
+    "gold_cost": 300,
+    "armor": 20
+  }
+]

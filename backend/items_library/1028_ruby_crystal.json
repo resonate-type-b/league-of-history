@@ -1,0 +1,39 @@
+[
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "4.20",
+    "gold_cost": 400,
+    "hp": 150,
+    "motd": "Item cost reduced and Health reduced"
+  },
+  {
+    "patch_version": "4.3",
+    "hp": 150,
+    "gold_cost": 400
+  },
+  {
+    "patch_version": "0.9.25.24",
+    "gold_cost": 475,
+    "hp": 180,
+    "motd": "Note: The patch notes say health reduced to 200 here, but the next change claims to be from 180. As the item gave 180 health since at least S1, this is the number included."
+  },
+  {
+    "patch_version": "0.9.25.21",
+    "hp": 215
+  },
+  {
+    "patch_version": "0.9.22.16",
+    "gold_cost": 500
+  },
+
+  {
+    "patch_version": "initial",
+    "item_id": 1028,
+    "item_name": "Ruby Crystal",
+    "gold_cost": 475,
+    "hp": 225
+  }
+]

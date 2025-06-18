@@ -1,0 +1,36 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 250
+  },
+  {
+    "patch_version": "14.10",
+    "aspd": 10
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.22",
+    "aspd": 12,
+    "gold_cost": 300
+  },
+  {
+    "patch_version": "4.10",
+    "aspd": 15,
+    "gold_cost": 450
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "aspd": 12,
+    "gold_cost": 400
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1042,
+    "item_name": "Dagger",
+    "gold_cost": 420,
+    "aspd": 15
+  }
+]

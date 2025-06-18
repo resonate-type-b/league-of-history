@@ -1,0 +1,28 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 200
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 250,
+    "mp_regen": 50
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 125
+  },
+  {
+    "patch_version": "4.20",
+    "mp_regen": 25,
+    "mp5": null
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1004,
+    "item_name": "Faerie Charm",
+    "gold_cost": 180,
+    "mp5": 3
+  }
+]

@@ -49,7 +49,7 @@ export default function ItemHistory() {
   let AllPatches = patchResult.data as Patch[];
   const startIdx = AllPatches.findIndex((e) => e[0] === itemList[0].patch_version);
   const endIdx = AllPatches.findIndex((e) => e[0] === itemList[itemList.length - 1].patch_version);
-  AllPatches = AllPatches.slice(startIdx, endIdx);
+  AllPatches = AllPatches.slice(startIdx, endIdx + 1);
 
   const name = itemList[0].item_name; // Maybe change the backend so it gives me the item name directly and only once...
 
