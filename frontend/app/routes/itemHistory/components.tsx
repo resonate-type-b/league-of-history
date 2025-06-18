@@ -28,11 +28,11 @@ export function ExpandablePatchList({ patchList }: { patchList: string[] }) {
         {anchorJSXList.length >= 2 && last}
       </span>
       {anchorJSXList.length >= 3 && (
-        <span
+        <a
           onClick={() => setExpand(true)}
           className="text-md hover:text-blue-200 hover:underline active:text-blue-200 active:underline transition">
           {" expand all..."}
-        </span>
+        </a>
       )}
     </div>
   ) : (
@@ -44,11 +44,11 @@ export function ExpandablePatchList({ patchList }: { patchList: string[] }) {
       </span>
 
       {
-        <span
+        <a
           onClick={() => setExpand(false)}
           className="text-md hover:text-blue-200 hover:underline active:text-blue-200 active:underline transition">
           {" collapse..."}
-        </span>
+        </a>
       }
     </div>
   );
@@ -64,13 +64,13 @@ type InfoBoxSwitcherProps = {
 export function InfoBoxSwitcher({ infoBox, diffBox, infoItem, diffItem }: InfoBoxSwitcherProps) {
   const [showDiff, setShowDiff] = useState(false);
   return (
-    <div
+    <button
       onClick={() => setShowDiff((x) => !x)}
-      className="relative hover:bg-gray-800 active:bg-gray-800 transition">
+      className="cursor-pointer relative w-full text-left hover:bg-gray-800 active:bg-gray-800 transition">
       {infoBox({ item: infoItem, className: showDiff ? "blur-sm brightness-50" : "" })}
       {showDiff &&
         diffBox({ item: diffItem, className: "absolute w-full top-0 bg-gray-900 z-999" })}
-    </div>
+    </button>
   );
 }
 
