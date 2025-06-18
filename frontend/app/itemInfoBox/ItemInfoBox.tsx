@@ -76,7 +76,7 @@ function PassiveLine({ heading, body }: PassiveLineProps): React.JSX.Element {
   heading = heading as string;
   body = body as string;
 
-  heading = heading === undefined ? "Passive" : heading;
+  heading = heading ?? "Passive";
   return (
     <div className="pb-2">
       <div className="font-bold text-sm text-slate-400">{`${heading}`}</div>

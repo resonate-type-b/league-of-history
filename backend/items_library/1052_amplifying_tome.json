@@ -1,0 +1,21 @@
+[
+  {
+    "patch_version": "14.1",
+    "gold_cost": 400
+  },
+  {
+    "patch_version": "0.8.21.110",
+    "gold_cost": 435
+  },
+  {
+    "patch_version": "20090626",
+    "gold_cost": 460
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1052,
+    "item_name": "Amplifying Tome",
+    "gold_cost": 420,
+    "ap": 20
+  }
+]

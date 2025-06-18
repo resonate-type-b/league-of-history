@@ -1,0 +1,31 @@
+[
+  {
+    "patch_version": "5.22",
+    "ad": 40,
+    "gold_cost": 1300
+  },
+  {
+    "patch_version": "4.10",
+    "ad": 50
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1550
+  },
+  {
+    "patch_version": "1.0.0.115",
+    "ad": 45,
+    "gold_cost": 1650
+  },
+  {
+    "patch_version": "alpha6",
+    "gold_cost": 1850
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1038,
+    "item_name": "B.F. Sword",
+    "gold_cost": 1550,
+    "ad": 50
+  }
+]

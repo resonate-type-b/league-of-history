@@ -30,15 +30,27 @@ def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -
         "reworked": None
     }
 
+    removed = False
     for patch in patch_versions[first_patch_index:]:
         # if there is a change in this patch, update curr_definition with the changes
         if patch == data[definition_idx]["patch_version"]:
+            try:
+                # was the item added or removed this patch?
+                removed = data[definition_idx]["removed"]
+                data[definition_idx].pop("removed")
+            except KeyError:  # the removed key was not present in the json this patch
+                pass
+
             curr_definition.update(data[definition_idx])
 
             # if a later change still exists, we'll wait for that patch to come around
             # if there isn't then we're on the latest version of the item, so no more updating is required
             if definition_idx + 1 < len(data):
                 definition_idx += 1
+
+        # if the item is currently in a removed state, don't bother adding it to the list
+        if removed:
+            continue
 
         curr_definition["patch_version"] = patch
         ItemModel.model_validate(curr_definition)
@@ -50,7 +62,7 @@ def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -
         curr_definition["reworked"] = None
     # make sure we matched every single entry in the json
     if definition_idx + 1 != len(data):
-        raise ValueError(
+        raise AssertionError(
             f"{curr_definition["item_name"]} json not fully processed. Last good entry: {data[definition_idx]}")
 
     return return_list
