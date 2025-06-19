@@ -38,7 +38,7 @@
   },
   {
     "patch_version": "10.23",
-    "rework": true,
+    "reworked": true,
     "icon_version": 1,
     "gold_cost": 400,
     "health": 70,

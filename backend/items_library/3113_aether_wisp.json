@@ -1,0 +1,36 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 900,
+    "movespeed_percent": 4
+  },
+  {
+    "patch_version": "14.1",
+    "movespeed_percent": 5,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "13.9",
+    "motd": "Bugfix: Now properly grants its 5% movement speed upon death."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "unique_passive_1_name": "GLIDE"
+  },
+  {
+    "patch_version": "5.2",
+    "gold_cost": 850
+  },
+  {
+    "patch_version": "4.5",
+    "components": [1052],
+    "item_id": 3113,
+    "item_name": "Aether Wisp",
+    "gold_cost": 950,
+    "ap": 30,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "+5% movement speed."
+  }
+]

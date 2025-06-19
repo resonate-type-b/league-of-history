@@ -1,0 +1,40 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 900,
+    "mp_regen": 100
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 1000,
+    "mp_regen": 75,
+    "components": [1004, 1052, 2022]
+  },
+  {
+    "patch_version": "13.10",
+
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "13.4",
+
+    "unique_passive_1_name": "MYTHIC COMPONENT",
+    "unique_passive_1": "Limited to 1 MYTHIC COMPONENT item."
+  },
+
+  {
+    "patch_version": "10.25",
+    "gold_cost": 950
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 4642,
+    "item_name": "Bandleglass Mirror",
+    "components": [1004, 1052],
+    "gold_cost": 1050,
+    "ap": 20,
+    "haste": 10,
+    "mp_regen": 50
+  }
+]
