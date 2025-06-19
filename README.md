@@ -24,3 +24,7 @@ Below items have old icons on the wiki, but did not specify when they were updat
 - Cloth armor (1029).
 - Dagger (1042)
 - Long Sword (1036)
+
+These items have unknown original recipes:
+
+- Aegis of the Legion (3105)

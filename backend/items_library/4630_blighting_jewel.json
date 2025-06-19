@@ -1,0 +1,26 @@
+[
+  {
+    "patch_version": "14.1",
+    "unique_passive_1_name": "BLIGHT",
+    "unique_passive_1": "Limited to 1 BLIGHT item."
+  },
+  {
+    "patch_version": "13.20",
+    "gold_cost": 1100
+  },
+  {
+    "patch_version": "12.10",
+    "magic_pen_percent": 13
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 4630,
+    "item_name": "Blighting Jewel",
+    "components": [1052],
+    "gold_cost": 1250,
+    "ap": 25,
+    "magic_pen_percent": 15,
+    "unique_passive_1_name": "VOID PEN",
+    "unique_passive_1": "Limited to 1 VOID PEN item."
+  }
+]

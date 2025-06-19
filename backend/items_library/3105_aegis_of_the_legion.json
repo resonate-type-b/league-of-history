@@ -1,0 +1,139 @@
+[
+  {
+    "patch_version": "25.S1.1",
+    "removed": false,
+    "gold_cost": 1100,
+    "armor": 25,
+    "magic_resist": 25
+  },
+  {
+    "patch_version": "14.1",
+    "removed": true
+  },
+  {
+    "patch_version": "12.22",
+    "gold_cost": 1200
+  },
+  {
+    "patch_version": "11.23",
+    "gold_cost": 1400
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 2,
+    "gold_cost": 1500,
+    "armor": 30,
+    "magic_resist": 30,
+    "haste": 10
+  },
+  {
+    "patch_version": "6.22",
+    "reworked": true,
+    "components": [1033, 1029],
+    "gold_cost": 1100,
+    "hp": null,
+    "hp_regen": null,
+    "unique_passive_1": null,
+    "unique_passive_1_name": null,
+    "armor": 30,
+    "magic_resist": 30
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1500,
+    "unique_passive_1": "+10 magic resistance aura (Affects minions)."
+  },
+  {
+    "patch_version": "5.16",
+    "gold_cost": 1600,
+    "components": [1033, 3801],
+    "hp_regen": 100,
+    "unique_passive_1": "+15 magic resistance aura (Affects minions)."
+  },
+  {
+    "patch_version": "4.20",
+    "components": [1033, 1028, 1006],
+    "gold_cost": 1900,
+    "unique_passive_1": "+20 magic resistance / 75% base health regeneration aura (Affects minions)."
+  },
+  {
+    "patch_version": "4.5",
+    "components": [1006, 1028, 1057],
+    "magic_resist": 20,
+    "armor": null
+  },
+  {
+    "patch_version": "3.14",
+    "icon_version": 1,
+    "components": [1006, 1029, 1028, 1033],
+    "gold_cost": 1950
+  },
+  {
+    "patch_version": "3.10",
+    "gold_cost": 1900,
+    "hp": 200,
+    "magic_resist": null,
+    "unique_passive_1_name": "LEGION",
+    "unique_passive_1": "+20 magic resistance / 10 health regen per 5 seconds aura."
+  },
+  {
+    "patch_version": "3.04",
+    "unique_passive_1": "+10 armor / +12 magic resistance / 10 health regen per 5 seconds aura (50% effect for minions)."
+  },
+  {
+    "patch_version": "1.0.0.153",
+    "motd": "Bugfix: Fixed a bug where aura stacked with Runic Bulwark."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "reworked": true,
+    "components": [3097, 1028, 1033],
+    "hp": 250,
+    "armor": 20,
+    "magic_resist": 20,
+    "unique_passive_1": "+10 armor / +12 magic resistance / 10 health regen per 5 seconds aura."
+  },
+  {
+    "patch_version": "1.0.0.120",
+    "unique_passive_1": "+8 attack damage / +12 armor / +15 magic resistance aura."
+  },
+  {
+    "patch_version": "1.0.0.106",
+    "motd": "Change: No longer grants aura while the holder is dead."
+  },
+  {
+    "patch_version": "1.0.0.96",
+    "motd": "Bugfix: Fixed a bug where Aegis of the Legion did not affect minions."
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "reworked": true,
+    "hp": 270,
+    "armor": 18,
+    "magic_resist": 24,
+    "unique_passive_1": "+8 attack damage / +12 armor / +15 magic resistance aura (Affects minions)."
+  },
+  {
+    "patch_version": "1.0.0.61",
+    "hp": 300,
+    "unique_passive_1": "+10 attack damage / +25 armor / +25 magic resistance aura (Affects minions).",
+    "motd": "Note: The patch notes claim that AD was increased from 10 from 8"
+  },
+  {
+    "patch_version": "0.9.25.21",
+    "hp": 285
+  },
+  {
+    "patch_version": "20090710",
+    "components": [1028, 1029, 1033]
+  },
+  {
+    "patch_version": "20090509",
+    "item_id": 3105,
+    "item_name": "Aegis of the Legion",
+    "gold_cost": 1925,
+    "hp": 300,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "+12 attack damage / +35 armor / +40 magic resistance aura (Affects minions)."
+  }
+]
