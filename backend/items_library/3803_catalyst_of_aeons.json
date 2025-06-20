@@ -1,0 +1,91 @@
+[
+  {
+    "patch_version": "25.07",
+    "mp": 375,
+    "components": [1028, 1028, 2017],
+    "unique_passive_1": "Restore mana equal to 10% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
+  },
+  {
+    "patch_version": "14.1",
+    "hp": 350,
+    "unique_passive_4_name": "ETERNITY",
+    "unique_passive_4": "limited to 1 ETERNITY item"
+  },
+  {
+    "patch_version": "13.10",
+    "unique_passive_4_name": "ETERNITY/MYTHIC COMPONENT",
+    "unique_passive_4": "limited to 1 ETERNITY/MYTHIC COMPONENT item"
+  },
+  {
+    "patch_version": "13.7",
+    "gold_cost": 1300,
+    "hp": 300
+  },
+  {
+    "patch_version": "13.1",
+    "unique_passive_1": "Restore mana equal to 7% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
+  },
+  {
+    "patch_version": "12.22",
+    "icon_version": 2,
+    "removed": false,
+    "hp": 225,
+    "mp": 300,
+    "unique_passive_1": "Restore mana equal to 8% of pre-mitigation damage taken from champions, and health equal to 20% of mana spent, up to 15 health per cast. Toggled abilities can only heal for up to 15 per second.",
+    "unique_passive_4_name": "ETERNITY",
+    "unique_passive_4": "limited to 1 ETERNITY item"
+  },
+  {
+    "patch_version": "10.23",
+    "removed": true
+  },
+  {
+    "patch_version": "6.9",
+    "reworked": true,
+    "item_name": "Catalyst of Aeons",
+    "gold_cost": 1100,
+    "unique_passive_1_name": "ETERNITY",
+    "unique_passive_1": "15% of damage taken from enemy champions is gained as mana. 20% of Mana spent is gained as health, up to 15 health per spell cast or 15 health per second for toggled spells."
+  },
+  {
+    "patch_version": "5.22",
+    "hp": 225
+  },
+  {
+    "patch_version": "3.10",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1200,
+    "hp": 200,
+    "mp": 300,
+    "unique_passive_1": "Upon leveling up, restores 150 health and 200 mana over 8 seconds.",
+    "motd": "Note: Patch notes claim Health was reduced from 290"
+  },
+  {
+    "patch_version": "1.0.0.118",
+    "unique_passive_1_name": "VALOR'S REWARD",
+    "unique_passive_1": "Upon leveling up, restores 250 health and 200 mana over 8 seconds."
+  },
+  {
+    "patch_version": "1.0.0.61",
+    "hp": 325,
+    "unique_passive_1": "Upon leveling up, restores 300 health and 250 mana."
+  },
+  {
+    "patch_version": "0.9.25.21",
+    "hp": 400
+  },
+  {
+    "patch_version": "initial",
+    "gold_cost": 1325,
+    "item_id": 3803,
+    "item_name": "Catalyst the Protector",
+    "components": [2017, 1027],
+    "hp": 425,
+    "mp": 325,
+    "unique_passive_1_name": "VALOR'S REWARD",
+    "unique_passive_1": "Upon leveling up, restores 425 health and 325 mana."
+  }
+]

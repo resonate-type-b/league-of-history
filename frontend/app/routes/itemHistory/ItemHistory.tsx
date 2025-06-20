@@ -116,10 +116,12 @@ export default function ItemHistory() {
         </React.Fragment>
       );
       patchesUnchanged.length = 0;
-    }
-
-    // if the item was changed, we need to create a new Switcher.
-    if (compareItem(lastItem, item) && lastItem !== null) {
+      // else here because we don't want to show the diff of a removed item even if it was changed upon readding
+    } else if (
+      // if the item was changed, we need to create a new Switcher.
+      compareItem(lastItem, item) &&
+      lastItem !== null
+    ) {
       InfoBoxJSXList.push(
         <React.Fragment key={patchVersion}>
           <ExpandablePatchList patchList={[...patchesUnchanged]} />

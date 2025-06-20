@@ -1,0 +1,32 @@
+[
+  {
+    "patch_version": "10.23",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 800
+  },
+  {
+    "patch_version": "4.20",
+    "gold_cost": 750,
+    "components": [1029]
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 720,
+    "armor": 40
+  },
+  {
+    "patch_version": "0.9.25.34",
+    "armor": 45,
+    "motd": "Note: Exact patch unknown."
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1031,
+    "item_name": "Chain Vest",
+    "gold_cost": 700,
+    "armor": 50
+  }
+]

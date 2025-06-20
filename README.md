@@ -12,7 +12,7 @@
 - Modern League of Legends blurs the line between items and game systems for jungle & support. Their items in recent years function more as role markers that unlock specific systems than items in the traditional sense. As a general rule, only information reasonable for in-game item tooltips are included,underlying system changes are not tracked
   - The jungle pet from S12+ is not included, despite technically being an item mechanic. Changes to jungle pet affect jungler balance, rather than item strength.
   - For support items, detailed minion execution mechanics, over-farming penalties, anti lane swap system etc. are similarly considered out of scope.
-  - Minor icon touchups made in 10.24 after the major revamp in 10.23 are not included.
+  - If an icon was touched up in 10.24 after the 10.23 icon revamp, the 10.24 version is included directly into 10.23
 
 **Old patch notes were highly uninformative, and often do not provide enough information to accurately reconstruct an item. In particular, prior to S1, assume listed gold costs to be ballpark estimates, and provided stats to be potentially inaccurate.**
 
@@ -24,7 +24,12 @@ Below items have old icons on the wiki, but did not specify when they were updat
 - Cloth armor (1029).
 - Dagger (1042)
 - Long Sword (1036)
+- Chain Vest (1031)
 
 These items have unknown original recipes:
 
 - Aegis of the Legion (3105)
+
+These items have item_ids changed during their lives
+
+- Catalyst the Protector/Catalyst of Aeons - 3010/3803 - Listed as a single item under 3803
