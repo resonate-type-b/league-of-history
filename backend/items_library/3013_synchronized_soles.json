@@ -25,8 +25,7 @@
     "unique_passive_1": "Gain Empowered Recall.",
     "unique_passive_2_name": "UNIQUE",
     "unique_passive_2": "Gain 45 bonus movement speed while out-of-combat.",
-    "unique_passive_3_name": "BOOTS",
-    "unique_passive_3": "Limited to 1 BOOTS item.",
+    "buy_group": ["BOOTS"],
 
     "motd": "Base movement speed reduced to 70 from 75."
   }

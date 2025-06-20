@@ -15,8 +15,7 @@
     "unique_passive_1": "Reduces incoming damage from all basic attacks by 12% (excluding turret attacks).",
     "unique_passive_2_name": "NOXIAN ENDURANCE",
     "unique_passive_2": "Taking physical damage from champions grants you a shield that absorbs 10 – 120 (based on level) (+ 4% maximum health) physical damage for 4 seconds (15 second cooldown).",
-    "unique_passive_3_name": "BOOTS",
-    "unique_passive_3": "Limited to 1 BOOTS item.",
+    "buy_group": ["BOOTS"],
     "motd": "Hotfix: • Noxian Endurance base shield reduced to 10 – 120 (based on level) from 10 – 140 (based on level). \n\n  • Noxian Endurance cooldown increased to 15 seconds from 12.",
     "unique_passive_4_name": "REQUIREMENT",
     "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."

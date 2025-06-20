@@ -6,8 +6,7 @@
   },
   {
     "patch_version": "14.6",
-    "unique_passive_2_name": "STARTER",
-    "unique_passive_2": "Limited to 1 STARTER item."
+    "buy_group": ["STARTER"]
   },
   {
     "patch_version": "14.1",
@@ -19,8 +18,7 @@
     "patch_version": "13.20",
     "ad": 10,
     "health": 100,
-    "unique_passive_2_name": "DORAN",
-    "unique_passive_2": "Limited to 1 DORAN item."
+    "buy_group": ["DORAN"]
   },
   {
     "patch_version": "10.23",

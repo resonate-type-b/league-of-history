@@ -7,8 +7,7 @@
   },
   {
     "patch_version": "14.6",
-    "unique_passive_4_name": "STARTER",
-    "unique_passive_4": "Limited to 1 STARTER item."
+    "buy_group": ["STARTER"]
   },
   {
     "patch_version": "14.1",
@@ -27,8 +26,7 @@
     "patch_version": "13.20",
     "hp": 110,
     "unique_passive_2": "After taking damage from a champion, large monster or epic monster, gain health regeneration equal to 0 – 45 (based on current missing health) health over 8 seconds. Reduced to 66% effectiveness on ranged champions or when triggered by AoE, DoT or proc effects.",
-    "unique_passive_4_name": "DORAN",
-    "unique_passive_4": "Limited to 1 DORAN item."
+    "buy_group": ["DORAN"]
   },
   {
     "patch_version": "13.4",

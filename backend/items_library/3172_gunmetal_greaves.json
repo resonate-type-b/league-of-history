@@ -13,9 +13,8 @@
     "movespeed_flat": 50,
     "unique_passive_1_name": "NOXIAN GAIT",
     "unique_passive_1": "Basic attacks on-hit against champions grant you [15%/10%] bonus movement speed decaying over 2 seconds.",
-    "unique_passive_2_name": "BOOTS",
-    "unique_passive_2": "Limited to 1 BOOTS item.",
-    "unique_passive_4_name": "REQUIREMENT",
-    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
+    "buy_group": ["BOOTS"],
+    "unique_passive_3_name": "REQUIREMENT",
+    "unique_passive_3": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
   }
 ]

@@ -1,8 +1,7 @@
 [
   {
     "patch_version": "14.1",
-    "unique_passive_1_name": "BLIGHT",
-    "unique_passive_1": "Limited to 1 BLIGHT item."
+    "buy_group": ["BLIGHT"]
   },
   {
     "patch_version": "13.20",
@@ -20,7 +19,6 @@
     "gold_cost": 1250,
     "ap": 25,
     "magic_pen_percent": 15,
-    "unique_passive_1_name": "VOID PEN",
-    "unique_passive_1": "Limited to 1 VOID PEN item."
+    "buy_group": ["VOID PEN"]
   }
 ]

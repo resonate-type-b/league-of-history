@@ -19,8 +19,7 @@
   {
     "patch_version": "13.4",
 
-    "unique_passive_1_name": "MYTHIC COMPONENT",
-    "unique_passive_1": "Limited to 1 MYTHIC COMPONENT item."
+    "buy_group": ["MYTHIC COMPONENT"]
   },
 
   {
