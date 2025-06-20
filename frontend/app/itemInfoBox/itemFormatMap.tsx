@@ -91,4 +91,8 @@ export const itemMap: FormatterMap = {
     <React.Fragment key="movespeedPercent">{value}%</React.Fragment>,
   ],
   gp10: (value) => ["Gold per 10: ", <React.Fragment key="gp10">{value}</React.Fragment>],
+  heal_power: (value) => [
+    "Heal and shield power: ",
+    <React.Fragment key="healPower">{value}%</React.Fragment>,
+  ],
 };

@@ -44,7 +44,7 @@
     "ap": null,
     "magic_pen_flat": 15,
     "components": [1001],
-    "motd": "Note: The gold cost before this was ~900, but the patch notes never tracked it. Amplifying Tome is also assumed to have been removed from the build path here."
+    "motd": "Note: This is the earliest confirmed gold cost. Prior to this, the cost was ~900, but was never given directly and had undocumented changes, hence is not displayed. Amplifying Tome is also assumed to have been removed from the build path here."
   },
   {
     "patch_version": "20090515",

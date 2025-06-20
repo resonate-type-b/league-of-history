@@ -63,7 +63,7 @@
     "patch_version": "5.22",
     "mp5": null,
     "mp_regen": 50,
-    "motd": "Note: There is an error in the patch notes regarding the mana restore per kill, so the exact change history up to here may be inaccurate."
+    "motd": "Note: Patch notes claim that 'Mana restored per kill increased to 4 from 3', although no previous change to 3 is noted."
   },
   {
     "patch_version": "3.8",

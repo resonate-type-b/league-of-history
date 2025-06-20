@@ -1,0 +1,73 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 600
+  },
+  {
+    "patch_version": "12.14",
+    "heal_power": 8
+  },
+  {
+    "patch_version": "11.8",
+    "unique_passive_2_name": null,
+    "unique_passive_2": null,
+    "heal_power": 10,
+    "motd": "Note: Undocumented change."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "components": [1004],
+    "unique_passive_1_name": null,
+    "unique_passive_1": null,
+    "unique_passive_2": "+10% bonus healing and shielding power."
+  },
+  {
+    "patch_version": "8.24b",
+    "unique_passive_1": "+10% cooldown reduction."
+  },
+  {
+    "patch_version": "8.12",
+    "unique_passive_1": "+5% cooldown reduction.",
+    "unique_passive_2": "+5% bonus healing and shielding power."
+  },
+  {
+    "patch_version": "6.22",
+    "gold_cost": 800,
+    "unique_passive_2": "+8% bonus healing and shielding power."
+  },
+  {
+    "patch_version": "6.13",
+    "gold_cost": 850,
+    "unique_passive_2_name": "UNIQUE",
+    "unique_passive_2": "+10% bonus healing and shielding power."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 550
+  },
+  {
+    "patch_version": "4.21",
+    "mp_regen": 50
+  },
+  {
+    "patch_version": "4.20",
+    "gold_cost": 600,
+    "mp5": null,
+    "mp_regen": 60
+  },
+  {
+    "patch_version": "4.10",
+    "gold_cost": 700
+  },
+  {
+    "patch_version": "4.5",
+    "item_id": 3114,
+    "item_name": "Forbidden Idol",
+    "gold_cost": 750,
+    "components": [1004, 1004],
+    "mp5": 8,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "+10% cooldown reduction."
+  }
+]

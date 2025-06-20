@@ -58,7 +58,7 @@
     "hp": 200,
     "mp": 300,
     "unique_passive_1": "Upon leveling up, restores 150 health and 200 mana over 8 seconds.",
-    "motd": "Note: Patch notes claim Health was reduced from 290"
+    "motd": "Note: Patch notes claim that Health was reduced from 290"
   },
   {
     "patch_version": "1.0.0.118",

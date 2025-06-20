@@ -39,6 +39,7 @@ class ItemModel(BaseModel):
     movespeed_flat: Optional[float] = None
     movespeed_percent: Optional[float] = None
     gp10: Optional[float] = None
+    heal_power: Optional[float] = None
     unique_passive_1: Optional[str] = Field(max_length=1000, default=None)
     unique_passive_1_name: Optional[str] = Field(max_length=50, default=None)
     unique_passive_2: Optional[str] = Field(max_length=1000, default=None)

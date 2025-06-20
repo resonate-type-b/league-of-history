@@ -38,6 +38,7 @@ export const LeagueItemSchema = z.object({
   movespeed_flat: z.number().optional(),
   movespeed_percent: z.number().optional(),
   gp10: z.number().optional(),
+  heal_power: z.number().optional(),
   unique_passive_1: z.string().optional(),
   unique_passive_1_name: z.string().optional(),
   unique_passive_2: z.string().optional(),
