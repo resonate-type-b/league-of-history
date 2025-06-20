@@ -11,8 +11,7 @@
   {
     "patch_version": "14.6",
     "unique_passive_1": "Grants a charge every 20 seconds, up to 3 charges. When an allied champion is within 1050 units of you, consume a charge in two ways:\n\n• Kill a minion by any means, granting you 15 gold and the nearest allied champion kill gold. Damaging a minion below below [50%|30%] of its maximum health  executes it.\n\n• Damage an enemy champion or structure with a basic attack or ability, up to one per attack or cast,[22|20] gold.",
-    "unique_passive_4_name": "STARTER",
-    "unique_passive_4": "Limited to 1 STARTER item."
+    "buy_group": ["STARTER"]
   },
   {
     "patch_version": "14.4",
@@ -31,7 +30,6 @@
     "unique_passive_1": "Grants a charge every 18 seconds, up to 3 charges. When an allied champion is within 1050 units of you, consume a charge in two ways:\n\n• Kill a minion by any means, granting you 20 gold and the nearest allied champion kill gold. Damaging a minion below below [50%|30%] of its maximum health  executes it.\n\n•Damage an enemy champion or structure with a basic attack or ability, up to one per attack or cast,[30|28] gold.",
     "unique_passive_2": "Earn 500 gold through QUEST to automatically upgrade to Runic Compass, gaining the Warding active with 3 wards in stock.",
     "unique_passive_3": "Receive diminishing gold from excessive minion kills.",
-    "unique_passive_4_name": "SUPPORT/JUNGLE",
-    "unique_passive_4": "Limited to 1 SUPPORT/JUNGLE item."
+    "buy_group": ["SUPPORT", "JUNGLE"]
   }
 ]

@@ -1,8 +1,7 @@
 [
   {
     "patch_version": "14.6",
-    "unique_passive_3_name": "JUNGLE/SUPPORT/STARTER",
-    "unique_passive_3": "Limited to 1 JUNGLE/SUPPORT/STARTER item."
+    "buy_group": ["JUNGLE", "SUPPORT", "STARTER"]
   },
   {
     "patch_version": "13.20",
@@ -17,7 +16,6 @@
     "unique_passive_1": "Summon a *Gustwalker Hatchling* companion to assist you in combat against monsters.",
     "unique_passive_2_name": "GUSTWALKER'S GAIT",
     "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Gustwalker's Gait* buff:\n\n• While in a brush, gain  45% bonus movement speed, decaying over 2 seconds after leaving the brush. Killing a large monster increases this effect to 60% for 2 seconds.",
-    "unique_passive_3_name": "JUNGLE/SUPPORT",
-    "unique_passive_3": "Limited to 1 JUNGLE/SUPPORT item."
+    "buy_group": ["JUNGLE", "SUPPORT"]
   }
 ]

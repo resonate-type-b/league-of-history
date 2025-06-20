@@ -8,13 +8,11 @@
   {
     "patch_version": "14.1",
     "hp": 350,
-    "unique_passive_4_name": "ETERNITY",
-    "unique_passive_4": "limited to 1 ETERNITY item"
+    "buy_group": ["ETERNITY"]
   },
   {
     "patch_version": "13.10",
-    "unique_passive_4_name": "ETERNITY/MYTHIC COMPONENT",
-    "unique_passive_4": "limited to 1 ETERNITY/MYTHIC COMPONENT item"
+    "buy_group": ["ETERNITY", "MYTHIC COMPONENT"]
   },
   {
     "patch_version": "13.7",
@@ -32,8 +30,7 @@
     "hp": 225,
     "mp": 300,
     "unique_passive_1": "Restore mana equal to 8% of pre-mitigation damage taken from champions, and health equal to 20% of mana spent, up to 15 health per cast. Toggled abilities can only heal for up to 15 per second.",
-    "unique_passive_4_name": "ETERNITY",
-    "unique_passive_4": "limited to 1 ETERNITY item"
+    "buy_group": ["ETERNITY"]
   },
   {
     "patch_version": "10.23",
@@ -61,7 +58,7 @@
     "hp": 200,
     "mp": 300,
     "unique_passive_1": "Upon leveling up, restores 150 health and 200 mana over 8 seconds.",
-    "motd": "Note: Patch notes claim Health was reduced from 290"
+    "motd": "Note: Patch notes claim that Health was reduced from 290"
   },
   {
     "patch_version": "1.0.0.118",

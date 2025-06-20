@@ -13,8 +13,7 @@
     "movespeed_flat": 50,
     "magic_pen_flat": 18,
     "magic_pen_percent": 8,
-    "unique_passive_1_name": "BOOTS",
-    "unique_passive_1": "Limited to 1 BOOTS item.",
+    "buy_group": ["BOOTS"],
     "motd": "Hotfix: • Flat magic penetration reduced to 18 from 19. \n\n  • Percentage magic penetration reduced to 8% from 10%.",
     "unique_passive_4_name": "REQUIREMENT",
     "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."

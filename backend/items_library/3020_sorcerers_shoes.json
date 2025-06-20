@@ -24,8 +24,7 @@
   },
   {
     "patch_version": "7.23",
-    "unique_passive_3_name": "BOOTS",
-    "unique_passive_3": "Limited to 1 BOOTS item."
+    "buy_group": ["BOOTS"]
   },
   {
     "patch_version": "7.22",
@@ -45,7 +44,7 @@
     "ap": null,
     "magic_pen_flat": 15,
     "components": [1001],
-    "motd": "Note: The gold cost before this was ~900, but the patch notes never tracked it. Amplifying Tome is also assumed to have been removed from the build path here."
+    "motd": "Note: This is the earliest confirmed gold cost. Prior to this, the cost was ~900, but was never given directly and had undocumented changes, hence is not displayed. Amplifying Tome is also assumed to have been removed from the build path here."
   },
   {
     "patch_version": "20090515",

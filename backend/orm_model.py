@@ -53,6 +53,7 @@ class Item(BaseORM):
     movespeed_flat: Mapped[float] = stat_mapped_column()
     movespeed_percent: Mapped[float] = stat_mapped_column()
     gp10: Mapped[float] = stat_mapped_column()
+    heal_power: Mapped[float] = stat_mapped_column()
     unique_passive_1: Mapped[str] = mapped_column(String(1000), nullable=True)
     unique_passive_1_name: Mapped[str] = mapped_column(String(50), nullable=True)
     unique_passive_2: Mapped[str] = mapped_column(String(1000), nullable=True)
@@ -61,6 +62,7 @@ class Item(BaseORM):
     unique_passive_3_name: Mapped[str] = mapped_column(String(50), nullable=True)
     unique_passive_4: Mapped[str] = mapped_column(String(1000), nullable=True)
     unique_passive_4_name: Mapped[str] = mapped_column(String(50), nullable=True)
+    buy_group: Mapped[list[str]] = mapped_column(ARRAY(String(50)), nullable=True)
     motd: Mapped[str] = mapped_column(String(1000), nullable=True)  # for bugfix/hotfix messages
     reworked: Mapped[bool] = mapped_column(Boolean, nullable=True)
     quest_reward: Mapped[bool] = mapped_column(Boolean, nullable=True)

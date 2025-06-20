@@ -1,8 +1,7 @@
 [
   {
     "patch_version": "14.6",
-    "unique_passive_3_name": "JUNGLE/SUPPORT/STARTER",
-    "unique_passive_3": "Limited to 1 JUNGLE/SUPPORT/STARTER item."
+    "buy_group": ["JUNGLE", "SUPPORT", "STARTER"]
   },
   {
     "patch_version": "13.20",
@@ -22,7 +21,6 @@
     "unique_passive_1": "Summon a *Mosstomper Seedling* companion to assist you in combat against monsters.",
     "unique_passive_2_name": "MOSSTOMPER'S COURAGE",
     "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Mosstomper's Courage* buff:\n\n• Gain a 75 – 330 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat. While the shield holds, and for 3 seconds after it is destroyed, gain 20% multiplicative tenacity and slow resist.",
-    "unique_passive_3_name": "JUNGLE/SUPPORT",
-    "unique_passive_3": "Limited to 1 JUNGLE/SUPPORT item."
+    "buy_group": ["JUNGLE", "SUPPORT"]
   }
 ]

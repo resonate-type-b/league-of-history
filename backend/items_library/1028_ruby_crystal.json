@@ -18,7 +18,7 @@
     "patch_version": "0.9.25.24",
     "gold_cost": 475,
     "hp": 180,
-    "motd": "Note: The patch notes say health reduced to 200 here, but the next change claims to be from 180. As the item gave 180 health since at least S1, this is the number included."
+    "motd": "Note: patch notes claim that health reduced to 200 here, but the next change claims to be from 180. This is the value displayed here as it gave 180 health since at least S1."
   },
   {
     "patch_version": "0.9.25.21",

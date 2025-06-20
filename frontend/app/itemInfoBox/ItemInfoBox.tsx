@@ -1,7 +1,6 @@
-import Markdown from "react-markdown";
 import { Icon } from "~/Icon";
 import type { LeagueItem } from "../leagueItem";
-import { FormatMotd, ItemLine } from "./_common";
+import { ItemLine, Motd, PassiveLine } from "./_common";
 import { itemMap, type FormatterMap } from "./itemFormatMap";
 
 function formatStat<K extends keyof FormatterMap>(item: LeagueItem, statName: K) {
@@ -43,11 +42,22 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
   const textJSXList: React.JSX.Element[] = [];
 
   for (const i of [1, 2, 3, 4]) {
-    const passive = `unique_passive_${i}` as keyof LeagueItem;
-    const passiveName = `unique_passive_${i}_name` as keyof LeagueItem;
+    const passive = item[`unique_passive_${i}` as keyof LeagueItem] as string | undefined;
+    const passiveName =
+      item[`unique_passive_${i}_name` as keyof LeagueItem] ?? ("Passive" as string);
 
+    if (passive !== undefined) {
+      textJSXList.push(<PassiveLine key={`passive_${i}`} heading={passiveName} body={passive} />);
+    }
+  }
+  if (item.buy_group !== undefined) {
     textJSXList.push(
-      <PassiveLine key={`passive_${i}`} heading={item[passiveName]} body={item[passive]} />
+      <PassiveLine
+        key={"buyGroup"}
+        heading={"Limitation"}
+        body={`Limited to 1 ${item.buy_group.join("/")}`}
+        className="italic"
+      />
     );
   }
 
@@ -59,39 +69,7 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
       </div>
       <hr className="pb-3 invisible" />
       {textJSXList}
-      {item["motd"] !== undefined && <FormatMotd motd={item.motd} />}
-    </div>
-  );
-}
-
-type PassiveLineProps = {
-  heading: LeagueItem[keyof LeagueItem];
-  body: LeagueItem[keyof LeagueItem];
-};
-
-function PassiveLine({ heading, body }: PassiveLineProps): React.JSX.Element {
-  if (body === undefined) {
-    return <></>;
-  }
-  heading = heading as string;
-  body = body as string;
-
-  heading = heading ?? "Passive";
-  return (
-    <div className="pb-2">
-      <div className="font-bold text-sm text-slate-400">{`${heading}`}</div>
-      <div className="text-sm ml-10">
-        <Markdown
-          components={{
-            p: ({ children, ...props }) => {
-              return (
-                <p className="pb-2" {...props}>
-                  {children}
-                </p>
-              );
-            },
-          }}>{`${body}`}</Markdown>
-      </div>
+      {item["motd"] !== undefined && <Motd motd={item.motd} />}
     </div>
   );
 }

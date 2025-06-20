@@ -7,8 +7,7 @@
   },
   {
     "patch_version": "14.3",
-    "unique_passive_3_name": "MANAFLOW",
-    "unique_passive_3": "Limited to 1 MANAFLOW item."
+    "buy_group": ["MANAFLOW"]
   },
   {
     "patch_version": "14.1",
@@ -37,13 +36,11 @@
     "unique_passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 450 bonus mana.",
     "unique_passive_2_name": "FOCUS",
     "unique_passive_2": "Basic attacks deal 5 bonus physical damage on-hit against minions.",
-    "unique_passive_3_name": "MANA CHARGE",
-    "unique_passive_3": "Limited to 1 MANA CHARGE item."
+    "buy_group": ["MANA CHARGE"]
   },
   {
     "patch_version": "9.6",
-    "unique_passive_3_name": "AWE",
-    "unique_passive_3": "Limited to 1 AWE item."
+    "buy_group": ["AWE"]
   },
 
   {

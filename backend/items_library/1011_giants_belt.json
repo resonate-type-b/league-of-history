@@ -1,0 +1,40 @@
+[
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 900,
+    "hp": 350
+  },
+  {
+    "patch_version": "5.2",
+    "component": [1028]
+  },
+  {
+    "patch_version": "3.01",
+    "hp": 380
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1000,
+    "hp": 400
+  },
+  {
+    "patch_version": "1.0.0.79",
+    "gold_cost": 1110
+  },
+  {
+    "patch_version": "0.9.25.21",
+    "hp": 430
+  },
+  {
+    "patch_version": "0.9.22.16",
+    "gold_cost": 1150
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1011,
+    "item_name": "Giant's Belt",
+    "gold_cost": 1100,
+    "hp": 500
+  }
+]

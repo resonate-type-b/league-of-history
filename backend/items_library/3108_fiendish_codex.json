@@ -1,0 +1,68 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 850
+  },
+  {
+    "patch_version": "14.6",
+    "ap": 25
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1052, 2022]
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "haste": 10,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "8.9",
+    "ap": 35
+  },
+  {
+    "patch_version": "6.9",
+    "gold_cost": 900,
+    "ap": 30
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 800,
+    "ap": 25,
+    "motd": "Note: Patch notes claim that cost was reduced from 850."
+  },
+  {
+    "patch_version": "3.01",
+    "gold_cost": 820,
+    "components": [1052],
+    "mp5": null
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "mp5": 6,
+    "gold_cost": 1000,
+    "components": [1004, 1052]
+  },
+
+  {
+    "patch_version": "1.0.0.139",
+    "gold_cost": 1125
+  },
+  {
+    "patch_version": "20090626",
+    "gold_cost": 1245
+  },
+  {
+    "patch_version": "20090606",
+    "item_id": 3108,
+    "item_name": "Fiendish Codex",
+    "gold_cost": 1215,
+    "components": [1005, 1052],
+    "ap": 30,
+    "mp5": 7,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "+10% cooldown reduction."
+  }
+]

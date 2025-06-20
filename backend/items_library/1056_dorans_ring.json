@@ -7,8 +7,7 @@
   },
   {
     "patch_version": "14.6",
-    "unique_passive_3_name": "STARTER",
-    "unique_passive_3": "Limited to 1 STARTER item."
+    "buy_group": ["STARTER"]
   },
   {
     "patch_version": "14.1",
@@ -21,8 +20,7 @@
     "patch_version": "13.20",
     "ap": 18,
     "health": 90,
-    "unique_passive_3_name": "DORAN",
-    "unique_passive_3": "Limited to 1 DORAN item."
+    "buy_group": ["DORAN"]
   },
   {
     "patch_version": "12.12",
@@ -65,7 +63,7 @@
     "patch_version": "5.22",
     "mp5": null,
     "mp_regen": 50,
-    "motd": "Note: There is an error in the patch notes regarding the mana restore per kill, so the exact change history up to here may be inaccurate."
+    "motd": "Note: Patch notes claim that 'Mana restored per kill increased to 4 from 3', although no previous change to 3 is noted."
   },
   {
     "patch_version": "3.8",

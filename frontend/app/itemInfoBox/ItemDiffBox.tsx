@@ -1,8 +1,6 @@
-import { type Change } from "diff";
-import Markdown from "react-markdown";
 import { Icon } from "~/Icon";
 import type { DiffLeagueItem } from "../leagueItem";
-import { FormatMotd, ItemLine } from "./_common";
+import { ItemLine, Motd, PassiveLine, diffText } from "./_common";
 import { itemMap, type FormatterMap } from "./itemFormatMap";
 
 function formatStat<K extends keyof FormatterMap>(
@@ -65,18 +63,18 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps): React.J
     const passiveName = `unique_passive_${i}_name` as keyof DiffLeagueItem;
 
     if (item[passive] !== undefined) {
-      const formattedPassive = item[passive];
-      const formattedName = item[passiveName] ?? "Passive";
-
       textJSXList.push(
-        <div key={"passive" + i} className="pb-2">
-          <div className="font-bold text-sm text-slate-400">
-            {diffText(formattedName as Change[])}
-          </div>
-          <div className="text-sm ml-10 pb-2">{diffText(formattedPassive as Change[])}</div>
-        </div>
+        <PassiveLine
+          key={"passive" + i}
+          heading={item[passiveName] ?? "Passive"}
+          body={item[passive]}
+        />
       );
     }
+  }
+
+  if (item.buy_group !== undefined) {
+    textJSXList.push(<PassiveLine key={"buyGroup"} heading={"Limitation"} body={item.buy_group} />);
   }
 
   return (
@@ -90,47 +88,7 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps): React.J
       </div>
       <hr className="pb-3 invisible" />
       {textJSXList}
-      {item["motd"] !== undefined && <FormatMotd motd={item.motd} highlight={true} />}
+      {item["motd"] !== undefined && <Motd motd={item.motd} highlight={true} />}
     </div>
   );
-}
-
-// if changeObj is a string -> the stat wasn't changed. Return it back as is in a span
-// if its a change object -> return back a list of spans that have the correct styling
-function diffText(changeObj: Change[] | string): React.JSX.Element[] {
-  if (typeof changeObj === "string") {
-    return [
-      <Markdown
-        key={changeObj}
-        components={{
-          p: ({ children }) => <span className="pb-1">{children}</span>,
-        }}>
-        {changeObj}
-      </Markdown>,
-    ];
-  }
-
-  const JSXList = [];
-  let i = 0;
-  for (const part of changeObj) {
-    const classes = part.added
-      ? "bg-green-700/40 text-green-200 px-1"
-      : part.removed
-      ? "bg-red-700/40 text-red-200 px-1"
-      : "";
-    // returns span instead of p like everywhere else, because otherwise each diff part will be newline'd
-    // we strip <p> tags because markdown behaviour means it considers all text to be paragraphs and wraps <p>
-    // unfortunately this means we completely lose the ability to parse markdown paragraphs
-    JSXList.push(
-      <span className={classes} key={`count_${i++}`}>
-        <Markdown
-          components={{
-            p: ({ children }) => <>{children}</>, // strip <p>
-          }}>
-          {part.value}
-        </Markdown>
-      </span>
-    );
-  }
-  return JSXList;
 }

@@ -1,0 +1,104 @@
+[
+  {
+    "patch_version": "14.1",
+    "unique_passive_1_name": "GREVIOUS WOUNDS"
+  },
+  {
+    "patch_version": "13.7",
+    "motd": "Change: Now applies Grievous Wounds even if the damage dealt was completely mitigated by a shield."
+  },
+  {
+    "patch_version": "13.1b",
+    "ad": 15,
+    "unique_passive_1": "Dealing physical damage applies 40% Grievous Wounds to champions for 3 seconds."
+  },
+  {
+    "patch_version": "12.11",
+    "ad": 20,
+    "unique_passive_1": "Dealing physical damage applies 25% Grievous Wounds to champions for 3 seconds."
+  },
+  {
+    "patch_version": "12.10",
+    "unique_passive_1": "Dealing physical damage applies 30% Grievous Wounds to champions for 3 seconds."
+  },
+  {
+    "patch_version": "11.1",
+    "unique_passive_1": "Dealing physical damage applies 40% Grievous Wounds to champions for 3 seconds."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 800,
+    "ad": 15,
+    "unique_passive_1_name": "REND",
+    "unique_passive_1": "Dealing physical damage applies 40% Grievous Wounds to champions for 2 seconds."
+  },
+  {
+    "patch_version": "5.22",
+    "removed": false,
+    "gold_cost": 800,
+    "components": [1036],
+    "ad": 15,
+    "crit_chance": null,
+    "unique_passive_1_name": "EXECUTIONER",
+    "unique_passive_1": "Physical damage inflicts Grievous Wounds on enemy champions for 3 seconds."
+  },
+  {
+    "patch_version": "4.20",
+    "removed": true
+  },
+  {
+    "patch_version": "3.02",
+    "crit_chance": 20
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1900,
+    "components": [3093, 1036],
+    "ad": 25,
+    "lifesteal": null,
+    "unique_passive_2_name": null,
+    "unique_passive_2": null,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "Basic attacks inflict Grievous Wounds on enemy champions for 1.5 seconds."
+  },
+  {
+    "patch_version": "1.0.0.97",
+    "motd": "Change: No longer removes stealth when used."
+  },
+  {
+    "patch_version": "1.0.0.86",
+    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grevious Wounds for 7 seconds (20 second cooldown)."
+  },
+  {
+    "patch_version": "1.0.0.79",
+    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grevious Wounds for 8 seconds (45 second cooldown)."
+  },
+  {
+    "patch_version": "1.0.0.75",
+    "unique_passive_1": "Damage applies Executioner's Mark on the target, dealing 4 damage per second for 8 seconds.",
+    "unique_passive_2_name": "ACTIVE",
+    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grevious Wounds for 7 seconds (60 second cooldown)."
+  },
+  {
+    "patch_version": "1.0.0.74",
+    "unique_passive_1": "Damage applies Executioner's Mark on the target, reducing the target's healing by 65% for 8 seconds. Deals 4 damage per second for the duration."
+  },
+  {
+    "patch_version": "1.0.0.61",
+    "lifesteal": 18,
+    "unique_passive_1": "Damage applies Executioner's Mark on the target, reducing the target's healing by 65% for 12 seconds. Deals 4 damage per second for the duration."
+  },
+  {
+    "patch_version": "0.9.22.15",
+    "item_id": 3123,
+    "item_name": "Executioner's Calling",
+    "components": [1051, 1053],
+    "gold_cost": 1350,
+    "lifesteal": 15,
+    "crit_chance": 15,
+    "unique_passive_1_name": "EXECUTIONER'S MARK",
+    "unique_passive_1": "Damage applies Executioner's Mark on the target, reducing the target's healing by 40% for 8 seconds.",
+    "motd": "The exact gold cost is unknown."
+  }
+]

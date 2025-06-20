@@ -1,0 +1,21 @@
+[
+  {
+    "patch_version": "14.20",
+    "unique_passive_1": "Dealing ability damage burns enemies, causing them to take 2.5 magic damage every 0.5 seconds over 3 seconds, for a total of 15. Against monsters, the burn deals 7.5 bonus magic damage per tick, dealing a total of 10 magic damage per tick for up to 60."
+  },
+  {
+    "patch_version": "14.11",
+    "motd": "Bugfix: Fixed an issue where the damage-over-time was able to stack Spear of Shojin's Focused Will passive."
+  },
+  {
+    "patch_version": "14.10",
+    "item_name": "Fated Ashes",
+    "item_id": 2508,
+    "gold_cost": 900,
+    "ap": 30,
+    "components": [1052],
+    "unique_passive_1_name": "INFLAME",
+    "unique_passive_1": "Dealing ability damage burns enemies, causing them to take 2.5 magic damage every 0.5 seconds over 3 seconds, for a total of 15. Against monsters, the burn deals 10 bonus magic damage per tick, dealing a total of 12.5 magic damage per tick for up to 75.",
+    "motd": "Hotfix: • Ability power reduced to 30 from 40.\n\n  • Base damage per tick reduced to 2.5 from 3.5.\n\n   • Total base damage reduced to 15 from 21."
+  }
+]
