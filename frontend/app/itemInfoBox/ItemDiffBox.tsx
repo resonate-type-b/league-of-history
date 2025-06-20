@@ -103,7 +103,7 @@ function diffText(changeObj: Change[] | string): React.JSX.Element[] {
       <Markdown
         key={changeObj}
         components={{
-          p: ({ children }) => <p className="pb-1">{children}</p>,
+          p: ({ children }) => <span className="pb-1">{children}</span>,
         }}>
         {changeObj}
       </Markdown>,

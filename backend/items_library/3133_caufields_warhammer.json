@@ -1,0 +1,31 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 1050
+  },
+  {
+    "patch_version": "14.6",
+    "ad": 20
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1036, 1036, 2022]
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "haste": 10,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1100,
+    "item_id": 3133,
+    "item_name": "Caulfield's Warhammer",
+    "components": [1036, 1036],
+    "ad": 25,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "+10% cooldown reduction."
+  }
+]

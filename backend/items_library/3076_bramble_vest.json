@@ -1,0 +1,62 @@
+[
+  {
+    "patch_version": "14.19",
+    "unique_passive_1": "When struck by an attack, deal 10 magic damage to the attacker and inflict them with 40%  Grievous Wounds for 3 seconds if they are a champion."
+  },
+  {
+    "patch_version": "13.7",
+    "motd": "Change: Now applies Grevious Wounds even if the damage dealt was completely mitigated by a shield."
+  },
+  {
+    "patch_version": "13.1b",
+    "unique_passive_1": "When struck by an attack, deal 6 magic damage to the attacker and inflict them with 40%  Grievous Wounds for 3 seconds if they are a champion."
+  },
+  {
+    "patch_version": "12.11",
+    "unique_passive_1": "When struck by an attack, deal 4 magic damage to the attacker and inflict them with 25%  Grievous Wounds for 3 seconds if they are a champion."
+  },
+  {
+    "patch_version": "12.10",
+    "unique_passive_1": "When struck by an attack, deal 3 magic damage to the attacker and inflict them with 30%  Grievous Wounds for 3 seconds if they are a champion."
+  },
+  {
+    "patch_version": "11.11",
+    "armor": 30,
+    "unique_passive_1": "When struck by an attack, deal 3 magic damage to the attacker and inflict them with 40%  Grievous Wounds for 3 seconds if they are a champion."
+  },
+  {
+    "patch_version": "11.1",
+    "unique_passive_1": "When struck by an attack, deal 3 (+ 10% bonus armor) magic damage to the attacker and inflict them with 40%  Grievous Wounds for 3 seconds if they are a champion."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 800,
+    "armor": 35,
+    "unique_passive_1": "When struck by an attack, deal 3 (+ 10% bonus armor) magic damage to the attacker and inflict them with 40%  Grievous Wounds for 2 seconds if they are a champion.",
+    "motd": "Hotfix-Bugfix: No longer loses the ability to apply Grievous Wounds if its owner dies."
+  },
+  {
+    "patch_version": "9.8"
+  },
+  {
+    "patch_version": "7.24",
+    "unique_passive_1": "Upon being hit by a basic attack, reflects 3 (+ 10% bonus armor) magic damage and, if they are a champion, inflict them with Grievous Wounds for 1 second."
+  },
+  {
+    "patch_version": "7.19",
+    "gold_cost": 1000,
+    "armor": 35,
+    "unique_passive_1": "Upon being hit by a basic attack, reflects 15 magic damage and, if they are a champion, inflict them with Grievous Wounds for 1 second."
+  },
+  {
+    "patch_version": "7.14",
+    "gold_cost": 900,
+    "item_id": 3076,
+    "item_name": "Bramble Vest",
+    "components": [1029, 1029],
+    "armor": 35,
+    "unique_passive_1_name": "THORNS",
+    "unique_passive_1": "Upon being hit by a basic attack, reflects 20 magic damage, inflicting Grievous Wounds on the attacker for 1 second."
+  }
+]

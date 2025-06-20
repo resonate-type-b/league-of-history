@@ -6,7 +6,8 @@
   },
   {
     "patch_version": "14.19",
-    "aspd": 25
+    "aspd": 25,
+    "components": [1001, 1042, 1042]
   },
   {
     "patch_version": "14.15",
