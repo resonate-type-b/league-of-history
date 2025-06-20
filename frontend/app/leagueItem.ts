@@ -46,6 +46,7 @@ export const LeagueItemSchema = z.object({
   unique_passive_3_name: z.string().optional(),
   unique_passive_4: z.string().optional(),
   unique_passive_4_name: z.string().optional(),
+  buy_group: z.array(z.string()).optional(),
   quest_reward: z.boolean().optional(),
   motd: z.string().optional(),
 });
@@ -54,7 +55,7 @@ export type LeagueItem = z.infer<typeof LeagueItemSchema>;
 
 // every key except patch_version/motd/reworked, used to compare items
 // motd field is a special case that needs to be checked manually for existence, not compared.
-// components currently not used, so pass, but will be implemented later
+// TODO: compare components too
 export const LeagueItemCompareKeys: (keyof LeagueItem)[] = Object.keys(
   LeagueItemSchema.shape
 ).filter(

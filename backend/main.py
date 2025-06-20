@@ -73,7 +73,7 @@ def read_root():
 # as there is no use case for specifying both paremeters.
 @app.get("/items/")
 def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) \
- -> list[dict[str, str | int | float | bool | list[int]]] | str:
+ -> list[dict[str, str | int | float | bool | list[int] | list[str]]] | str:  # list of any possible type from the model, OR an error str  # noqa: E501
     if item_id is not None:
         # fetch timeline of item
         stmt = (

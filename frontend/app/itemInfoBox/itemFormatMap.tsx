@@ -21,6 +21,7 @@ export type FormatterMap = {
     | "reworked"
     | "components"
     | "quest_reward"
+    | "buy_group"
   >]-?: (value: string | number | React.JSX.Element[]) => [string, React.JSX.Element];
 };
 

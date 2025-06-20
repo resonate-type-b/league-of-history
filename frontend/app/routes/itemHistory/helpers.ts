@@ -15,7 +15,7 @@ export function compareItem(newerItem: LeagueItem | null, olderItem: LeagueItem)
   }
 
   for (const key of LeagueItemCompareKeys) {
-    if (newerItem[key] !== olderItem[key]) {
+    if (newerItem[key]?.toString() !== olderItem[key]?.toString()) {
       return true;
     }
   }
@@ -30,13 +30,21 @@ export function createDiffItem(newerItem: LeagueItem, olderItem: LeagueItem): Di
   const diffItem: DiffLeagueItem = {};
   // item_id -> always directly use
   // motd -> directly use if being added, but do not include if being deleted
-  // everything else -> change object
+  // everything else -> change object if changed, string if identical
   for (const key of allExistingKeys) {
     if (key === "item_id") {
       diffItem[key] = newerItem[key];
     } else if (key !== "motd" && key !== "patch_version") {
-      const oldStr = oldKeys.includes(key) ? olderItem[key]!.toString() : "";
-      const newStr = newKeys.includes(key) ? newerItem[key]!.toString() : "";
+      const oldStr = oldKeys.includes(key)
+        ? key === "buy_group"
+          ? olderItem[key]!.join("/")
+          : olderItem[key]!.toString()
+        : "";
+      const newStr = newKeys.includes(key)
+        ? key === "buy_group"
+          ? newerItem[key]!.join("/")
+          : newerItem[key]!.toString()
+        : "";
       diffItem[key] = oldStr === newStr ? oldStr : diffWords(oldStr, newStr);
     } else if (key === "motd" && newKeys.includes("motd")) {
       diffItem[key] = newerItem[key];
