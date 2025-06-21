@@ -5,17 +5,17 @@
   },
   {
     "patch_version": "13.20",
-    "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the Gustwalker's Gait buff:\n\n• While in a brush, gain  30% bonus movement speed, decaying over 2 seconds after leaving the brush. Killing a large monster increases this effect to 45% for 2 seconds."
+    "passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the Gustwalker's Gait buff:\n\n• While in a brush, gain  30% bonus movement speed, decaying over 2 seconds after leaving the brush. Killing a large monster increases this effect to 45% for 2 seconds."
   },
   {
     "patch_version": "12.22",
     "item_name": "Gustwalker Hatchling",
     "item_id": 1102,
     "gold_cost": 450,
-    "unique_passive_1_name": "JUNGLE COMPANIONS",
-    "unique_passive_1": "Summon a *Gustwalker Hatchling* companion to assist you in combat against monsters.",
-    "unique_passive_2_name": "GUSTWALKER'S GAIT",
-    "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Gustwalker's Gait* buff:\n\n• While in a brush, gain  45% bonus movement speed, decaying over 2 seconds after leaving the brush. Killing a large monster increases this effect to 60% for 2 seconds.",
+    "passive_1_name": "JUNGLE COMPANIONS",
+    "passive_1": "Summon a *Gustwalker Hatchling* companion to assist you in combat against monsters.",
+    "passive_2_name": "GUSTWALKER'S GAIT",
+    "passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Gustwalker's Gait* buff:\n\n• While in a brush, gain  45% bonus movement speed, decaying over 2 seconds after leaving the brush. Killing a large monster increases this effect to 60% for 2 seconds.",
     "buy_group": ["JUNGLE", "SUPPORT"]
   }
 ]

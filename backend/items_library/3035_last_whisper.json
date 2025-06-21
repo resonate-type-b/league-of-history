@@ -1,0 +1,110 @@
+[
+  {
+    "patch_version": "14.1",
+    "buy_group": ["FATALITY"]
+  },
+  {
+    "patch_version": "12.21",
+    "icon_version": 2
+  },
+  {
+    "patch_version": "12.10",
+    "armor_pen_percent": 18
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "armor_pen_percent": 20,
+    "passive_1_name": null,
+    "passive_1": null,
+    "buy_group": ["LAST WHISPER"]
+  },
+  {
+    "patch_version": "9.3",
+    "components": [1036, 1036],
+    "gold_cost": 1450,
+    "ad": 20,
+    "passive_1": "Your physical damage ignores 20% of your target's total armor."
+  },
+  {
+    "patch_version": "8.11",
+    "passive_1": "Your physical damage ignores 10% of your target's total armor."
+  },
+  {
+    "patch_version": "7.9",
+    "passive_1": "Your physical damage ignores 35% of your target's bonus armor."
+  },
+  {
+    "patch_version": "7.4",
+    "components": [1036],
+    "passive_1": "Your physical damage ignores 45% of your target's bonus armor.",
+    "ad": 10
+  },
+  {
+    "patch_version": "5.22",
+    "reworked": true,
+    "components": [1037],
+    "gold_cost": 1300,
+    "ad": 25,
+    "passive_1_name": "LAST WHISPER",
+    "passive_1": "Your physical damage ignores 30% of your target's bonus armor."
+  },
+  {
+    "patch_version": "1.0.0.154",
+    "gold_cost": 2300
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 2135,
+    "passive_1": "Gain 35% armor penetration."
+  },
+  {
+    "patch_version": "1.0.0.110",
+    "gold_cost": 2290
+  },
+  {
+    "patch_version": "1.0.0.107",
+    "components": [1037, 1036],
+    "gold_cost": 2090,
+    "ad": 40,
+    "aspd": null
+  },
+  {
+    "patch_version": "1.0.0.103",
+    "passive_1": "Gain 40% armor penetration."
+  },
+  {
+    "patch_version": "0.9.25.24",
+    "gold_cost": 1965
+  },
+  {
+    "patch_version": "0.9.25.21",
+    "motd": "Change: No longer works on turrets."
+  },
+  {
+    "patch_version": "20090619",
+    "passive_1": "Basic attacks have 40% armor penetration."
+  },
+  {
+    "patch_version": "20090523",
+    "passive_1": "Basic attacks have 33% armor penetration.",
+    "gold_cost": 2115
+  },
+  {
+    "patch_version": "20090501",
+    "gold_cost": 2215,
+    "passive_1": "35% chance on hit to deal 1 Magic Damage for each point of Armor the target has"
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3035,
+    "item_name": "Last Whisper",
+    "gold_cost": 2000,
+    "components": [1043, 1036],
+    "ad": 20,
+    "aspd": 40,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Basic attacks have a 50% chance to ignore target's armor.",
+    "motd": "Note: Exact wording & effect of passive is unknown (also unknown if it's unique, but assuming so)."
+  }
+]

@@ -2,7 +2,7 @@
   {
     "patch_version": "14.19",
     "hp": 150,
-    "unique_passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 15 magic damage per second to nearby enemies, increased by 50% against minions and monsters. This executes minions that would be killed by one more tick of damage."
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 15 magic damage per second to nearby enemies, increased by 50% against minions and monsters. This executes minions that would be killed by one more tick of damage."
   },
   {
     "patch_version": "14.10",
@@ -13,7 +13,7 @@
   },
   {
     "patch_version": "14.6",
-    "unique_passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 13 (+ 0.5% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and monsters. This executes minions that would be killed by one more tick of damage."
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 13 (+ 0.5% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and monsters. This executes minions that would be killed by one more tick of damage."
   },
   {
     "patch_version": "12.22",
@@ -25,12 +25,12 @@
   },
   {
     "patch_version": "11.23",
-    "unique_passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and monsters. This executes minions that would be killed by one more tick of damage."
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and monsters. This executes minions that would be killed by one more tick of damage."
   },
   {
     "patch_version": "10.25",
     "gold_cost": 1100,
-    "unique_passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and monsters."
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and monsters."
   },
   {
     "patch_version": "10.23",
@@ -39,7 +39,7 @@
     "gold_cost": 1000,
     "hp": 300,
     "icon_version": 1,
-    "unique_passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and 50% against monsters.",
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and 50% against monsters.",
     "buy_group": ["MYTHIC COMPONENT"],
     "motd": "Hotfix: • Immolate base damage reduced to 12 from 15\n\n  • Bonus minion damage reduced to 25% from 50%\n\n  • Bonus monster damage reduced to 50% from 100%"
   },
@@ -54,7 +54,7 @@
   },
   {
     "patch_version": "10.4",
-    "unique_passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies (325 range). Hitting an enemy with an  immobilizing ability deals 6 – 23 (based on level) (+ 1% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown). Immolate's damage is increased by 100% against  minions and  monsters.",
+    "passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies (325 range). Hitting an enemy with an  immobilizing ability deals 6 – 23 (based on level) (+ 1% bonus health) bonus magic damage and releases a fire nova that also deals that bonus damage to nearby enemies (12 second cooldown). Immolate's damage is increased by 100% against  minions and  monsters.",
     "motd": "Hotfix: • Cooldown increased to 12 seconds from 10.\n\n  • Health ratio reduced to 1% bonus health from 2%."
   },
   {
@@ -69,11 +69,11 @@
     "patch_version": "7.13",
     "gold_cost": 900,
     "hp": 200,
-    "unique_passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies in 325 radius. Deals 100% bonus damage to minions and monsters."
+    "passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies in 325 radius. Deals 100% bonus damage to minions and monsters."
   },
   {
     "patch_version": "7.9",
-    "unique_passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies in 325 radius. Deals 50% bonus damage to minions and monsters."
+    "passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies in 325 radius. Deals 50% bonus damage to minions and monsters."
   },
   {
     "patch_version": "6.9",
@@ -90,7 +90,7 @@
     "item_name": "Bami's Cinder",
     "gold_cost": 1000,
     "hp": 300,
-    "unique_passive_1_name": "IMMOLATE",
-    "unique_passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies in 400 radius. Deals 50% bonus damage to minions and monsters."
+    "passive_1_name": "IMMOLATE",
+    "passive_1": "Deals 6 – 23 (based on level) magic damage per second to nearby enemies in 400 radius. Deals 50% bonus damage to minions and monsters."
   }
 ]

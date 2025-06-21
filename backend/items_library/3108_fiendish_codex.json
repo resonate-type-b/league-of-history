@@ -15,8 +15,8 @@
     "patch_version": "10.23",
     "icon_version": 1,
     "haste": 10,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null
+    "passive_1_name": null,
+    "passive_1": null
   },
   {
     "patch_version": "8.9",
@@ -62,7 +62,7 @@
     "components": [1005, 1052],
     "ap": 30,
     "mp5": 7,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "+10% cooldown reduction."
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+10% cooldown reduction."
   }
 ]

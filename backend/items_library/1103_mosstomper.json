@@ -5,11 +5,11 @@
   },
   {
     "patch_version": "13.20",
-    "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Mosstomper's Courage* buff:\n\n• Gain a 180 – 330 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat."
+    "passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Mosstomper's Courage* buff:\n\n• Gain a 180 – 330 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat."
   },
   {
     "patch_version": "12.23",
-    "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Mosstomper's Courage* buff:\n\n• Gain a 60 – 281 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat. While the shield holds, and for 1.5 seconds after it is destroyed, gain 20% additive tenacity and slow resist.",
+    "passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Mosstomper's Courage* buff:\n\n• Gain a 60 – 281 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat. While the shield holds, and for 1.5 seconds after it is destroyed, gain 20% additive tenacity and slow resist.",
     "motd": "Hotfix: Shield reduced to 60 – 281 (based on level) from 75 – 330 (based on level)."
   },
   {
@@ -17,10 +17,10 @@
     "item_name": "Mosstomper Seedling",
     "item_id": 1103,
     "gold_cost": 450,
-    "unique_passive_1_name": "JUNGLE COMPANIONS",
-    "unique_passive_1": "Summon a *Mosstomper Seedling* companion to assist you in combat against monsters.",
-    "unique_passive_2_name": "MOSSTOMPER'S COURAGE",
-    "unique_passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Mosstomper's Courage* buff:\n\n• Gain a 75 – 330 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat. While the shield holds, and for 3 seconds after it is destroyed, gain 20% multiplicative tenacity and slow resist.",
+    "passive_1_name": "JUNGLE COMPANIONS",
+    "passive_1": "Summon a *Mosstomper Seedling* companion to assist you in combat against monsters.",
+    "passive_2_name": "MOSSTOMPER'S COURAGE",
+    "passive_2": "Feed the companion treats to evolve it and upgrade your Smite. Upon the companion reaching its final evolution, this item is consumed, granting you the *Mosstomper's Courage* buff:\n\n• Gain a 75 – 330 (based on level) shield that lasts until broken and refreshes after killing a monster camp or 10 seconds without combat. While the shield holds, and for 3 seconds after it is destroyed, gain 20% multiplicative tenacity and slow resist.",
     "buy_group": ["JUNGLE", "SUPPORT"]
   }
 ]

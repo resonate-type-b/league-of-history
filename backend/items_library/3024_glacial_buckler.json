@@ -14,8 +14,8 @@
     "item_name": "Glacial Buckler",
     "icon_version": 2,
     "haste": 10,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null
+    "passive_1_name": null,
+    "passive_1": null
   },
   {
     "patch_version": "7.12",
@@ -42,7 +42,7 @@
     "patch_version": "3.02",
     "gold_cost": 1350,
     "armor": 45,
-    "unique_passive_1": "+10% cooldown reduction."
+    "passive_1": "+10% cooldown reduction."
   },
   {
     "patch_version": "1.0.0.152",
@@ -53,7 +53,7 @@
   {
     "patch_version": "1.0.0.111",
     "gold_cost": 1525,
-    "unique_passive_1": "+15% cooldown reduction."
+    "passive_1": "+15% cooldown reduction."
   },
   {
     "patch_version": "1.0.0.82",
@@ -73,7 +73,7 @@
     "components": [9000, 1029],
     "mp": 500,
     "armor": 36,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "+20% cooldown reduction."
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+20% cooldown reduction."
   }
 ]

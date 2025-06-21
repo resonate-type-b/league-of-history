@@ -10,7 +10,7 @@
     "hp": 200,
     "icon_version": 2,
     "gold_cost": 1300,
-    "unique_passive_1": "For each second in combat with enemy champions, deal 2% increased damage, stacking up to 3 times for a total of 6%."
+    "passive_1": "For each second in combat with enemy champions, deal 2% increased damage, stacking up to 3 times for a total of 6%."
   },
   {
     "patch_version": "10.23",
@@ -24,8 +24,8 @@
     "patch_version": "8.4",
     "ap": 35,
     "rework": true,
-    "unique_passive_1_name": "MADNESS",
-    "unique_passive_1": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%."
+    "passive_1_name": "MADNESS",
+    "passive_1": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%."
   },
   {
     "patch_version": "6.24",
@@ -45,13 +45,13 @@
   },
   {
     "patch_version": "1.0.0.152",
-    "unique_passive_1": "+15 Magic Penetration."
+    "passive_1": "+15 Magic Penetration."
   },
   {
     "patch_version": "1.0.0.86",
     "ap": 25,
     "hp": 200,
-    "unique_passive_1": "+20 Magic Penetration."
+    "passive_1": "+20 Magic Penetration."
   },
   {
     "patch_version": "1.0.0.82",
@@ -62,8 +62,8 @@
     "mp5": null,
     "hp": 180,
     "ap": 20,
-    "unique_passive_1_name": "EYES OF PAIN",
-    "unique_passive_1": "+10% Spell Vamp (5% for multi-target spells) and +20 Magic Penetration."
+    "passive_1_name": "EYES OF PAIN",
+    "passive_1": "+10% Spell Vamp (5% for multi-target spells) and +20 Magic Penetration."
   },
   {
     "patch_version": "1.0.0.61",
@@ -73,7 +73,7 @@
     "gold_cost": 1337,
     "hp5": 9,
     "mp5": 8,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "Reduces ability cooldowns by 10% and +20 Magic Penetration."
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Reduces ability cooldowns by 10% and +20 Magic Penetration."
   }
 ]

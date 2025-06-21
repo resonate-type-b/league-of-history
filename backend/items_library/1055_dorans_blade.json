@@ -11,8 +11,8 @@
   {
     "patch_version": "14.1",
     "lifesteal": 3.5,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null
+    "passive_1_name": null,
+    "passive_1": null
   },
   {
     "patch_version": "13.20",
@@ -26,8 +26,8 @@
     "icon_version": 1,
     "gold_cost": 450,
     "lifesteal": null,
-    "unique_passive_1_name": "WARMONGER",
-    "unique_passive_1": "+2.5% omni vamp",
+    "passive_1_name": "WARMONGER",
+    "passive_1": "+2.5% omni vamp",
     "motd": "Hotfix-Bugfix: Fixed a bug where users would retain omnivamp after selling it."
   },
   {
@@ -40,19 +40,19 @@
     "patch_version": "4.10",
     "health": 70,
     "ad": 7,
-    "unique_passive_1": null,
+    "passive_1": null,
     "lifesteal": 3
   },
   {
     "patch_version": "3.14",
     "gold_cost": 440,
     "ad": 8,
-    "unique_passive_1": "Basic attacks restore [5|3] health each time they hit an enemy."
+    "passive_1": "Basic attacks restore [5|3] health each time they hit an enemy."
   },
   {
     "patch_version": "1.0.0.152",
     "lifesteal": null,
-    "unique_passive_1": "Basic attacks restore 5 health each time they hit an enemy."
+    "passive_1": "Basic attacks restore 5 health each time they hit an enemy."
   },
   {
     "patch_version": "1.0.0.138",

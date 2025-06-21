@@ -7,8 +7,8 @@
   {
     "patch_version": "14.1",
     "movespeed_percent": 5,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null
+    "passive_1_name": null,
+    "passive_1": null
   },
   {
     "patch_version": "13.9",
@@ -17,7 +17,7 @@
   {
     "patch_version": "10.23",
     "icon_version": 1,
-    "unique_passive_1_name": "GLIDE"
+    "passive_1_name": "GLIDE"
   },
   {
     "patch_version": "5.2",
@@ -30,7 +30,7 @@
     "item_name": "Aether Wisp",
     "gold_cost": 950,
     "ap": 30,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "+5% movement speed."
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+5% movement speed."
   }
 ]

@@ -1,0 +1,31 @@
+[
+  {
+    "patch_version": "14.1",
+    "components": [1028, 2022]
+  },
+  {
+    "patch_version": "10.23",
+    "haste": 10,
+    "icon_version": 1,
+    "passive_1_name": null,
+    "passive_1": null
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 800
+  },
+  {
+    "patch_version": "1.0.0.103",
+    "gold_cost": 850
+  },
+  {
+    "patch_version": "1.0.0.101",
+    "item_id": 3067,
+    "item_name": "Kindlegem",
+    "components": [1028],
+    "gold_cost": 900,
+    "hp": 200,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+10% cooldown reduction."
+  }
+]

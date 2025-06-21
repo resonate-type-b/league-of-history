@@ -15,8 +15,8 @@
     "patch_version": "10.23",
     "icon_version": 1,
     "haste": 10,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null
+    "passive_1_name": null,
+    "passive_1": null
   },
   {
     "patch_version": "5.22",
@@ -25,7 +25,7 @@
     "item_name": "Caulfield's Warhammer",
     "components": [1036, 1036],
     "ad": 25,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "+10% cooldown reduction."
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+10% cooldown reduction."
   }
 ]

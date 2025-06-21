@@ -7,11 +7,11 @@
   {
     "patch_version": "14.15",
     "gold_cost": 1000,
-    "unique_passive_2": "Gain 10% summoner spell haste."
+    "passive_2": "Gain 10% summoner spell haste."
   },
   {
     "patch_version": "14.12",
-    "unique_passive_2_name": "IONIAN INSIGHT"
+    "passive_2_name": "IONIAN INSIGHT"
   },
   {
     "patch_version": "14.1",
@@ -26,7 +26,7 @@
   {
     "patch_version": "11.1",
     "haste": 20,
-    "unique_passive_2": "Gain 12% summoner spell haste."
+    "passive_2": "Gain 12% summoner spell haste."
   },
   {
     "patch_version": "10.23",
@@ -34,9 +34,9 @@
     "icon_version": 1,
     "haste": 15,
     "movespeed_flat": 45,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null,
-    "unique_passive_2": "Gain 10% summoner spell haste."
+    "passive_1_name": null,
+    "passive_1": null,
+    "passive_2": "Gain 10% summoner spell haste."
   },
   {
     "patch_version": "7.23",
@@ -53,7 +53,7 @@
   {
     "patch_version": "5.22",
     "gold_cost": 800,
-    "unique_passive_2": "+10% cooldown reduction. Reduces the cooldowns of summoner spells by 10%"
+    "passive_2": "+10% cooldown reduction. Reduces the cooldowns of summoner spells by 10%"
   },
   {
     "patch_version": "3.6",
@@ -61,7 +61,7 @@
   },
   {
     "patch_version": "1.0.0.152",
-    "unique_passive_1": "+45 flat movement speed"
+    "passive_1": "+45 flat movement speed"
   },
   {
     "patch_version": "1.0.0.108",
@@ -69,8 +69,8 @@
     "item_id": 3158,
     "components": [1001],
     "gold_cost": 900,
-    "unique_passive_1_name": "ENHANCED MOVEMENT",
-    "unique_passive_1": "+70 flat movement speed",
-    "unique_passive_2": "+15% cooldown reduction."
+    "passive_1_name": "ENHANCED MOVEMENT",
+    "passive_1": "+70 flat movement speed",
+    "passive_2": "+15% cooldown reduction."
   }
 ]

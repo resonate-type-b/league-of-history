@@ -40,14 +40,14 @@ class ItemModel(BaseModel):
     movespeed_percent: Optional[float] = None
     gp10: Optional[float] = None
     heal_power: Optional[float] = None
-    unique_passive_1: Optional[str] = Field(max_length=1000, default=None)
-    unique_passive_1_name: Optional[str] = Field(max_length=50, default=None)
-    unique_passive_2: Optional[str] = Field(max_length=1000, default=None)
-    unique_passive_2_name: Optional[str] = Field(max_length=50, default=None)
-    unique_passive_3: Optional[str] = Field(max_length=1000, default=None)
-    unique_passive_3_name: Optional[str] = Field(max_length=50, default=None)
-    unique_passive_4: Optional[str] = Field(max_length=1000, default=None)
-    unique_passive_4_name: Optional[str] = Field(max_length=50, default=None)
+    passive_1: Optional[str] = Field(max_length=1000, default=None)
+    passive_1_name: Optional[str] = Field(max_length=50, default=None)
+    passive_2: Optional[str] = Field(max_length=1000, default=None)
+    passive_2_name: Optional[str] = Field(max_length=50, default=None)
+    passive_3: Optional[str] = Field(max_length=1000, default=None)
+    passive_3_name: Optional[str] = Field(max_length=50, default=None)
+    passive_4: Optional[str] = Field(max_length=1000, default=None)
+    passive_4_name: Optional[str] = Field(max_length=50, default=None)
     buy_group: Optional[list[str]] = None
     motd: Optional[str] = Field(max_length=1000, default=None)  # for bugfix/hotfix messages
     quest_reward: Optional[bool] = None

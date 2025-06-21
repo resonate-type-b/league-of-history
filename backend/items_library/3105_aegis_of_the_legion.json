@@ -33,28 +33,28 @@
     "gold_cost": 1100,
     "hp": null,
     "hp_regen": null,
-    "unique_passive_1": null,
-    "unique_passive_1_name": null,
+    "passive_1": null,
+    "passive_1_name": null,
     "armor": 30,
     "magic_resist": 30
   },
   {
     "patch_version": "5.22",
     "gold_cost": 1500,
-    "unique_passive_1": "+10 magic resistance aura (Affects minions)."
+    "passive_1": "+10 magic resistance aura (Affects minions)."
   },
   {
     "patch_version": "5.16",
     "gold_cost": 1600,
     "components": [1033, 3801],
     "hp_regen": 100,
-    "unique_passive_1": "+15 magic resistance aura (Affects minions)."
+    "passive_1": "+15 magic resistance aura (Affects minions)."
   },
   {
     "patch_version": "4.20",
     "components": [1033, 1028, 1006],
     "gold_cost": 1900,
-    "unique_passive_1": "+20 magic resistance / 75% base health regeneration aura (Affects minions)."
+    "passive_1": "+20 magic resistance / 75% base health regeneration aura (Affects minions)."
   },
   {
     "patch_version": "4.5",
@@ -73,12 +73,12 @@
     "gold_cost": 1900,
     "hp": 200,
     "magic_resist": null,
-    "unique_passive_1_name": "LEGION",
-    "unique_passive_1": "+20 magic resistance / 10 health regen per 5 seconds aura."
+    "passive_1_name": "LEGION",
+    "passive_1": "+20 magic resistance / 10 health regen per 5 seconds aura."
   },
   {
     "patch_version": "3.04",
-    "unique_passive_1": "+10 armor / +12 magic resistance / 10 health regen per 5 seconds aura (50% effect for minions)."
+    "passive_1": "+10 armor / +12 magic resistance / 10 health regen per 5 seconds aura (50% effect for minions)."
   },
   {
     "patch_version": "1.0.0.153",
@@ -91,11 +91,11 @@
     "hp": 250,
     "armor": 20,
     "magic_resist": 20,
-    "unique_passive_1": "+10 armor / +12 magic resistance / 10 health regen per 5 seconds aura."
+    "passive_1": "+10 armor / +12 magic resistance / 10 health regen per 5 seconds aura."
   },
   {
     "patch_version": "1.0.0.120",
-    "unique_passive_1": "+8 attack damage / +12 armor / +15 magic resistance aura."
+    "passive_1": "+8 attack damage / +12 armor / +15 magic resistance aura."
   },
   {
     "patch_version": "1.0.0.106",
@@ -111,12 +111,12 @@
     "hp": 270,
     "armor": 18,
     "magic_resist": 24,
-    "unique_passive_1": "+8 attack damage / +12 armor / +15 magic resistance aura (Affects minions)."
+    "passive_1": "+8 attack damage / +12 armor / +15 magic resistance aura (Affects minions)."
   },
   {
     "patch_version": "1.0.0.61",
     "hp": 300,
-    "unique_passive_1": "+10 attack damage / +25 armor / +25 magic resistance aura (Affects minions).",
+    "passive_1": "+10 attack damage / +25 armor / +25 magic resistance aura (Affects minions).",
     "motd": "Note: The patch notes claim that AD was increased from 10 from 8"
   },
   {
@@ -133,7 +133,7 @@
     "item_name": "Aegis of the Legion",
     "gold_cost": 1925,
     "hp": 300,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "+12 attack damage / +35 armor / +40 magic resistance aura (Affects minions)."
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+12 attack damage / +35 armor / +40 magic resistance aura (Affects minions)."
   }
 ]

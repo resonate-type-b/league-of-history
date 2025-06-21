@@ -1,0 +1,54 @@
+[
+  {
+    "patch_version": "14.10",
+    "passive_1": "Grants 15 bonus physical damage on-hit."
+  },
+  {
+    "patch_version": "14.1",
+    "passive_1_name": "STING"
+  },
+  {
+    "patch_version": "13.10",
+    "aspd": 15,
+    "components": [1042],
+    "passive_1": "Grants 15 bonus magic damage on-hit."
+  },
+  {
+    "patch_version": "12.21",
+    "icon_version": 2
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "passive_1_name": "STEELTIPPED"
+  },
+  {
+    "patch_version": "5.22",
+    "aspd": 25,
+    "gold_cost": 1000,
+    "passive_1": "Grants 15 bonus physical damage on-hit."
+  },
+  {
+    "patch_version": "5.8",
+    "gold_cost": 1100,
+    "components": [1042, 1042],
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Grants 10 bonus physical damage on-hit."
+  },
+  {
+    "patch_version": "3.8",
+    "gold_cost": 900
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "aspd": 30,
+    "gold_cost": 950
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1043,
+    "item_name": "Recurve Bow",
+    "gold_cost": 1050,
+    "aspd": 40
+  }
+]

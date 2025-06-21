@@ -2,7 +2,7 @@
   {
     "patch_version": "25.09",
     "gold_cost": 1500,
-    "unique_passive_2": "Gain adaptive force equal to 5% of your total movement speed."
+    "passive_2": "Gain adaptive force equal to 5% of your total movement speed."
   },
   {
     "patch_version": "25.S1.1",
@@ -11,13 +11,13 @@
     "components": [3009],
     "gold_cost": 1750,
     "movespeed_flat": 70,
-    "unique_passive_1_name": "FLEETFOOTED",
-    "unique_passive_1": "Gain 25% slow resist.",
-    "unique_passive_2_name": "NOXIAN FERVOR",
-    "unique_passive_2": "Gain 4% bonus total movement speed.",
+    "passive_1_name": "FLEETFOOTED",
+    "passive_1": "Gain 25% slow resist.",
+    "passive_2_name": "NOXIAN FERVOR",
+    "passive_2": "Gain 4% bonus total movement speed.",
     "buy_group": ["BOOTS"],
-    "unique_passive_4_name": "REQUIREMENT",
-    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped.",
+    "passive_4_name": "REQUIREMENT",
+    "passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped.",
     "motd": "Base movement speed reduced to 70 from 75."
   }
 ]

@@ -3,7 +3,7 @@
     "patch_version": "25.07",
     "mp": 375,
     "components": [1028, 1028, 2017],
-    "unique_passive_1": "Restore mana equal to 10% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
+    "passive_1": "Restore mana equal to 10% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
   },
   {
     "patch_version": "14.1",
@@ -21,7 +21,7 @@
   },
   {
     "patch_version": "13.1",
-    "unique_passive_1": "Restore mana equal to 7% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
+    "passive_1": "Restore mana equal to 7% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
   },
   {
     "patch_version": "12.22",
@@ -29,7 +29,7 @@
     "removed": false,
     "hp": 225,
     "mp": 300,
-    "unique_passive_1": "Restore mana equal to 8% of pre-mitigation damage taken from champions, and health equal to 20% of mana spent, up to 15 health per cast. Toggled abilities can only heal for up to 15 per second.",
+    "passive_1": "Restore mana equal to 8% of pre-mitigation damage taken from champions, and health equal to 20% of mana spent, up to 15 health per cast. Toggled abilities can only heal for up to 15 per second.",
     "buy_group": ["ETERNITY"]
   },
   {
@@ -41,8 +41,8 @@
     "reworked": true,
     "item_name": "Catalyst of Aeons",
     "gold_cost": 1100,
-    "unique_passive_1_name": "ETERNITY",
-    "unique_passive_1": "15% of damage taken from enemy champions is gained as mana. 20% of Mana spent is gained as health, up to 15 health per spell cast or 15 health per second for toggled spells."
+    "passive_1_name": "ETERNITY",
+    "passive_1": "15% of damage taken from enemy champions is gained as mana. 20% of Mana spent is gained as health, up to 15 health per spell cast or 15 health per second for toggled spells."
   },
   {
     "patch_version": "5.22",
@@ -57,18 +57,18 @@
     "gold_cost": 1200,
     "hp": 200,
     "mp": 300,
-    "unique_passive_1": "Upon leveling up, restores 150 health and 200 mana over 8 seconds.",
+    "passive_1": "Upon leveling up, restores 150 health and 200 mana over 8 seconds.",
     "motd": "Note: Patch notes claim that Health was reduced from 290"
   },
   {
     "patch_version": "1.0.0.118",
-    "unique_passive_1_name": "VALOR'S REWARD",
-    "unique_passive_1": "Upon leveling up, restores 250 health and 200 mana over 8 seconds."
+    "passive_1_name": "VALOR'S REWARD",
+    "passive_1": "Upon leveling up, restores 250 health and 200 mana over 8 seconds."
   },
   {
     "patch_version": "1.0.0.61",
     "hp": 325,
-    "unique_passive_1": "Upon leveling up, restores 300 health and 250 mana."
+    "passive_1": "Upon leveling up, restores 300 health and 250 mana."
   },
   {
     "patch_version": "0.9.25.21",
@@ -82,7 +82,7 @@
     "components": [2017, 1027],
     "hp": 425,
     "mp": 325,
-    "unique_passive_1_name": "VALOR'S REWARD",
-    "unique_passive_1": "Upon leveling up, restores 425 health and 325 mana."
+    "passive_1_name": "VALOR'S REWARD",
+    "passive_1": "Upon leveling up, restores 425 health and 325 mana."
   }
 ]

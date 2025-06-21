@@ -10,12 +10,12 @@
   {
     "patch_version": "10.23",
     "icon_version": 1,
-    "unique_passive_2_name": "REAP"
+    "passive_2_name": "REAP"
   },
   {
     "patch_version": "6.2",
     "ad": 7,
-    "unique_passive_2": "Killing a minion grants +1 gold, up to a maximum of 100 gold. After having killed 100 minions, grants an additional 350 gold and permanently disables this passive."
+    "passive_2": "Killing a minion grants +1 gold, up to a maximum of 100 gold. After having killed 100 minions, grants an additional 350 gold and permanently disables this passive."
   },
   {
     "patch_version": "5.22",
@@ -23,8 +23,8 @@
     "item_id": 1083,
     "gold_cost": 450,
     "ad": 5,
-    "unique_passive_1": "+3 health on-hit",
-    "unique_passive_2_name": "UNIQUE",
-    "unique_passive_2": "Killing a minion grants +1 gold, up to a maximum of 100 gold. After having killed 100 minions, grants an additional 300 gold and permanently disables this passive."
+    "passive_1": "+3 health on-hit",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "Killing a minion grants +1 gold, up to a maximum of 100 gold. After having killed 100 minions, grants an additional 300 gold and permanently disables this passive."
   }
 ]

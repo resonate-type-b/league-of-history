@@ -5,8 +5,8 @@
   },
   {
     "patch_version": "25.09",
-    "unique_passive_1_name": "SYNCHRONY",
-    "unique_passive_1": "Gain 10 bonus movement speed while out-of-combat."
+    "passive_1_name": "SYNCHRONY",
+    "passive_1": "Gain 10 bonus movement speed while out-of-combat."
   },
   {
     "patch_version": "25.04",
@@ -14,8 +14,8 @@
   },
   {
     "patch_version": "14.12",
-    "unique_passive_1_name": "VOIDBORN",
-    "unique_passive_2_name": "SYMBIOSIS"
+    "passive_1_name": "VOIDBORN",
+    "passive_2_name": "SYMBIOSIS"
   },
   {
     "patch_version": "14.10",
@@ -24,8 +24,8 @@
     "components": [1001],
     "movespeed_flat": 35,
     "gold_cost": 900,
-    "unique_passive_1": "Gain Empowered Recall.",
-    "unique_passive_2": "After traveling for a total of 150,000 units of distance, capped at 500 at a time, upgrade this item to Synchronized Souls.",
+    "passive_1": "Gain Empowered Recall.",
+    "passive_2": "After traveling for a total of 150,000 units of distance, capped at 500 at a time, upgrade this item to Synchronized Souls.",
     "buy_group": ["BOOTS"]
   }
 ]

@@ -1,8 +1,8 @@
 [
   {
     "patch_version": "25.S1.1",
-    "unique_passive_4_name": "TRIUMPHANT",
-    "unique_passive_4": "Triumphant version grants +5 Magic Resist."
+    "passive_4_name": "TRIUMPHANT",
+    "passive_4": "Triumphant version grants +5 Magic Resist."
   },
   {
     "patch_version": "25.04",
@@ -24,10 +24,10 @@
     "movespeed_flat": 45,
     "magic_resist": 25,
     "tenacity": 30,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null,
-    "unique_passive_2_name": null,
-    "unique_passive_2": null
+    "passive_1_name": null,
+    "passive_1": null,
+    "passive_2_name": null,
+    "passive_2": null
   },
 
   {
@@ -40,24 +40,24 @@
   },
   {
     "patch_version": "6.4",
-    "unique_passive_2": "+30% Tenacity"
+    "passive_2": "+30% Tenacity"
   },
   {
     "patch_version": "5.22",
     "gold_cost": 1100,
-    "unique_passive_2": "+20% Tenacity"
+    "passive_2": "+20% Tenacity"
   },
   {
     "patch_version": "1.0.0.152",
-    "unique_passive_1": "+45 flat movement speed"
+    "passive_1": "+45 flat movement speed"
   },
   {
     "patch_version": "1.0.0.118",
-    "unique_passive_2": "+35% Tenacity"
+    "passive_2": "+35% Tenacity"
   },
   {
     "patch_version": "1.0.0.94",
-    "unique_passive_2": "Reduces all crowd control effects by 35% (slow, stun, fear, root, taunt, etc)."
+    "passive_2": "Reduces all crowd control effects by 35% (slow, stun, fear, root, taunt, etc)."
   },
   {
     "patch_version": "1.0.0.82",
@@ -69,11 +69,11 @@
   },
   {
     "patch_version": "0.9.22.16",
-    "unique_passive_2": "Reduces all crowd control effects by 40% (slow, stun, fear, root, taunt, etc)."
+    "passive_2": "Reduces all crowd control effects by 40% (slow, stun, fear, root, taunt, etc)."
   },
   {
     "patch_version": "20090619",
-    "unique_passive_2": "Reduces all crowd control effects by 35% (slow, stun, fear, root, taunt, etc)."
+    "passive_2": "Reduces all crowd control effects by 35% (slow, stun, fear, root, taunt, etc)."
   },
   {
     "patch_version": "20090606",
@@ -82,9 +82,9 @@
     "components": [1001, 1033],
     "gold_cost": 850,
     "magic_resist": 35,
-    "unique_passive_1_name": "ENHANCED MOVEMENT",
-    "unique_passive_1": "+70 flat movement speed",
-    "unique_passive_2_name": "TENACITY",
-    "unique_passive_2": "Reduces all crowd control effects by 30% (slow, stun, fear, root, taunt, etc)."
+    "passive_1_name": "ENHANCED MOVEMENT",
+    "passive_1": "+70 flat movement speed",
+    "passive_2_name": "TENACITY",
+    "passive_2": "Reduces all crowd control effects by 30% (slow, stun, fear, root, taunt, etc)."
   }
 ]
