@@ -1,0 +1,37 @@
+[
+  {
+    "patch_version": "14.16",
+    "motd": "Bugfix: No longer triggers spell effects"
+  },
+  {
+    "patch_version": "14.6",
+    "ap": 45
+  },
+  {
+    "patch_version": "14.3",
+    "unique_passive_1": "Damaging an enemy champion deals 65 bonus magic damage (40 second cooldown)."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1052, 1052],
+    "gold_cost": 1100,
+    "ap": 50,
+    "hp": null
+  },
+  {
+    "patch_version": "11.23",
+    "components": [1052, 1028],
+    "ap": 25,
+    "hp": 150
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 3145,
+    "item_name": "Hextech Alternator",
+    "components": [1052, 1052],
+    "gold_cost": 1050,
+    "ap": 40,
+    "unique_passive_1_name": "REVVED",
+    "unique_passive_1": "Damaging an enemy champion deals 50 – 125 (based on level) bonus magic damage (40 second cooldown)."
+  }
+]

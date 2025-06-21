@@ -27,6 +27,7 @@ Below items have old icons on the wiki, but did not specify when they were updat
 - Chain Vest (1031)
 - Glacial Shroud (3024)
 - Hexdrinker (3155)
+- Last Whisper (3035): This was when it had the IE icon!
 
 These items have unknown original recipes:
 
