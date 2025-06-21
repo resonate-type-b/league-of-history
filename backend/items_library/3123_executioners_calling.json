@@ -1,7 +1,7 @@
 [
   {
     "patch_version": "14.1",
-    "unique_passive_1_name": "GREVIOUS WOUNDS"
+    "unique_passive_1_name": "GRIEVOUS WOUNDS"
   },
   {
     "patch_version": "13.7",
@@ -54,6 +54,7 @@
   {
     "patch_version": "1.0.0.152",
     "gold_cost": 1900,
+    "reworked": true,
     "components": [3093, 1036],
     "ad": 25,
     "lifesteal": null,
@@ -68,17 +69,18 @@
   },
   {
     "patch_version": "1.0.0.86",
-    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grevious Wounds for 7 seconds (20 second cooldown)."
+    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grievous Wounds for 7 seconds (20 second cooldown)."
   },
   {
     "patch_version": "1.0.0.79",
-    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grevious Wounds for 8 seconds (45 second cooldown)."
+    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grievous Wounds for 8 seconds (45 second cooldown)."
   },
   {
     "patch_version": "1.0.0.75",
+    "reworked": true,
     "unique_passive_1": "Damage applies Executioner's Mark on the target, dealing 4 damage per second for 8 seconds.",
     "unique_passive_2_name": "ACTIVE",
-    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grevious Wounds for 7 seconds (60 second cooldown)."
+    "unique_passive_2": "For the next 10 seconds, your damage against enemy champions inflicts 50% Grievous Wounds for 7 seconds (60 second cooldown)."
   },
   {
     "patch_version": "1.0.0.74",
@@ -99,6 +101,6 @@
     "crit_chance": 15,
     "unique_passive_1_name": "EXECUTIONER'S MARK",
     "unique_passive_1": "Damage applies Executioner's Mark on the target, reducing the target's healing by 40% for 8 seconds.",
-    "motd": "The exact gold cost is unknown."
+    "motd": "Note: The exact gold cost is unknown."
   }
 ]

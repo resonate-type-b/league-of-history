@@ -1,0 +1,47 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 1200
+  },
+  {
+    "patch_version": "14.10",
+    "gold_cost": 1300,
+    "components": [1036, 1042, 1036],
+    "ad": 20,
+    "aspd": 20
+  },
+  {
+    "patch_version": "14.6",
+    "gold_cost": 1150,
+    "ad": 15
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 1200,
+    "aspd": 25,
+    "components": [1042, 1036, 1042],
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "13.10",
+    "gold_cost": 1100,
+    "components": [1036, 1042, 1036],
+    "ad": 20
+  },
+  {
+    "patch_version": "12.3",
+    "gold_cost": 1000
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 3051,
+    "item_name": "Hearthbound Axe",
+    "components": [1042, 1036],
+    "gold_cost": 1100,
+    "ad": 15,
+    "aspd": 15,
+    "unique_passive_1_name": "NIMBLE",
+    "unique_passive_1": "Basic attacks grant [20|10] bonus movement speed for 2 seconds."
+  }
+]
