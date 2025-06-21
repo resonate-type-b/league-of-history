@@ -1,0 +1,79 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 900,
+    "armor": 25,
+    "mp": 300
+  },
+  {
+    "patch_version": "14.6",
+    "components": [1029, 2017, 2022]
+  },
+  {
+    "patch_version": "10.23",
+    "item_name": "Glacial Buckler",
+    "icon_version": 2,
+    "haste": 10,
+    "unique_passive_1_name": null,
+    "unique_passive_1": null
+  },
+  {
+    "patch_version": "7.12",
+    "gold_cost": 900,
+    "armor": 20
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1000,
+    "armor": 25
+  },
+  {
+    "patch_version": "4.5",
+    "components": [1029, 2017],
+    "gold_cost": 950,
+    "armor": 20,
+    "mp": 250
+  },
+  {
+    "patch_version": "3.10",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "3.02",
+    "gold_cost": 1350,
+    "armor": 45,
+    "unique_passive_1": "+10% cooldown reduction."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1500,
+    "armor": 40,
+    "mp": 300
+  },
+  {
+    "patch_version": "1.0.0.111",
+    "gold_cost": 1525,
+    "unique_passive_1": "+15% cooldown reduction."
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "mp": 425,
+    "armor": 45,
+    "components": [2017, 1031]
+  },
+  {
+    "patch_version": "20090710",
+    "gold_cost": 1675
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3024,
+    "item_name": "Glacial Shroud",
+    "gold_cost": 1775,
+    "components": [9000, 1029],
+    "mp": 500,
+    "armor": 36,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "+20% cooldown reduction."
+  }
+]

@@ -25,6 +25,8 @@ Below items have old icons on the wiki, but did not specify when they were updat
 - Dagger (1042)
 - Long Sword (1036)
 - Chain Vest (1031)
+- Glacial Shroud (3024)
+- Hexdrinker (3155)
 
 These items have unknown original recipes:
 
@@ -33,3 +35,7 @@ These items have unknown original recipes:
 These items have item_ids changed during their lives
 
 - Catalyst the Protector/Catalyst of Aeons - 3010/3803 - Listed as a single item under 3803
+
+Some alpha/beta items do not have an ID listed on the wiki, and have been given one manually:
+
+- Sage's Ring (9000)

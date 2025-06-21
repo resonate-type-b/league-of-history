@@ -1,0 +1,11 @@
+[
+  { "patch_version": "1.0.0.82", "removed": true },
+
+  {
+    "patch_version": "initial",
+    "item_name": "Sage's Ring",
+    "item_id": 9000,
+    "gold_cost": 975,
+    "mp": 500
+  }
+]

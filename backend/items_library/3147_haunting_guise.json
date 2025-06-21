@@ -1,0 +1,79 @@
+[
+  {
+    "patch_version": "14.6",
+    "ap": 30
+  },
+  {
+    "patch_version": "14.1",
+    "removed": false,
+    "ap": 35,
+    "hp": 200,
+    "icon_version": 2,
+    "gold_cost": 1300,
+    "unique_passive_1": "For each second in combat with enemy champions, deal 2% increased damage, stacking up to 3 times for a total of 6%."
+  },
+  {
+    "patch_version": "10.23",
+    "removed": true
+  },
+  {
+    "patch_version": "8.5",
+    "motd": "Bugfix: The Madness passive no longer modifies true damage, matching rules around other damage-amplifying effects."
+  },
+  {
+    "patch_version": "8.4",
+    "ap": 35,
+    "rework": true,
+    "unique_passive_1_name": "MADNESS",
+    "unique_passive_1": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%."
+  },
+  {
+    "patch_version": "6.24",
+    "gold_cost": 1500
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1600
+  },
+  {
+    "patch_version": "5.13",
+    "gold_cost": 1500
+  },
+  {
+    "patch_version": "3.10",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "unique_passive_1": "+15 Magic Penetration."
+  },
+  {
+    "patch_version": "1.0.0.86",
+    "ap": 25,
+    "hp": 200,
+    "unique_passive_1": "+20 Magic Penetration."
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "components": [1028, 1052],
+    "rework": true,
+    "gold_cost": 1485,
+    "hp5": null,
+    "mp5": null,
+    "hp": 180,
+    "ap": 20,
+    "unique_passive_1_name": "EYES OF PAIN",
+    "unique_passive_1": "+10% Spell Vamp (5% for multi-target spells) and +20 Magic Penetration."
+  },
+  {
+    "patch_version": "1.0.0.61",
+    "item_id": 3147,
+    "item_name": "Haunting Guise",
+    "components": [1004, 1006, 1052],
+    "gold_cost": 1337,
+    "hp5": 9,
+    "mp5": 8,
+    "unique_passive_1_name": "UNIQUE",
+    "unique_passive_1": "Reduces ability cooldowns by 10% and +20 Magic Penetration."
+  }
+]
