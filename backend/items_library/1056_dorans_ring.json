@@ -1,9 +1,9 @@
 [
   {
     "patch_version": "14.19",
-    "unique_passive_1_name": "HELPING HAND",
-    "unique_passive_1": "Basic attacks deal 5 bonus physical damage on-hit against minions.",
-    "unique_passive_2": "Restore 1.25 mana every second. If you cannot gain mana, heal 0.55 health instead. Basic attacks deal 5 bonus physical damage on-hit against minions."
+    "passive_1_name": "HELPING HAND",
+    "passive_1": "Basic attacks deal 5 bonus physical damage on-hit against minions.",
+    "passive_2": "Restore 1.25 mana every second. If you cannot gain mana, heal 0.55 health instead. Basic attacks deal 5 bonus physical damage on-hit against minions."
   },
   {
     "patch_version": "14.6",
@@ -11,10 +11,10 @@
   },
   {
     "patch_version": "14.1",
-    "unique_passive_1_name": null,
-    "unique_passive_1": null,
-    "unique_passive_2_name": "Restoration",
-    "unique_passive_2": "Restore 1.25 mana every second. If you cannot gain mana, heal 45% of this value instead. Basic attacks deal 5 bonus physical damage on-hit against minions."
+    "passive_1_name": null,
+    "passive_1": null,
+    "passive_2_name": "Restoration",
+    "passive_2": "Restore 1.25 mana every second. If you cannot gain mana, heal 45% of this value instead. Basic attacks deal 5 bonus physical damage on-hit against minions."
   },
   {
     "patch_version": "13.20",
@@ -28,11 +28,11 @@
   },
   {
     "patch_version": "12.10",
-    "unique_passive_2": "Restore 1 mana every second, increased to 1.5 for 10 seconds when you damage an enemy champion. If you can't gain mana, heal 45% of this value instead."
+    "passive_2": "Restore 1 mana every second, increased to 1.5 for 10 seconds when you damage an enemy champion. If you can't gain mana, heal 45% of this value instead."
   },
   {
     "patch_version": "11.23",
-    "unique_passive_2": "Restore 0.75 mana every second, increased to 1.25 for 10 seconds when you damage an enemy champion. If you can't gain mana, heal 50% of this value instead."
+    "passive_2": "Restore 0.75 mana every second, increased to 1.25 for 10 seconds when you damage an enemy champion. If you can't gain mana, heal 50% of this value instead."
   },
   {
     "patch_version": "10.23",
@@ -42,22 +42,22 @@
     "health": 70,
     "ap": 15,
     "mp5": null,
-    "unique_passive_1_name": "FOCUS",
-    "unique_passive_1": "Basic attacks deal 5 bonus physical damage on-hit against minions.",
-    "unique_passive_2_name": "DRAIN",
-    "unique_passive_2": "Killing a minion restores 6 mana, if you can't gain mana, restore 3 health instead.",
+    "passive_1_name": "FOCUS",
+    "passive_1": "Basic attacks deal 5 bonus physical damage on-hit against minions.",
+    "passive_2_name": "DRAIN",
+    "passive_2": "Killing a minion restores 6 mana, if you can't gain mana, restore 3 health instead.",
     "motd": "Hotfix-bugfix: Bonus damage to minions is no longer lost on death. Passive mana regeneration has been properly removed."
   },
   {
     "patch_version": "8.9",
     "mp_regen": null,
     "mp5": 5,
-    "unique_passive_1_name": null,
-    "unique_passive_1": "Basic attacks deal 5 on-hit bonus physical damage to minions."
+    "passive_1_name": null,
+    "passive_1": "Basic attacks deal 5 on-hit bonus physical damage to minions."
   },
   {
     "patch_version": "7.12",
-    "unique_passive_1_name": "UNIQUE"
+    "passive_1_name": "UNIQUE"
   },
   {
     "patch_version": "5.22",
@@ -69,12 +69,12 @@
     "patch_version": "3.8",
     "gold_cost": 400,
     "health": 60,
-    "unique_passive_1": "Restores 4 mana when you kill an enemy unit."
+    "passive_1": "Restores 4 mana when you kill an enemy unit."
   },
   {
     "patch_version": "1.0.0.152",
     "mp5": 3,
-    "unique_passive_1": "Restores 5 mana when you kill an enemy unit."
+    "passive_1": "Restores 5 mana when you kill an enemy unit."
   },
   {
     "patch_version": "1.0.0.138",

@@ -16,11 +16,11 @@
     "mr": 35,
     "movespeed_flat": 50,
     "tenacity": 30,
-    "unique_passive_1_name": "NOXIAN PERSISTENCE",
-    "unique_passive_1": "Taking magic damage from champions grants you a shield that absorbs 10 – 120 (based on level) (+ 4% maximum health) magic damage for 4 seconds (15 second cooldown).",
+    "passive_1_name": "NOXIAN PERSISTENCE",
+    "passive_1": "Taking magic damage from champions grants you a shield that absorbs 10 – 120 (based on level) (+ 4% maximum health) magic damage for 4 seconds (15 second cooldown).",
     "buy_group": ["BOOTS"],
     "motd": "Hotfix: • Noxian Persistence base shield reduced to 10 – 120 (based on level) from 10 – 140 (based on level). \n\n  • Noxian Persistence cooldown increased to 15 seconds from 12.",
-    "unique_passive_4_name": "REQUIREMENT",
-    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
+    "passive_4_name": "REQUIREMENT",
+    "passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
   }
 ]

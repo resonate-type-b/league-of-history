@@ -1,8 +1,8 @@
 [
   {
     "patch_version": "25.S1.1",
-    "unique_passive_4_name": "TRIUMPHANT",
-    "unique_passive_4": "Triumphant version grants +5 ability haste."
+    "passive_4_name": "TRIUMPHANT",
+    "passive_4": "Triumphant version grants +5 ability haste."
   },
   {
     "patch_version": "25.09",
@@ -21,12 +21,12 @@
     "gold_cost": 1650,
     "movespeed_flat": 50,
     "haste": 25,
-    "unique_passive_1_name": "IONIAN INSIGHT",
-    "unique_passive_1": "Gain 10 summoner spell haste.",
-    "unique_passive_2_name": "NOXIAN HASTE",
-    "unique_passive_2": "Healing, shielding or buffing an ally, damaging abilities against champions, and using summoner spells grants you [10%|8%] bonus movement speed for 4 seconds. This can be triggered from the same cast instance only once every 4 seconds.",
+    "passive_1_name": "IONIAN INSIGHT",
+    "passive_1": "Gain 10 summoner spell haste.",
+    "passive_2_name": "NOXIAN HASTE",
+    "passive_2": "Healing, shielding or buffing an ally, damaging abilities against champions, and using summoner spells grants you [10%|8%] bonus movement speed for 4 seconds. This can be triggered from the same cast instance only once every 4 seconds.",
     "buy_group": ["BOOTS"],
-    "unique_passive_3_name": "REQUIREMENT",
-    "unique_passive_3": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
+    "passive_3_name": "REQUIREMENT",
+    "passive_3": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
   }
 ]

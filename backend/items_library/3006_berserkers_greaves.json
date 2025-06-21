@@ -1,8 +1,8 @@
 [
   {
     "patch_version": "25.S1.1",
-    "unique_passive_4_name": "TRIUMPHANT",
-    "unique_passive_4": "Triumphant version grants +5% attack speed."
+    "passive_4_name": "TRIUMPHANT",
+    "passive_4": "Triumphant version grants +5% attack speed."
   },
   {
     "patch_version": "14.19",
@@ -20,8 +20,8 @@
     "gold_cost": 1100,
     "movespeed_flat": 45,
     "aspd": 35,
-    "unique_passive_1_name": null,
-    "unique_passive_1": null
+    "passive_1_name": null,
+    "passive_1": null
   },
   {
     "patch_version": "7.23",
@@ -49,7 +49,7 @@
     "patch_version": "1.0.0.152",
     "gold_cost": 900,
     "aspd": 20,
-    "unique_passive_1": "+45 flat movement speed"
+    "passive_1": "+45 flat movement speed"
   },
   {
     "patch_version": "20090515",
@@ -63,7 +63,7 @@
     "components": [1001, 1042],
     "gold_cost": 920,
     "aspd": 30,
-    "unique_passive_1_name": "ENHANCED MOVEMENT",
-    "unique_passive_1": "+70 flat movement speed"
+    "passive_1_name": "ENHANCED MOVEMENT",
+    "passive_1": "+70 flat movement speed"
   }
 ]

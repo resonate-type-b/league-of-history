@@ -11,18 +11,18 @@
   {
     "patch_version": "13.10",
     "ad": 25,
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs [110 – 280|82.5 – 210] (based on level) magic damage for 2.5 seconds. 60 second cooldown."
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs [110 – 280|82.5 – 210] (based on level) magic damage for 2.5 seconds. 60 second cooldown."
   },
   {
     "patch_version": "12.3",
     "ad": 25,
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs [110 – 280|82.5 – 210] (based on level) magic damage for 3 seconds. 60 second cooldown."
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs [110 – 280|82.5 – 210] (based on level) magic damage for 3 seconds. 60 second cooldown."
   },
   {
     "patch_version": "10.23",
     "icon_version": 1,
-    "unique_passive_1_name": "LIFELINE",
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 110 – 280 (based on level) magic damage for 3 seconds. 60 second cooldown.",
+    "passive_1_name": "LIFELINE",
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 110 – 280 (based on level) magic damage for 3 seconds. 60 second cooldown.",
     "buy_group": ["LIFELINE"]
   },
   {
@@ -30,7 +30,7 @@
     "gold_cost": 1300,
     "ad": 20,
     "magic_resist": 35,
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 110 – 280 (based on level) magic damage for 5 seconds. 60 second cooldown."
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 110 – 280 (based on level) magic damage for 5 seconds. 60 second cooldown."
   },
   {
     "patch_version": "4.20",
@@ -44,17 +44,17 @@
   },
   {
     "patch_version": "1.0.0.138",
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 250 magic damage for 5 seconds. 60 second cooldown."
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 250 magic damage for 5 seconds. 60 second cooldown."
   },
   {
     "patch_version": "1.0.0.136",
     "ad": 25,
     "components": [1036, 1033],
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 250 magic damage for 3 seconds. 60 second cooldown."
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 250 magic damage for 3 seconds. 60 second cooldown."
   },
   {
     "patch_version": "1.0.0.106",
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 300 magic damage for 4 seconds. 60 second cooldown."
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 300 magic damage for 4 seconds. 60 second cooldown."
   },
   {
     "patch_version": "1.0.0.105",
@@ -64,7 +64,7 @@
     "components": [1036, 1036, 1033],
     "ad": 35,
     "magic_resist": 30,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 300 magic damage for 4 seconds. 45 second cooldown."
+    "passive_1_name": "UNIQUE",
+    "passive_1": "If you would take magic damage which would leave you at less than 30% of your maximum health, you gain a shield which absorbs 300 magic damage for 4 seconds. 45 second cooldown."
   }
 ]

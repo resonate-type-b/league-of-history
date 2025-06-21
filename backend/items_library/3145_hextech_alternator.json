@@ -9,7 +9,7 @@
   },
   {
     "patch_version": "14.3",
-    "unique_passive_1": "Damaging an enemy champion deals 65 bonus magic damage (40 second cooldown)."
+    "passive_1": "Damaging an enemy champion deals 65 bonus magic damage (40 second cooldown)."
   },
   {
     "patch_version": "14.1",
@@ -31,7 +31,7 @@
     "components": [1052, 1052],
     "gold_cost": 1050,
     "ap": 40,
-    "unique_passive_1_name": "REVVED",
-    "unique_passive_1": "Damaging an enemy champion deals 50 – 125 (based on level) bonus magic damage (40 second cooldown)."
+    "passive_1_name": "REVVED",
+    "passive_1": "Damaging an enemy champion deals 50 – 125 (based on level) bonus magic damage (40 second cooldown)."
   }
 ]

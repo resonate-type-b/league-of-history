@@ -15,12 +15,12 @@
     "components": [3013],
     "gold_cost": 1650,
     "movespeed_flat": 55,
-    "unique_passive_1_name": "VOIDBORN",
-    "unique_passive_1": "Gain Empowered Recall.",
-    "unique_passive_2_name": "NOXIAN SYNCHRONY",
-    "unique_passive_2": "Gain 45 (+ 10% total movement speed) bonus movement speed while out-of-combat.",
+    "passive_1_name": "VOIDBORN",
+    "passive_1": "Gain Empowered Recall.",
+    "passive_2_name": "NOXIAN SYNCHRONY",
+    "passive_2": "Gain 45 (+ 10% total movement speed) bonus movement speed while out-of-combat.",
     "buy_group": ["BOOTS"],
-    "unique_passive_4_name": "REQUIREMENT",
-    "unique_passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
+    "passive_4_name": "REQUIREMENT",
+    "passive_4": "Requires *Blessing of Noxus* and two Legendary-tier items equipped."
   }
 ]

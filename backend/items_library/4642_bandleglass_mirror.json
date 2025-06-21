@@ -13,8 +13,8 @@
   {
     "patch_version": "13.10",
 
-    "unique_passive_1_name": null,
-    "unique_passive_1": null
+    "passive_1_name": null,
+    "passive_1": null
   },
   {
     "patch_version": "13.4",

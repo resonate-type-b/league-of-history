@@ -1,13 +1,13 @@
 [
   {
     "patch_version": "25.S1.1",
-    "unique_passive_4_name": "TRIUMPHANT",
-    "unique_passive_4": "Triumphant version grants +5 movement speed."
+    "passive_4_name": "TRIUMPHANT",
+    "passive_4": "Triumphant version grants +5 movement speed."
   },
   {
     "patch_version": "14.12",
-    "unique_passive_1_name": "VOIDBORN",
-    "unique_passive_2_name": "SYNCHRONY"
+    "passive_1_name": "VOIDBORN",
+    "passive_2_name": "SYNCHRONY"
   },
   {
     "patch_version": "14.11",
@@ -21,10 +21,10 @@
     "quest_reward": true,
     "gold_cost": 900,
     "movespeed_flat": 45,
-    "unique_passive_1_name": "UNIQUE",
-    "unique_passive_1": "Gain Empowered Recall.",
-    "unique_passive_2_name": "UNIQUE",
-    "unique_passive_2": "Gain 45 bonus movement speed while out-of-combat.",
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Gain Empowered Recall.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "Gain 45 bonus movement speed while out-of-combat.",
     "buy_group": ["BOOTS"],
 
     "motd": "Base movement speed reduced to 70 from 75."

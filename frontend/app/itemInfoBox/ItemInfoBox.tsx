@@ -42,9 +42,8 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
   const textJSXList: React.JSX.Element[] = [];
 
   for (const i of [1, 2, 3, 4]) {
-    const passive = item[`unique_passive_${i}` as keyof LeagueItem] as string | undefined;
-    const passiveName =
-      item[`unique_passive_${i}_name` as keyof LeagueItem] ?? ("Passive" as string);
+    const passive = item[`passive_${i}` as keyof LeagueItem] as string | undefined;
+    const passiveName = item[`passive_${i}_name` as keyof LeagueItem] ?? ("Passive" as string);
 
     if (passive !== undefined) {
       textJSXList.push(<PassiveLine key={`passive_${i}`} heading={passiveName} body={passive} />);

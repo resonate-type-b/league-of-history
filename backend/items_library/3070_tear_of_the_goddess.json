@@ -1,9 +1,9 @@
 [
   {
     "patch_version": "14.19",
-    "unique_passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge to grant 3 bonus mana, increased to 6 if they are a champion, up to maximum of 360 bonus mana.",
-    "unique_passive_2_name": "HELPING HAND",
-    "unique_passive_2": "Basic attacks deal 5 bonus physical damage on-hit against minions."
+    "passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge to grant 3 bonus mana, increased to 6 if they are a champion, up to maximum of 360 bonus mana.",
+    "passive_2_name": "HELPING HAND",
+    "passive_2": "Basic attacks deal 5 bonus physical damage on-hit against minions."
   },
   {
     "patch_version": "14.3",
@@ -11,9 +11,9 @@
   },
   {
     "patch_version": "14.1",
-    "unique_passive_2_name": null,
-    "unique_passive_2": null,
-    "unique_passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge to grant 3 bonus mana, increased to 6 if they are a champion, up to maximum of 360 bonus mana. Basic attacks deal 5 bonus physical damage on-hit against minions."
+    "passive_2_name": null,
+    "passive_2": null,
+    "passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge to grant 3 bonus mana, increased to 6 if they are a champion, up to maximum of 360 bonus mana. Basic attacks deal 5 bonus physical damage on-hit against minions."
   },
   {
     "patch_version": "10.25",
@@ -23,7 +23,7 @@
     "patch_version": "10.24",
     "mp": 240,
     "max_mana": 360,
-    "unique_passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 360 bonus mana.",
+    "passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 360 bonus mana.",
     "motd": "Bugfix: Mana charge no longer triggers off abilities used on Gangplank's Powder Keg."
   },
   {
@@ -33,9 +33,9 @@
     "gold_cost": 400,
     "components": null,
     "mp": 150,
-    "unique_passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 450 bonus mana.",
-    "unique_passive_2_name": "FOCUS",
-    "unique_passive_2": "Basic attacks deal 5 bonus physical damage on-hit against minions.",
+    "passive_1": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 450 bonus mana.",
+    "passive_2_name": "FOCUS",
+    "passive_2": "Basic attacks deal 5 bonus physical damage on-hit against minions.",
     "buy_group": ["MANA CHARGE"]
   },
   {
@@ -46,25 +46,25 @@
   {
     "patch_version": "8.9",
     "gold_cost": 850,
-    "unique_passive_2": "Refunds 10% of mana spent.",
-    "unique_passive_1": "Each time you spend mana, your maximum mana increases by 4 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds.",
+    "passive_2": "Refunds 10% of mana spent.",
+    "passive_1": "Each time you spend mana, your maximum mana increases by 4 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds.",
     "motd": "Change: now preserves current mana percent instead of restoring the same amount of maximum mana gained."
   },
 
   {
     "patch_version": "8.1",
-    "unique_passive_1": "Each time you spend mana, your maximum mana increases by 4 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds."
+    "passive_1": "Each time you spend mana, your maximum mana increases by 4 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds."
   },
 
   {
     "patch_version": "7.21",
-    "unique_passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds."
+    "passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds."
   },
 
   {
     "patch_version": "6.9",
     "mana_regen": null,
-    "unique_passive_2": "Refunds 15% of mana spent."
+    "passive_2": "Refunds 15% of mana spent."
   },
 
   {
@@ -81,19 +81,19 @@
   {
     "patch_version": "4.3",
     "mp5": 6,
-    "unique_passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4 (occurs up to 2 times every 8 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds."
+    "passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4 (occurs up to 2 times every 8 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds."
   },
 
   {
     "patch_version": "3.9",
-    "unique_passive_1_name": "MANA CHARGE",
-    "unique_passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4 (occurs up to 2 times every 8 seconds). Bonus caps at +750 mana"
+    "passive_1_name": "MANA CHARGE",
+    "passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4 (occurs up to 2 times every 8 seconds). Bonus caps at +750 mana"
   },
   {
     "patch_version": "1.0.0.152",
     "gold_cost": 700,
     "mp": 250,
-    "unique_passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +750 mana"
+    "passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +750 mana"
   },
 
   {
@@ -103,21 +103,21 @@
   },
   {
     "patch_version": "1.0.0.82",
-    "unique_passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +1000 mana"
+    "passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +1000 mana"
   },
   {
     "patch_version": "0.9.25.21",
-    "unique_passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +600 mana"
+    "passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +600 mana"
   },
 
   {
     "patch_version": "0.9.22.16",
-    "unique_passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +750 mana"
+    "passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +750 mana"
   },
 
   {
     "patch_version": "0.8.22.115",
-    "unique_passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown."
+    "passive_1": "Each time you cast a spell, your maximum mana increases by 4. This effect has a 3 second cooldown."
   },
   {
     "patch_version": "initial",
@@ -127,6 +127,6 @@
     "components": [1004, 1027],
     "mp": 350,
     "mp5": 5,
-    "unique_passive_1": "Each time you cast a spell, your maximum mana increases by 4."
+    "passive_1": "Each time you cast a spell, your maximum mana increases by 4."
   }
 ]

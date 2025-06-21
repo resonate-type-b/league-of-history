@@ -59,8 +59,8 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps): React.J
   const textJSXList: React.JSX.Element[] = [];
 
   for (const i of [1, 2, 3, 4]) {
-    const passive = `unique_passive_${i}` as keyof DiffLeagueItem;
-    const passiveName = `unique_passive_${i}_name` as keyof DiffLeagueItem;
+    const passive = `passive_${i}` as keyof DiffLeagueItem;
+    const passiveName = `passive_${i}_name` as keyof DiffLeagueItem;
 
     if (item[passive] !== undefined) {
       textJSXList.push(
