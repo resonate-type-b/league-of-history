@@ -1,0 +1,90 @@
+[
+  {
+    "patch_version": "14.1",
+    "passive_1_name": "RAGE",
+    "passive_1": "Basic attacks on-hit grant [20|10] bonus movement speed for 2 seconds."
+  },
+  {
+    "patch_version": "12.10",
+    "passive_1": "After dealing physical damage to an enemy champion, heal [1.6%|0.8%] of maximum health over 6 seconds."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 1100,
+    "passive_1_name": "STURDY",
+    "passive_1": "After dealing physical damage to an enemy champion, heal [2%|1%] of maximum health over 6 seconds."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1250,
+    "ad": 15
+  },
+  {
+    "patch_version": "3.14",
+    "gold_cost": 1325
+  },
+  {
+    "patch_version": "3.12",
+    "gold_cost": 1350,
+    "passive_1": "Basic attacks grant [20|10] movement speed for 2 seconds on hit. Minion, monster, and champion kills grant [60|30] movement speed for 2 seconds."
+  },
+  {
+    "patch_version": "3.10a",
+    "gold_cost": 1250,
+    "passive_1_name": "RAGE",
+    "passive_1": "Basic attacks grant 20 movement speed for 2 seconds on hit. Minion, monster, and champion kills grant 60 movement speed for 2 seconds."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1465,
+    "ad": 20,
+    "hp": 200
+  },
+  {
+    "patch_version": "1.0.0.150",
+    "passive_1": "Basic attacks against enemy champion have a 25% chance of slowing them by [30%|20%] for 2 seconds."
+  },
+  {
+    "patch_version": "1.0.0.75",
+    "passive_1": "Basic attacks against enemy champion have a 25% chance of slowing them by 30% for 3 seconds.",
+    "motd": "Bugfix: Fixed a bug in which Phage was slowing for too much on the initial hit."
+  },
+
+  {
+    "patch_version": "0.9.25.34",
+    "motd": "Change: Slows from Items (Phage, Frozen Mallet, Rylai's Crystal Scepter) will no longer stack. The largest slow will take effect until duration wears then next largest slow will take effect if it’s still active."
+  },
+  {
+    "patch_version": "0.9.22.16",
+    "passive_1": "Basic attacks against enemy champion have a 25% chance of slowing them by 40% for 3 seconds.",
+    "gold_cost": 1315,
+    "motd": "Change: Slow no longer stacks with Frozen Mallet."
+  },
+  {
+    "patch_version": "20090515",
+    "gold_cost": 1290
+  },
+  {
+    "patch_version": "alpha6",
+    "gold_cost": 1190,
+    "ad": 18,
+    "passive_1": "Basic attacks against enemy champion have a 25% chance of reducing the target's armor by 15 for 5 seconds and slowing them by 40% for 3 seconds."
+  },
+  {
+    "patch_version": "alpha5",
+    "ad": 18,
+    "passive_1": "Basic attacks against enemy champion have a 18% chance of reducing the target's armor by 15 for 5 seconds and slowing them by 30% for 5 seconds."
+  },
+  {
+    "patch_version": "alpha2",
+    "item_id": 3044,
+    "item_name": "Phage",
+    "components": [1028, 1036],
+    "gold_cost": 1025,
+    "ad": 20,
+    "health": 200,
+    "passive_1_name": "ICY",
+    "passive_1": "Basic attacks against enemy champion have a 10% chance of reducing the target's armor by 20 for 5 seconds and slowing them by 30% for 5 seconds."
+  }
+]

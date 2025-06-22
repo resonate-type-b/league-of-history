@@ -1,0 +1,72 @@
+[
+  {
+    "patch_version": "14.8",
+    "motd": "Change: No longer cleanses Mordekaiser's Realm of Death."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "buy_group": ["QUICKSILVER"],
+    "passive_1": "Removes all crowd control debuffs (except Airborne) from your champion (90 second cooldown)."
+  },
+  {
+    "patch_version": "6.9",
+    "passive_1": "Removes all crowd control debuffs from your champion (90 second cooldown)."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1300
+  },
+  {
+    "patch_version": "4.20",
+    "components": [1033],
+    "gold_cost": 1250,
+    "magic_resist": 30
+  },
+  {
+    "patch_version": "3.02",
+    "gold_cost": 1550
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1660
+  },
+  {
+    "patch_version": "1.0.0.142",
+    "magic_resist": 48,
+    "gold_cost": 1640
+  },
+  {
+    "patch_version": "1.0.0.123",
+    "passive_1_name": "QUICKSILVER"
+  },
+  {
+    "patch_version": "1.0.0.120",
+    "passive_1": "Clears all negative debuffs from the owner. 90 second cooldown."
+  },
+  {
+    "patch_version": "1.0.0.111",
+    "magic_resist": 56,
+    "motd": "Note: Patch notes claim that magic resist was increased from 48. "
+  },
+  {
+    "patch_version": "1.0.0.103",
+    "passive_1": "Clears all negative debuffs from the owner. 105 second cooldown.",
+    "motd": "Bugfix: Fixed a bug that allowed it to be affected by cooldown reduction"
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "passive_1": "Clears all negative debuffs from the owner. 120 second cooldown.",
+    "gold_cost": 1440
+  },
+  {
+    "patch_version": "1.0.0.61",
+    "item_id": 3140,
+    "item_name": "Quicksilver Sash",
+    "components": [1057],
+    "gold_cost": 1640,
+    "magic_resist": 50,
+    "passive_1_name": "Active",
+    "passive_1": "Clears all negative debuffs from the owner. 150 second cooldown."
+  }
+]

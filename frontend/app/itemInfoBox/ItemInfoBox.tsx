@@ -28,11 +28,7 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
   );
 
   for (const statName of Object.keys(item) as (keyof LeagueItem)[]) {
-    if (
-      statName in itemMap &&
-      !["gold_cost"].includes(statName) &&
-      !statName.startsWith("unique_passive")
-    ) {
+    if (statName in itemMap && !["gold_cost"].includes(statName)) {
       const [descriptor, value] = formatStat(item, statName as keyof FormatterMap);
       statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
     }

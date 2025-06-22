@@ -157,14 +157,18 @@ export default function ItemHistory() {
   // TODO: display all versions of icon next to title, not just latest
   return (
     <>
-      <div className="flex flex-row justify-center items-center pt-10 gap-5">
-        <h1 className="text-5xl font-medium leading-none">{name}</h1>
-      </div>
+      <title>{`History: ${name}`}</title>
+      <h1 className="text-5xl text-center font-medium leading-none p-10">{name}</h1>
 
-      <div className="flex flex-row flex-grow flex-nowrap pt-16">
-        <title>{`History: ${name}`}</title>
+      <div className="flex flex-row flex-grow flex-nowrap">
         <div className="hidden sm:block lg:flex-1/3"></div>
-        <div className="flex-auto mx-auto sm:flex-2/3 min-w-64 max-w-128">{InfoBoxJSXList}</div>
+        <div className="flex-auto mx-auto px-3 sm:flex-2/3 min-w-64 max-w-128">
+          <div className="text-left text-xs pb-5 text-gray-400">
+            <p>Click patch numbers to see items available on that patch.</p>
+            <p>Click anywhere on an item iteration to highlight changes </p>
+          </div>
+          {InfoBoxJSXList}
+        </div>
 
         <div className="hidden sm:block sm:flex-1/3 lg:flex-1/3"></div>
       </div>
