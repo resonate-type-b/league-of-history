@@ -4,4 +4,5 @@ export default [
   index("routes/Home.tsx"),
   route("patch/", "routes/PatchOverview.tsx"),
   route("item/", "routes/itemHistory/ItemHistory.tsx"),
+  route("mondstadt/", "routes/mondstadt.tsx"),
 ] satisfies RouteConfig;
