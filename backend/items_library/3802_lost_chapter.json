@@ -1,0 +1,44 @@
+[
+  {
+    "patch_version": "14.1",
+    "gold_cost": 1200,
+    "components": [1052, 2017, 2022],
+    "buy_group": null
+  },
+  {
+    "patch_version": "13.10",
+    "gold_cost": 1100
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "haste": 10,
+    "passive_1_name": "ENLIGHTEN",
+    "passive_2_name": null,
+    "passive_2": null,
+    "buy_group": ["MYTHIC COMPONENT"]
+  },
+  {
+    "patch_version": "8.9",
+    "ap": 40,
+    "gold_cost": 1300,
+    "components": [1052, 2017, 1052]
+  },
+  {
+    "patch_version": "8.4",
+    "gold_cost": 1100,
+    "passive_2_name": "HASTE",
+    "passive_2": "+10% cooldown reduction"
+  },
+  {
+    "patch_version": "6.9",
+    "gold_cost": 900,
+    "item_id": 3802,
+    "item_name": "Lost Chapter",
+    "components": [1052, 2017],
+    "ap": 25,
+    "mp": 300,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Restores 20% of your maximum mana over 3 seconds upon leveling up."
+  }
+]

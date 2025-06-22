@@ -28,6 +28,7 @@ Below items have old icons on the wiki, but did not specify when they were updat
 - Glacial Shroud (3024)
 - Hexdrinker (3155)
 - Last Whisper (3035): This was when it had the IE icon!
+- Phage (3044): with the Stinger icon
 
 These items have unknown original recipes:
 

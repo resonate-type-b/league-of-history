@@ -1,0 +1,50 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 850,
+    "magic_resist": 45
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 900,
+    "magic_resist": 50
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 720,
+    "magic_resist": 40
+  },
+  {
+    "patch_version": "5.16",
+    "gold_cost": 800
+  },
+  {
+    "patch_version": "4.21",
+    "removed": false,
+    "components": [1033],
+    "gold_cost": 850,
+    "magic_resist": 45
+  },
+  {
+    "patch_version": "4.20",
+    "removed": true
+  },
+  {
+    "patch_version": "3.02",
+    "gold_cost": 720,
+    "magic_resist": 40
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 810,
+    "magic_resist": 45
+  },
+  {
+    "patch_version": "20090710",
+    "item_id": 1057,
+    "item_name": "Negatron Cloak",
+    "gold_cost": 740,
+    "magic_resist": 50
+  }
+]

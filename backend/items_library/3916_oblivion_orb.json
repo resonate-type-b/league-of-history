@@ -1,0 +1,60 @@
+[
+  {
+    "patch_version": "14.19",
+    "ap": 25
+  },
+  {
+    "patch_version": "14.1",
+    "passive_1_name": "GRIEVOUS WOUNDS"
+  },
+  {
+    "patch_version": "13.7",
+    "motd": "Change: Now applies Grievous Wounds even if the damage dealt was completely mitigated by a shield."
+  },
+  {
+    "patch_version": "13.1b",
+    "ap": 30,
+    "passive_1": "Dealing magic damage against champions applies 40%  Grievous Wounds for 3 seconds."
+  },
+  {
+    "patch_version": "12.11",
+    "ap": 35,
+    "passive_1": "Dealing magic damage against champions applies 25%  Grievous Wounds for 3 seconds."
+  },
+  {
+    "patch_version": "12.10",
+    "ap": 35,
+    "passive_1": "Dealing magic damage against champions applies 30%  Grievous Wounds for 3 seconds."
+  },
+  {
+    "patch_version": "11.1",
+    "ap": 35,
+    "passive_1": "Dealing magic damage against champions applies 40%  Grievous Wounds for 3 seconds."
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "icon_version": 1,
+    "gold_cost": 800,
+    "ap": 30,
+    "hp": null,
+    "passive_1_name": "CURSED",
+    "passive_1": "Dealing magic damage against champions applies 40%  Grievous Wounds for 2 seconds."
+  },
+  {
+    "patch_version": "9.2",
+    "gold_cost": 1600,
+    "ap": 20
+  },
+  {
+    "patch_version": "8.4",
+    "item_id": 3916,
+    "item_name": "Oblivion Orb",
+    "components": [1028, 1052],
+    "gold_cost": 1500,
+    "ap": 25,
+    "hp": 200,
+    "passive_1_name": "TOUCH OF DEATH",
+    "passive_1": "+15 magic penetration"
+  }
+]
