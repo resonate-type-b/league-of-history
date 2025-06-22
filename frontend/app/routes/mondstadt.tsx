@@ -40,10 +40,11 @@ export default function Home() {
     setImages((prev) => [...prev, { x: x, y: y, size: size, rare: rare }]);
   };
 
-  useFavicon("/favicon.ico");
+  useFavicon("/ehe/favicon.ico");
 
   return (
     <div onClick={handleClick} className="w-screen h-screen relative bg-[url(/ehe/background.png)]">
+      <title>Mondstadt</title>
       {images.map((coord, idx) => {
         const src = coord.rare ? "/ehe/EXTRAEHE.png" : "/ehe/EHE.png";
         const size = coord.rare ? coord.size : coord.size / 1.2;
