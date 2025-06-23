@@ -79,6 +79,7 @@
     "patch_version": "20090606",
     "item_id": 3111,
     "item_name": "Mercury's Treads",
+    "category": "Boots",
     "components": [1001, 1033],
     "gold_cost": 850,
     "magic_resist": 35,

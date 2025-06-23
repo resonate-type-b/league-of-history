@@ -6,6 +6,7 @@
   {
     "patch_version": "14.1",
     "item_name": "Shattered Armguard",
+    "category": "Transforms",
     "components": [2420],
     "item_id": 2421,
     "ap": 45,

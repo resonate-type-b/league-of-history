@@ -4,9 +4,10 @@ import csv
 from sqlalchemy import insert
 from conn import session_factory
 from orm_model import Patch
+from pathlib import Path
 
 
-def import_patch_history_data(filepath: str):
+def import_patch_history_data(filepath: str | Path):
     insert_list: list[dict[str, str | date | int]] = []
 
     with open(filepath, mode='r', newline='') as csvfile:

@@ -18,7 +18,7 @@
     "item_id": 3013,
     "item_name": "Synchronized Souls",
     "components": [3010],
-    "quest_reward": true,
+    "category": "Boots",
     "gold_cost": 900,
     "movespeed_flat": 45,
     "passive_1_name": "UNIQUE",

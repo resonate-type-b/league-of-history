@@ -31,6 +31,7 @@
   {
     "patch_version": "initial",
     "item_name": "Boots of Speed",
+    "category": "Boots",
     "item_id": 1001,
     "gold_cost": 250,
     "passive_1_name": "ENHANCED MOVEMENT",

@@ -20,7 +20,7 @@
     "item_id": 3866,
     "item_name": "Runic Compass",
     "components": [3865],
-    "quest_reward": true,
+    "category": "Transforms",
     "gold_cost": 400,
     "health": 100,
     "hp_regen": 50,

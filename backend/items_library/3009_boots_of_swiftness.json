@@ -79,6 +79,7 @@
     "patch_version": "initial",
     "item_id": 3009,
     "item_name": "Boots of Swiftness",
+    "category": "Boots",
     "components": [1001],
     "gold_cost": 1000,
     "passive_1_name": "ENHANCED MOVEMENT",

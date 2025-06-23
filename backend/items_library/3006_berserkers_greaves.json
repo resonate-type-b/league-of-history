@@ -60,6 +60,7 @@
     "patch_version": "initial",
     "item_id": 3006,
     "item_name": "Berserker's Greaves",
+    "category": "Boots",
     "components": [1001, 1042],
     "gold_cost": 920,
     "aspd": 30,

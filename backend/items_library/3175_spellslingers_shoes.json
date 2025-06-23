@@ -9,6 +9,7 @@
     "item_id": 3175,
     "item_name": "Spellslinger's Shoes",
     "components": [3020],
+    "category": "Boots",
     "gold_cost": 1850,
     "movespeed_flat": 50,
     "magic_pen_flat": 18,

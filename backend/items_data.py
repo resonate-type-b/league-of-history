@@ -1,6 +1,8 @@
-from sqlalchemy import insert
+from sqlalchemy import insert, update
 from pydantic_model import ItemModel
 from typing import Sequence
+from sqlalchemy import select
+from collections import defaultdict
 
 from conn import session_factory
 from orm_model import Item
@@ -27,7 +29,8 @@ def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -
     # default values to assume for an initial item definition goes here
     curr_definition: StatDictType = {
         "icon_version": 0,
-        "reworked": None
+        "reworked": None,
+        "category": ""
     }
 
     removed = False
@@ -51,6 +54,10 @@ def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -
         # if the item is currently in a removed state, don't bother adding it to the list
         if removed:
             continue
+
+        # the jsons are allowed to set category = null. We need to make sure it defaults to empty string.
+        if curr_definition["category"] is None:
+            curr_definition["category"] = ""
 
         curr_definition["patch_version"] = patch
         ItemModel.model_validate(curr_definition)
@@ -79,3 +86,22 @@ def insert_items_data(items: Sequence[ItemModel]):
             insert(Item),
             item_dicts
         )
+
+
+def categorise_final_items():
+    components_by_patch: dict[str, set[int]] = defaultdict(set)
+    update_list: list[dict[str, str | int]] = []
+    with session_factory.begin() as session:
+        all_items = session.execute(select(Item.item_id, Item.category, Item.components, Item.patch_version)).all()
+
+        for item_id, category, components, patch_version in all_items:
+            if components is not None and category != "Transforms":
+                components_by_patch[patch_version].update(components)
+
+        for item_id, category, components, patch_version in all_items:
+            item_id = int(item_id)
+            if item_id not in components_by_patch[patch_version] and category == "":
+                update_list.append(dict(item_id=item_id, patch_version=patch_version, category="Final"))
+
+        if update_list:
+            session.execute(update(Item), update_list)

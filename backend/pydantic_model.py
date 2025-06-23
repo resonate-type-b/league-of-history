@@ -10,6 +10,7 @@ class ItemModel(BaseModel):
     item_name: str = Field(max_length=50)
     gold_cost: int
     icon_version: int
+    category: str
     components: Optional[list[int]] = None
     hp: Optional[float] = None
     hp5: Optional[float] = None
@@ -50,7 +51,6 @@ class ItemModel(BaseModel):
     passive_4_name: Optional[str] = Field(max_length=50, default=None)
     buy_group: Optional[list[str]] = None
     motd: Optional[str] = Field(max_length=1000, default=None)  # for bugfix/hotfix messages
-    quest_reward: Optional[bool] = None
     reworked: Optional[bool] = None
 
     model_config = ConfigDict(from_attributes=True)
