@@ -3,9 +3,9 @@
 # https://resonate.moe
 
 - Only tracks stats, does not track system changes such as sellback price
-- Only bugfixes that could constitute a meaningful change in power level is included.
+- Only bugfixes that could constitute a meaningful change in gameplay is included. Blatant exploits (e.g. duplicating for free gold) are also excluded.
   - Examples included: attacking wards disabling out of combat bonuses, item giving the wrong amount of stats.
-  - Examples of excluded changes: tooltips, visual bugs, stat tracking, refund related (does not affect balance), lifesteal incorrectly applying to wards (insignificant), auras sometimes fail to apply at edge of range (rare edge case)
+  - Examples excluded: tooltips, visual bugs, stat tracking, shop related, lifesteal incorrectly applying to wards (insignificant), auras sometimes fail to apply at edge of range (rare edge case)
 - Hotfixes are displayed as a message inside the parent patch. The infobox itself shows the item after hotfixes.
 - Exact formulae for effects such as 'based on missing health' aren't included.
 - Though best effort is made preserve the the exact wording of the passives, there is no guarantee of it being so. For example, tooltip updates without balance changes are frequently not tracked.
@@ -29,6 +29,7 @@ Below items have old icons on the wiki, but did not specify when they were updat
 - Hexdrinker (3155)
 - Last Whisper (3035): This was when it had the IE icon!
 - Phage (3044): with the Stinger icon
+- Zeal (3086): Sheen icon
 
 These items have unknown original recipes:
 
@@ -41,3 +42,5 @@ These items have item_ids changed during their lives
 Some alpha/beta items do not have an ID listed on the wiki, and have been given one manually:
 
 - Sage's Ring (9000)
+
+Watchful Wardstone and Stirring Wardstone somehow share the same item ID of 4638. Stirring Wardstone has been reassigned 9001.

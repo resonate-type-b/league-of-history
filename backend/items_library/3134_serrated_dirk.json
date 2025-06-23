@@ -1,0 +1,67 @@
+[
+  {
+    "patch_version": "14.11",
+    "buy_group": ["DIRK"]
+  },
+  {
+    "patch_version": "14.10",
+    "lethality": 10,
+    "passive_1_name": null,
+    "passive_1": null
+  },
+  {
+    "patch_version": "14.6",
+    "ad": 20
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 1000,
+    "ad": 25
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "passive_1_name": "GOUGE"
+  },
+  {
+    "patch_version": "9.24b",
+    "ad": 30
+  },
+  {
+    "patch_version": "9.23",
+    "passive_2_name": null,
+    "passive_2": null
+  },
+
+  {
+    "patch_version": "7.24b",
+    "passive_1": "+10 Lethality."
+  },
+  {
+    "patch_version": "7.22",
+    "passive_1": "+12 Lethality."
+  },
+  {
+    "patch_version": "7.14",
+    "passive_2_name": "HEADHUNTER",
+    "passive_2": "After killing any enemy, your next damage spell will deal 40 bonus physical damage (30 second cooldown)."
+  },
+  {
+    "patch_version": "6.22",
+    "ad": 25,
+    "passive_1": "+10 Lethality.",
+    "passive_2": "+20 out-of-combat movement speed."
+  },
+  {
+    "patch_version": "5.22",
+    "item_id": 3134,
+    "item_name": "Serrated Dirk",
+    "components": [1036, 1036],
+    "gold_cost": 1100,
+    "ad": 20,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+10 armor penetration.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "After killing a unit, your next basic attack or single target spell deals 15 bonus damage."
+  }
+]

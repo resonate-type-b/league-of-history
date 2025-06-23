@@ -1,0 +1,35 @@
+[
+  {
+    "patch_version": "14.19",
+    "passive_1_name": "SHARED RICHES",
+    "passive_2_name": "SUPPORT QUEST",
+    "passive_2": "Earn 800 gold through *Shared Riches* to automatically upgrade to Bounty of Worlds, increasing the Warding active to instead have 4 wards in stock."
+  },
+  {
+    "patch_version": "14.6",
+    "passive_1": "Grants a charge every 20 seconds, up to 3 charges. When an allied champion is within 1050 units of you, consume a charge in two ways:\n\n• Kill a minion by any means, granting you 20 gold and the nearest allied champion kill gold. Damaging a minion below below [50%|30%] of its maximum health  executes it.\n\n•Damage an enemy champion or structure with a basic attack or ability, up to one per attack or cast,[24|22] gold.",
+    "passive_2": "Earn 800 gold through QUEST to automatically upgrade to Bounty of Worlds, increasing the Warding active to instead have 4 wards in stock.",
+    "buy_group": ["STARTER"]
+  },
+  {
+    "patch_version": "14.4",
+    "passive_1": "Grants a charge every 20 seconds, up to 3 charges. When an allied champion is within 1050 units of you, consume a charge in two ways:\n\n• Kill a minion by any means, granting you 28 gold and the nearest allied champion kill gold. Damaging a minion below below [50%|30%] of its maximum health  executes it.\n\n•Damage an enemy champion or structure with a basic attack or ability, up to one per attack or cast,[34|32] gold."
+  },
+  {
+    "patch_version": "14.1",
+    "item_id": 3866,
+    "item_name": "Runic Compass",
+    "components": [3865],
+    "quest_reward": true,
+    "gold_cost": 400,
+    "health": 100,
+    "hp_regen": 50,
+    "mp_regen": 50,
+    "gp10": 5,
+    "passive_1_name": "QUEST",
+    "passive_1": "Grants a charge every 18 seconds, up to 3 charges. When an allied champion is within 1050 units of you, consume a charge in two ways:\n\n• Kill a minion by any means, granting you 28 gold and the nearest allied champion kill gold. Damaging a minion below below [50%|30%] of its maximum health  executes it.\n\n•Damage an enemy champion or structure with a basic attack or ability, up to one per attack or cast,[34|32] gold.",
+    "passive_2": "Earn 1000 gold through QUEST to automatically upgrade to Bounty of Worlds, increasing the Warding active to instead have 4 wards in stock.",
+    "passive_3": "Receive diminishing gold from excessive minion kills.",
+    "buy_group": ["SUPPORT", "JUNGLE"]
+  }
+]

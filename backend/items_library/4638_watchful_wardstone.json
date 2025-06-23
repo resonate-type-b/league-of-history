@@ -1,0 +1,48 @@
+[
+  {
+    "patch_version": "14.1",
+    "hp": 150,
+    "armor": 10,
+    "magic_resist": 15,
+    "haste": 10,
+    "mp_regen": null,
+    "passive_2_name": null,
+    "passive_2": null
+  },
+  {
+    "patch_version": "13.10",
+    "mp_regen": 50,
+    "passive_2_name": "BLESSINGS OF IXTAL",
+    "passive_2": "Increases bonus attack damage, bonus health, ability power and ability haste by 8%.",
+    "passive_4_name": "REQUIREMENT",
+    "passive_4": "Can only be purchased after completing a support quest (An icon representing Gold 1000 generated gold)."
+  },
+  {
+    "patch_version": "11.11",
+    "reworked": true,
+    "components": null,
+    "quest_reward": null,
+    "haste": 10,
+    "hp": 150,
+    "passive_2_name": "UNIQUE",
+    "passive_2": "Transforms into Vigilant Wardstone after completing a support quest (1000 generated gold) and reaching level 13.",
+    "passive_4_name": null,
+    "passive_4": null
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 4638,
+    "item_name": "Watchful Wardstone",
+    "components": [9001],
+    "quest_reward": true,
+    "gold_cost": 1100,
+    "haste": 25,
+    "passive_1_name": "ARCANE CACHE",
+    "passive_1": "This item can store up to 3 purchased Control Wards.",
+    "passive_2_name": "VISIONS OF IXTAL",
+    "passive_2": "Increase your Stealth Ward and Control Ward caps by 1.",
+    "passive_4_name": "REQUIREMENT",
+    "passive_4": "Requires level 13 and 20 Stealth Wards or Totem Wards placed to purchase.",
+    "buy_group": ["SIGHTSTONE"]
+  }
+]

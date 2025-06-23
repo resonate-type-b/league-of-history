@@ -1,0 +1,16 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 775,
+    "ad": 15
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1036],
+    "item_id": 6690,
+    "item_name": "Rectrix",
+    "gold_cost": 900,
+    "ad": 20,
+    "movespeed_percent": 4
+  }
+]

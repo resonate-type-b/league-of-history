@@ -1,0 +1,33 @@
+[
+  {
+    "patch_version": "14.6",
+    "lethality": 5
+  },
+  {
+    "patch_version": "14.1",
+    "removed": false,
+    "icon_version": 1,
+    "haste": 10,
+    "lethality": 8,
+    "passive_1_name": null,
+    "passive_1": null
+  },
+  {
+    "patch_version": "5.22",
+    "removed": true
+  },
+  {
+    "patch_version": "1.0.0.153",
+    "passive_1": "+10 armor penetration. +10% cooldown reduction"
+  },
+  {
+    "patch_version": "0.9.25.24",
+    "item_id": 2020,
+    "item_name": "The Brutalizer",
+    "components": [1036, 1036],
+    "gold_cost": 1337,
+    "ad": 25,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+15 armor penetration. +10% cooldown reduction"
+  }
+]

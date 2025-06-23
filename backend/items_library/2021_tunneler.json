@@ -1,0 +1,15 @@
+[
+  {
+    "patch_version": "14.6",
+    "gold_cost": 1150
+  },
+  {
+    "patch_version": "14.1",
+    "item_id": 2021,
+    "item_name": "Tunneler",
+    "components": [1036, 1028],
+    "gold_cost": 1100,
+    "ad": 15,
+    "hp": 250
+  }
+]

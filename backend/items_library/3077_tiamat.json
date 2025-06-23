@@ -1,0 +1,155 @@
+[
+  {
+    "patch_version": "14.2",
+    "motd": "Change: Cast time now shifts to be equal to the caster's attack windup time if it would be lower than the usual cast time."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1036, 1036],
+    "ad": 20,
+    "passive_2_name": "CRESENT",
+    "passive_2": "Deal 75% AD physical damage to enemies in a radius centered around you (10 second cooldown).",
+    "buy_group": ["CLEAVE"],
+    "motd": "Hotfix: Cleave AD ratio increased to 75% AD from 60% AD. Cast time changed to champion's auto attack windup from 0.2 seconds."
+  },
+  {
+    "patch_version": "12.23",
+    "passive_1": "Basic attacks deal [40%|20%] AD physical damage to other nearby enemies."
+  },
+  {
+    "patch_version": "12.22",
+    "passive_1": "Basic attacks deal [50%|25%] AD physical damage to other nearby enemies."
+  },
+  {
+    "patch_version": "12.21",
+    "icon_version": 2
+  },
+  {
+    "patch_version": "10.23",
+    "components": [1037],
+    "reworked": true,
+    "icon_version": 1,
+    "gold_cost": 1200,
+    "hp_regen": null,
+    "passive_2_name": null,
+    "passive_2": null,
+    "passive_1_name": "CLEAVE",
+    "passive_1": "Basic attacks deal 60% – 12% (based on distance) AD physical damage to other nearby enemies.",
+    "passive_3": null,
+    "buy_group": ["HYDRA"]
+  },
+  {
+    "patch_version": "10.5",
+    "motd": "Change: Crescent center point is now at champion's basic attack range (up to 200 units), instead of 125 units in front."
+  },
+  {
+    "patch_version": "10.4",
+    "motd": "Hotfix-Bugfix: Fixed a bug where Poppy and Rengar could use its active effect from range."
+  },
+  {
+    "patch_version": "8.24b",
+    "gold_cost": 1325
+  },
+  {
+    "patch_version": "8.8",
+    "motd": "Bugfix: Fixed a bug where it counted towards procs for Electrocute or Phase Rush."
+  },
+  {
+    "patch_version": "7.24b",
+    "ad": 25
+  },
+  {
+    "patch_version": "6.6",
+    "components": [1036, 1036, 1006],
+    "ad": 20,
+    "passive_1_name": "CLEAVE",
+    "passive_1": "Basic attacks deal 20% to 60% of your AD physical damage to units around your target."
+  },
+  {
+    "patch_version": "6.1",
+    "gold_cost": 1200
+  },
+  {
+    "patch_version": "5.22",
+    "components": [1037, 1006],
+    "gold_cost": 1250,
+    "ad": 30,
+    "hp_regen": 50,
+    "passive_1_name": null,
+    "passive_1": null
+  },
+  {
+    "patch_version": "4.20",
+    "hp_regen": 100,
+    "hp5": null
+  },
+  {
+    "patch_version": "3.6",
+    "gold_cost": 1900,
+    "ad": 40
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "reworked": true,
+    "components": [1037, 1036, 1006, 1006],
+    "gold_cost": 2300,
+    "mp5": null,
+    "passive_1_name": "CLEAVE",
+    "passive_1": "Your attacks deal up to 60% of your attack damage to units around your target, decaying down to 20% near the edge.",
+    "passive_2_name": "CRESENT",
+    "passive_2": "Deals up to 100% of your attack damage to units around you, decaying down to 60% near the edge - 10 second cooldown.",
+    "passive_3_name": "REQUIREMENT",
+    "passive_3": "Melee Only"
+  },
+  {
+    "patch_version": "1.0.0.112",
+    "ad": 50,
+    "mp5": 5
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "gold_cost": 2070
+  },
+  {
+    "patch_version": "0.9.25.34",
+    "gold_cost": 2270,
+    "passive_1": "Your attacks Splash, dealing Physical Damage in 185 range around the target."
+  },
+  {
+    "patch_version": "0.9.22.16",
+    "passive_1": "Your attacks Splash, dealing Magic Damage in 185 range around the target."
+  },
+  {
+    "patch_version": "0.9.22.15",
+    "components": [1037, 1004, 1006],
+    "gold_cost": 2320,
+    "hp5": 15,
+    "mp5": 4
+  },
+  {
+    "patch_version": "0.8.21.110",
+    "ad": 42
+  },
+  {
+    "patch_version": "20090515",
+    "ad": 40,
+    "hp5": 22,
+    "mp5": 7
+  },
+  {
+    "patch_version": "20090509",
+    "ad": 45
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3077,
+    "item_name": "Tiamat",
+    "components": [1037, 1007, 1005],
+    "gold_cost": 2755,
+    "ad": 50,
+    "hp5": 25,
+    "mp5": 8,
+    "passive_1": "Your attacks Splash, dealing Magic Damage in 175 range around the target.",
+    "motd": "Note: Exact cost, recipe, and effects uncertain."
+  }
+]

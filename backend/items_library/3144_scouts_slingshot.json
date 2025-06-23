@@ -1,0 +1,21 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 600
+  },
+  {
+    "patch_version": "14.12",
+    "components": [1042, 1042],
+    "gold_cost": 800
+  },
+  {
+    "patch_version": "14.10",
+    "gold_cost": 900,
+    "aspd": 20,
+    "item_id": 3144,
+    "item_name": "Scout's Slingshot",
+    "components": [1042],
+    "passive_1_name": "BULLSEYE",
+    "passive_1": "Damaging an enemy champion deals 40 bonus magic damage (40 second cooldown, reduced by 1 second on-attack)."
+  }
+]

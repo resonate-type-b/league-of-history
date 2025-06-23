@@ -1,0 +1,14 @@
+[
+  { "patch_version": "11.11", "removed": true },
+  {
+    "patch_version": "10.23",
+    "item_id": 9001,
+    "item_name": "Stirring Wardstone",
+    "gold_cost": 1100,
+    "passive_1_name": "ARCANE CACHE",
+    "passive_1": "This item can store up to 3 purchased Control Wards.",
+    "passive_2_name": "BLOOMING EMPIRE",
+    "passive_2": "Placing 20  Stealth Wards or Totem Wards transforms this item into Watchful Wardstone.",
+    "buy_group": ["SIGHTSTONE"]
+  }
+]

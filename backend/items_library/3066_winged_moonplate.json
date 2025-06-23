@@ -1,0 +1,23 @@
+[
+  {
+    "patch_version": "14.19",
+    "hp": 200,
+    "movespeed_percent": 4
+  },
+  {
+    "patch_version": "14.1",
+    "movespeed_percent": 5,
+    "passive_1_name": null,
+    "passive_1": null
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 3066,
+    "item_name": "Winged Moonplate",
+    "components": [1028],
+    "gold_cost": 800,
+    "hp": 150,
+    "passive_1_name": "FLIGHT",
+    "passive_1": "+5% movement speed."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "patch_version": "14.19",
+    "magic_resist": 35
+  },
+  {
+    "patch_version": "14.6",
+    "components": [1028, 1006, 1033],
+    "hp": 200,
+    "hp_regen": 100,
+    "passive_1_name": null,
+    "passive_1": null
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 1250,
+    "passive_1_name": "INCORPOREAL",
+    "passive_1": "After taking damage, gain 150% base health regeneration for up to 10 seconds. Duration increases with damage taken."
+  },
+  {
+    "patch_version": "7.9",
+    "magic_resist": 25
+  },
+  {
+    "patch_version": "6.9",
+    "gold_cost": 1200,
+    "hp": 250,
+    "magic_resist": 30
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1100,
+    "magic_resist": 35
+  },
+  {
+    "patch_version": "5.16",
+    "magic_resist": 40
+  },
+  {
+    "patch_version": "5.3",
+    "passive_1": "grants +150% base health regen per 5 seconds for up to 10 seconds after taking damage from an enemy champion."
+  },
+  {
+    "patch_version": "4.20",
+    "components": [1028, 1033],
+    "gold_cost": 1200,
+    "magic_resist": 35,
+    "passive_1": "grants +100% base health regen per 5 seconds for up to 10 seconds after taking damage from an enemy champion."
+  },
+  {
+    "patch_version": "3.10",
+    "gold_cost": 1400,
+    "item_id": 3211,
+    "item_name": "Spectre's Cowl",
+    "components": [1028, 1057],
+    "hp": 200,
+    "magic_resist": 45,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "grants +15 health regen per 5 seconds for up to 10 seconds after taking damage from an enemy champion."
+  }
+]
