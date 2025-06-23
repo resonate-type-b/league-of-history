@@ -43,7 +43,9 @@ export default function Home() {
   useFavicon("/ehe/favicon.ico");
 
   return (
-    <div onClick={handleClick} className="w-screen h-screen relative bg-[url(/ehe/background.png)]">
+    <div
+      onClick={handleClick}
+      className="w-screen h-screen relative bg-[url(/ehe/background.png)] bg-center bg-cover">
       <title>Mondstadt</title>
       {images.map((coord, idx) => {
         const src = coord.rare ? "/ehe/EXTRAEHE.png" : "/ehe/EHE.png";

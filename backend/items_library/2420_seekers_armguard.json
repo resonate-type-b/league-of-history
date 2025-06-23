@@ -1,0 +1,82 @@
+[
+  {
+    "patch_version": "14.19",
+    "ap": 40
+  },
+  {
+    "patch_version": "14.1",
+    "reworked": true,
+    "components": [1052, 1052, 1029],
+    "ap": 45,
+    "armor": 25,
+    "gold_cost": 1600,
+    "passive_1_name": "TIME STOP",
+    "passive_1": "Put yourself in  stasis for 2.5 seconds, rendering you  untargetable and  invulnerable for the duration but also unable to move, declare basic attacks, cast abilities, use summoner spells, or activate items. Transforms into Shattered Armguard when activated, which cannot be activated again.",
+    "buy_group": ["STASIS"]
+  },
+  {
+    "patch_version": "13.19",
+    "armor": 20
+  },
+  {
+    "patch_version": "12.17",
+    "ap": 30
+  },
+  {
+    "patch_version": "11.6",
+    "passive_1": "Killing a unit grants 0.5 bonus armor, up to a maximum of 15."
+  },
+  {
+    "patch_version": "11.3",
+    "gold_cost": 1000
+  },
+  {
+    "patch_version": "10.25",
+    "ap": 20
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "components": [1029, 1052],
+
+    "ap": 30,
+    "armor": 15,
+    "gold_cost": 900,
+    "passive_1_name": "WITCH'S PATH",
+    "passive_1": "Killing a unit grants 1 bonus armor, up to a maximum of 30."
+  },
+  {
+    "patch_version": "8.9",
+    "gold_cost": 1100
+  },
+  {
+    "patch_version": "6.3",
+    "armor": 30,
+    "components": [1029, 1052, 1029]
+  },
+  {
+    "patch_version": "5.22",
+    "ap": 20,
+    "armor": 25
+  },
+  {
+    "patch_version": "4.20",
+    "ap": 25,
+    "components": [1029, 1052]
+  },
+  {
+    "patch_version": "3.04",
+    "ap": 20
+  },
+  {
+    "patch_version": "3.01",
+    "item_name": "Seeker's Armguard",
+    "components": [1029, 1052, 1029],
+    "item_id": 2420,
+    "ap": 25,
+    "armor": 30,
+    "gold_cost": 1160,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Kills grant 0.5 bonus armor and ability power. This bonus stacks up to 30 times."
+  }
+]

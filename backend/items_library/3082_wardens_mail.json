@@ -1,0 +1,120 @@
+[
+  {
+    "patch_version": "14.19",
+    "passive_1": "Every first incoming instance of post-mitigation basic damage per cast instance is reduced by 15, with a maximum of 20% reduction each."
+  },
+  {
+    "patch_version": "13.8",
+    "passive_1": "Every first incoming instance of post-mitigation basic damage per cast instance is reduced by 3.5 per 1000 maximum health, minimum 5, maximum 20% reduction each"
+  },
+  {
+    "patch_version": "11.11",
+    "passive_1": "Every first incoming instance of post-mitigation basic damage per cast instance is reduced by 3.5 per 1000 maximum health, minimum 5, maximum 40% reduction each",
+    "motd": "Change: The 'frst instance per cast' limitation was not part of this patch, but was introduced later, undocumented in an unknown patch. It prevents multiple reductions with attacks such as Ashe's Ranger's Focus, Camille's Precision Protocol, or Zeri's Burst Fire."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "passive_1_name": "ROCK SOLID",
+    "passive_1": "Reduce incoming damage from basic attacks by 5 per 1000 maximum health, capped at 40% of the attack's damage."
+  },
+  {
+    "patch_version": "6.3",
+    "gold_cost": 1000
+  },
+  {
+    "patch_version": "5.22",
+    "armor": 40
+  },
+  {
+    "patch_version": "5.16",
+    "gold_cost": 1100
+  },
+  {
+    "patch_version": "4.20",
+    "gold_cost": 1050,
+    "armor": 45,
+    "components": [1029, 1029]
+  },
+  {
+    "patch_version": "4.18",
+    "passive_1": "If you are hit by a basic attack, you slow the attacker's attack speed by 15% for 1 second."
+  },
+  {
+    "patch_version": "4.10",
+    "passive_1": "If you are hit by a basic attack, you slow the attacker's attack speed by 10% for 1 second."
+  },
+  {
+    "patch_version": "4.5",
+    "components": [1031]
+  },
+  {
+    "patch_version": "3.10",
+    "gold_cost": 1000,
+    "passive_1": "If you are hit by a basic attack, you slow the attacker's attack speed by 15% for 1 second."
+  },
+  {
+    "patch_version": "3.04",
+    "passive_1": "If you are hit by a basic attack, you slow the attacker's attack speed by 15% for 1.5 seconds."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1100,
+    "components": [1029, 1029],
+    "hp5": null,
+    "passive_1_name": "COLD STEEL",
+    "passive_1": "If you are hit by a basic attack, you slow the attacker's attack speed by 20% for 1.5 seconds."
+  },
+  {
+    "patch_version": "1.0.0.107",
+    "armor": 50,
+    "hp5": 20
+  },
+  {
+    "patch_version": "1.0.0.96",
+    "motd": "Bugfix: Fixed a bug where Warden's Mail was not slowing attack speeds."
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "armor": 60,
+    "components": [1031, 1006]
+  },
+  {
+    "patch_version": "20090710",
+    "passive_1": "20% chance on being hit to slow the attacker's movement and attack speeds by 35% for 3 seconds.",
+    "motd": "Note: Patch notes claim that slows were reduced from 40%."
+  },
+  {
+    "patch_version": "20090612",
+    "passive_1": "20% chance on being hit to slow the attacker's movement and attack speeds by 60% for 3 seconds."
+  },
+  {
+    "patch_version": "20090529",
+    "passive_1": "20% chance on being hit to slow the attacker's movement and attack speeds by 50% for 3 seconds."
+  },
+  {
+    "patch_version": "20090523",
+    "passive_1": "20% chance on being hit to slow the attacker's movement and attack speeds by 40% for 3 seconds."
+  },
+  {
+    "patch_version": "20090515",
+    "passive_1": "20% chance on being hit to deal 40 damage and stun the attacker for 1 seconds.",
+    "motd": "Bugfix: Fixed a bug that caused Warden's Mail to get bonus damage from ability power."
+  },
+  {
+    "patch_version": "alpha5",
+    "passive_1": "20% chance on being hit to deal 40 damage and stun the attacker for [1|0.5] seconds.",
+    "motd": "Note: This passive was NOT unique and its proc chance stacked multiplicatively."
+  },
+  {
+    "patch_version": "initial",
+    "gold_cost": 1350,
+    "item_id": 3082,
+    "item_name": "Warden's Mail",
+    "components": [1031, 1029, 1006],
+    "armor": 81,
+    "hp5": 25,
+    "passive_1": "30% chance to take half damage from basic attacks.",
+    "motd": "Note: Exact stats, cost, and effect unknown (the passive is guesstimated from context)."
+  }
+]

@@ -5,8 +5,9 @@
   },
   {
     "patch_version": "14.19",
-    "passive_1_name": "SUPPORT QUEST",
-    "passive_2_name": "SHARED RICHES"
+    "passive_1_name": "SHARED RICHES",
+    "passive_2_name": "SUPPORT QUEST",
+    "passive_2": "Earn 500 gold through *Shared Riches* to automatically upgrade to Runic Compass, gaining the Warding active with 3 wards in stock."
   },
   {
     "patch_version": "14.6",

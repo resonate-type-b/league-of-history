@@ -1,0 +1,93 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 1200,
+    "movespeed_percent": 4
+  },
+  {
+    "patch_version": "14.10",
+    "motd": "Hotfix: Critical strike chance was increased from 15% to 20% then hotfixed back to 15%."
+  },
+  {
+    "patch_version": "13.10",
+    "gold_cost": 1100,
+    "aspd": 15,
+    "movespeed_percent": 5,
+    "passive_1_name": null,
+    "passive_1": null
+  },
+  {
+    "patch_version": "10.25",
+    "gold_cost": 1050
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 1200,
+    "aspd": 18,
+    "crit_chance": 15,
+    "passive_1_name": "ZEALOUS"
+  },
+  {
+    "patch_version": "10.11",
+    "passive_1": "+7% movement speed"
+  },
+  {
+    "patch_version": "9.23",
+    "components": [1018, 1042],
+    "gold_cost": 1400,
+    "crit_chance": 25,
+    "aspd": 12
+  },
+  {
+    "patch_version": "9.3",
+    "gold_cost": 1200
+  },
+  {
+    "patch_version": "8.11",
+    "gold_cost": 1300,
+    "crit_chance": 15
+  },
+  {
+    "patch_version": "7.9",
+    "gold_cost": 1200
+  },
+  {
+    "patch_version": "5.24",
+    "gold_cost": 1300
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 1200,
+    "aspd": 15,
+    "crit_chance": 20,
+    "movespeed_percent": null,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+5% movement speed"
+  },
+  {
+    "patch_version": "4.10",
+    "gold_cost": 1100,
+    "aspd": 20
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 1175,
+    "aspd": 18,
+    "movespeed_percent": 5
+  },
+  {
+    "patch_version": "1.0.0.140",
+    "movespeed_percent": 6
+  },
+  {
+    "patch_version": "initial",
+    "gold_cost": 1195,
+    "item_id": 3086,
+    "components": [1051, 1042],
+    "item_name": "Zeal",
+    "aspd": 20,
+    "movespeed_percent": 8,
+    "crit_chance": 10
+  }
+]

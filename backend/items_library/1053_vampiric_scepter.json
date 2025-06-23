@@ -1,0 +1,50 @@
+[
+  {
+    "patch_version": "12.10",
+    "lifesteal": 7
+  },
+  {
+    "patch_version": "12.6",
+    "lifesteal": 8
+  },
+
+  {
+    "patch_version": "10.23",
+    "icon_version": 2
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 900,
+    "ad": 15,
+    "lifesteal": 10
+  },
+  {
+    "patch_version": "4.10",
+    "lifesteal": 8
+  },
+  {
+    "patch_version": "3.10",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "components": [1036],
+    "gold_cost": 800,
+    "ad": 10
+  },
+  {
+    "patch_version": "1.0.0.136",
+    "lifesteal": 10
+  },
+  {
+    "patch_version": "0.9.22.16",
+    "lifesteal": 12
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 1053,
+    "item_name": "Vampiric Scepter",
+    "gold_cost": 450,
+    "lifesteal": 10
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "patch_version": "14.19",
+    "ap": 40
+  },
+  {
+    "patch_version": "14.1",
+    "item_name": "Shattered Armguard",
+    "components": [2420],
+    "item_id": 2421,
+    "ap": 45,
+    "armor": 25,
+    "gold_cost": 1600,
+    "buy_group": ["STASIS"]
+  }
+]

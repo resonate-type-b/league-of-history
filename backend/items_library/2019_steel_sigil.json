@@ -1,0 +1,19 @@
+[
+  {
+    "patch_version": "14.6",
+    "components": [1029, 1036, 1029]
+  },
+  {
+    "patch_version": "14.2",
+    "gold_cost": 1100
+  },
+  {
+    "patch_version": "14.1",
+    "item_id": 2019,
+    "item_name": "Steel Sigil",
+    "components": [1036, 1029],
+    "gold_cost": 1200,
+    "ad": 15,
+    "armor": 30
+  }
+]
