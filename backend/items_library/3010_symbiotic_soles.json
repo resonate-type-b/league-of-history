@@ -21,6 +21,7 @@
     "patch_version": "14.10",
     "item_id": 3010,
     "item_name": "Symbiotic Soles",
+    "category": "Boots",
     "components": [1001],
     "movespeed_flat": 35,
     "gold_cost": 900,

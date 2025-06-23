@@ -12,6 +12,7 @@
     "item_id": 3173,
     "item_name": "Chainlaced Crushers",
     "components": [3111],
+    "category": "Boots",
     "gold_cost": 2050,
     "mr": 35,
     "movespeed_flat": 50,

@@ -67,6 +67,7 @@
     "patch_version": "1.0.0.108",
     "item_name": "Ionian Boots of Lucidity",
     "item_id": 3158,
+    "category": "Boots",
     "components": [1001],
     "gold_cost": 900,
     "passive_1_name": "ENHANCED MOVEMENT",

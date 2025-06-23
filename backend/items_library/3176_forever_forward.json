@@ -14,6 +14,7 @@
     "item_name": "Forever Forward",
     "components": [3013],
     "gold_cost": 1650,
+    "category": "Boots",
     "movespeed_flat": 55,
     "passive_1_name": "VOIDBORN",
     "passive_1": "Gain Empowered Recall.",

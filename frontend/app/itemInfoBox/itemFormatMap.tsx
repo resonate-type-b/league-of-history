@@ -9,6 +9,7 @@ export type FormatterMap = {
     | "item_name"
     | "patch_version"
     | "icon_version"
+    | "category"
     | "passive_1"
     | "passive_1_name"
     | "passive_2"
@@ -20,7 +21,6 @@ export type FormatterMap = {
     | "motd"
     | "reworked"
     | "components"
-    | "quest_reward"
     | "buy_group"
   >]-?: (value: string | number | React.JSX.Element[]) => [string, React.JSX.Element];
 };

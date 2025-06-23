@@ -23,6 +23,7 @@ class Item(BaseORM):
     item_name: Mapped[str] = mapped_column(String(50))
     gold_cost: Mapped[int] = mapped_column(Integer, nullable=False)
     icon_version: Mapped[int] = mapped_column(Integer, nullable=False)
+    category: Mapped[str] = mapped_column(String(50), nullable=False)
     components: Mapped[list[int]] = mapped_column(ARRAY(Integer), nullable=True)
     hp: Mapped[float] = stat_mapped_column()
     hp5: Mapped[float] = stat_mapped_column()
@@ -65,7 +66,6 @@ class Item(BaseORM):
     buy_group: Mapped[list[str]] = mapped_column(ARRAY(String(50)), nullable=True)
     motd: Mapped[str] = mapped_column(String(1000), nullable=True)  # for bugfix/hotfix messages
     reworked: Mapped[bool] = mapped_column(Boolean, nullable=True)
-    quest_reward: Mapped[bool] = mapped_column(Boolean, nullable=True)
     patches_existing: Mapped["Patch"] = relationship(back_populates="items")
 
 
@@ -77,3 +77,6 @@ class Patch(BaseORM):
     season: Mapped[int] = mapped_column(Integer, nullable=False)
     preseason: Mapped[bool] = mapped_column(Boolean, nullable=False)
     items: Mapped[list[Item]] = relationship(back_populates="patches_existing")
+
+
+MODEL_DATATYPES = str | int | float | bool | list[int] | list[str]

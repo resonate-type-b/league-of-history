@@ -7,6 +7,7 @@
     "item_id": 3172,
     "item_name": "Gunmetal Greaves",
     "components": [3006],
+    "category": "Boots",
     "gold_cost": 1850,
     "patch_version": "25.S1.1",
     "aspd": 40,

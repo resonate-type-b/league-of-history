@@ -8,6 +8,7 @@
     "item_id": 3174,
     "item_name": "Armored Advance",
     "components": [3047],
+    "category": "Boots",
     "gold_cost": 1950,
     "armor": 40,
     "movespeed_flat": 50,

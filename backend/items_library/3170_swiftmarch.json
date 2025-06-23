@@ -9,6 +9,7 @@
     "item_id": 3170,
     "item_name": "Swiftmarch",
     "components": [3009],
+    "category": "Boots",
     "gold_cost": 1750,
     "movespeed_flat": 70,
     "passive_1_name": "FLEETFOOTED",

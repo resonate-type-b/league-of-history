@@ -1,7 +1,6 @@
 # make sure this goes on top to load the .env!
 import env_config  # type:ignore  # noqa: F401
 
-
 from pathlib import Path
 import json
 from fastapi import FastAPI
@@ -10,18 +9,19 @@ from sqlalchemy import select, desc
 from fastapi.middleware.cors import CORSMiddleware
 import os
 from datetime import date
+from collections import defaultdict
 
 from conn import engine, session_factory
-from orm_model import BaseORM, Patch, Item
+from orm_model import BaseORM, Patch, Item, MODEL_DATATYPES
 from pydantic_model import ItemModel
 from patch_history_data import import_patch_history_data
-from items_data import format_item_from_json, insert_items_data
+from items_data import format_item_from_json, insert_items_data, categorise_final_items
 
 
 # ====== data loading stuff here ======
 # models come from orm_model
 BaseORM.metadata.create_all(engine)
-import_patch_history_data("./patch_history.csv")
+import_patch_history_data(Path(__file__).parent / "patch_history.csv")
 
 with session_factory.begin() as session:
     patch_versions: list[str] = list(session.scalars(select(Patch.patch_version).order_by(Patch.patch_date)).all())
@@ -34,6 +34,7 @@ for file in (p/"items_library").iterdir():
             json_data = json.load(f)
             insert_items_data(format_item_from_json(json_data, patch_versions))
 
+categorise_final_items()
 
 # ====== fastAPI stuff here ======
 
@@ -71,33 +72,50 @@ def read_root():
 
 # note that patch_version, even if provided, will be ignored if item_id is specified,
 # as there is no use case for specifying both paremeters.
-@app.get("/items/")
-def get_item(item_id: Optional[int] = None, patch_version: str = latest_patch) \
- -> list[dict[str, str | int | float | bool | list[int] | list[str]]] | str:  # list of any possible type from the model, OR an error str  # noqa: E501
-    if item_id is not None:
-        # fetch timeline of item
-        stmt = (
-            select(Item)
-            .join(Patch, Item.patch_version == Patch.patch_version)
-            .where(Item.item_id == item_id)
-            .order_by(desc(Patch.patch_date))
-        )
-    else:
-        # return all items on specified patch
-        stmt = (
-            select(Item)
-            .join(Patch, Item.patch_version == Patch.patch_version)
-            .where(Item.patch_version == patch_version)
-            .order_by(desc(Item.gold_cost), Item.item_id)
-        )
+@app.get("/patch/")
+def get_patch(patch_version: str = latest_patch) \
+ -> dict[str, list[dict[str, MODEL_DATATYPES]]] | str:  # any type from the model, or a plain string in case of error
+    stmt = (
+        select(Item)
+        .join(Patch, Item.patch_version == Patch.patch_version)
+        .where(Item.patch_version == patch_version)
+        .order_by(desc(Item.gold_cost), Item.item_id)
+    )
 
     with session_factory() as session:
         items = session.scalars(stmt).all()
-        item_data = [ItemModel.model_validate(item).model_dump(exclude_none=True) for item in items]
-    if not item_data:
-        item_data = "Error: No matching items found"
 
-    return item_data
+        # a dictionary with 'category: str' as key,
+        # containing a list of dicts, each of which is a dict representation of an item
+        items_by_category: dict[str, list[dict[str, MODEL_DATATYPES]]] = defaultdict(list)
+        for item in items:
+            item = ItemModel.model_validate(item).model_dump(exclude_none=True)
+            category = item["category"] if item["category"] else "Others"
+            items_by_category[category].append(item)
+
+    if not items_by_category:
+        return "Error: No matching item found"
+    return items_by_category
+
+
+@app.get("/item/")
+def get_item(item_id: int):
+
+    stmt = (
+        select(Item)
+        .join(Patch, Item.patch_version == Patch.patch_version)
+        .where(Item.item_id == item_id)
+        .order_by(desc(Patch.patch_date))
+    )
+
+    with session_factory() as session:
+        items = session.scalars(stmt).all()
+        item_list = [ItemModel.model_validate(item).model_dump(exclude_none=True) for item in items]
+
+    if not item_list:
+        return "Error: No items found"
+    return item_list
+
 
 
 @app.get("/patch_versions/")

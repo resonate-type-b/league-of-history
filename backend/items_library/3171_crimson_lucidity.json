@@ -18,6 +18,7 @@
     "item_id": 3171,
     "item_name": "Crimson Lucidity",
     "components": [3158],
+    "category": "Boots",
     "gold_cost": 1650,
     "movespeed_flat": 50,
     "haste": 25,

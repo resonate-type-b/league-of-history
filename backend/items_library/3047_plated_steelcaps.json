@@ -100,6 +100,7 @@
     "patch_version": "initial",
     "item_id": 3047,
     "gold_cost": 850,
+    "category": "Boots",
     "item_name": "Ninja Tabi",
     "components": [1001, 1029],
     "armor": 20,

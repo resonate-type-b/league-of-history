@@ -22,7 +22,7 @@ export default function ItemHistory() {
   }
   const result = useQuery({
     queryKey: ["patch", item_id],
-    queryFn: async () => fetchData(`/items/?item_id=${item_id}`),
+    queryFn: async () => fetchData(`/item/?item_id=${item_id}`),
   });
 
   const patchResult = useQuery({
