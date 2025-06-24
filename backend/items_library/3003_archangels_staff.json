@@ -1,0 +1,222 @@
+[
+  {
+    "patch_version": "14.19",
+    "ap": 70
+  },
+  {
+    "patch_version": "14.4",
+    "haste": 25
+  },
+  {
+    "patch_version": "14.3",
+    "gold_cost": 2900,
+    "passive_2_name": "MANAFLOW",
+    "buy_group": ["MANAFLOW", "LIFELINE"]
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3802, 3070, 3108],
+    "ap": 80,
+    "haste": 20,
+    "mp": 600,
+    "hp": null,
+    "passive_2": "Grants a charge every 8 seconds, up to 5 charges. Affecting an enemy or ally with an ability consumes a charge and grants 5 bonus mana, increased to 10 if it's a champion, up to maximum of 360 bonus mana."
+  },
+  {
+    "patch_version": "13.5",
+    "ap": 70
+  },
+  {
+    "patch_version": "13.3",
+    "buy_group": ["MANA CHARGE", "LIFELINE"]
+  },
+  {
+    "patch_version": "13.1",
+    "components": [3070, 3067, 1058],
+    "ap": 80,
+    "haste": 10,
+    "passive_1": "Grants ability power equal to 1% of your max mana."
+  },
+  {
+    "patch_version": "11.24",
+    "gold_cost": 2600
+  },
+  {
+    "patch_version": "11.23",
+    "components": [3070, 3067, 1026],
+    "ap": 60,
+    "hp": 200,
+    "passive_1": "Grants ability haste equal to 0.5% of your max mana."
+  },
+  {
+    "patch_version": "11.9",
+    "motd": "Bugfix: No longer unintentionally mutually exclusive with Lifeline items such as Sterak's Gage or Immortal Shieldbow."
+  },
+  {
+    "patch_version": "11.1",
+    "ap": 65,
+    "components": [3070, 1052, 1058]
+  },
+  {
+    "patch_version": "10.25",
+    "motd": "Bugfix: Abilities which empower a champion's basic attack will now properly trigger Mana Charge when hitting epic monsters."
+  },
+  {
+    "patch_version": "10.24",
+    "mp": 500,
+    "passive_2": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 360 bonus mana.",
+    "motd": "Bugfix: Mana charge no longer triggers off abilities used on Gangplank's Powder Keg."
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "icon_version": 2,
+    "components": [3070, 1058, 2017],
+    "ap": 60,
+    "mp": 400,
+    "gold_cost": 3000,
+    "cdr": null,
+    "buy_group": ["MANA CHARGE"],
+    "passive_3_name": null,
+    "passive_3": null,
+    "passive_1": "Grants ability power equal to 3% of your max mana.",
+    "passive_2": "Grants a charge every 8 seconds, up to 4 charges. Affecting an enemy or ally with an ability consumes a charge and grants 3 bonus mana, increased to 6 if it's a champion, up to maximum of 450 bonus mana."
+  },
+  {
+    "patch_version": "9.6",
+    "buy_group": ["AWE"]
+  },
+  {
+    "patch_version": "8.9",
+    "components": [3070, 3802],
+    "motd": "Change: When gaining maximum mana from Mana Charge, now preserves current mana percent instead of restoring the same amount of maximum mana gained."
+  },
+  {
+    "patch_version": "8.8",
+    "passive_1": "Grants ability power equal to 1% of your max mana. Refunds 25% of mana spent."
+  },
+  {
+    "patch_version": "8.4",
+    "components": [3070, 1052, 3802],
+    "gold_cost": 3200,
+    "ap": 50,
+    "mp": 650,
+    "cdr": 10,
+    "passive_3_name": "HASTE",
+    "passive_3": "Additional +10% cooldown reduction."
+  },
+  {
+    "patch_version": "8.1",
+    "passive_2": "Each time you spend mana, your maximum mana increases by 6 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana."
+  },
+  {
+    "patch_version": "7.21",
+    "passive_2": "Each time you spend mana, your maximum mana increases by 6 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana."
+  },
+  {
+    "patch_version": "6.9",
+    "mp_regen": null,
+    "passive_1_name": "AWE",
+    "passive_1": "Grants ability power equal to 3% of your max mana. Refunds 25% of mana spent."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 3100
+  },
+  {
+    "patch_version": "5.13",
+    "components": [3070, 1058],
+    "ap": 80,
+    "gold_cost": 3000
+  },
+  {
+    "patch_version": "4.20",
+    "mp_regen": 50,
+    "mp5": null
+  },
+  {
+    "patch_version": "3.14",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "3.9",
+    "passive_2": "Each time you use an ability or spend mana, your maximum mana increases by 6 (occurs up to 2 times every 8 seconds). Bonus caps at +750 mana."
+  },
+  {
+    "patch_version": "1.0.0.154",
+    "ap": 60,
+    "passive_2": "Each time you use an ability or spend mana, your maximum mana increases by 6. This effect has a 3 second cooldown. Bonus caps at +750 mana."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 2700,
+    "mp": 250,
+    "ap": 50,
+    "mp5": 10,
+    "passive_1_name": "INSIGHT",
+    "passive_2_name": "MANA CHARGE",
+    "passive_2": "Each time you use an ability or spend mana, your maximum mana increases by 5. This effect has a 3 second cooldown. Bonus caps at +750 mana.",
+    "passive_4": "Transforms into Seraph's Embrace at maximum bonus mana."
+  },
+  {
+    "patch_version": "1.0.0.94(b)",
+    "passive_1": "Grants ability power equal to 3% of your max mana."
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "passive_2": "Each time your Champion uses an Ability their Maximum Mana will increase by 4 Mana. This effect has a 3 second cooldown. Bonus caps at +1000 mana.",
+    "motd": "Note: Patch notes claim that ability power conversion ratio was increased to 2.5% from 2%, but it's unclear when it was last reduced to 2%."
+  },
+  {
+    "patch_version": "1.0.0.74",
+    "gold_cost": 2840
+  },
+
+  {
+    "patch_version": "0.9.22.16",
+    "passive_2": "Each time your Champion uses an Ability their Maximum Mana will increase by 4 Mana. This effect has a 3 second cooldown. Bonus caps at +600 mana.",
+    "motd": "Note: It's unclear when the mana cap was introduced, so assuming it's on the same patch as when it was added for Tear."
+  },
+  {
+    "patch_version": "0.8.22.115",
+    "passive_2": "Each time your Champion uses an Ability their Maximum Mana will increase by 4 Mana. This effect has a 3 second cooldown."
+  },
+  {
+    "patch_version": "20090626",
+    "gold_cost": 2890
+  },
+  {
+    "patch_version": "20090612",
+    "passive_1_name": null
+  },
+  {
+    "patch_version": "20090515",
+    "ap": 45
+  },
+  {
+    "patch_version": "20090501",
+    "passive_2_name": "UNIQUE",
+    "passive_1": "Grants ability power equal to 2.5% of your max mana."
+  },
+  {
+    "patch_version": "20090418",
+    "passive_1": "Grants ability power equal to 2.5% of your current mana."
+  },
+  {
+    "patch_version": "alpha5",
+    "passive_1": "Grants ability power equal to 2% of your current mana."
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3003,
+    "item_name": "Archangel's Staff",
+    "components": [3070, 1026],
+    "gold_cost": 2840,
+    "ap": 50,
+    "mp": 400,
+    "mp5": 25,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Reduces nearby ally cooldowns by 15%.",
+    "passive_2": "Each time your Champion uses an Ability their Maximum Mana will increase by 4 Mana."
+  }
+]

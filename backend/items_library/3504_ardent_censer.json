@@ -1,0 +1,139 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 2200,
+    "ap": 45,
+    "movespeed_percent": 4,
+    "heal_power": 10
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 2300,
+    "mp_regen": 125,
+    "ap": 50,
+    "movespeed_percent": 8,
+    "passive_1": "Healing and shielding an ally enhances you and affected allies with 25% (based on target's level) bonus attack speed and 20 bonus magic damage on-hit for 6 seconds."
+  },
+  {
+    "patch_version": "13.12",
+    "passive_1": "Healing and shielding an ally enhances you and affected allies with 20% (based on target's level) bonus attack speed and 15 bonus magic damage on-hit for 6 seconds."
+  },
+  {
+    "patch_version": "13.11",
+    "passive_1": "Healing and shielding an ally enhances you and affected allies with 20% (based on target's level) bonus attack speed and 15 – 30 (based on target's level) bonus magic damage on-hit for 6 seconds."
+  },
+  {
+    "patch_version": "13.10",
+    "components": [3113, 3114],
+    "gold_cost": 2100,
+    "ap": 35,
+    "mp_regen": 75,
+    "movespeed_percent": 5,
+    "passive_1": "Healing and shielding an ally enhances you and affected allies with 15% – 30% (based on target's level) bonus attack speed and 15 – 30 (based on target's level) bonus magic damage on-hit for 6 seconds.",
+    "motd": "Bugfix: Sanctify's effects on the user now properly scale with the affected ally's level and not their level."
+  },
+  {
+    "patch_version": "12.14",
+    "heal_power": 8
+  },
+  {
+    "patch_version": "10.25",
+    "components": [1052, 3114, 1052]
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "components": [3114, 1026],
+    "mp_regen": 100,
+    "heal_power": 10,
+    "passive_2_name": null,
+    "passive_2": null,
+    "passive_3_name": null,
+    "passive_3": null,
+    "passive_1_name": "SANCTIFY",
+    "passive_1": "Healing and shielding an ally enhances you and affected allies with 10% – 30% (based on target's level) bonus attack speed and 5 – 20 (based on target's level) bonus magic damage on-hit for 6 seconds.",
+    "buy_group": ["ARDENT CENSER"]
+  },
+  {
+    "patch_version": "10.1",
+    "motd": "Bugfix: Passive no longer activates with self shields."
+  },
+  {
+    "patch_version": "9.15",
+    "motd": "Undocumented: Now also triggers from casting shields on yourself."
+  },
+  {
+    "patch_version": "8.24b",
+    "passive_3": "+10% bonus healing and shielding power."
+  },
+  {
+    "patch_version": "8.12",
+    "passive_3": "+8% bonus healing and shielding power."
+  },
+  {
+    "patch_version": "7.21",
+    "passive_1": "Your heals and shields on allied champions grant you both 10% – 30% (based on target's level) attack speed, and 5 – 20 (based on target's level) on-hit magic damage."
+  },
+  {
+    "patch_version": "7.19",
+    "ap": 25,
+    "passive_1": "Your heals and shields on allied champions grant you both 20% – 35% (based on target's level) attack speed, and 20 – 35 (based on target's level) on-hit magic damage."
+  },
+  {
+    "patch_version": "7.17",
+    "passive_1": "Your heals and shields on allied champions grant them 25% attack speed, and 25 on-hit magic damage and healing for 6 seconds."
+  },
+  {
+    "patch_version": "7.2",
+    "passive_1": "Your heals and shields on allied champions grant them 20% – 35% (based on target's level) attack speed, and 20 – 35 (based on target's level) on-hit magic damage and healing for 6 seconds."
+  },
+  {
+    "patch_version": "6.22",
+    "gold_cost": 2300,
+    "passive_3": "+10% bonus healing and shielding power.",
+    "passive_1": "Your heals and shields on allied champions grant them 20% attack speed, and +20 on-hit magic damage and healing for 6 seconds."
+  },
+  {
+    "patch_version": "6.15",
+    "passive_3_name": "UNIQUE"
+  },
+  {
+    "patch_version": "6.13",
+    "gold_cost": 2400,
+    "ap": 60,
+    "mp_regen": 50,
+    "passive_3": "+15% bonus healing and shielding power."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 2200
+  },
+  {
+    "patch_version": "5.10",
+    "passive_1": "Your heals and shields on allied champions grant them 15% attack speed and +30 on-hit magic damage for 6 seconds.",
+    "motd": "Note: Patch notes claim that attack speed was reduced from 30%."
+  },
+  {
+    "patch_version": "4.20",
+    "mp_regen": 100,
+    "mp5": null
+  },
+  {
+    "patch_version": "4.12",
+    "ap": 40
+  },
+  {
+    "patch_version": "4.10",
+    "item_id": 3504,
+    "item_name": "Ardent Censer",
+    "components": [3114, 3113],
+    "gold_cost": 2200,
+    "ap": 30,
+    "mp5": 10,
+    "cdr": 10,
+    "passive_2_name": "UNIQUE",
+    "passive_2": "+8% movement speed.",
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Your heals and shields on another unit grant them 25% attack speed for 6 seconds."
+  }
+]

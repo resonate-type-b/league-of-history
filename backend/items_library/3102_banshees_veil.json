@@ -1,0 +1,161 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 3000,
+    "ap": 105,
+    "magic_resist": 40,
+    "passive_1": "Grants a  spell shield that blocks the next ability. This shield refreshes after no damage is taken from enemy champions for 40 seconds."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1058, 4632],
+    "gold_cost": 3100,
+    "ap": 120,
+    "magic_resist": 50,
+    "haste": null,
+    "passive_1": "Grants a  spell shield that blocks the next ability. This shield refreshes after no damage is taken from enemy champions for 30 seconds.",
+    "buy_group": ["ANNUL"]
+  },
+  {
+    "patch_version": "11.7",
+    "motd": "Bugfix: Fixed a bug where the spellshield would not be affected by item haste."
+  },
+  {
+    "patch_version": "11.3",
+    "gold_cost": 2600,
+    "ap": 80
+  },
+  {
+    "patch_version": "11.1",
+    "motd": "Bugfix: Passive cooldown no longer ignores item haste granted from Ingenious Hunter."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "components": [3108, 4632],
+    "gold_cost": 2500,
+    "ap": 65,
+    "magic_resist": 45,
+    "haste": 10,
+    "cdr": null,
+    "passive_1_name": "ANNUL",
+    "passive_1": "Grants a  spell shield that blocks the next ability. This shield refreshes after no damage is taken from enemy champions for 40 seconds.",
+    "buy_group": ["BANSHEE'S VEIL"]
+  },
+  {
+    "patch_version": "9.23",
+    "passive_1_name": "SPELL SHIELD"
+  },
+  {
+    "patch_version": "8.9",
+    "ap": 75
+  },
+  {
+    "patch_version": "7.19",
+    "motd": "Change: Now block only the first ability that hits, rather than every ability that hits at the same time the shield is broken."
+  },
+  {
+    "patch_version": "7.11",
+    "gold_cost": 3000,
+    "magic_resist": 60
+  },
+  {
+    "patch_version": "7.9",
+    "reworked": true,
+    "components": [3108, 1033],
+    "gold_cost": 2500,
+    "ap": 70,
+    "magic_resist": 45,
+    "cdr": 10,
+    "hp": null,
+    "hp_regen": null
+  },
+  {
+    "patch_version": "6.9",
+    "components": [3211, 1057],
+    "hp": 300,
+    "gold_cost": 2450
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 2900,
+    "hp": 500,
+    "magic_resist": 70
+  },
+  {
+    "patch_version": "5.16",
+    "components": [3211, 3801],
+    "gold_cost": 2700,
+    "magic_resist": 60
+  },
+  {
+    "patch_version": "4.20",
+    "hp_regen": 100,
+    "passive_2_name": null,
+    "passive_2": null
+  },
+  {
+    "patch_version": "4.13",
+    "passive_1": "Grants a spell shield that blocks the next enemy ability. This shield refreshes after no damage is taken from enemy champions for 40 seconds."
+  },
+  {
+    "patch_version": "3.10",
+    "components": [3211, 1028],
+    "hp": 450,
+    "magic_resist": 55,
+    "mp": null,
+    "passive_2_name": "UNIQUE",
+    "passive_2": "Grants +45 health regen per 5 seconds for up to 10 seconds after taking damage from an enemy champion or when the spell shield breaks."
+  },
+  {
+    "patch_version": "3.02",
+    "gold_cost": 2520
+  },
+  {
+    "patch_version": "1.0.0.154",
+    "gold_cost": 2610,
+    "hp": 400
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 2500,
+    "hp": 300,
+    "mp": 300,
+    "magic_resist": 45,
+    "passive_1": "Grants a spell shield that blocks the next enemy ability. This shield refreshes after no damage is taken from enemy champions for 25 seconds."
+  },
+  {
+    "patch_version": "1.0.0.113",
+    "passive_1": "Block one negative spell every 45 seconds."
+  },
+  {
+    "patch_version": "1.0.0.107",
+    "hp": 375,
+    "mp": 375,
+    "magic_resist": 50
+  },
+  {
+    "patch_version": "1.0.0.94(b)",
+    "motd": "Change: Will now only be ready on cloned units if it was ready on the creating champion."
+  },
+  {
+    "patch_version": "0.9.25.24",
+    "passive_1": "Block one negative spell every 30 seconds."
+  },
+  {
+    "patch_version": "20090710",
+    "components": [3803, 1057]
+  },
+  {
+    "patch_version": "20090509",
+    "components": [3803],
+    "item_id": 3102,
+    "item_name": "Banshee's Veil",
+    "gold_cost": 2715,
+    "hp": 450,
+    "mp": 400,
+    "magic_resist": 57,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Block one negative spell every 25 seconds."
+  }
+]

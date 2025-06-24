@@ -1,0 +1,142 @@
+[
+  {
+    "patch_version": "25.04",
+    "magic_resist": 45
+  },
+  {
+    "patch_version": "25.S1.1",
+    "hp": 350,
+    "magic_resist": 50,
+    "passive_1": "Enemy champions within 700 units of you become cursed, causing them to receive 12% increased magic damage from all sources.",
+    "buy_group": ["ABYSSAL MASK"]
+  },
+  {
+    "patch_version": "14.19",
+    "gold_cost": 2650,
+    "haste": 15,
+    "magic_resist": 45,
+    "passive_1": "Enemy champions within 700 units of you become cursed, reducing their magic resistance by 30%."
+  },
+  {
+    "patch_version": "14.15",
+    "gold_cost": 2500,
+    "passive_1": "Enemy champions within 700 units of you become cursed, reducing their magic resistance by 30%. Gain 10 bonus magic resistance per cursed enemy."
+  },
+  {
+    "patch_version": "14.10",
+    "gold_cost": 2300,
+    "magic_resist": 50,
+    "passive_1": "Enemy champions within 600 units of you become cursed, reducing their magic resistance by 20%. Gain 10 bonus magic resistance per cursed enemy.",
+    "buy_group": ["BLIGHT"]
+  },
+
+  {
+    "patch_version": "13.10",
+    "components": [3067, 1057],
+    "gold_cost": 2400,
+    "hp": 300,
+    "magic_resist": 60,
+    "haste": 10,
+    "mp": null,
+    "buy_group": ["ABYSSAL MASK"],
+    "passive_2_name": null,
+    "passive_2": null
+  },
+  {
+    "patch_version": "13.7",
+    "hp": 550
+  },
+  {
+    "patch_version": "13.1",
+    "passive_2": "Restore mana equal to 7% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
+  },
+  {
+    "patch_version": "12.22",
+    "icon_version": 2,
+    "components": [3803, 3211],
+    "hp": 500,
+    "mp": 300,
+    "magic_resist": 40,
+    "passive_2_name": "ETERNITY",
+    "passive_2": "Restore mana equal to 8% of pre-mitigation damage taken from champions, and health equal to 20% of mana spent, up to 15 health per cast. Toggled abilities can only heal for up to 15 per second.",
+    "buy_group": ["ETERNITY"]
+  },
+  {
+    "patch_version": "12.11",
+    "magic_resist": 35,
+    "passive_1": "Enemy champions within 550 units of you become cursed, reducing their magic resistance by 5 (+ 1.2% bonus health), capped at a reduction of 25 magic resistance. Gain 9 bonus magic resistance per cursed enemy. Champions can only be afflicted by one curse at a time, prioritizing the most potent curse."
+  },
+  {
+    "patch_version": "12.7",
+    "passive_1": "Enemy champions within 550 units of you become cursed, reducing their magic resistance by 5 (+ 1.2% bonus health), capped at a reduction of 25 magic resistance. Gain 7 bonus magic resistance per cursed enemy. Champions can only be afflicted by one curse at a time, prioritizing the most potent curse."
+  },
+  {
+    "patch_version": "11.23",
+    "components": [3067, 3211],
+    "reworked": true,
+    "hp": 450,
+    "magic_resist": 30,
+    "haste": 10,
+    "passive_1": "Enemy champions within 550 units of you become cursed, reducing their magic resistance by 5 (+ 1% bonus health), capped at a reduction of 20 magic resistance. Gain 7 bonus magic resistance per cursed enemy. Champions can only be afflicted by one curse at a time, prioritizing the most potent curse."
+  },
+  {
+    "patch_version": "11.10",
+    "hp": 400,
+    "passive_1": "Immobilizing an enemy champion increases the damage they take by 15% for 5 seconds."
+  },
+  {
+    "patch_version": "10.24",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "components": [1011, 1057],
+    "gold_cost": 2700,
+    "magic_resist": 60,
+    "mp": null,
+    "cdr": null,
+    "passive_1_name": "UNMAKE",
+    "passive_1": "Immobilizing an enemy champion increases the damage they take by 10% for 4 seconds.",
+    "passive_2_name": null,
+    "passive_2": null,
+    "buy_group": ["ABYSSAL MASK"]
+  },
+  {
+    "patch_version": "8.9",
+    "gold_cost": 3000
+  },
+  {
+    "patch_version": "8.7",
+    "motd": "Change: Aura range type changed to edge to center from center to center (functionally scales with champion size)."
+  },
+  {
+    "patch_version": "8.6",
+    "passive_1": "Nearby enemy champions take 15% more magic damage (325 range)",
+    "motd": "Bugfix: No longer counts as a spell for the purposes of Electrocute's or Phase Rush's 3 unique spell requirement."
+  },
+  {
+    "patch_version": "7.13",
+    "components": [3803, 1057],
+    "hp_regen": null,
+    "gold_cost": 2900,
+    "hp": 350,
+    "mp": 300,
+    "magic_resist": 55,
+    "passive_2_name": "ETERNITY",
+    "passive_2": "15% of damage taken from champions is gained as mana. Spending mana restores 20% of mana spent as health, up to 25 per cast (toggle spells heal for up to 25 per second)."
+  },
+  {
+    "patch_version": "7.11",
+    "item_id": 8020,
+    "item_name": "Abyssal Mask",
+    "components": [3211, 1057],
+    "gold_cost": 2800,
+    "hp": 300,
+    "magic_resist": 65,
+    "hp_regen": 100,
+    "cdr": 10,
+    "passive_1_name": "UNIQUE AURA",
+    "passive_1": "Nearby enemy champions take 10% more magic damage (500 range)"
+  }
+]

@@ -48,7 +48,7 @@
     "gold_cost": 850,
     "passive_2": "Refunds 10% of mana spent.",
     "passive_1": "Each time you spend mana, your maximum mana increases by 4 (occurs up to 3 times every 12 seconds). Bonus caps at +750 mana. Gains +1 mana every 8 seconds.",
-    "motd": "Change: now preserves current mana percent instead of restoring the same amount of maximum mana gained."
+    "motd": "Change: Now preserves current mana percent instead of restoring the same amount of maximum mana gained."
   },
 
   {
@@ -86,13 +86,13 @@
 
   {
     "patch_version": "3.9",
-    "passive_1_name": "MANA CHARGE",
     "passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4 (occurs up to 2 times every 8 seconds). Bonus caps at +750 mana"
   },
   {
     "patch_version": "1.0.0.152",
     "gold_cost": 700,
     "mp": 250,
+    "passive_1_name": "MANA CHARGE",
     "passive_1": "Each time you cast a spell or spend mana, your maximum mana increases by 4. This effect has a 3 second cooldown. Bonus caps at +750 mana"
   },
 

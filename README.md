@@ -13,6 +13,7 @@
   - The jungle pet from S12+ is not included, despite technically being an item mechanic. Changes to jungle pet affect jungler balance, rather than item strength.
   - For support items, detailed minion execution mechanics, over-farming penalties, anti lane swap system etc. are similarly considered out of scope.
   - If an icon was touched up in 10.24 after the 10.23 icon revamp, the 10.24 version is included directly into 10.23
+- Ornn's Masterwork items are **not** tracked.
 
 **Old patch notes were highly uninformative, and often do not provide enough information to accurately reconstruct an item. In particular, prior to S1, assume listed gold costs to be ballpark estimates, and provided stats to be potentially inaccurate.**
 
