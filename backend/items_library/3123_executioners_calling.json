@@ -100,7 +100,6 @@
     "lifesteal": 15,
     "crit_chance": 15,
     "passive_1_name": "EXECUTIONER'S MARK",
-    "passive_1": "Damage applies Executioner's Mark on the target, reducing the target's healing by 40% for 8 seconds.",
-    "motd": "Note: The exact gold cost is unknown."
+    "passive_1": "Damage applies Executioner's Mark on the target, reducing the target's healing by 40% for 8 seconds."
   }
 ]

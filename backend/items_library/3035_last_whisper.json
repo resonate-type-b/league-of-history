@@ -105,6 +105,6 @@
     "aspd": 40,
     "passive_1_name": "UNIQUE",
     "passive_1": "Basic attacks have a 50% chance to ignore target's armor.",
-    "motd": "Note: Exact wording & effect of passive is unknown (also unknown if it's unique, but assuming so)."
+    "motd": "Note: Passive is guessed from context."
   }
 ]

@@ -1,0 +1,49 @@
+[
+  {
+    "patch_version": "14.21",
+    "motd": "Bugfix: If multiple Axiom Arc owners on the same team take down the same target, all of them now properly gain Flux's cooldown reduction, instead of only the killer."
+  },
+  {
+    "patch_version": "14.19",
+    "haste": 20,
+    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 15% (+0.15% per 1 Lethality) of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [2020, 3133],
+    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 10% (+0.3% per 1 Lethality) of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds."
+  },
+  {
+    "patch_version": "13.16",
+    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 10% (+0.4% per 1 Lethality) of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds."
+  },
+  {
+    "patch_version": "13.14",
+    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 5% (+0.4% per 1 Lethality) of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds."
+  },
+  {
+    "patch_version": "13.1",
+    "lethality": 18
+  },
+  {
+    "patch_version": "12.1",
+    "motd": "Bugfix: Flux now stacks correctly with the Ultimate Hunter rune."
+  },
+  {
+    "patch_version": "11.24",
+    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 20% of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds."
+  },
+  {
+    "patch_version": "11.23",
+    "components": [3134, 3133],
+    "item_id": 6696,
+    "item_name": "Axiom Arc",
+    "gold_cost": 3000,
+    "ad": 55,
+    "lethality": 10,
+    "haste": 25,
+    "passive_1_name": "FLUX",
+    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 25% of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds.",
+    "buy_group": ["AXIOM ARC"]
+  }
+]

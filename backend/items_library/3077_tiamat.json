@@ -149,7 +149,6 @@
     "ad": 50,
     "hp5": 25,
     "mp5": 8,
-    "passive_1": "Your attacks Splash, dealing Magic Damage in 175 range around the target.",
-    "motd": "Note: Exact cost, recipe, and effects uncertain."
+    "passive_1": "Your attacks Splash, dealing Magic Damage in 175 range around the target."
   }
 ]
