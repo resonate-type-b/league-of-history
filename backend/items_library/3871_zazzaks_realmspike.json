@@ -1,0 +1,32 @@
+[
+  {
+    "patch_version": "25.S1.3",
+    "passive_1": "Damaging an enemy champion with an ability creates an explosion at their location after a 0.5-second delay, dealing 10 (+15% AP)(+3% of each target's maximum health) magic damage to nearby enemies, capped at 300 against  monsters (10 second cooldown)."
+  },
+  {
+    "patch_version": "14.7",
+    "passive_1": "Damaging an enemy champion with an ability creates an explosion at their location after a 0.5-second delay, dealing 10 (+20% AP)(+3% of each target's maximum health) magic damage to nearby enemies, capped at 300 against  monsters (10 second cooldown)."
+  },
+  {
+    "patch_version": "14.4",
+    "passive_1": "Damaging an enemy champion with an ability creates an explosion at their location after a 0.5-second delay, dealing 20 (+20% AP)(+4% of each target's maximum health) magic damage to nearby enemies, capped at 300 against  monsters (8 / 7 / 6 (based on level) second cooldown)."
+  },
+  {
+    "patch_version": "14.1",
+    "hp": 200,
+    "hp_regen": 75,
+    "mp_regen": 75,
+    "gp10": 5,
+    "gold_cost": 400,
+    "item_id": 3871,
+    "components": [3867],
+    "item_name": "Zaz'Zak's Realmspike",
+    "category": "Transforms",
+    "passive_1_name": "VOID EXPLOSION",
+    "passive_1": "Damaging an enemy champion with an ability creates an explosion at their location after a 0.5-second delay, dealing 50 (+15% AP)(+3% of each target's maximum health) magic damage to nearby enemies, capped at 300 against  monsters (9 – 6 (based on level) second cooldown).",
+    "passive_2_name": "WARD",
+    "passive_2": "Consumes a charge to place a  Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).",
+    "passive_3": "Receive diminishing gold from excessive minion kills.",
+    "buy_group": ["SUPPORT", "JUNGLE"]
+  }
+]

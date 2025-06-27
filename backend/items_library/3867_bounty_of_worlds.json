@@ -1,0 +1,26 @@
+[
+  {
+    "patch_version": "14.4",
+    "hp": 200,
+    "hp_regen": 75,
+    "mp_regen": 75
+  },
+  {
+    "patch_version": "14.1",
+    "hp": 100,
+    "hp_regen": 50,
+    "mp_regen": 50,
+    "gp10": 5,
+    "gold_cost": 400,
+    "item_id": 3867,
+    "components": [3866],
+    "item_name": "Bounty of Worlds",
+    "category": "Transforms",
+    "passive_1_name": "UPGRADE",
+    "passive_1": "You have completed the Support quest and you may upgrade this item, Bounty of Worlds, for free into Bloodsong, Celestial Opposition, Dream Maker, Solstice Sleigh, or Zaz'Zak's Realmspike by selecting one of them from a custom menu or the shop.",
+    "passive_2_name": "WARD",
+    "passive_2": "Consumes a charge to place a  Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).",
+    "passive_3": "Receive diminishing gold from excessive minion kills.",
+    "buy_group": ["SUPPORT", "JUNGLE"]
+  }
+]

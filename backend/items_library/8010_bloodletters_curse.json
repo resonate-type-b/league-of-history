@@ -1,0 +1,21 @@
+[
+  {
+    "patch_version": "25.10",
+    "hp": 400,
+    "ap": 65,
+    "passive_1": "Dealing magic damage to an enemy champion with your innate ability or abilities applies a stack to them for 6 seconds, stacking up to 6 times and up to 1 per basic attack or ability per cast instance every 0.3 seconds. Each stack inflicts 7.5% magic resistance reduction, up to 30% at 4 stacks."
+  },
+  {
+    "patch_version": "25.S1.1",
+    "item_id": 8010,
+    "components": [3147, 3108],
+    "item_name": "Bloodletter's Curse",
+    "gold_cost": 2900,
+    "ap": 60,
+    "hp": 350,
+    "haste": 15,
+    "passive_1_name": "VILE DECAY",
+    "passive_1": "Dealing magic damage to an enemy champion with your innate ability or abilities applies a stack to them for 6 seconds, stacking up to 6 times and up to 1 per basic attack or ability per cast instance every 0.3 seconds. Each stack inflicts 5% magic resistance reduction, up to 30% at 6 stacks.",
+    "buy_group": ["BLIGHT"]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "patch_version": "14.5",
+    "passive_1": "Slowing or immobilizing an enemy champion causes you and the nearest and most wounded allied champion to gain 20% bonus movement speed decaying over 2.5 seconds as well as 50 – 230 (based on user's level) bonus health for 4 seconds (30 second cooldown)."
+  },
+  {
+    "patch_version": "14.5",
+    "passive_1": "Slowing or immobilizing an enemy champion causes you and the nearest and most wounded allied champion to gain 25% bonus movement speed decaying over 3 seconds as well as 50 – 230 (based on user's level) bonus health for 4 seconds (30 second cooldown)."
+  },
+  {
+    "patch_version": "14.4",
+    "passive_1": "Slowing or immobilizing an enemy champion causes you and the nearest and most wounded allied champion to gain 30% bonus movement speed decaying over 3 seconds as well as (7% of your maximum health) bonus health for 4 seconds (20 second cooldown)."
+  },
+  {
+    "patch_version": "14.1",
+    "hp": 200,
+    "hp_regen": 75,
+    "mp_regen": 75,
+    "gp10": 5,
+    "gold_cost": 400,
+    "item_id": 3876,
+    "components": [3867],
+    "item_name": "Solstice Sleigh",
+    "category": "Transforms",
+    "passive_1_name": "GOING SLEDDING",
+    "passive_1": "Slowing or immobilizing an enemy champion causes you and the nearest and most wounded allied champion to gain 90 bonus movement speed decaying over 4 seconds as well as 120 bonus health for 4 seconds (20 second cooldown).",
+    "passive_2_name": "WARD",
+    "passive_2": "Consumes a charge to place a  Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).",
+    "passive_3": "Receive diminishing gold from excessive minion kills.",
+    "buy_group": ["SUPPORT", "JUNGLE"]
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "patch_version": "25.S1.3",
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit. If the target is a champion, inflict them with Expose Weakness for 4 seconds, causing them to take [8%|6%] increased damage from all sources (1.5 second cooldown)."
+  },
+  {
+    "patch_version": "14.7",
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit. If the target is a champion, inflict them with Expose Weakness for 6 seconds, causing them to take [10%|6%] increased damage from all sources (1.5 second cooldown)."
+  },
+  {
+    "patch_version": "14.4",
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 150% base AD bonus physical damage on-hit. If the target is a champion, inflict them with Expose Weakness for 6 seconds, causing them to take [10%|5%] increased damage from all sources (1.5 second cooldown)."
+  },
+  {
+    "patch_version": "14.2",
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 150% base AD bonus physical damage on-hit. If the target is a champion, inflict them with Expose Weakness for 6 seconds, causing them to take [10%|6%] increased damage from all sources (1.5 second cooldown)."
+  },
+  {
+    "patch_version": "14.1",
+    "hp": 200,
+    "hp_regen": 75,
+    "mp_regen": 75,
+    "gp10": 5,
+    "gold_cost": 400,
+    "item_id": 3877,
+    "components": [3867],
+    "item_name": "Bloodsong",
+    "category": "Transforms",
+    "passive_1_name": "SPELLBLADE",
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 150% base AD bonus physical damage on-hit. If the target is a champion, inflict them with Expose Weakness for 6 seconds, causing them to take ( 12% /  8%) increased damage from all sources (1.5 second cooldown).",
+    "passive_2_name": "WARD",
+    "passive_2": "Consumes a charge to place a  Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).",
+    "passive_3": "Receive diminishing gold from excessive minion kills.",
+    "buy_group": ["SUPPORT", "JUNGLE", "SPELLBLADE"]
+  }
+]
