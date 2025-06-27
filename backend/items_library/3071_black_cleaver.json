@@ -1,0 +1,187 @@
+[
+  {
+    "patch_version": "14.19",
+    "components": [3044, 3067, 1037],
+    "ad": 40
+  },
+  {
+    "patch_version": "14.16",
+    "motd": "Removed: No longer has a 0.01-second internal delay between applying stacks."
+  },
+  {
+    "patch_version": "14.10",
+    "passive_1": "Dealing physical damage to an enemy champion applies a stack of Carve for 6 seconds, stacking up to 5 times. Each stack inflicts 6% armor reduction, up to 30% at 6 stacks."
+  },
+  {
+    "patch_version": "14.4",
+    "components": [3044, 3133, 1028],
+    "passive_1": "Dealing physical damage to an enemy champion applies a stack of Carve for 6 seconds, stacking up to 5 times. Each stack inflicts 5% armor reduction, up to 25% at 6 stacks.",
+    "motd": "Change: Fervor can now trigger on mitigated damage."
+  },
+  {
+    "patch_version": "14.2",
+    "passive_2_name": "FERVOR",
+    "passive_2": "Dealing physical damage grants you 20 bonus movement speed for 2 seconds."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3044, 3067, 1036],
+    "ad": 55,
+    "haste": 20,
+    "passive_1": "Dealing physical damage to an enemy champion applies a stack of Carve for 6 seconds, stacking up to 6 times. Each stack inflicts 4% armor reduction, up to 24% at 6 stacks.",
+    "passive_2": "Basic attacks on-hit grant [20|10] bonus movement speed for 2 seconds.",
+    "buy_group": ["FATALITY"]
+  },
+  {
+    "patch_version": "13.1b",
+    "ad": 50,
+    "hp": 400
+  },
+  {
+    "patch_version": "12.8",
+    "motd": "Bugfix: Bug Fix: Titanic Hydra's Cleave and certain other on-hit effects from items and Champion passives no longer apply an additional stack of Carve on basic attacks if Black Cleaver's effect was acquired later (in a higher buff slot) than the on-hit effect."
+  },
+  {
+    "patch_version": "12.3",
+    "ad": 45,
+    "haste": 30,
+    "hp": 350
+  },
+  {
+    "patch_version": "11.13",
+    "hp": 450,
+    "passive_2": "Dealing physical damage to a champion grants 3 bonus movement speed per stack of *Carve* on them for 2 seconds, up to 18."
+  },
+  {
+    "patch_version": "11.11",
+    "passive_1": "Dealing physical damage to an enemy champion reduces their armor by 5% for 6 seconds, stacking up to 6 times for a maximum of 24%."
+  },
+  {
+    "patch_version": "11.5",
+    "gold_cost": 3100,
+    "hp": 400,
+    "passive_1": "Dealing physical damage to an enemy champion reduces their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%.",
+    "passive_2_name": "RAGE",
+    "passive_2": "Dealing physical damage to a champion grants 5 bonus movement speed per stack of *Carve* on them for 2 seconds, up to 30."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 2,
+    "components": [3133, 3067, 1036],
+    "gold_cost": 3300,
+    "hp": 300,
+    "ad": 40,
+    "haste": 25,
+    "cdr": null,
+    "passive_1_name": "CARVE",
+    "passive_1": "Dealing physical damage to an enemy champion reduces their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%. Enemies with 6 stacks are *Shredded*.",
+    "passive_2_name": "BUTCHER",
+    "passive_2": "Basic attacks (on-hit) and damaging abilities against fully *Shredded* enemies deal bonus physical damage equal to 5% of their missing health, reduced to 2% of their missing health for damage over time effects (0.5 second cooldown).",
+    "buy_group": ["BLACK CLEAVER"]
+  },
+  {
+    "patch_version": "9.19",
+    "item_name": "Black Cleaver"
+  },
+  {
+    "patch_version": "7.13",
+    "motd": "Undocumented: An ability cannot add more than one stack in an instant."
+  },
+  {
+    "patch_version": "7.9",
+    "passive_1": "Dealing physical damage to an enemy champion *Cleaves* them, reducing their armor by 4% for 6 seconds, stacking up to 6 times."
+  },
+  {
+    "patch_version": "7.4",
+    "components": [3044, 3067],
+    "hp": 400,
+    "ad": 40,
+    "gold_cost": 3000
+  },
+  {
+    "patch_version": "6.16",
+    "motd": "Bugfix: Fixed a bug where an enemy hit with multiple shells from Graves' basic attacks only applied a single stack of The Black Cleaver."
+  },
+  {
+    "patch_version": "6.9",
+    "gold_cost": 3100,
+    "ad": 50
+  },
+  {
+    "patch_version": "5.22",
+    "components": [3044, 3133],
+    "ad": 55,
+    "hp": 300,
+    "gold_cost": 3500
+  },
+  {
+    "patch_version": "5.8",
+    "icon_version": 1,
+    "components": [3067, 3044],
+    "ad": 40,
+    "hp": 400,
+    "cdr": 20,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Dealing physical damage to an enemy champion *Cleaves* them, reducing their armor by 5% for 6 seconds, stacking up to 6 times.",
+    "passive_2_name": "RAGE",
+    "passive_2": "Dealing physical damage grants [20|10] movement speed for 2 seconds. Assists on Cleaved enemy champions or kills on any unit grant [60|30] movement speed for 2 seconds instead."
+  },
+  {
+    "patch_version": "3.9",
+    "motd": "Change: Can no longer apply more than one stack of Armor Shred in a single basic attack."
+  },
+  {
+    "patch_version": "3.01",
+    "hp": 200,
+    "passive_1": "Dealing physical damage to an enemy champion reduces their armor by 5% for 4 seconds. This effect stacks up to 5 times."
+  },
+  {
+    "patch_version": "1.0.0.153",
+    "armor_pen_flat": null,
+    "passive_1": "Dealing physical damage to an enemy champion reduces their armor by 6.25% for 4 seconds. This effect stacks up to 4 times.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "+10 armor penetration"
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "components": [2020, 1028],
+    "reworked": true,
+    "gold_cost": 3000,
+    "hp": 250,
+    "ad": 50,
+    "cdr": 10,
+    "armor_pen_flat": 15,
+    "aspd": null,
+    "passive_1_name": null,
+    "passive_1": "Dealing physical damage to an enemy champion reduces their armor by 7.5% for 4 seconds. This effect stacks up to 4 times."
+  },
+  {
+    "patch_version": "1.0.0.130",
+    "motd": "Change: No longer shreds Dragon and Baron Nashor's armor."
+  },
+  {
+    "patch_version": "1.0.0.108",
+    "components": [1038, 1042],
+    "ad": 55,
+    "aspd": 30,
+    "passive_1": "Physical attacks reduce your target's Armor by 15 for 5 seconds, (maximum 3 stacks)."
+  },
+  {
+    "patch_version": "20090515",
+    "ad": 75
+  },
+  {
+    "patch_version": "alpha6",
+    "gold_cost": 3065
+  },
+  {
+    "patch_version": "initial",
+    "gold_cost": 2700,
+    "item_id": 3071,
+    "components": [1038, 1036],
+    "item_name": "The Black Cleaver",
+    "ad": 80,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Physical attacks reduce your target's Armor by 12 for 5 seconds, (maximum 5 stacks)."
+  }
+]

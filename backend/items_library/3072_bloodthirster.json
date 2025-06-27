@@ -1,0 +1,126 @@
+[
+  {
+    "patch_version": "14.18",
+    "lifesteal": 15,
+    "passive_1": "Convert excess healing from life steal into a shield for up to 165– 315 (based on level)."
+  },
+  {
+    "patch_version": "14.10",
+    "components": [1038, 1037, 1053],
+    "ad": 80,
+    "lifesteal": 18,
+    "crit_chance": null,
+    "passive_1_name": "ICHORSHIELD",
+    "passive_1": "Convert excess healing from life steal into a shield for up to 50 – 400 (based on level)."
+  },
+  {
+    "patch_version": "13.17",
+    "passive_1": "While above 70% maximum health, gain 10 – 40 (based on level) bonus attack damage."
+  },
+  {
+    "patch_version": "13.12",
+    "gold_cost": 3400
+  },
+  {
+    "patch_version": "13.10",
+    "lifesteal": 18,
+    "passive_1_name": "ENGORGE",
+    "passive_1": "While above 50% maximum health, gain 10 – 40 (based on level) bonus attack damage."
+  },
+  {
+    "patch_version": "13.6",
+    "passive_1": "Life steal from basic attacks can now overheal you, converting the excess healing into a shield that absorbs up to 100 – 400 (based on level) damage and slowly decays if you haven't dealt or taken damage in the last 25 seconds."
+  },
+  {
+    "patch_version": "13.1b",
+    "gold_cost": 3200,
+    "lifesteal": 15,
+    "passive_1": "Life steal from basic attacks can now overheal you, converting the excess healing into a shield that absorbs up to 180 – 450 (based on level) damage and slowly decays if you haven't dealt or taken damage in the last 25 seconds."
+  },
+  {
+    "patch_version": "12.10",
+    "lifesteal": 18,
+    "passive_1": "Life steal from basic attacks can now overheal you, converting the excess healing into a shield that absorbs up to 50 – 320 (based on level) damage and slowly decays if you haven't dealt or taken damage in the last 25 seconds."
+  },
+  {
+    "patch_version": "12.4",
+    "passive_1_name": "ICHORSHIELD"
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "components": [1038, 1018, 1053],
+    "icon_version": 1,
+    "gold_cost": 3400,
+    "ad": 55,
+    "lifesteal": 20,
+    "crit_chance": 20,
+    "passive_2_name": null,
+    "passive_2": null,
+    "passive_1_name": "BLOOD BARRIER",
+    "passive_1": "Life steal from basic attacks can now overheal you, converting the excess healing into a shield that absorbs up to 50 – 350 (based on level) damage and slowly decays if you haven't dealt or taken damage in the last 25 seconds.",
+    "buy_group": ["BLOODTHIRSTER"]
+  },
+  {
+    "patch_version": "9.19",
+    "item_name": "Bloodthirster"
+  },
+  {
+    "patch_version": "8.11",
+    "gold_cost": 3500
+  },
+  {
+    "patch_version": "7.9",
+    "ad": 80
+  },
+  {
+    "patch_version": "5.22",
+    "components": [1038, 1036, 1053],
+    "gold_cost": 3700,
+    "ad": 75
+  },
+  {
+    "patch_version": "4.12",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "+20% life steal.",
+    "lifesteal": null,
+    "passive_1": "Your life steal effects can overheal you, converting the excess healing into a shield. The shield can block from 50 to 350 damage, based on champion level, and decays if you have been out of combat for 255 seconds."
+  },
+  {
+    "patch_version": "4.10",
+    "reworked": true,
+    "gold_cost": 3500,
+    "ad": 80,
+    "lifesteal": 15,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Your life steal effects can overheal you, converting the excess healing into a shield. The shield can block from 50 to 450 damage, based on champion level, and decays if you have been out of combat for 15 seconds."
+  },
+  {
+    "patch_version": "3.14",
+    "motd": "Hotfix: Cost decreased to 3000, then hotfixed back to 3200."
+  },
+  {
+    "patch_version": "3.01",
+    "gold_cost": 3200
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "ad": 70,
+    "passive_1": "Gain an additional 1 Physical Damage and 0.2% Life Steal per kill. Maximum of +30 Damage and +6% Life steal. Half the bonuses are lost upon death."
+  },
+  {
+    "patch_version": "1.0.0.136",
+    "lifesteal": 12,
+    "passive_1": "Gain an additional 1 Physical Damage and 0.2% Life Steal per kill. Maximum of +40 Damage and +8% Life steal. Half the bonuses are lost upon death."
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3072,
+    "components": [1038, 1053],
+    "item_name": "The Bloodthirster",
+    "gold_cost": 3000,
+    "ad": 60,
+    "lifesteal": 10,
+    "passive_1": "Gain an additional 1 Physical Damage and 0.25% Life Steal per kill. Maximum of +60 Damage and +15% Life steal. Bonuses are lost upon death."
+  }
+]

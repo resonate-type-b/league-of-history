@@ -1,0 +1,32 @@
+[
+  {
+    "patch_version": "14.17",
+    "passive_1": "Become *Blessed* to reduce incoming champion damage by [35%|25%], lingering for 2 seconds after taking damage from a champion. After the linger ends, you lose *Blessed* to unleash a shockwave around you that slows enemies within 500 units by 50% for 1.5 seconds (18 second cooldown, timer restarts upon taking damage from champions)."
+  },
+  {
+    "patch_version": "14.11",
+    "motd": "Change: Damage dealt to the user from Knight's Vow's Sacrifice damage redirect is now special-cased to no longer trigger Blessed."
+  },
+  {
+    "patch_version": "14.5",
+    "passive_1": "Become *Blessed* to reduce incoming champion damage by [35%|25%], lingering for 2 seconds after taking damage from a champion. After the linger ends, you lose *Blessed* to unleash a shockwave around you that slows enemies within 500 units by 60% for 2 seconds (18 second cooldown, timer restarts upon taking damage from champions)."
+  },
+  {
+    "patch_version": "14.1",
+    "hp": 200,
+    "hp_regen": 75,
+    "mp_regen": 75,
+    "gp10": 5,
+    "gold_cost": 400,
+    "item_id": 3869,
+    "components": [3867],
+    "item_name": "Celestial Opposition",
+    "category": "Transforms",
+    "passive_1_name": "BLESSING OF THE MOUNTAIN",
+    "passive_1": "Become *Blessed* to reduce incoming champion damage by [35%|25%], lingering for 2 seconds after taking damage from a champion. After the linger ends, you lose *Blessed* to unleash a shockwave around you that slows enemies within 500 units by 50% for 1.5 seconds (20 second cooldown, timer restarts upon taking damage from champions).",
+    "passive_2_name": "WARD",
+    "passive_2": "Consumes a charge to place a  Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).",
+    "passive_3": "Receive diminishing gold from excessive minion kills.",
+    "buy_group": ["SUPPORT", "JUNGLE"]
+  }
+]

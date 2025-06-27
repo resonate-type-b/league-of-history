@@ -1,0 +1,194 @@
+[
+  {
+    "patch_version": "14.21",
+    "passive_1": "Deal [8%|5%] of the target's current health bonus physical damage on-hit, capped at 100 bonus damage against minions and monsters."
+  },
+  {
+    "patch_version": "14.19",
+    "ad": 40
+  },
+  {
+    "patch_version": "14.16",
+    "ad": 50,
+    "aspd": 25,
+    "passive_1": "Deal [10%|6%] of the target's current health bonus physical damage on-hit, capped at 100 bonus damage against minions and monsters."
+  },
+  {
+    "patch_version": "14.10",
+    "ad": 55,
+    "aspd": 30,
+    "lifesteal": 10,
+    "gold_cost": 3200,
+    "passive_1": "Deal [9%|6%] of the target's current health bonus physical damage on-hit, capped at 100 bonus damage against minions and monsters.",
+    "passive_2": "Basic attacks on-hit against enemy champions apply a stack for 6 seconds, stacking up to 3 times. The third stack consumes them all to slow the target by 30% for 1 second (15 second cooldown)."
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 3200,
+    "passive_2_name": "CLAWING SHADOWS",
+    "passive_2": "The next basic attack against an enemy champion on-hit  slows them by [30%|15%] for 1 second (15 second cooldown)."
+  },
+  {
+    "patch_version": "13.1b",
+    "passive_2": "Attacking a champion 3 times deals 40 – 103 (based on level) magic damage on-hit and steals 25% of their movement speed for 2 seconds (30 second cooldown).",
+    "passive_1": "Deal [12%|9%] of the target's current health bonus physical damage on-hit, capped at 60 bonus damage against minions and monsters."
+  },
+  {
+    "patch_version": "12.21",
+    "icon_version": 2
+  },
+  {
+    "patch_version": "12.11",
+    "lifesteal": 8
+  },
+  {
+    "patch_version": "12.10",
+    "lifesteal": 7
+  },
+  {
+    "patch_version": "12.6",
+    "lifesteal": 8
+  },
+  {
+    "patch_version": "12.3",
+    "gold_cost": 3300,
+    "passive_1": "Deal [12%|8%] of the target's current health bonus physical damage on-hit, capped at 60 bonus damage against minions and monsters."
+  },
+  {
+    "patch_version": "11.6",
+    "lifesteal": 10,
+    "passive_2": "Attacking a champion 3 times deals 40 – 150 (based on level) magic damage on-hit and steals 25% of their movement speed for 2 seconds (20 second cooldown)."
+  },
+  {
+    "patch_version": "10.24",
+    "aspd": 25,
+    "gold_cost": 3200
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "components": [1053, 1043, 1037],
+    "ad": 40,
+    "aspd": 30,
+    "lifesteal": 12,
+    "gold_cost": 3100,
+    "passive_1_name": "MIST'S EDGE",
+    "passive_1": "Deal [10%|6%] of the target's current health bonus physical damage on-hit, capped at 60 bonus damage against minions and monsters.",
+    "passive_2_name": "SIPHON",
+    "passive_2": "Attacking a champion 3 times deals 40 – 120 (based on level) magic damage on-hit and steals 25% of their movement speed for 2 seconds (20 second cooldown).",
+    "buy_group": ["BLADE OF THE RUINED KING"]
+  },
+  {
+    "patch_version": "10.5",
+    "passive_1": "Deals [12%|8%] of the target's current health in bonus physical damage (max 60 damage vs. monsters and minions) on-hit. Minimum 15 damage."
+  },
+  {
+    "patch_version": "9.8",
+    "gold_cost": 3300
+  },
+  {
+    "patch_version": "8.11",
+    "gold_cost": 3200
+  },
+  {
+    "patch_version": "7.17",
+    "motd": "Bugfix: • No longer causes The Black Cleaver to apply two stacks per basic attack\n\n  • Fixed an interaction where energized attacks prevented some movement speed boosts"
+  },
+  {
+    "patch_version": "7.12",
+    "motd": "Bugfix: On-hit effect no longer applies a stack of The Black Cleaver"
+  },
+  {
+    "patch_version": "7.11",
+    "lifesteal": 12
+  },
+  {
+    "patch_version": "7.9",
+    "gold_cost": 3400
+  },
+  {
+    "patch_version": "7.5",
+    "ad": 40,
+    "aspd": 25,
+    "lifesteal": 15,
+    "gold_cost": 3300,
+    "passive_1": "Deals 8% of the target's current health in bonus physical damage (max 60 damage vs. monsters and minions) on-hit. Minimum 15 damage.",
+    "passive_2": "Deals 100 magic damage, and steals 25% of the target's movement speed for 3 seconds (90 second cooldown, 550 range)."
+  },
+  {
+    "patch_version": "6.23",
+    "passive_1": "Deals 8% of the target's current health in bonus physical damage (max 60 damage vs. monsters and minions) on-hit. Minimum 10 damage."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 3400,
+    "passive_1": "Deals 6% of the target's current health in bonus physical damage (max 60 damage vs. monsters and minions) on-hit. Minimum 10 damage."
+  },
+  {
+    "patch_version": "5.10",
+    "passive_2": "Deals 10% of target champion's maximum health as physical damage (min. 100), heals for the same amount, and steals 25% of the target's movement speed for 3 seconds (90 second cooldown, 550 range)."
+  },
+  {
+    "patch_version": "5.8",
+    "components": [1043, 3144],
+    "passive_1": "Deals 8% of the target's current health in bonus physical damage (max 60 damage vs. monsters and minions) on-hit. Minimum 10 damage.",
+    "motd": "Change: Passive damage now benefits from life steal."
+  },
+  {
+    "patch_version": "4.10",
+    "lifesteal": 10,
+    "gold_cost": 3200,
+    "passive_1": "Deals 8% of the target's current health in bonus physical damage (max 60 damage vs. monsters and minions) on-hit. Minimum 3 damage.",
+    "passive_2": "Deals 10% of target champion's maximum health as physical damage (min. 100), heals for the same amount, and steals 25% of the target's movement speed for 3 seconds (90 second cooldown, 450 range)."
+  },
+  {
+    "patch_version": "3.10a",
+    "passive_2": "Deals 15% of target champion's maximum health as physical damage (min. 100), heals for the same amount, and steals 30% of the target's movement speed for 3 seconds (90 second cooldown, 450 range).",
+    "motd": "Note: Patch notes claim that active range was reduced from 550."
+  },
+  {
+    "patch_version": "3.10",
+    "passive_2": "Deals 15% of target champion's maximum health as physical damage (min. 100), heals for the same amount, and steals 30% of the target's movement speed for 3 seconds (90 second cooldown, 500 range)."
+  },
+  {
+    "patch_version": "3.04",
+    "ad": 25,
+    "gold_cost": 3200,
+    "passive_1": "Deals 5% of the target's current health in bonus physical damage (max 60 damage vs. monsters and minions) on-hit. Minimum 3 damage.",
+    "motd": "Change: Active heal amount is now reduced by target's armor."
+  },
+  {
+    "patch_version": "3.03",
+    "reworked": true,
+    "components": [1042, 1042, 3144],
+    "ad": 30,
+    "aspd": 40,
+    "lifesteal": 15,
+    "gold_cost": 2850,
+    "passive_1": "Deals 5% of the target's current health in bonus physical damage (max 90 damage vs. monsters and minions) on-hit. Minimum 3 damage.",
+    "passive_2": "Deals 15% of target champion's maximum health as physical damage (min. 100), heals for the same amount, and steals 30% of the target's movement speed for 4 seconds (60 second cooldown, 500 range)."
+  },
+  {
+    "patch_version": "3.02",
+    "ad": 45,
+    "passive_1": "Your attacks deal 5% of the target's current health in physical damage and heals you for half the amount (120 max vs. minions)."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 2900,
+    "passive_1": "Your attacks deal 4% of the target's current health in physical damage and heals you for half the amount (120 max vs. minions)."
+  },
+  {
+    "patch_version": "1.0.0.150",
+    "ad": 40,
+    "lifesteal": 10,
+    "gold_cost": 2825,
+    "item_id": 3153,
+    "components": [3144],
+    "item_name": "Blade of the Ruined King",
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Your attacks deal 4% of the target's current health in magic damage and heals you for half the amount (120 max vs. minions).",
+    "passive_2_name": "UNIQUE ACTIVE",
+    "passive_2": "Drains target champion, dealing 150 physical damage plus 50% of your attack damage and healing you by the same amount. Additionally, you steal 30% of their movement speed for 2 seconds (60 second cooldown, 400 range)."
+  }
+]

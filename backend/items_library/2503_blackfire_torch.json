@@ -1,0 +1,99 @@
+[
+  {
+    "patch_version": "14.19",
+    "haste": 20,
+    "ap": 80,
+    "passive_1": "Dealing ability damage burns enemies, causing them to take 10 magic damage (+ 1% AP) every 0.5 seconds over 3 seconds, for a total of 60 (+ 6% AP). Against monsters, the burn deals 10 bonus magic damage per tick, dealing a total of 20 magic damage (+ 2% AP) per tick for up to 120 (+ 12% AP)."
+  },
+  {
+    "patch_version": "14.11",
+    "motd": "Bugfix: Baleful Blaze's damage is no longer able to incorrectly grant stacks of Spear of Shojin's Focused Will, if both items are owned"
+  },
+  {
+    "patch_version": "14.10",
+    "removed": false,
+    "icon_version": 1,
+    "ap": 90,
+    "hp": null,
+    "haste": 25,
+    "mp": 600,
+    "gold_cost": 2800,
+    "passive_1_name": "BALEFUL BLAZE",
+    "passive_1": "Dealing ability damage burns enemies, causing them to take 7.5 magic damage (+ 1.5% AP) every 0.5 seconds over 3 seconds, for a total of 45 (+ 9% AP). Against monsters, the burn deals 10 bonus magic damage per tick, dealing a total of 20 magic damage (+ 2% AP) per tick for up to 120 (+ 12% AP).",
+    "passive_2_name": "BLACKFIRE",
+    "passive_2": "For each champion, epic monster, and large monster afflicted with Baleful Blaze's burn, increase your ability power by 4%.",
+    "buy_group": ["BLACKFIRE TORCH"],
+    "motd": "Hotfix: • Base damage per tick reduced to 7.5 from 10.\n\n  • Total base damage reduced to 45 from 60.\n\n  • AP ratio per tick reduced to 1.5% AP from 2% AP.\n\n  • Total AP ratio reduced to 9% AP from 12% AP."
+  },
+  {
+    "patch_version": "5.2",
+    "removed": true
+  },
+  {
+    "patch_version": "4.13",
+    "passive_1": "Deals 20% of target champion's maximum Health in magic damage over 4 seconds and increases all subsequent magic damage taken by the target by 20% (90 second cooldown)."
+  },
+  {
+    "patch_version": "4.6",
+    "movespeed_percent": null
+  },
+  {
+    "patch_version": "4.1",
+    "movespeed_percent": 5
+  },
+  {
+    "patch_version": "3.13",
+    "gold_cost": 2650,
+    "movespeed_percent": 10,
+    "passive_1": "Deals 20% of target champion's maximum Health in magic damage over 4 seconds and increases all subsequent magic damage taken by the target by 20% (60 second cooldown)."
+  },
+  {
+    "patch_version": "3.10",
+    "components": [1026, 3108],
+    "gold_cost": 2400,
+    "passive_1_name": "UNIQUE ACTIVE",
+    "passive_1": "Deals 20% of target champion's maximum Health in magic damage over 6 seconds and increases all subsequent magic damage taken by the target by 20% (60 second cooldown).",
+    "passive_2": "+10% cooldown reduction. +15 magic penetration."
+  },
+  {
+    "patch_version": "3.01",
+    "gold_cost": 3770,
+    "mp5": null
+  },
+  {
+    "patch_version": "1.0.0.154",
+    "components": [9001, 3108, 3147],
+    "ap": 80,
+    "mp5": 10,
+    "gold_cost": 3950,
+    "passive_2": "+20% cooldown reduction. +15 magic penetration."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "passive_2": "+10% cooldown reduction. +15 magic penetration.",
+    "passive_1": "Your spells burn for an additional 3.5% of the target champion's maximum Health in magic damage over 2 seconds. Each second burned consumes a charge. One charge is generated every 1.5 seconds, maximum 18 charges."
+  },
+  {
+    "patch_version": "1.0.0.151",
+    "components": [9001, 3147],
+    "ap": 70,
+    "hp": 250,
+    "mp": null,
+    "gold_cost": 2950,
+    "passive_1": "Your spells burn for an additional 5% of the target champion's maximum Health in magic damage over 3 seconds. Each second burned consumes a charge. One charge is generated each second, maximum 25 charges.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "+15% cooldown reduction. +20 magic penetration."
+  },
+  {
+    "patch_version": "1.0.0.150",
+    "ap": 50,
+    "hp": 300,
+    "mp": 350,
+    "gold_cost": 2890,
+    "item_id": 2503,
+    "components": [9001, 3803],
+    "item_name": "Blackfire Torch",
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Your spells burn for an additional 5% of the target's current Health in magic damage over 3 seconds (effect halved for AoE and damage over time)."
+  }
+]

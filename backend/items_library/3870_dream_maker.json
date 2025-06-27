@@ -1,0 +1,24 @@
+[
+  {
+    "patch_version": "14.5",
+    "passive_1": "Every 8 seconds, you gain a Blue Dream Bubble and a Purple Dream Bubble. Granting a heal or shield to an allied champion (excluding yourself) causes you to blow both of your Dream Bubbles to them, empowering them for 3 seconds. The Blue Bubble reduces the next instance of damage they take by 75 – 255 (based on user's level) and the Purple Bubble grants them 50 – 170 (based on user's level) bonus magic damage on-hit on their next basic attack."
+  },
+  {
+    "patch_version": "14.1",
+    "hp": 200,
+    "hp_regen": 75,
+    "mp_regen": 75,
+    "gp10": 5,
+    "gold_cost": 400,
+    "item_id": 3870,
+    "components": [3867],
+    "item_name": "Dream Maker",
+    "category": "Transforms",
+    "passive_1_name": "DREAM MAKER",
+    "passive_1": "Every 8 seconds, you gain a Blue Dream Bubble and a Purple Dream Bubble. Granting a heal or shield to an allied champion (excluding yourself) causes you to blow both of your Dream Bubbles to them, empowering them for 3 seconds. The Blue Bubble reduces the next instance of damage they take by 140 and the Purple Bubble grants them 90 bonus magic damage on-hit on their next basic attack.",
+    "passive_2_name": "WARD",
+    "passive_2": "Consumes a charge to place a  Stealth Ward at the target location, which grants sight of the surrounding area. Charges refill upon visiting the shop (4 charges; 600 range).",
+    "passive_3": "Receive diminishing gold from excessive minion kills.",
+    "buy_group": ["SUPPORT", "JUNGLE"]
+  }
+]

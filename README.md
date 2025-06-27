@@ -31,6 +31,7 @@ Below items have old icons on the wiki, but did not specify when they were updat
 - Last Whisper (3035): This was when it had the IE icon!
 - Phage (3044): with the Stinger icon
 - Zeal (3086): Sheen icon
+- Bloodthirster (3072): Unknown when the middle verion was in use.
 
 These items have unknown original recipes:
 
@@ -43,5 +44,6 @@ These items have item_ids changed during their lives
 Some alpha/beta items do not have an ID listed on the wiki, and have been given one manually:
 
 - Sage's Ring (9000)
+- Kage's Lucky Pick (9001)
 
 Watchful Wardstone and Stirring Wardstone somehow share the same item ID of 4638. Stirring Wardstone has been reassigned 9001.
