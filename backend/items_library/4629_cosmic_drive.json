@@ -1,0 +1,75 @@
+[
+  {
+    "patch_version": "14.19",
+    "ap": 70,
+    "movespeed_percent": 4,
+    "passive_1": "Dealing magic or true damage to an enemy champion grants you 20 bonus movement speed for 4 seconds."
+  },
+  {
+    "patch_version": "14.15",
+    "hp": 350,
+    "passive_1": "Dealing ability damage to an enemy champion grants you 40 – 60 (based on level) bonus movement speed for 2 seconds."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3067, 3113, 3108],
+    "hp": 250,
+    "ap": 80,
+    "haste": 25,
+    "movespeed_percent": 5,
+    "passive_1": "Dealing ability damage to an enemy champion grants you 25 – 60 (based on level) bonus movement speed for 2 seconds."
+  },
+  {
+    "patch_version": "13.8",
+    "ap": 100,
+    "passive_1": "Damaging a champion generates a stack of 2.5% bonus movement speed every 1.5 seconds for the next 5 seconds, up to 10% at 4 stacks. At maximum stacks, gain an additional 10% bonus movement speed, for a total of 20%. Dealing damage refreshes this effect."
+  },
+  {
+    "patch_version": "13.5",
+    "components": [3108, 3113, 1052],
+    "ap": 90,
+    "hp": null
+  },
+  {
+    "patch_version": "11.24",
+    "ap": 65,
+    "hp": 200,
+    "passive_1": "After damaging a champion with 3 separate basic attacks or abilities within 3 seconds, gain 15% bonus movement speed, decaying to 5% over 2 seconds, and 40 ability power until exiting champion combat (5 seconds)."
+  },
+  {
+    "patch_version": "11.23",
+    "components": [3108, 3113, 1028],
+    "ap": 75,
+    "hp": 250,
+    "haste": 30,
+    "movespeed_percent": 5,
+    "passive_1": "After damaging a champion with 3 separate basic attacks or abilities within 3 seconds, gain 20% bonus movement speed, decaying to 10% over 2 seconds, and 40 ability power until exiting champion combat (5 seconds)."
+  },
+  {
+    "patch_version": "11.13",
+    "ap": 80,
+    "passive_1": "If you have at least 160 ability power, gain 20 ability haste and 20 bonus movement speed."
+  },
+  {
+    "patch_version": "11.4",
+    "haste": 20,
+    "passive_1": "If you have at least 160 ability power, gain 20 ability haste and 10 – 30 (based on level) bonus movement speed."
+  },
+  {
+    "patch_version": "10.24",
+    "ap": 75
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 4629,
+    "components": [3108, 3067, 1052],
+    "item_name": "Cosmic Drive",
+    "passive_1_name": "SPELLDANCE",
+    "passive_1": "Dealing damage with abilities grants 10 (+ 20% ability haste) bonus movement speed for 4 seconds.",
+    "buy_group": ["COSMIC DRIVE"],
+    "gold_cost": 3000,
+    "ap": 70,
+    "hp": 200,
+    "haste": 30
+  }
+]
