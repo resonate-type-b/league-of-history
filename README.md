@@ -40,6 +40,7 @@ These items have unknown original recipes:
 These items have item_ids changed during their lives
 
 - Catalyst the Protector/Catalyst of Aeons - 3010/3803 - Listed as a single item under 3803
+- Death's Dance - 3812/6333 - Listed under 6333
 
 Some alpha/beta items do not have an ID listed on the wiki, and have been given one manually:
 

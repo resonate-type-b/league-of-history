@@ -29,12 +29,7 @@ export type ItemDiffBoxProps = {
 export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps): React.JSX.Element {
   const statJSXList: React.JSX.Element[] = [];
 
-  // this is a little bit hacky...
-  // but basically, if an item's gold cost is -1 (quest reward),
-  // hijack it here manually pass -1 to the formatter so it can catch it
-  // because otherwise, formatStat does diffWord() to it at which point it's wrapped in <span> and impossible to work with
-  const [gold_cost_desc, gold_cost_value] =
-    item.gold_cost === "-1" ? itemMap["gold_cost"](-1) : formatStat(item, "gold_cost");
+  const [gold_cost_desc, gold_cost_value] = formatStat(item, "gold_cost");
   statJSXList.push(
     <ItemLine
       descriptor={gold_cost_desc}
