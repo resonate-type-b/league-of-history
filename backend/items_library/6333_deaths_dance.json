@@ -1,0 +1,159 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 3300
+  },
+  {
+    "patch_version": "14.15",
+    "armor": 50
+  },
+  {
+    "patch_version": "14.9",
+    "components": [2019, 3133, 1037],
+    "ad": 60,
+    "passive_2": "If an enemy champion dies within 3 seconds of you damaging them, removes Ignore Pain's remaining stored damage and heals you for 75% bonus AD over 2 seconds."
+  },
+  {
+    "patch_version": "14.1",
+    "armor": 40,
+    "components": [2019, 3133],
+    "gold_cost": 3200
+  },
+  {
+    "patch_version": "13.7",
+    "components": [1037, 1031, 3133],
+    "ad": 55,
+    "haste": 15,
+    "armor": 45
+  },
+  {
+    "patch_version": "13.1b",
+    "components": [1037, 1031, 1037],
+    "gold_cost": 3300,
+    "ad": 65,
+    "haste": null,
+    "armor": 50,
+    "passive_2": "If an enemy champion dies within 3 seconds of you damaging them, removes Ignore Pain's remaining stored damage and heals you for 50% bonus AD over 2 seconds."
+  },
+  {
+    "patch_version": "12.23",
+    "motd": "Change: Taking damage from Ignore Pain no longer interrupts Recall."
+  },
+  {
+    "patch_version": "12.21",
+    "icon_version": 2
+  },
+  {
+    "patch_version": "12.11",
+    "passive_2": "If an enemy champion dies within 3 seconds of you damaging them, removes Ignore Pain's remaining stored damage and heals you for 120% bonus AD over 2 seconds."
+  },
+  {
+    "patch_version": "12.10",
+    "passive_2": "If an enemy champion dies within 3 seconds of you damaging them, removes Ignore Pain's remaining stored damage and heals you for 140% bonus AD over 2 seconds."
+  },
+  {
+    "patch_version": "12.4",
+    "motd": "Bugfix: Triggering Defy now properly removes all instances of stored damage by Ignore Pain."
+  },
+  {
+    "patch_version": "12.3",
+    "gold_cost": 3300,
+    "passive_1": "Stores [30%|10%] of all post-mitigation physical and magical damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.",
+    "passive_2": "If an enemy champion dies within 3 seconds of you damaging them, removes Ignore Pain's remaining stored damage and heals you for 175% bonus AD over 2 seconds.",
+    "motd": "Change: Ignore Pain now also stores damage received to shields."
+  },
+  {
+    "patch_version": "11.13",
+    "passive_2": "Champion takedowns remove Ignore Pain's remaining damage and heal you for 15% of your maximum health over the duration."
+  },
+  {
+    "patch_version": "11.10",
+    "motd": "Bugfix: No longer extends Aspect of the Dragon's burn damage longer than intended (3 seconds)"
+  },
+  {
+    "patch_version": "11.9",
+    "ad": 55,
+    "armor": 45
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "gold_cost": 3100,
+    "ad": 50,
+    "armor": 40,
+    "magic_resist": null,
+    "cdr": null,
+    "haste": 15,
+    "passive_1_name": "IGNORE PAIN",
+    "passive_1": "Stores [35%|15%] of all post-mitigation physical damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.",
+    "passive_2_name": "DEFY",
+    "passive_2": "Champion takedowns grant you 30% bonus movement speed for 2 seconds, remove Ignore Pain's remaining damage, and heal you for 10% of your maximum health over the duration.",
+    "buy_group": ["DEATH'S DANCE"]
+  },
+  {
+    "patch_version": "10.13",
+    "passive_2": "Stores [30%|10%] of all physical and magical damage received, and is taken as a damage over time instead, dealing one-third of the stored damage every second."
+  },
+  {
+    "patch_version": "10.6",
+    "components": [3105, 3133, 1053],
+    "gold_cost": 3600,
+    "ad": 50,
+    "armor": 30,
+    "magic_resist": 30,
+    "passive_2": "Stores [30%|20%] of all physical and magical damage received, and is taken as a damage over time instead, dealing one-third of the stored damage every second."
+  },
+  {
+    "patch_version": "10.5",
+    "motd": "Bugfix: The last tick of stored damage now properly kills the target champion instead of leaving them at 1 health"
+  },
+  {
+    "patch_version": "9.23",
+    "motd": "Hotfix-Bugfix: Passive no longer infinitely triggers Infernal Dragon Soul."
+  },
+  {
+    "patch_version": "9.11",
+    "motd": "Bugfix: Getting damaged by an Aery user while having Death's Dance equipped no longer causes Aery to continuously deal damage to the player."
+  },
+  {
+    "patch_version": "9.7",
+    "motd": "Bugfix: Omni-vamp now properly grants reduced healing from pets"
+  },
+  {
+    "patch_version": "9.1",
+    "motd": "Bugfix: No longer grants excessive healing from Urgot's Fear Beyond Death against Tryndamere's Undying Rage or Anivia's Rebirth."
+  },
+  {
+    "patch_version": "8.24",
+    "passive_1": "Instantly heal for 15% of all damage dealt. Area of effect physical damage only heals 5% for every unit affected."
+  },
+  {
+    "patch_version": "7.9",
+    "ad": 80,
+    "passive_2": "Stores 30% of all physical and magical damage received, and is taken as a damage over time instead, dealing one-third of the stored damage every second."
+  },
+  {
+    "patch_version": "7.6",
+    "motd": "Undocumented: Bleed effect now doesn't cancel Recall"
+  },
+  {
+    "patch_version": "6.1",
+    "gold_cost": 3500,
+    "ad": 75,
+    "passive_1": "Instantly heal for 15% of all physical damage dealt. Area of effect physical damage only heals 4% for every unit affected.",
+    "passive_2": "Stores 15% of all physical and magical damage received, and is taken as a damage over time instead, dealing one-third of the stored damage every second."
+  },
+  {
+    "patch_version": "5.22",
+    "item_id": 6333,
+    "item_name": "Death's Dance",
+    "components": [3133, 1037, 1053],
+    "gold_cost": 3400,
+    "ad": 65,
+    "cdr": 10,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Instantly heal for 12% of all physical damage dealt. Area of effect physical damage only heals 4% for every unit affected.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "Stores 12% of all physical and magical damage received, and is taken as a damage over time instead, dealing one-third of the stored damage every second."
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "patch_version": "14.19",
+    "components": [3123, 1011, 3133],
+    "hp": 450,
+    "ad": 45,
+    "gold_cost": 3100
+  },
+  {
+    "patch_version": "14.1",
+    "haste": 15
+  },
+  {
+    "patch_version": "13.7",
+    "motd": "Change: Now applies Grevious Wounds even if the damage dealt was completely mitigated by a shield."
+  },
+  {
+    "patch_version": "13.1b",
+    "passive_1": "Dealing physical damage to enemy champions inflicts them with 40% Grievous Wounds for 3 seconds."
+  },
+  {
+    "patch_version": "12.14",
+    "gold_cost": 2800
+  },
+  {
+    "patch_version": "12.11",
+    "ad": 55,
+    "haste": 25,
+    "passive_1": "Dealing physical damage to enemy champions inflicts them with 25% Grievous Wounds for 3 seconds, increased to 40% if the target is below 50% of their maximum health."
+  },
+  {
+    "patch_version": "12.10",
+    "passive_1": "Dealing physical damage to enemy champions inflicts them with 30% Grievous Wounds for 3 seconds, increased to 50% if the target is below 50% of their maximum health."
+  },
+  {
+    "patch_version": "11.4",
+    "hp": 250
+  },
+  {
+    "patch_version": "11.2",
+    "gold_cost": 2600,
+    "hp": 150
+  },
+  {
+    "patch_version": "11.1",
+    "passive_1": "Dealing physical damage to enemy champions inflicts them with 40% Grievous Wounds for 3 seconds, increased to 60% if the target is below 50% of their maximum health."
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 6609,
+    "components": [3123, 1028, 3133],
+    "item_name": "Chempunk Chainsword",
+    "passive_1_name": "HACKSHORN",
+    "passive_1": "Dealing physical damage to enemy champions inflicts them with 40% Grievous Wounds for 2 seconds, increased to 60% if the target is below 50% of their maximum health.",
+    "buy_group": ["CHEMPUNK CHAINSWORD"],
+    "gold_cost": 2700,
+    "ad": 45,
+    "hp": 200,
+    "haste": 15
+  }
+]

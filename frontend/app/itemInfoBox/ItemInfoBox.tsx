@@ -27,9 +27,10 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
     />
   );
 
-  for (const statName of Object.keys(item) as (keyof LeagueItem)[]) {
-    if (statName in itemMap && !["gold_cost"].includes(statName)) {
-      const [descriptor, value] = formatStat(item, statName as keyof FormatterMap);
+  const itemKeys = Object.keys(item);
+  for (const statName of Object.keys(itemMap) as (keyof FormatterMap)[]) {
+    if (itemKeys.includes(statName) && !["gold_cost"].includes(statName)) {
+      const [descriptor, value] = formatStat(item, statName);
       statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
     }
   }
