@@ -1,0 +1,102 @@
+[
+  {
+    "patch_version": "25.08",
+    "passive_2": "+15% slow resist."
+  },
+  {
+    "patch_version": "14.19",
+    "hp": 350,
+    "armor": 55,
+    "movespeed_percent": 4,
+    "passive_1": "While moving, generates 7 stacks of Momentum each 0.25 seconds, granting up to 20 bonus movement speed at 100 stacks after 3.75 seconds of moving. Attacks deal 0.4 + 1% base AD physical damage on-hit per stack of Momentum, consuming all stacks."
+  },
+  {
+    "patch_version": "14.2",
+    "motd": "Bugfix: Momentum stacks are no longer lost from attacking traps or jungle plants"
+  },
+  {
+    "patch_version": "14.1",
+    "passive_1": "While moving, generates 7 stacks of Momentum each 0.25 seconds, granting up to 40 bonus movement speed at 100 stacks after 3.75 seconds of moving. Attacks deal 0.4 + 1% base AD physical damage on-hit per stack of Momentum, consuming all stacks.",
+    "passive_2_name": "UNSINKABLE",
+    "passive_2": "+25% slow resist."
+  },
+  {
+    "patch_version": "11.14",
+    "armor": 45
+  },
+  {
+    "patch_version": "11.13",
+    "passive_1": "While moving, generates 7 stacks of Momentum each 0.25 seconds, granting up to 40 bonus movement speed at 100 stacks after 3.75 seconds of moving. Momentum decays by 15 every 0.25 seconds while immobilized. Attacks deal 0.4 + 1% base AD physical damage on-hit per stack of Momentum, consuming all stacks. At max stacks, the target is also slowed by 50% for 1 second if the attacker is melee."
+  },
+  {
+    "patch_version": "11.9",
+    "hp": 300
+  },
+  {
+    "patch_version": "11.3",
+    "hp": 400
+  },
+  {
+    "patch_version": "10.23",
+    "components": [3066, 1028, 1031],
+    "icon_version": 1,
+    "hp": 475,
+    "armor": 40,
+    "movespeed_percent": 5,
+    "passive_1_name": "SHIPWRECKER",
+    "passive_1": "While moving, generates 5 stacks of Momentum each 0.25 seconds, granting up to 60 bonus movement speed at 100 stacks after 5 seconds of moving. Momentum decays by 15 every 0.25 seconds while immobilized. Attacks deal 1 magic damage on-hit per stack of Momentum, consuming all stacks. At max stacks, the target is also slowed by 50% for 1 second if the attacker is melee.",
+    "passive_2_name": null,
+    "passive_2": null
+  },
+  {
+    "patch_version": "10.20",
+    "motd": "Bugfix: Certain empowered basic attacks no longer grant double Conqueror stacks when the champion in question has Dead Man's Plate"
+  },
+  {
+    "patch_version": "8.12",
+    "motd": "Bugfix: Crushing Blow now properly deals magic damage for ranged users"
+  },
+  {
+    "patch_version": "8.6",
+    "passive_1": "Generates a maximum of 100 Momentum stacks by moving, which grant up to 60 bonus movement speed. Momentum decays by 3 every 0.25 seconds while immobilized.",
+    "passive_2": "Basic attacks discharge all stacks to deal (1 per stack) bonus magic damage on-hit, up to 100. Melee basic attacks at 100 stacks also slow by 50% for 1 second. This damage can critically strike."
+  },
+  {
+    "patch_version": "7.9",
+    "hp": 425,
+    "armor": 60,
+    "passive_2": "Basic attacks discharge 15 Momentum. If 100 stacks are discharged, Deal 150 damage; if this attack is melee, the target will also be slowed by 50% for 1 second."
+  },
+  {
+    "patch_version": "6.3",
+    "gold_cost": 2900,
+    "passive_2": "Basic attacks discharge all Momentum, dealing 1 bonus physical damage for every 2 momentum. If 100 stacks are discharged, the damage is doubled; if this attack is melee, the target will also be slowed for 50%, decaying over 1 second."
+  },
+  {
+    "patch_version": "5.24",
+    "hp": 500
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 2800
+  },
+  {
+    "patch_version": "5.16",
+    "gold_cost": 2750,
+    "hp": 600,
+    "armor": 50
+  },
+  {
+    "patch_version": "5.15",
+    "item_id": 3742,
+    "item_name": "Dead Man's Plate",
+    "components": [1031, 1011],
+    "gold_cost": 2800,
+    "hp": 580,
+    "armor": 55,
+    "passive_1_name": "DREADNAUGHT",
+    "passive_1": "You build Momentum stacks while moving, up to 100, granting up to 60 bonus movement speed. Momentum rapidly decays while under immobilizing crowd control effects, and decays slowly while slowed.",
+    "passive_2_name": "CRUSHING BLOW",
+    "passive_2": "Basic attacks discharge all Momentum, dealing 1 bonus physical damage for every 2 momentum. If 100 stacks are discharged, the damage is doubled; if this attack is melee, the target will also be slowed for 75%, decaying over 1 second."
+  }
+]

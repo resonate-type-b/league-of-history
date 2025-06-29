@@ -1,0 +1,31 @@
+[
+  {
+    "patch_version": "25.10",
+    "components": [4630, 3108, 3108],
+    "ap": 75,
+    "gold_cost": 3000,
+    "passive_1": "Scoring a takedown against an enemy champion while alive and within 3 seconds of damaging them summons a nova at their location, healing allied champions within the area for 100 (+ 20% AP) (60 second cooldown)."
+  },
+  {
+    "patch_version": "25.08",
+    "haste": 20
+  },
+  {
+    "patch_version": "14.19",
+    "ap": 60,
+    "passive_1": "Scoring a takedown against an enemy champion while alive and within 3 seconds of damaging them summons a nova at their location, healing allied champions within the area for 100 (+ 25% AP) (60 second cooldown)."
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 2850,
+    "ap": 70,
+    "haste": 15,
+    "magic_pen_percent": 30,
+    "item_id": 3137,
+    "item_name": "Cryptbloom",
+    "components": [4630, 3108],
+    "passive_1_name": "LIFE FROM DEATH",
+    "passive_1": "Scoring a takedown against an enemy champion while alive and within 3 seconds of damaging them summons a nova at their location, healing allied champions within the area for 50 (+ 50% AP) (60 second cooldown).",
+    "buy_group": ["VOID PEN"]
+  }
+]
