@@ -1,3 +1,4 @@
+import type { Diff } from "diff";
 import { Icon } from "~/Icon";
 import type { DiffLeagueItem } from "../leagueItem";
 import { ItemLine, Motd, PassiveLine, diffText } from "./_common";
@@ -39,13 +40,14 @@ export function ItemDiffBox({ item, className = "" }: ItemDiffBoxProps): React.J
     />
   );
 
-  for (const statName of Object.keys(item) as (keyof DiffLeagueItem)[]) {
+  const itemKeys = Object.keys(item);
+  for (const statName of Object.keys(itemMap) as (keyof FormatterMap)[]) {
     if (
-      statName in itemMap &&
+      itemKeys.includes(statName) &&
       !["gold_cost"].includes(statName) &&
       !statName.startsWith("unique_passive")
     ) {
-      const [descriptor, value] = formatStat(item, statName as keyof FormatterMap);
+      const [descriptor, value] = formatStat(item, statName);
       statJSXList.push(<ItemLine descriptor={descriptor} value={value} key={statName} />);
     }
   }
