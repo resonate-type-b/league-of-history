@@ -6,13 +6,13 @@
 - Only bugfixes that could constitute a meaningful change in gameplay is included. Blatant exploits (e.g. duplicating for free gold) are also excluded.
   - Examples included: attacking wards disabling out of combat bonuses, item giving the wrong amount of stats.
   - Examples excluded: tooltips, visual bugs, stat tracking, shop related, lifesteal incorrectly applying to wards (insignificant), auras sometimes fail to apply at edge of range (rare edge case)
-- Hotfixes are displayed as a message inside the parent patch. The infobox itself shows the item after hotfixes.
+- Hotfixes on the same patch as another change are displayed as a message inside the parent patch. The infobox itself shows the item after hotfixes.
 - Exact formulae for effects such as 'based on missing health' aren't included.
 - Though best effort is made preserve the the exact wording of the passives, there is no guarantee of it being so. For example, tooltip updates without balance changes are frequently not tracked.
 - Modern League of Legends blurs the line between items and game systems for jungle & support. Their items in recent years function more as role markers that unlock specific systems than items in the traditional sense. As a general rule, only information reasonable for in-game item tooltips are included,underlying system changes are not tracked
   - The jungle pet from S12+ is not included, despite technically being an item mechanic. Changes to jungle pet affect jungler balance, rather than item strength.
   - For support items, detailed minion execution mechanics, over-farming penalties, anti lane swap system etc. are similarly considered out of scope.
-  - If an icon was touched up in 10.24 after the 10.23 icon revamp, the 10.24 version is included directly into 10.23
+- If an icon was touched up in 10.24 after the 10.23 icon revamp, the 10.24 version is included directly into 10.23
 - Ornn's Masterwork items are **not** tracked.
 
 **Old patch notes were highly uninformative, and often do not provide enough information to accurately reconstruct an item. In particular, prior to S1, assume listed gold costs to be ballpark estimates, and provided stats to be potentially inaccurate.**

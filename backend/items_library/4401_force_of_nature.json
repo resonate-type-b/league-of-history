@@ -1,0 +1,81 @@
+[
+  {
+    "patch_version": "14.19",
+    "movespeed_percent": 4,
+    "passive_1": "Taking magic damage from champions grants a stack of *Steadfast* for 7 seconds, stacking up to 8 times with the duration refreshing on subsequent magic damage from them and whenever dealing damage to them. Becoming immobilized by an enemy champion grants 2 stacks and also refreshes the duration. Damaging basic attacks and spells per cast instance can only grant 1 stack of *Steadfast* every 1 second. At maximum stacks, gain 70 bonus magic resistance and 6% bonus movement speed."
+  },
+  {
+    "patch_version": "14.1",
+    "magic_resist": 55,
+    "passive_1_name": "STEADFAST",
+    "passive_1": "Taking magic damage from champions grants a stack of *Steadfast* for 7 seconds, stacking up to 8 times with the duration refreshing on subsequent magic damage from them and whenever dealing damage to them. Becoming immobilized by an enemy champion grants 2 stacks and also refreshes the duration. Damaging basic attacks and spells per cast instance can only grant 1 stack of *Steadfast* every 1 second. At maximum stacks, gain 70 bonus magic resistance and 10% bonus movement speed.",
+    "passive_2_name": null,
+    "passive_2": null
+  },
+  {
+    "patch_version": "13.10",
+    "gold_cost": 2800,
+    "hp": 400,
+    "magic_resist": 60,
+    "passive_1": "Taking magic damage from enemy champions grants a stack of *Steadfast* for 7 seconds, up to a maximum of 10. Becoming immobilized by an enemy champion grants 2 additional stacks. Spells can only grant 1 stack of *Steadfast* every 1 second.",
+    "passive_2": "While at maximum stacks of *Steadfast*, gain 10% bonus movement speed and 30 bonus magic resistance."
+  },
+  {
+    "patch_version": "12.1",
+    "passive_1": "Taking magic damage from enemy champions grants a stack of *Steadfast* for 7 seconds, up to a maximum of 6. Becoming immobilized by an enemy champion grants 2 additional stacks. Spells can only grant 1 stack of *Steadfast* every 1 second.",
+    "passive_2": "While at maximum stacks of *Steadfast*, gain 10% bonus movement speed and reduce all incoming magic damage by 25%."
+  },
+  {
+    "patch_version": "11.23",
+    "magic_resist": 70,
+    "passive_1": "Taking magic damage from enemy champions grants a stack of *Steadfast* for 5 seconds, up to a maximum of 6. Becoming immobilized by an enemy champion grants 2 additional stacks. Spells can only grant 1 stack of *Steadfast* every 1 second.",
+    "passive_2_name": "DISSIPATE",
+    "passive_2": "While at maximum stacks of *Steadfast*, gain 10% bonus movement speed and reduce all incoming magic damage by 20%."
+  },
+  {
+    "patch_version": "11.3",
+    "passive_1": "Taking ability damage grants you 8 bonus movement speed and 4 bonus magic resistance for 5 seconds, stacks up to 5 times and each unique ability gives 1 stack."
+  },
+  {
+    "patch_version": "10.23",
+    "removed": false,
+    "icon_version": 1,
+    "components": [1057, 1028, 3066],
+    "hp": 350,
+    "magic_resist": 60,
+    "movespeed_percent": 5,
+    "hp5": null,
+    "gold_cost": 2900,
+    "passive_1_name": "ABSORB",
+    "passive_1": "Taking ability damage grants you 6 bonus movement speed and 4 bonus magic resistance for 5 seconds, stacks up to 5 times and each unique ability gives 1 stack.",
+    "buy_group": ["FORCE OF NATURE"]
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "removed": true
+  },
+  {
+    "patch_version": "20090710",
+    "components": [1057, 1007, 1007]
+  },
+  {
+    "patch_version": "20090626",
+    "movespeed_percent": 7,
+    "passive_1": "Restores 1% maximum health per second when below 40% health."
+  },
+  {
+    "patch_version": "20090619",
+    "passive_1": "Restores 1.2% maximum health per second when below 50% health."
+  },
+  {
+    "patch_version": "20090612",
+    "item_id": 4401,
+    "item_name": "Force of Nature",
+    "components": [1033, 1007, 1007],
+    "movespeed_percent": 10,
+    "magic_resist": 76,
+    "hp5": 40,
+    "gold_cost": 2610,
+    "passive_1": "Restores 1.5% maximum health per second when below 50% health."
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "patch_version": "14.19",
+    "ap": 35,
+    "passive_1": "Damaging an enemy champion with a basic attack or ability damage grants a Soul Shard, up to 2. Healing or shielding an allied champion (excluding yourself) consumes all Soul Shards to heal them for 65 per shard and deal 50 magic damage per shard to the nearest enemy champion within 1100 units of the ally."
+  },
+  {
+    "patch_version": "14.10",
+    "passive_1": "Damaging an enemy champion with a basic attack or ability damage grants a Soul Shard, up to 2. Healing or shielding an allied champion (excluding yourself) consumes all Soul Shards to heal them for 75 per shard and deal 60 magic damage per shard to the nearest enemy champion within 1100 units of the ally.",
+    "motd": "Bugfix: Soul Siphon's damage is now mitigated by spell shields before the missile consumes them."
+  },
+  {
+    "patch_version": "14.5",
+    "motd": "Change: Soul Shards can now be consumed to trigger the heal on allies even if there are no nearby enemies. Bug Fix: Soul Siphon is now properly triggered upon granting a shield to an ally even if they are at full health. Also now properly triggers upon granting a shield to an ally even if they are at full health."
+  },
+  {
+    "patch_version": "14.3",
+    "passive_1": "Damaging an enemy champion with a basic attack or ability damage grants a Soul Shard, up to 3. Healing or shielding an allied champion (excluding yourself) consumes all Soul Shards to heal them for 40 per shard and deal 45 magic damage per shard to the nearest enemy champion within 1100 units of the ally.",
+    "motd": "Bugfix: When the heal cannot trigger, Soul Siphon can now properly discharge the shards to damage enemies when possible."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3067, 4642],
+    "ap": 40,
+    "haste": 20,
+    "gold_cost": 2200,
+    "passive_1": "Damaging an enemy champion with a basic attack or ability damage grants a Soul Shard, up to 3. Healing or shielding an allied champion (excluding yourself) consumes all Soul Shards to heal them for 20 per shard and deal 55 magic damage per shard to the nearest enemy champion within 1100 units of the ally.",
+    "passive_2_name": null,
+    "passive_2": null,
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": ["ECHOES OF HELIA"]
+  },
+  {
+    "patch_version": "13.12",
+    "motd": "Change: No longer is triggered by rune: Font of Life's healing on allies."
+  },
+  {
+    "patch_version": "13.11",
+    "passive_1": "Damaging an enemy champion with a basic attack or ability damage grants a Soul Shard, up to 2. Healing or shielding an allied champion (excluding yourself) consumes all Soul Shards to heal them for 20 – 80 (based on ally's level) per shard and deal 30 – 180 (based on ally's level) magic damage per shard to the nearest enemy champion."
+  },
+  {
+    "patch_version": "13.10",
+    "item_id": 6620,
+    "item_name": "Echoes of Helia",
+    "components": [3012, 4642],
+    "ap": 30,
+    "hp": 200,
+    "haste": 15,
+    "mp_regen": 125,
+    "gold_cost": 2300,
+    "passive_1_name": "SOUL SIPHON",
+    "passive_1": "Damaging an enemy champion with a basic attack or ability damage grants a Soul Shard, up to 2. Healing or shielding an allied champion (excluding yourself) consumes all Soul Shards to heal them for 20 – 100 (based on ally's level) per shard and deal 30 – 200 (based on ally's level) magic damage per shard to the nearest enemy champion.",
+    "passive_2_name": "DISSONANCE",
+    "passive_2": "Gain 3 ability power for every additional 25% base mana regeneration. Disables **Harmony** on your other items.",
+    "passive_4_name": "MYTHIC",
+    "passive_4": "Empowers other Legendary items with 5 ability haste.",
+    "buy_group": ["MYTHIC"]
+  }
+]

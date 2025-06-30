@@ -78,7 +78,7 @@
   },
   {
     "patch_version": "1.0.0.152",
-    "movespeed_flat": 45,
+    "passive_1": "+45 flat movement speed",
     "gold_cost": 1000,
     "passive_2": "Reduces the damage taken from champion basic attacks by 10%."
   },

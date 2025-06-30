@@ -1,0 +1,89 @@
+[
+  {
+    "patch_version": "14.3",
+    "gold_cost": 900
+  },
+  {
+    "patch_version": "14.1",
+    "components": [2022],
+    "haste": 10,
+    "gold_cost": 1000,
+    "buy_group": ["SPELLBLADE"]
+  },
+  {
+    "patch_version": "11.24",
+    "motd": "Bugfix: Spellblade no longer interferes with Skarner's Fracture cooldown reduction."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "components": null,
+    "gold_cost": 700,
+    "mp": null,
+    "cdr": null
+  },
+  {
+    "patch_version": "9.14",
+    "motd": "Hotfix: No longer grants Electrocute/Phase Rush stacks. Spellblade damage is no longer considered part of attack damage for most ability scalings."
+  },
+  {
+    "patch_version": "5.22",
+    "components": [2017],
+    "mp": 250,
+    "cdr": 10,
+    "ap": null,
+    "gold_cost": 1050
+  },
+  {
+    "patch_version": "4.13",
+    "passive_1": "After using an ability, your next basic attack (on-hit) deals 100% base AD bonus physical damage (1.5 second cooldown, begins after using the empowered attack).",
+    "motd": "Note: The exact patch this change was made on is unknown."
+  },
+  {
+    "patch_version": "3.04",
+    "gold_cost": 1200
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "mp": 200
+  },
+  {
+    "patch_version": "1.0.0.101",
+    "passive_1": "After using an ability, your next basic attack (on-hit) deals 100% base AD bonus physical damage (2 second cooldown)."
+  },
+  {
+    "patch_version": "1.0.0.100",
+    "passive_1": "After using an ability, your next basic attack (on-hit) deals 80% base AD bonus physical damage (2 second cooldown).",
+    "motd": "Change: \"Reservoir\" system removed."
+  },
+  {
+    "patch_version": "1.0.0.75",
+    "passive_1": "After using an ability, your next basic attack (on-hit) deals 80% base AD bonus physical damage (3 second cooldown)."
+  },
+  {
+    "patch_version": "0.8.22.115",
+    "passive_1": "After using an ability, your next basic attack (on-hit) deals 100% base AD bonus physical damage (3 second cooldown)."
+  },
+  {
+    "patch_version": "20090626",
+    "gold_cost": 1085
+  },
+  {
+    "patch_version": "20090515",
+    "ap": 25,
+    "mp": 250,
+    "motd": "Change: Spellblade can no longer crit."
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3057,
+    "item_name": "Sheen",
+    "components": [2017, 1052],
+    "ap": 30,
+    "mp": 275,
+
+    "gold_cost": 1070,
+    "passive_1_name": "SPELLBLADE",
+    "passive_1": "After using an ability, your next basic attack (on-hit) deals 100% base AD bonus physical damage."
+  }
+]
