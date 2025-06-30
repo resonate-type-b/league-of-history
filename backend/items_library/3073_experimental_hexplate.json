@@ -1,0 +1,31 @@
+[
+  {
+    "patch_version": "14.19",
+    "components": [2021, 3044, 1042],
+    "hp": 450,
+    "ad": 40,
+    "aspd": 20,
+    "gold_cost": 3000
+  },
+  {
+    "patch_version": "14.2",
+    "components": [2021, 3051],
+    "aspd": 25,
+    "passive_2": "Upon casting your ultimate ability, enter *Overdrive* to gain 30% bonus attack speed and 15% bonus movement speed for 8 seconds (30 second cooldown, starts on cast)."
+  },
+  {
+    "patch_version": "14.1",
+    "item_id": 3073,
+    "item_name": "Experimental Hexplate",
+    "components": [2021, 6670],
+    "hp": 300,
+    "ad": 55,
+    "aspd": 20,
+    "gold_cost": 3000,
+    "passive_1_name": "HEXCHARGED",
+    "passive_1": "Gain 30 ultimate haste.",
+    "passive_2_name": "OVERDRIVE",
+    "passive_2": "Upon casting your ultimate ability, enter *Overdrive* to gain 35% bonus attack speed and 15% bonus movement speed for 8 seconds (30 second cooldown, starts on cast).",
+    "buy_group": ["EXPERIMENTAL HEXPLATE"]
+  }
+]

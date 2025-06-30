@@ -1,0 +1,151 @@
+[
+  {
+    "patch_version": "14.19",
+    "armor": 75,
+    "gold_cost": 2500,
+    "passive_1": "Reduces the attack speed of nearby enemy champions by 20% (700 range).",
+    "passive_2_name": null,
+    "passive_2": null
+  },
+  {
+    "patch_version": "14.5",
+    "gold_cost": 2500,
+    "armor": 65
+  },
+  {
+    "patch_version": "14.2",
+    "gold_cost": 2400
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 2300,
+    "armor": 70
+  },
+  {
+    "patch_version": "13.11",
+    "motd": "Bugfix: No longer sometimes generates monster aggro"
+  },
+  {
+    "patch_version": "13.8",
+    "passive_2": "Reduces incoming damage from basic attacks by 3.5 per 1000 maximum health (minimum 5), capped at 20% of the attack's damage."
+  },
+  {
+    "patch_version": "12.20",
+    "gold_cost": 2700,
+    "armor": 90,
+    "passive_2": "Reduces incoming damage from basic attacks by 3.5 per 1000 maximum health (minimum 5), capped at 40% of the attack's damage."
+  },
+  {
+    "patch_version": "11.24",
+    "motd": "Bugfix: Winter's Caress no longer improperly counts as being in-combat"
+  },
+  {
+    "patch_version": "11.19",
+    "motd": "Bugfix: Winter's Caress no longer activates while dead if purchased while dead"
+  },
+  {
+    "patch_version": "11.11",
+    "passive_1": "Reduces the attack speed of nearby enemies by 20% (700 range).",
+    "passive_2": "Reduces incoming damage from basic attacks by 3.5 per 1000 maximum health (minimum 7), capped at 40% of the attack's damage."
+  },
+  {
+    "patch_version": "11.8",
+    "armor": 80
+  },
+  {
+    "patch_version": "11.3",
+    "gold_cost": 2500,
+    "armor": 70
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 2,
+    "armor": 80,
+    "haste": 20,
+    "cdr": null,
+    "passive_1_name": "WINTER'S CARESS",
+    "passive_1": "Reduces the attack speed of nearby enemies by 15% (700 range).",
+    "passive_2_name": "ROCK SOLID",
+    "passive_2": "Reduces incoming damage from basic attacks by 5 per 1000 maximum health, capped at 40% of the attack's damage.",
+    "buy_group": ["FROZEN HEART"]
+  },
+  {
+    "patch_version": "10.2",
+    "armor": 110
+  },
+  {
+    "patch_version": "7.21",
+    "armor": 100
+  },
+  {
+    "patch_version": "6.22",
+    "gold_cost": 2700
+  },
+  {
+    "patch_version": "6.9",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 2800
+  },
+  {
+    "patch_version": "5.16",
+    "gold_cost": 2600,
+    "armor": 90
+  },
+  {
+    "patch_version": "4.20",
+    "gold_cost": 2450
+  },
+  {
+    "patch_version": "4.5",
+    "gold_cost": 2600,
+    "armor": 100,
+    "passive_1": "Reduces the attack speed of nearby enemies by 15% (700 range)."
+  },
+  {
+    "patch_version": "3.10",
+    "gold_cost": 2900
+  },
+  {
+    "patch_version": "3.02",
+    "armor": 95
+  },
+  {
+    "patch_version": "3.01",
+    "gold_cost": 3000
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "components": [3082, 3024],
+    "gold_cost": 3100,
+    "armor": 90,
+    "mp": 400,
+    "cdr": 20,
+    "passive_1": "Reduces the attack speed of nearby enemies by 20% (700 range)."
+  },
+  {
+    "patch_version": "1.0.0.111",
+    "gold_cost": 2775,
+    "passive_1": "+20% cooldown reduction and reduces the attack speed of nearby enemies by 20%."
+  },
+  {
+    "patch_version": "1.0.0.82",
+    "components": [3024, 1029, 1029],
+    "gold_cost": 3075,
+    "passive_1": "+25% cooldown reduction and reduces the attack speed of nearby enemies by 20%.",
+    "motd": "Note: Unclear exactly when the attack speed debuff was changed to 20%"
+  },
+  {
+    "patch_version": "20090606",
+    "item_id": 3110,
+    "item_name": "Frozen Heart",
+    "components": [1031, 3024],
+    "gold_cost": 2800,
+    "armor": 99,
+    "mp": 500,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+25% cooldown reduction and reduces the attack speed of nearby enemies by 25%."
+  }
+]

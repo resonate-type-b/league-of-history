@@ -1,0 +1,48 @@
+[
+  {
+    "patch_version": "25.04",
+    "passive_2": "Immobilizing, or slowing if you are melee, an enemy champion grants a 100 (+ 4.5% current mana)  shield for 3 seconds (8 second cooldown). The shield's strength is increased「 by 80% 」if there is more than one enemy champion within 1200 units."
+  },
+  {
+    "patch_version": "14.10",
+    "hp": 550,
+    "passive_1": "Grants bonus health equal to 15% maximum mana."
+  },
+  {
+    "patch_version": "14.3",
+    "buy_group": ["MANAFLOW"]
+  },
+  {
+    "patch_version": "13.10",
+    "passive_2": "Immobilizing, or slowing if you are melee, an enemy champion grants a 100 – 180 (based on level) (+ 4.5% current mana)  shield for 3 seconds (8 second cooldown). The shield's strength is increased「 by 80% 」if there is more than one enemy champion within 1200 units."
+  },
+  {
+    "patch_version": "13.1",
+    "hp": 400
+  },
+  {
+    "patch_version": "12.10",
+    "passive_2": "Immobilizing, or slowing if you are melee, an enemy champion consumes 3% current mana to grant a 100 – 180 (based on level) (+ 4.5% current mana)  shield for 3 seconds (8 second cooldown). The shield's strength is increased「 by 80% 」if there is more than one enemy champion within 1200 units. Can only activate if you have greater than 20% maximum mana."
+  },
+  {
+    "patch_version": "12.7",
+    "hp": 350,
+    "motd": "Bugfix: Fixed a bug where the base shield did not properly update with champion level."
+  },
+  {
+    "patch_version": "11.23",
+    "item_id": 3121,
+    "item_name": "Fimbulwinter",
+    "components": [3119],
+    "gold_cost": 2400,
+    "category": "Transforms",
+    "hp": 400,
+    "mp": 860,
+    "haste": 15,
+    "passive_1_name": "AWE",
+    "passive_1": "Grants bonus health equal to 8% maximum mana.",
+    "passive_2_name": "EVERLASTING",
+    "passive_2": "Immobilizing, or slowing if you are melee, an enemy champion consumes 3% current mana to grant a 100 – 200 (based on level) (+ 5% current mana)  shield for 3 seconds (8 second cooldown). The shield's strength is increased「 by 80% 」if there is more than one enemy champion within 1200 units. Can only activate if you have greater than 20% maximum mana.",
+    "buy_group": ["MANA CHARGE"]
+  }
+]
