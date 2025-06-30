@@ -1,0 +1,91 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 2900,
+    "ad": 60
+  },
+  {
+    "patch_version": "14.9",
+    "passive_1": "Hitting an enemy champion with 2 separate attacks or abilities within 2 seconds deals bonus physical damage equal to [6%|4%] of target's maximum health and grants you a shield for [160|80] (+ [40%|20%] bonus AD) for 2 seconds (6 second cooldown)."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3133, 1037, 1036],
+    "ad": 70,
+    "haste": 15,
+    "lethality": null,
+    "gold_cost": 2800,
+    "passive_1": "Hitting an enemy champion with 2 separate attacks or abilities within 2 seconds deals bonus physical damage equal to [8%|4%] of target's maximum health and grants you a shield for [160|80] (+ [40%|20%] bonus AD) for 2 seconds (6 second cooldown).",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": ["ECLIPSE"]
+  },
+  {
+    "patch_version": "13.1b",
+    "components": [3134, 3133],
+    "haste": 15,
+    "omnivamp": null,
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 3% of their maximum health and grants you 15% bonus movement speed and a [160|80] (+ [35%|17.5%] bonus AD) shield for 2 seconds ([6|12] second cooldown)."
+  },
+  {
+    "patch_version": "12.19",
+    "ad": 60,
+    "lethality": 12
+  },
+  {
+    "patch_version": "12.13",
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 3% of their maximum health and grants you 15% bonus movement speed and a [160|80] (+ [35%|17.5%] bonus AD) shield for 2 seconds ([8|16] second cooldown).",
+    "passive_4": "Empowers your other Legendary items with 4% armor penetration and 5 bonus movement speed."
+  },
+  {
+    "patch_version": "12.10",
+    "omnivamp": 7,
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 6% of their maximum health and grants you 15% bonus movement speed and a [160|80] (+ [35%|17.5%] bonus AD) shield for 2 seconds ([8|16] second cooldown)."
+  },
+  {
+    "patch_version": "12.2",
+    "motd": "Bugfix: Fixed a bug where triggering Glacial Augment would incorrectly count toward triggering Ever Rising Moon."
+  },
+  {
+    "patch_version": "12.1",
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 6% of their maximum health and grants you 15% bonus movement speed and a [180|90] (+ [40%|20%] bonus AD) shield for 2 seconds ([8|16] second cooldown)."
+  },
+  {
+    "patch_version": "11.23",
+    "gold_cost": 3100,
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 6% of their maximum health and grants you 15% bonus movement speed and a [180|90] (+ [40%|20%] bonus AD) shield for 2 seconds ([6|16] second cooldown)."
+  },
+  {
+    "patch_version": "11.3",
+    "omnivamp": 8,
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 6% of their maximum health and grants you 15% bonus movement speed and a [180|90] (+ [40%|20%] bonus AD) shield for 2 seconds ([8|16] second cooldown)."
+  },
+  {
+    "patch_version": "11.1",
+    "motd": "Bugfix: Passive cooldown no longer ignores item haste granted from rune: Ingenious Hunter."
+  },
+  {
+    "patch_version": "10.25",
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 6% of their maximum health and grants you 15% bonus movement speed and a [150|75] (+ [40%|20%] bonus AD) shield for 2 seconds ([8|16] second cooldown)."
+  },
+  {
+    "patch_version": "10.24",
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 6% of their maximum health and grants you 15% bonus movement speed and a [150|100] (+ [40%|30%] bonus AD) shield for 2 seconds ([8|16] second cooldown)."
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 6692,
+    "item_name": "Eclipse",
+    "components": [3134, 1036, 1053],
+    "ad": 55,
+    "lethality": 18,
+    "omnivamp": 10,
+    "gold_cost": 3200,
+    "passive_1_name": "EVER RISING MOON",
+    "passive_1": "Hitting a champion with 2 separate attacks or abilities within 1.5 seconds deals bonus physical damage equal to 6% of their maximum health and grants you 15% bonus movement speed and a [150|100] (+ [40%|30%] bonus AD) shield for 2 seconds ([6|12] second cooldown).",
+    "passive_4_name": "MYTHIC",
+    "passive_4": "Empowers your other Legendary items with 4% armor penetration.",
+    "buy_group": ["MYTHIC"],
+    "motd": "Hotfix: • Bonus physical damage reduced to 6% of target's maximum health from 8%.\n\n  • Bonus movement speed reduced to 15% from 30%."
+  }
+]
