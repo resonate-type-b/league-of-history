@@ -1,0 +1,173 @@
+[
+  {
+    "patch_version": "14.19",
+    "ap": 30,
+    "ad": 30
+  },
+  {
+    "patch_version": "14.3",
+    "components": [1052, 1043, 1037],
+    "ad": 35,
+    "ap": 35
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1052, 3051, 1037],
+    "ad": 30,
+    "ap": 30,
+    "aspd": 25,
+    "gold_cost": 3000,
+    "passive_1": "Basic attacks deal 30 bonus magic damage on-hit.",
+    "passive_3_name": null,
+    "passive_3": null,
+    "buy_group": ["GUINSOO'S RAGEBLADE"]
+  },
+  {
+    "patch_version": "13.10",
+    "components": [1052, 6677, 1037],
+    "ad": 30,
+    "ap": 30,
+    "aspd": 25,
+    "gold_cost": 3200,
+    "passive_1": "Basic attacks deal 30 bonus magic damage on-hit. Additionally, convert every 1% critical strike chance into 1.5 bonus magic damage on-hit, capped at 100% critical strike chance, for a maximum of 180 bonus magic damage on-hit. This damage is affected by critical strike modifiers.",
+    "passive_2": "Basic attacks grant 8% bonus attack speed for 3 seconds, stacking up to 4 times for a total of 32% bonus attack speed. At maximum stacks, basic attacks on-attack grant a Phantom stack for 6 seconds, up to 2 stacks. At 2 Phantom stacks, the next basic attack consumes all stacks on-attack to trigger a Phantom Hit that applies on-hit effects to the target at 100% effectiveness after a 0.15 second delay.",
+    "passive_3_name": "MYTHIC PASSIVE",
+    "passive_3": "Empowers other Legendary items with 5% armor penetration and 6% magic penetration.",
+    "buy_group": ["MYTHIC"]
+  },
+  {
+    "patch_version": "12.23",
+    "motd": "Bugfix: Phantom Hit's 0 damage instance no longer counts as magic damage"
+  },
+  {
+    "patch_version": "11.10",
+    "gold_cost": 2600
+  },
+  {
+    "patch_version": "11.5",
+    "passive_1": "Convert every 1% critical strike chance into 2 bonus physical damage on-hit, modified by critical strike damage modifiers, and capped at 100% critical strike chance."
+  },
+  {
+    "patch_version": "11.4",
+    "aspd": 45
+  },
+  {
+    "patch_version": "10.25",
+    "passive_1": "Convert every 1% critical strike chance into 2 bonus physical damage on-hit."
+  },
+  {
+    "patch_version": "10.24",
+    "passive_1": "Deal 2 bonus physical damage on-hit for every 1% critical strike chance, up to 200 bonus physical damage on-hit at 100% critical strike chance, but can no longer critically strike.",
+    "motd": "Bugfix: Now properly triggers with Kraken Slayer and Muramana."
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "components": [6677, 1018, 1042],
+    "icon_version": 1,
+    "gold_cost": 2800,
+    "aspd": 40,
+    "crit_chance": 20,
+    "ap": null,
+    "ad": null,
+    "passive_1_name": "WRATH",
+    "passive_1": "Deal 2 bonus physical damage on-hit for every 1% critical strike chance, up to 200 bonus physical damage on-hit at 100% critical strike chance, but can no longer critically strike. Damage applies to structures.",
+    "passive_2_name": "SEETHING STRIKE",
+    "passive_2": "Every third basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit after a 0.15 second delay.",
+    "passive_3_name": null,
+    "passive_4_name": null,
+    "passive_3": null,
+    "passive_4": null,
+    "buy_group": ["CRIT MODIFIER"],
+    "motd": "Hotfix: Total cost increased to An icon representing Gold 2800 from An icon representing Gold 2600.\n\n  Bonus physical damage per critical strike chance reduced to 2 from 2.25. "
+  },
+  {
+    "patch_version": "10.13",
+    "motd": "Bugfix: Guinsoo's Rage no longer triggers on the target when the holder's basic attack is blocked or destroyed."
+  },
+  {
+    "patch_version": "9.10",
+    "passive_1": "Basic attacks grant 8% attack speed for 5 seconds, stacking up to 6 times, granting a maximum of 48% attack speed. While at half stacks, melee champions' next basic attack fully stack Rageblade.\n\n  **Guinsoo's Rage**: Every third basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit.",
+    "passive_3": "Grants 15% total armor penetration.",
+    "passive_4": "Grants 15% magic penetration."
+  },
+  {
+    "patch_version": "8.23",
+    "reworked": true,
+    "gold_cost": 3100,
+    "passive_1": "Basic attacks grant 8% attack speed for 5 seconds, stacking up to 6 times, granting a maximum of 48% attack speed. While at half stacks, melee champions' next basic attack fully stack Rageblade.\n\n  **Guinsoo's Rage**: Every other basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit.",
+    "passive_2": "Basic attacks deal 15 bonus magic damage on-hit.",
+    "passive_3_name": "LAST WHISPER",
+    "passive_3": "Grants 6.5% – 15% (based on level) total armor penetration.",
+    "passive_4_name": "DISSOLVE",
+    "passive_4": "Grants 6.5% – 15% (based on level) magic penetration."
+  },
+  {
+    "patch_version": "8.13",
+    "passive_1": "Basic attacks grant 8% attack speed, 2.5% bonus AD, and 2.5% AP for 5 seconds, stacking up to 6 times, granting a maximum of 48% attack speed, 15% bonus AD, and 15% AP. At 6 stacks, gain **Guinsoo's Rage**. While at half stacks, melee champions' next basic attack fully stack Rageblade.\n\n  **Guinsoo's Rage**: Every other basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit."
+  },
+  {
+    "patch_version": "8.7",
+    "gold_cost": 3300
+  },
+  {
+    "patch_version": "8.6",
+    "components": [1052, 1043, 1037],
+    "ad": 25,
+    "ap": 25,
+    "gold_cost": 3000,
+    "passive_2": "Basic attacks deal 5 (+ 10% bonus AD) physical and 5 (+ 10% AP) magic damage on-hit.",
+    "passive_1": "Basic attacks grant 8% attack speed, 4% bonus AD, and 4% AP for 5 seconds, stacking up to 6 times, granting a maximum of 48% attack speed, 24% bonus AD, and 24% AP. At 6 stacks, gain **Guinsoo's Rage**. While at half stacks, melee champions' next basic attack fully stack Rageblade.\n\n  **Guinsoo's Rage**: Every other basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit.",
+    "motd": "Note: Patch notes claim that ability power was reduced from 50."
+  },
+  {
+    "patch_version": "6.23",
+    "aspd": 25
+  },
+  {
+    "patch_version": "6.9",
+    "components": [1037, 1026, 1043],
+    "gold_cost": 3600,
+    "passive_2": "Basic attacks deal 15 bonus magic damage on-hit.",
+    "passive_1": "On attack, grant 8% bonus attack speed, 3 attack damage, and 4 ability power for 8 seconds, stacking up to 6 times. At maximum stacks, gain **Guinsoo's Rage**\n\n  **Guinsoo's Rage**: Every other basic attack triggers a Phantom Hit on-attack that applies on-hit effects to the target unit."
+  },
+  {
+    "patch_version": "5.24",
+    "passive_1": "On attack, gains [2|1] stacks, each granting 8% bonus attack speed, 3 attack damage, and 4 ability power for 8 seconds, stacking up to 8 times. At maximum stacks, gain **Guinsoo's Rage**\n\n  **Guinsoo's Rage**: Basic attacks deal 20 (+ 15% bonus AD) (+ 7.5% AP) bonus magic damage to your target and nearby enemy units (350 radius)"
+  },
+  {
+    "patch_version": "5.23",
+    "gold_cost": 2800
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 2500,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "On attack, gains [2|1] stacks, each granting 8% bonus attack speed, 3 attack damage, and 4 ability power for 8 seconds, stacking up to 8 times. At maximum stacks, gain **Guinsoo's Rage**\n\n  **Guinsoo's Rage**: Basic attacks deal 20 (+ 15% bonus AD) (+ 7.5% AP) bonus magic damage to your target and nearby enemy units (450 radius)"
+  },
+  {
+    "patch_version": "5.13",
+    "gold_cost": 2590
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 2600,
+    "passive_1": "On attack or ability cast, grants 4% bonus attack speed and 4 ability power for 8 seconds, stacking up to 8 times.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "Falling below 50% health grants you 20% bonus attack speed, 10% life steal and 10% spell vamp until you exit combat (30 second cooldown)."
+  },
+  {
+    "patch_version": "1.0.0.74",
+    "motd": "Bugfix: Fixed a bug where the first time you attacked a target in an attack cycle, it would not function."
+  },
+  {
+    "patch_version": "0.9.25.21",
+    "item_id": 3124,
+    "item_name": "Guinsoo's Rageblade",
+    "components": [1037, 1026],
+    "gold_cost": 2235,
+    "ap": 45,
+    "ad": 35,
+    "passive_1": "On attack or ability cast, grants 4% bonus attack speed and 6 ability power for 5 seconds, stacking up to 8 times."
+  }
+]
