@@ -1,0 +1,54 @@
+[
+  {
+    "patch_version": "25.04",
+    "passive_1": "While within 700 units of an enemy champion, generate a stack on them each second, stacking up to 3 times. Your next basic attack against a target with 3 stacks is empowered to consume them all to deal 70 (+ 6% maximum health) bonus physical damage on-hit and grant you permanent bonus health equal to「 8% of that amount 」 (30 second cooldown per target)."
+  },
+  {
+    "patch_version": "25.S1.1",
+    "passive_1": "While within 700 units of an enemy champion, generate a stack on them each second, stacking up to 3 times. Your next basic attack against a target with 3 stacks is empowered to consume them all to deal 70 (+ 6% maximum health) bonus physical damage on-hit and grant you permanent bonus health equal to「 10% of that amount 」 (30 second cooldown per target)."
+  },
+  {
+    "patch_version": "14.19",
+    "hp_regen": 100,
+    "components": [1011, 3801, 1011]
+  },
+  {
+    "patch_version": "14.5",
+    "passive_1": "While within 700 units of an enemy champion, generate a stack on them each second, stacking up to 3 times. Your next basic attack against a target with 3 stacks is empowered to consume them all to deal 80 (+ 12% bonus health from items) bonus physical damage on-hit and grant you permanent bonus health equal to「 12% of that amount 」 (30 second cooldown per target)."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1011, 3801, 1028],
+    "hp": 900,
+    "haste": null,
+    "gold_cost": 3000,
+    "passive_1": "While within 700 units of an enemy champion, generate a stack on them each second, stacking up to 3 times. Your next basic attack against a target with 3 stacks is empowered to consume them all to deal 100 (+ 10% bonus health from items) bonus physical damage on-hit and grant you permanent bonus health equal to「 12% of that amount 」 (30 second cooldown per target).",
+    "passive_2_name": "GOLIATH",
+    "passive_2": "For each 1000 maximum health, gain 3% increased size, up to 30%.",
+    "buy_group": ["HEARTSTEEL"],
+    "motd": "Hotfix: Health increased to 900 from 800."
+  },
+  {
+    "patch_version": "13.19",
+    "motd": "Bugfix: On-target cooldown is no longer reset upon the user's death"
+  },
+  {
+    "patch_version": "12.23",
+    "motd": "Bugfix: On-target cooldown is now properly reduced by rune: Ingenious Hunter"
+  },
+  {
+    "patch_version": "12.22",
+    "item_id": 3084,
+    "item_name": "Heartsteel",
+    "components": [3067, 3801, 1011],
+    "passive_1_name": "COLOSSAL CONSUMPTION",
+    "passive_1": "While within 700 units of an enemy champion, generate a stack on them each second, stacking up to 3 times. Your next basic attack against a target with 3 stacks is empowered to consume them all to deal 125 (+ 6% maximum health) bonus physical damage and grant you permanent bonus health equal to 12.5 (+ 0.6% maximum health) (30 second cooldown per target).",
+    "passive_2_name": "MYTHIC PASSIVE",
+    "passive_2": "Empowers other Legendary items with 1% bonus health and 6% increased size.",
+    "buy_group": ["MYTHIC"],
+    "hp": 800,
+    "hp_regen": 200,
+    "haste": 20,
+    "gold_cost": 3200
+  }
+]

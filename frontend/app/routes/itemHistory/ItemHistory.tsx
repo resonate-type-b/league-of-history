@@ -135,7 +135,24 @@ export default function ItemHistory() {
       );
       // if item name changed, put a header for the old item name
       if (lastItem.item_name !== item.item_name) {
-        InfoBoxJSXList.push(<SubHeader key={patchVersion + "name"}>{item.item_name}</SubHeader>);
+        InfoBoxJSXList.push(
+          <SubHeader key={patchVersion + "lastName"} marginBottom={false}>
+            <section className="flex flex-row">
+              <span>↑</span>
+              <span className="text-center flex-grow">{lastItem.item_name}</span>
+              <span>↑</span>
+            </section>
+          </SubHeader>
+        );
+        InfoBoxJSXList.push(
+          <SubHeader key={patchVersion + "name"}>
+            <section className="flex flex-row">
+              <span>↓</span>
+              <span className="text-center flex-grow">{item.item_name}</span>
+              <span>↓</span>
+            </section>
+          </SubHeader>
+        );
       }
       patchesUnchanged.length = 0;
     }

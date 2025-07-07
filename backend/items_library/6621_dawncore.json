@@ -8,7 +8,7 @@
     "patch_version": "14.10",
     "components": [1026, 3114, 3114],
     "ap": 60,
-    "mp5": 100,
+    "mp_regen": 100,
     "heal_power": 16,
     "haste": null,
     "passive_1": "Gain 2% heal and shield power and 10 ability power for every additional 100% base mana regeneration.",

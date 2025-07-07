@@ -1,0 +1,140 @@
+[
+  {
+    "patch_version": "14.1",
+    "components": [2019, 1038],
+    "ad": 55,
+    "armor": 45,
+    "gold_cost": 3200,
+    "passive_1": "Upon taking lethal damage, resurrects and restores 50% of base health and 100% of maximum mana after 4 seconds of  stasis (300 second cooldown)."
+  },
+  {
+    "patch_version": "12.17",
+    "gold_cost": 3000,
+    "ad": 45
+  },
+  {
+    "patch_version": "11.20",
+    "motd": "Bugfix: Fixed a bug where certain summoner spells could be used while in the resurrecting state."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 2,
+    "ad": 40,
+    "passive_1_name": "REBIRTH",
+    "passive_1": "Upon taking lethal damage, resurrects and restores 50% of base health and 30% of maximum mana after 4 seconds of  stasis (300 second cooldown).",
+    "buy_group": ["GUARDIAN ANGEL"]
+  },
+  {
+    "patch_version": "10.14",
+    "motd": "Bugfix: Abilities with damaging auras (e.g. Renekton's Dominus) no longer continue to damage nearby enemies while the champion is in a revive state."
+  },
+  {
+    "patch_version": "8.11",
+    "ad": 45,
+    "armor": 40,
+    "gold_cost": 2800
+  },
+  {
+    "patch_version": "7.22",
+    "components": [1038, 1029, 2420]
+  },
+  {
+    "patch_version": "7.11",
+    "icon_version": 1
+  },
+  {
+    "patch_version": "7.9",
+    "reworked": true,
+    "components": [1038, 1029],
+    "ad": 40,
+    "armor": 30,
+    "magic_resist": null,
+    "passive_1": "Upon taking lethal damage, restores 50% base health and 30% maximum mana after 4 seconds of stasis (300 second cooldown)."
+  },
+  {
+    "patch_version": "6.9",
+    "magic_resist": 45,
+    "gold_cost": 2400
+  },
+  {
+    "patch_version": "6.5",
+    "gold_cost": 2700,
+    "passive_1": "Upon taking lethal damage, restores the higher of 700 health or 30% of maximum health, and 30% maximum mana after 4 seconds of stasis (300 second cooldown)."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 2900,
+    "armor": 60,
+    "magic_resist": 60
+  },
+  {
+    "patch_version": "5.1",
+    "gold_cost": 2800
+  },
+  {
+    "patch_version": "4.21",
+    "components": [1057, 1031],
+    "gold_cost": 2850
+  },
+  {
+    "patch_version": "4.20",
+    "components": [1033, 1031]
+  },
+  {
+    "patch_version": "3.10",
+    "components": [1057, 1031],
+    "magic_resist": 40,
+    "gold_cost": 2750
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "armor": 50,
+    "magic_resist": 30,
+    "passive_1": "Upon taking lethal damage, restores 30% of base health and maximum mana after 4 seconds of stasis (300 second cooldown)."
+  },
+  {
+    "patch_version": "1.0.0.103",
+    "motd": "Change: Most positive buffs are now removed on pseudo-death."
+  },
+  {
+    "patch_version": "1.0.0.100",
+    "passive_1": "Upon taking lethal damage, restores 750 health and 375 mana after 4 seconds of stasis (300 second cooldown)."
+  },
+  {
+    "patch_version": "1.0.0.94(b)",
+    "motd": "Change: Will now only be ready on cloned units if it was ready on the creating champion."
+  },
+  {
+    "patch_version": "1.0.0.79",
+    "motd": "Change: Positive buffs are no longer lost on pseudo-death."
+  },
+  {
+    "patch_version": "1.0.0.70",
+    "motd": "Change: Elixirs are no longer lost on pseudo-death."
+  },
+  {
+    "patch_version": "1.0.0.52",
+    "passive_1": "Upon taking lethal damage, restores 40% of base health and maximum mana after 4 seconds of stasis (300 second cooldown).",
+    "motd": "Change: You can no longer teleport while being revived by Guardian Angel."
+  },
+  {
+    "patch_version": "1.0.0.32",
+    "gold_cost": 2600
+  },
+  {
+    "patch_version": "20090515",
+    "armor": 75,
+    "magic_resist": 40
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3026,
+    "item_name": "Guardian Angel",
+    "components": [1033, 1029, 1031],
+    "armor": 80,
+    "magic_resist": 45,
+    "gold_cost": 2250,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "Upon taking lethal damage, restores 50% of base health and maximum mana after 4 seconds of stasis (300 second cooldown)."
+  }
+]
