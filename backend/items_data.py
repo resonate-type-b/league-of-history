@@ -3,6 +3,7 @@ from pydantic_model import ItemModel
 from typing import Sequence
 from sqlalchemy import select
 from collections import defaultdict
+from pydantic import ValidationError
 
 from conn import session_factory
 from orm_model import Item
@@ -60,9 +61,12 @@ def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -
             curr_definition["category"] = ""
 
         curr_definition["patch_version"] = patch
-        ItemModel.model_validate(curr_definition)
-
-        return_list.append(ItemModel.model_validate(curr_definition))
+        try:
+            return_list.append(ItemModel.model_validate(curr_definition))
+        except ValidationError as e:
+            raise AssertionError(
+                f"Error validating item {curr_definition['item_name']} for patch {patch}: {e}"
+            ) from e
 
         # these once off values are not persisted to future patches
         curr_definition["motd"] = None

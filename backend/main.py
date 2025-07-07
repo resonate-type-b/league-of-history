@@ -4,7 +4,6 @@ import env_config  # type:ignore  # noqa: F401
 from pathlib import Path
 import json
 from fastapi import FastAPI
-from typing import Optional
 from sqlalchemy import select, desc
 from fastapi.middleware.cors import CORSMiddleware
 import os
@@ -31,8 +30,11 @@ p = Path(__file__).parent
 for file in (p/"items_library").iterdir():
     if file.suffix == ".json":
         with open(file, "r", encoding="utf-8") as f:
-            json_data = json.load(f)
-            insert_items_data(format_item_from_json(json_data, patch_versions))
+            try:
+                json_data = json.load(f)
+                insert_items_data(format_item_from_json(json_data, patch_versions))
+            except json.decoder.JSONDecodeError as e:
+                print(f"Error decoding JSON from {file}: {e}")
 
 categorise_final_items()
 
@@ -115,7 +117,6 @@ def get_item(item_id: int):
     if not item_list:
         return "Error: No items found"
     return item_list
-
 
 
 @app.get("/patch_versions/")

@@ -1,5 +1,5 @@
-from pydantic import BaseModel, Field, ConfigDict
-from typing import Optional
+from pydantic import BaseModel, Field, ConfigDict, model_validator
+from typing import Optional, Self
 
 # there is no model for the patch table because I'm lazy and that table has static data that I already know is valid...
 
@@ -54,3 +54,57 @@ class ItemModel(BaseModel):
     reworked: Optional[bool] = None
 
     model_config = ConfigDict(from_attributes=True)
+
+    @model_validator(mode="after")
+    def mutually_exclusive_stats(self) -> Self:
+        exclusive_stats = [
+            ("hp5", "hp_regen"),
+            ("mp5", "mp_regen"),
+            ("armor_pen_flat", "lethality"),
+            ("cdr", "haste")
+        ]
+
+        for stat1, stat2 in exclusive_stats:
+            if getattr(self, stat1) and getattr(self, stat2):
+                raise ValueError(f"Only one of {stat1} or {stat2} can be set.")
+        return self
+
+    @model_validator(mode="after")
+    def check_zero_value(self) -> Self:
+        numerical_stats = [
+            "hp",
+            "hp5",
+            "hp_regen",
+            "armor",
+            "magic_resist",
+            "tenacity",
+            "slow_resist",
+            "aspd",
+            "ad",
+            "ap",
+            "crit_chance",
+            "armor_pen_flat",
+            "lethality",
+            "armor_pen_percent",
+            "magic_pen_flat",
+            "magic_pen_percent",
+            "lifesteal",
+            "physical_vamp",
+            "magic_vamp",
+            "omnivamp",
+            "cdr",
+            "haste",
+            "mp",
+            "mp5",
+            "mp_regen",
+            "movespeed_flat",
+            "movespeed_percent",
+            "gp10",
+            "heal_power"
+        ]
+
+        for stat in numerical_stats:
+            value = getattr(self, stat)
+            if value == 0:
+                raise ValueError(f"{stat} is 0. Should be None instead.")
+        return self

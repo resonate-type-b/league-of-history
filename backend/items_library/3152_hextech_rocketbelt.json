@@ -1,0 +1,99 @@
+[
+  {
+    "patch_version": "25.10",
+    "components": [3145, 3108, 1028],
+    "hp": 300,
+    "ap": 70,
+    "haste": 20,
+    "gold_cost": 2650
+  },
+  {
+    "patch_version": "14.19",
+    "hp": 350,
+    "ap": 60
+  },
+  {
+    "patch_version": "14.15",
+    "hp": 400
+  },
+  {
+    "patch_version": "14.5",
+    "gold_cost": 2600,
+    "ap": 70
+  },
+  {
+    "patch_version": "14.3",
+    "passive_1": "Dash 275 units in the target direction, though not through terrain, unleashing an arc of 7 rockets in the same direction that deal 100 (+ 10% AP) magic damage to enemies hit (40 second cooldown). Supersonic resets the user's basic attack timer."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3145, 3067],
+    "ap": 60,
+    "hp": 300,
+    "haste": 15,
+    "magic_pen_flat": null,
+    "gold_cost": 2500,
+    "passive_1": "Dash 275 units in the target direction, though not through terrain, unleashing an arc of 7 rockets in the same direction that deal 125 (+ 15% AP) magic damage to enemies hit (40 second cooldown). Supersonic resets the user's basic attack timer.",
+    "buy_group": ["HEXTECH PROTOBELT"]
+  },
+  {
+    "patch_version": "11.23",
+    "components": [1026, 3145, 1052]
+  },
+  {
+    "patch_version": "11.8",
+    "hp": 250,
+    "magic_pen_flat": 6
+  },
+  {
+    "patch_version": "11.2",
+    "passive_1": "Dash 125 to 275 units in the target direction, though not through terrain, unleashing an arc of 7 rockets in the same direction that deal 125 (+ 15% AP) magic damage. Afterwards, gain 30% bonus movement speed while facing nearby enemy champions for 1.5 seconds (40 second cooldown). Supersonic resets the user's basic attack timer."
+  },
+  {
+    "patch_version": "11.1",
+    "ap": 90,
+    "hp": 350,
+    "passive_1": "Dash 125 to 275 units in the target direction, though not through terrain, unleashing an arc of 7 rockets in the same direction that deal 125 (+ 15% AP) magic damage. Afterwards, gain 50% bonus movement speed while facing nearby enemy champions for 2 seconds (40 second cooldown). Supersonic resets the user's basic attack timer."
+  },
+  {
+    "patch_version": "10.24",
+    "passive_1": "Dash 125 to 275 units in the target direction, though not through terrain, unleashing an arc of 7 rockets in the same direction that deal 175 – 250 (based on level) (+ 15% AP) magic damage. Afterwards, gain 50% bonus movement speed while facing nearby enemy champions for 2 seconds (40 second cooldown). Supersonic resets the user's basic attack timer.",
+    "motd": "Bugfix: Projectiles no longer goes through champion-created terrain."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "item_name": "Hextech Rocketbelt",
+    "components": [3145, 1028, 1026],
+    "passive_1_name": "SUPERSONIC",
+    "passive_1": "Dash 125 to 275 units in the target direction, though not through terrain, unleashing an arc of 7 rockets in the same direction that deal 200 – 300 (based on level) (+ 15% AP) magic damage. Afterwards, gain 75% bonus movement speed while facing nearby enemy champions for 2 seconds (40 second cooldown). Supersonic resets the user's basic attack timer.",
+    "passive_2_name": "MYTHIC PASSIVE",
+    "passive_2": "Empowers your other Legendary items with 5 magic penetration.",
+    "buy_group": ["MYTHIC"],
+    "ap": 80,
+    "hp": 250,
+    "cdr": null,
+    "haste": 15,
+    "gold_cost": 3200
+  },
+  {
+    "patch_version": "6.22",
+    "passive_1": "Dash forward and unleash a nova of fire bolts that deal 75 – 150 (based on level) (+ 25% AP) as magic damage (40 second cooldown, shared with other Hextech items). Champions and monsters hit by multiple fire bolts take 10% damage per additional bolt."
+  },
+  {
+    "patch_version": "6.13",
+    "motd": "Change: Protobelt's dash now disables spellcasts and channels for the duration"
+  },
+  {
+    "patch_version": "6.9",
+    "item_id": 3152,
+    "item_name": "Hextech Protobelt-01",
+    "components": [3145, 3067],
+    "passive_1_name": "FIRE BOLT",
+    "passive_1": "Dash forward and unleash a nova of fire bolts that deal 75 – 150 (based on level) (+ 35% AP) as magic damage (40 second cooldown, shared with other Hextech items). Champions and monsters hit by multiple fire bolts take 20% damage per additional bolt.",
+    "hp": 300,
+    "ap": 60,
+    "cdr": 10,
+    "gold_cost": 2500
+  }
+]

@@ -74,6 +74,20 @@ export function InfoBoxSwitcher({ infoBox, diffBox, infoItem, diffItem }: InfoBo
   );
 }
 
-export function SubHeader({ children }: { children: React.ReactNode }) {
-  return <div className={"text-3xl text-center font-medium bg-blue-950"}>{children}</div>;
+export function SubHeader({
+  children,
+  marginBottom = true,
+}: {
+  children: React.ReactNode;
+  marginBottom?: boolean;
+}) {
+  return (
+    <div
+      className={
+        "text-3xl text-center font-medium bg-blue-950 border-gray-400" +
+        (marginBottom ? " mb-10 border-b-1" : " border-y-1")
+      }>
+      {children}
+    </div>
+  );
 }
