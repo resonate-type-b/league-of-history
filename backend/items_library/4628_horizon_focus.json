@@ -1,0 +1,69 @@
+[
+  {
+    "patch_version": "25.11",
+    "gold_cost": 2800,
+    "ap": 115
+  },
+  {
+    "patch_version": "25.10",
+    "components": [3108, 3108, 1026],
+    "ap": 110,
+    "gold_cost": 2900,
+    "passive_1": "Dealing ability damage to a champion at 600 units away or greater from the cast position reveals them for 6 seconds.",
+    "passive_2": "Upon triggering Hypershot, grant sight of the area 1400 units around the target for 2 seconds and apply Hypershot's effects to enemy champions within for 3 seconds (30 second cooldown). "
+  },
+  {
+    "patch_version": "14.19",
+    "components": [3108, 3108, 1052],
+    "ap": 75,
+    "haste": 25
+  },
+  {
+    "patch_version": "14.2",
+    "passive_1": "Dealing ability damage to a champion at 600 units away or greater from the cast position reveals them and increases your damage dealt to them by 10% for 6 seconds.",
+    "passive_2": "Upon triggering Hypershot, grant sight of the area 1400 units around the target for 2 seconds and apply Hypershot's effects to enemy champions within for 3 seconds (30 second cooldown). "
+  },
+  {
+    "patch_version": "14.1",
+    "ap": 90,
+    "haste": 20,
+    "hp": null,
+    "gold_cost": 2700,
+    "passive_1_name": "HYPERSHOT",
+    "passive_1": "Dealing ability damage to a champion at 700 units away or greater from the cast position reveals them and increases your damage dealt to them by 10% for 6 seconds.",
+    "passive_2_name": "FOCUS",
+    "passive_2": "Upon triggering Hypershot, grant sight of the area 1200 units around the target for 2 seconds and apply Hypershot's effects to enemy champions within for 3 seconds (30 second cooldown). "
+  },
+  {
+    "patch_version": "13.1",
+    "ap": 100
+  },
+  {
+    "patch_version": "11.23",
+    "components": [3145, 3108],
+    "ap": 85,
+    "haste": 15,
+    "hp": 150,
+    "passive_1": "Damaging a champion with a non-targeted ability at more than 700 units away or slowing, immobilizing or polymorphing one reveals them and increases your damage dealt to them by 10% for 6 seconds."
+  },
+  {
+    "patch_version": "11.22",
+    "motd": "Bugfix: No longer applies Focus Fire to allies knocked back by Blast Cones"
+  },
+  {
+    "patch_version": "11.3",
+    "ap": 115,
+    "passive_1": "Damaging a champion with a non-targeted ability at more than 700 units away or immobilizing one reveals them and increases your damage dealt to them by 10% for 6 seconds."
+  },
+  {
+    "patch_version": "10.23",
+    "components": [1058, 3145],
+    "item_id": 4628,
+    "item_name": "Horizon Focus",
+    "ap": 100,
+    "gold_cost": 3000,
+    "passive_1_name": "HYPERSHOT",
+    "passive_1": "Damaging a champion with a non-targeted ability at more than 750 units away or immobilizing one reveals them and increases your damage dealt to them by 10% for 6 seconds.",
+    "buy_group": ["HORIZON FOCUS"]
+  }
+]
