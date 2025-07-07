@@ -1,0 +1,113 @@
+[
+  {
+    "patch_version": "14.19",
+    "components": [2021, 3066, 1037],
+    "hp": 500,
+    "ad": 40,
+    "movespeed_percent": 4,
+    "passive_1": "Basic attacks grant a stack on-hit for 10 seconds, stacking up to 5 times. The fifth stack consumes them all to deal [120% base AD|84% base AD] (+ [5%|3.5%] maximum health) bonus physical damage, increased to [300% base AD|210% base AD] (+ [10%|7%] maximum health) bonus physical damage against structures.",
+    "passive_2": "Allied siege and super minions within 1050 units gain [70 – 130|35 – 65] (based on level) bonus armor and bonus magic resistance, as well as 10% increased size. The bonus resistances linger for 3 seconds when an allied champion is nearby."
+  },
+  {
+    "patch_version": "14.4",
+    "passive_1": "Basic attacks grant a stack on-hit for 10 seconds, stacking up to 5 times. The fifth stack consumes them all to deal [140% base AD|70% base AD] (+ 3.5% maximum health) bonus physical damage, increased to [400% base AD|200% base AD] (+ 7% maximum health) bonus physical damage against structures."
+  },
+  {
+    "patch_version": "14.3",
+    "passive_2": "Allied siege and super minions within 1050 units gain [20 – 135|10 – 68.5] (based on level) bonus armor and bonus magic resistance, as well as 10% increased size. The bonus resistances linger for 3 seconds when an allied champion is nearby.",
+    "motd": "Bugfix: Skipper now properly stacks on simulated attacks such as Urgot's Purge."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [2021, 6690, 1037],
+    "ad": 65,
+    "hp": 350,
+    "hp_regen": null,
+    "passive_1_name": "SKIPPER",
+    "passive_1": "Basic attacks grant a stack for 10 seconds, stacking up to 5 times. The fifth stack consumes them all to deal [140% base AD|70% base AD] (+ 3.5% maximum health) bonus physical damage, increased to [400% base AD|200% base AD] (+ 7% maximum health) bonus physical damage against structures.",
+    "passive_2": "While no allied champions are within 1400 units, allied siege and super minions within 1050 units gain [20 – 135|10 – 68.5] (based on level) bonus armor and bonus magic resistance, as well as 10% increased size. The bonus resistances linger for 3 seconds when an allied champion is nearby."
+  },
+  {
+    "patch_version": "13.21",
+    "passive_2": "While no allied champions are within 1400 units, gain [10 – 60|5 – 30] (based on level) bonus armor and bonus magic resistance and basic attacks deal 20% bonus damage against structures. Nearby large allied minions gain [30 – 180|15 – 90] (based on level) bonus armor and bonus magic resistance and deal 200% bonus damage against structures."
+  },
+  {
+    "patch_version": "13.10",
+    "components": [1037, 3044, 3066],
+    "ad": 60,
+    "movespeed_percent": 5,
+    "gold_cost": 3000
+  },
+  {
+    "patch_version": "12.13",
+    "motd": "Bugfix: Bonus resistances now properly decay over 3 seconds upon being in range of a nearby allied champion, instead of being lost instantly."
+  },
+  {
+    "patch_version": "12.9",
+    "passive_2": "While no allied champions are within 1400 units, gain [10 – 75|5 – 37.5] (based on level) bonus armor and bonus magic resistance and basic attacks deal 20% bonus damage against structures. Nearby large allied minions gain [30 – 225|15 – 112.5] (based on level) bonus armor and bonus magic resistance and deal 200% bonus damage against structures."
+  },
+  {
+    "patch_version": "12.5",
+    "passive_2": "While no allied champions are within 1400 units, gain [20 – 60|10 – 30] (based on level) bonus armor and bonus magic resistance and deal 20% bonus damage against structures. Nearby large allied minions gain [60 – 180|30 – 90] (based on level) bonus armor and bonus magic resistance and deal 200% bonus damage against structures.",
+    "motd": "Bug: Boarding Party resistances are now lost instantly when an allied champion is nearby, rather than decaying over 3 seconds."
+  },
+  {
+    "patch_version": "11.17",
+    "hp": 400
+  },
+  {
+    "patch_version": "11.15",
+    "passive_2": "While no allied champions are within 1400 units, gain 20 – 60 (based on level) bonus armor and bonus magic resistance and deal 20% bonus damage against structures. Nearby large allied minions gain 60 – 180 (based on level) bonus armor and bonus magic resistance and deal 200% bonus damage against structures."
+  },
+  {
+    "patch_version": "11.13",
+    "reworked": true,
+    "icon_version": 2,
+    "item_name": "Hullbreaker",
+    "components": [1037, 3044],
+    "ad": 50,
+    "hp": 300,
+    "hp_regen": 150,
+    "lethality": null,
+    "physical_vamp": null,
+    "gold_cost": 2800,
+    "passive_2_name": "BOARDING PARTY",
+    "passive_2": "While no allied champions are within 1400 units, gain 20 – 45 (based on level) bonus armor and bonus magic resistance and deal 20% bonus damage against structures. Nearby large allied minions gain 60 – 135 (based on level) bonus armor and bonus magic resistance and deal 200% bonus damage against structures.",
+    "buy_group": ["HULLBREAKER"]
+  },
+  {
+    "patch_version": "11.8",
+    "motd": "Bugfix: Now properly heals from physical damage dealt."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "ad": 50,
+    "physical_vamp": 12,
+    "lifesteal": null,
+    "lethality": 10,
+    "passive_1_name": null,
+    "passive_1": null,
+    "passive_2_name": "FRENZY",
+    "buy_group": ["SANGUINE BLADE"]
+  },
+  {
+    "patch_version": "10.9",
+    "gold_cost": 3000,
+    "ad": 55
+  },
+  {
+    "patch_version": "9.23",
+    "item_id": 3181,
+    "item_name": "Sanguine Blade",
+    "components": [3134, 1053],
+    "ad": 50,
+    "lifesteal": 15,
+    "gold_cost": 3100,
+    "passive_1_name": "UNIQUE",
+    "passive_1": "+10 lethality.",
+    "passive_2_name": "BLOOD PURSUIT",
+    "passive_2": "While near one or fewer visible enemy champions gain 8 lethality and 20% – 80% (based on level) bonus attack speed, decaying over 3 seconds if other enemy champions get too close.",
+    "motd": "Hotfix: Total cost increased to 3100 from 3000. Bonus attack speed reduced to 20%–80% from 40%–100%"
+  }
+]
