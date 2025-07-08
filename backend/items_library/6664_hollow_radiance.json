@@ -1,0 +1,28 @@
+[
+  {
+    "patch_version": "14.19",
+    "hp": 400,
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 15 (+ 1% bonus health) magic damage every second to enemies within 325 (+ 100% bonus size) units, with the damage being increased by 25% against minions and monsters. This executes minions that would be killed by one more tick of damage. Taking or dealing damage refreshes the duration of this effect.",
+    "passive_2": "Killing a non-champion unit causes an eruption around their death location that deals「 30 (+ 2% bonus health) magic damage 」to enemies within 350 units. Scoring a takedown against an enemy champion within 3 seconds of damaging them causes a larger eruption that deals「 40 (+ 7% bonus health) magic damage 」to enemies within 500 units."
+  },
+  {
+    "patch_version": "14.10",
+    "hp": 450,
+    "haste": 10
+  },
+  {
+    "patch_version": "14.1",
+    "components": [6660, 3211],
+    "item_id": 6664,
+    "item_name": "Hollow Radiance",
+    "hp": 600,
+    "magic_resist": 40,
+    "hp_regen": 100,
+    "gold_cost": 2800,
+    "passive_1_name": "IMMOLATE",
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 10 (+ 1.75% bonus health) magic damage every second to enemies within 325 (+ 100% bonus size) units, with the damage being increased by 25% against minions. This executes minions that would be killed by one more tick of damage. Taking or dealing damage refreshes the duration of this effect.",
+    "passive_2_name": "DESOLATE",
+    "passive_2": "Killing a non-champion unit causes an eruption around their death location that deals「 20 (+ 3.5% bonus health) magic damage 」to enemies within 350 units. Scoring a takedown against an enemy champion within 3 seconds of damaging them causes a larger eruption that deals「 40 (+ 7% bonus health) magic damage 」to enemies within 500 units.",
+    "buy_group": ["IMMOLATE"]
+  }
+]

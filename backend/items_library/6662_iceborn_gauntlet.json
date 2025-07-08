@@ -1,0 +1,150 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 2900,
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 150% base AD bonus physical damage on-hit and creates a 300 radius frost field for 2.5 seconds. Enemies within the field are slowed by [25%|12.5%] (1.5 second cooldown, begins after using the empowered attack)."
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3057, 1028, 1031],
+    "hp": 300,
+    "haste": 15,
+    "gold_cost": 2600,
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit and creates a 300 radius frost field for 2.5 seconds. Enemies within the field are slowed by [15%|7.5%] (+ [0.4%|0.2%] per 100 maximum health) (1.5 second cooldown, begins after using the empowered attack).",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": ["SPELLBLADE"]
+  },
+  {
+    "patch_version": "13.3",
+    "motd": "Bugfix: Now properly reduces damage dealt to shields"
+  },
+  {
+    "patch_version": "12.23",
+    "motd": "Bugfix: Non-champions now properly receive the enhanced effects as the primary target of the Spellblade effect."
+  },
+  {
+    "patch_version": "12.22",
+    "item_name": "Iceborn Gauntlet",
+    "reworked": true,
+    "components": [3057, 3067, 1031],
+    "hp": 400,
+    "armor": 50,
+    "haste": 20,
+    "magic_resist": null,
+    "gold_cost": 3000,
+    "passive_1_name": "SPELLBLADE",
+    "passive_1": "After using an ability, your next basic attack within 10 seconds deals 100% base AD bonus physical damage on-hit and creates a 300 radius frost field for 2.5 seconds. Enemies within the field are slowed by [15%|7.5%] (+ [0.4%|0.2%] per 100 maximum health). Your primary target is slowed for double the amount and has their damage against you reduced by 10% for 2.5 seconds (1.5 second cooldown).",
+    "passive_2_name": null,
+    "passive_2": null,
+    "passive_4": "Empowers other Legendary items with 50 bonus health, 5% tenacity, and 5% slow resistance."
+  },
+  {
+    "patch_version": "12.11",
+    "hp": 450
+  },
+  {
+    "patch_version": "11.24",
+    "passive_2": "Basic attacks create a 250 radius frost field that slows enemies within by [25%|12.5%] (+ [4%|2%] per 1000 maximum health) for 1.5 seconds and deals [12 – 85|6 – 45] (based on level) magic damage to all enemies within the area. ([4|6] second cooldown)."
+  },
+  {
+    "patch_version": "11.23",
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and 150% against monsters. This executes minions that would be killed by one more tick of damage.",
+    "passive_2": "Basic attacks create a 250 radius frost field that slows enemies within by [25%|12.5%] (+ [4%|2%] per 1000 maximum health) for 1.5 seconds and deals [20 – 100|10 – 50] (based on level) (+ [0.5%|0.25%] maximum health) magic damage to all enemies within the area. ([4|6] second cooldown)."
+  },
+  {
+    "patch_version": "11.11",
+    "passive_2": "Basic attacks create a 250 radius frost field that slows enemies within by [25%|12.5%] (+ [4%|2%] per 1000 maximum health) for 1.5 seconds ([4|6] second cooldown)."
+  },
+  {
+    "patch_version": "11.2",
+    "components": [6660, 1033, 1029],
+    "armor": 25,
+    "haste": 20,
+    "gold_cost": 2800
+  },
+  {
+    "patch_version": "10.25",
+    "passive_2": "Basic attacks create a 250 radius frost field that slows enemies within by 25% (+ 4% per 1000 maximum health) for 1.5 seconds (4 second cooldown).",
+    "passive_4": "Empowers your other Legendary items with 100 health and 7.6% increased size."
+  },
+  {
+    "patch_version": "10.23",
+    "item_name": "Frostfire Gauntlet",
+    "reworked": true,
+    "icon_version": 1,
+    "components": [6660, 1033, 1031],
+    "armor": 50,
+    "magic_resist": 25,
+    "hp": 350,
+    "haste": 15,
+    "cdr": null,
+    "gold_cost": 3200,
+    "passive_1_name": "IMMOLATE",
+    "passive_1": "Taking or dealing damage activates this passive for 3 seconds. Deal 12 – 30 (based on level) (+ 1% bonus health) magic damage per second to nearby enemies, increased by 25% against minions and 150% against monsters.",
+    "passive_2_name": "SNOWBIND",
+    "passive_2": "Basic attacks create a 275 radius frost field that slows enemies within by 25% (+ 4% per 1000 maximum health) for 1.5 seconds (4 second cooldown).",
+    "passive_4_name": "MYTHIC PASSIVE",
+    "passive_4": "Empowers your other Legendary items with 100 health and 7.5% increased size.",
+    "buy_group": ["MYTHIC"],
+    "motd": "Hotfix: • Immolate base damage reduced to 12 – 30 (based on level) from 20 – 40 (based on level).\n\n  • Bonus minion damage reduced to 25% from 50%.\n\n  • Bonus monster damage reduced to 150% from 200%.\n\n  • Base slow reduced to 25% from 30%."
+  },
+  {
+    "patch_version": "6.8",
+    "passive_1": "After using an ability, your next basic attack deals bonus physical damage equal to 100% of your base attack damage to surrounding enemies and creates a field with 180 + 55% armor radius for 2 seconds that slows enemies inside by 30% (1.5 seconds cooldown)."
+  },
+  {
+    "patch_version": "6.4",
+    "passive_1": "After using an ability, your next basic attack deals bonus physical damage equal to 125% of your base attack damage to surrounding enemies and creates a field with 180 + 55% armor radius for 2 seconds that slows enemies inside by 30% (1.5 seconds cooldown).",
+    "motd": "Change: Slow no longer lingers after leaving the area-of-effect."
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 2700,
+    "armor": 65,
+    "cdr": 20,
+    "ap": null,
+    "passive_1": "After using an ability, your next basic attack deals bonus physical damage equal to 125% of your base attack damage to surrounding enemies and creates a field with 190 + 45% armor radius for 2 seconds that slows enemies inside by 30% (1.5 seconds cooldown)."
+  },
+  {
+    "patch_version": "4.15",
+    "motd": "Change: Other Spellblade effects that deal more damage (Trinity Force) now correctly use their Unique passive instead of this one. The AoE field is still applied."
+  },
+  {
+    "patch_version": "4.13",
+    "passive_1": "After using an ability, your next basic attack deals bonus physical damage equal to 125% of your base attack damage to surrounding enemies and creates a field with [285|210] radius for 2 seconds that slows enemies inside by 30% (1.5 seconds cooldown).",
+    "motd": "Note: The exact patch this change was made on is unknown."
+  },
+  {
+    "patch_version": "4.5",
+    "gold_cost": 2900,
+    "armor": 60
+  },
+  {
+    "patch_version": "3.04",
+    "armor": 70,
+    "ap": 30
+  },
+  {
+    "patch_version": "3.02",
+    "gold_cost": 3250,
+    "cdr": 10,
+    "passive_1": "After using an ability, your next basic attack deals bonus physical damage equal to 125% of your base attack damage to surrounding enemies and creates a field with [285|210] radius for 2 seconds that slows enemies inside by 30%. 3 seconds cooldown."
+  },
+  {
+    "patch_version": "1.0.0.154",
+    "passive_1": "After using an ability, your next basic attack deals bonus physical damage equal to 125% of your base attack damage to surrounding enemies and creates a field with 275 radius for 2 seconds that slows enemies inside by 30%. 3 seconds cooldown."
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "ap": 40,
+    "armor": 60,
+    "cdr": 15,
+    "gold_cost": 3400,
+    "components": [3057, 3024],
+    "item_id": 6662,
+    "item_name": "Iceborn Gauntlet",
+    "passive_1_name": "SPELLBLADE",
+    "passive_1": "After using an ability, your next basic attack deals bonus physical damage equal to 125% of your base attack damage to surrounding enemies and creates a field with 275 radius for 3 seconds that slows enemies inside by 35%. 3 seconds cooldown."
+  }
+]

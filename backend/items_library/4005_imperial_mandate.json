@@ -1,0 +1,65 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 2250,
+    "passive_1": "Abilities that slow or immobilize enemy champions mark them for 5 seconds. Allied champions that damage marked enemies consume the mark to deal 10% of the target's current health bonus magic damage (9 second cooldown per champion, starts upon mark application)."
+  },
+  {
+    "patch_version": "14.7",
+    "passive_1": "Abilities that slow or immobilize enemy champions mark them for 5 seconds. Allied champions that damage marked enemies consume the mark to deal 10% of the target's current health bonus magic damage and grant you and the triggering ally 25% bonus movement speed for 2 seconds (9 second cooldown per champion, starts upon mark application)."
+  },
+  {
+    "patch_version": "14.1",
+    "mp_regen": 125,
+    "ap": 60,
+    "passive_1": "Abilities that slow or immobilize enemy champions mark them for 5 seconds. Allied champions that damage marked enemies consume the mark to deal 12% of the target's current health bonus magic damage and grant you and the triggering ally 25% bonus movement speed for 2 seconds (9 second cooldown per champion, starts upon mark application)."
+  },
+  {
+    "patch_version": "13.12",
+    "passive_1": "Abilities that slow or immobilize enemy champions deal 40 – 60 (based on level) bonus magic damage and mark them for 4 seconds. Allied champions that damage marked enemies consume the mark to deal 80 – 120 (based on ally's level) bonus magic damage and grant you and the triggering ally 25% bonus movement speed for 2 seconds (6 second cooldown per champion, starts upon mark application)."
+  },
+  {
+    "patch_version": "13.10",
+    "components": [3108, 4642],
+    "ap": 55,
+    "hp": null,
+    "gold_cost": 2300,
+    "passive_1": "Abilities that slow or immobilize enemy champions deal 35 – 75 (based on level) bonus magic damage and mark them for 4 seconds. Allied champions that damage marked enemies consume the mark to deal 70 – 150 (based on ally's level) bonus magic damage and grant you and the triggering ally 20% bonus movement speed for 2 seconds (6 second cooldown per champion, starts upon mark application).",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": ["IMPERIAL MANDATE"]
+  },
+  {
+    "patch_version": "11.20",
+    "passive_1": "Abilities that slow or immobilize enemy champions deal 45 – 75 (based on level) bonus magic damage and mark them for 4 seconds. Allied champions that damage marked enemies consume the mark to deal 90 – 150 (based on target's level) bonus magic damage and grant you and the triggering ally 20% bonus movement speed for 2 seconds (6 second cooldown per enemy champion, starts upon mark application)."
+  },
+  {
+    "patch_version": "11.3",
+    "motd": "Bugfix: Coordinated Fire now properly goes on cooldown upon mark application, rather than after the mark is consumed."
+  },
+  {
+    "patch_version": "11.2",
+    "passive_1": "Abilities that slow or immobilize enemy champions deal 36 – 60 (based on level) bonus magic damage and mark them for 4 seconds. Allied champions that damage marked enemies consume the mark to deal 90 – 150 (based on target's level) bonus magic damage and grant you and the triggering ally 20% bonus movement speed for 2 seconds (6 second cooldown per enemy champion, starts upon mark application)."
+  },
+  {
+    "patch_version": "10.25",
+    "gold_cost": 2500,
+    "passive_1": "Abilities that slow or immobilize enemy champions deal 36 – 60 (based on level) bonus magic damage and mark them for 4 seconds. Allied champions that damage marked enemies consume the mark to deal 90 – 150 (based on target's level) bonus magic damage and grant you and the triggering ally 20% bonus movement speed for 2 seconds (6 second cooldown per enemy champion)."
+  },
+  {
+    "patch_version": "10.23",
+    "item_id": 4005,
+    "item_name": "Imperial Mandate",
+    "components": [3067, 4642],
+    "passive_1_name": "COORDINATED FIRE",
+    "passive_1": "Abilities that slow or immobilize enemy champions deal 60 – 100 (based on level) bonus magic damage and mark them for 4 seconds. Allied champions that damage marked enemies consume the mark to deal 60 – 100 (based on target's level) bonus magic damage and grant you and the triggering ally 20% bonus movement speed for 2 seconds (6 second cooldown per enemy champion).",
+    "passive_4_name": "MYTHIC PASSIVE",
+    "passive_4": "Empowers your other Legendary items with 15 ability power.",
+    "buy_group": ["MYTHIC"],
+    "ap": 40,
+    "hp": 200,
+    "haste": 20,
+    "mp_regen": 100,
+    "gold_cost": 2700
+  }
+]
