@@ -1,0 +1,83 @@
+[
+  {
+    "patch_version": "14.18",
+    "passive_1": "If you would take damage that would reduce you below 30% of your maximum health, you first gain a shield that absorbs [400 – 700|320 – 560] (based on level) damage for 3 seconds (90 second cooldown)."
+  },
+  {
+    "patch_version": "14.11",
+    "passive_1": "If you would take damage that would reduce you below 30% of your maximum health, you first gain a shield that absorbs 320 – 720 (based on level) damage for 3 seconds (90 second cooldown)."
+  },
+  {
+    "patch_version": "14.10",
+    "ad": 55,
+    "crit_chance": 25,
+    "lifesteal": null
+  },
+  {
+    "patch_version": "14.1",
+    "lifesteal": 12,
+    "passive_1": "If you would take damage that would reduce you below 30% of your maximum health, you first gain a shield that absorbs 320 – 530 (based on level) damage for 3 seconds (90 second cooldown)."
+  },
+  {
+    "patch_version": "13.17",
+    "passive_1": "If you would take damage that would reduce you below 30% of your maximum health, you first gain a shield that absorbs 290 – 500 (based on level) damage for 3 seconds and 30% bonus attack speed for 8 seconds (90 second cooldown)."
+  },
+  {
+    "patch_version": "13.12",
+    "lifesteal": 10
+  },
+  {
+    "patch_version": "13.10",
+    "components": [1037, 1018, 1053],
+    "aspd": null,
+    "crit_chance": 20,
+    "lifesteal": 7,
+    "gold_cost": 3000,
+    "passive_1": "If you would take damage that would reduce you below 30% of your maximum health, you first gain a shield that absorbs 215 – 500 (based on level) damage for 3 seconds and 30% bonus attack speed for 8 seconds (90 second cooldown).",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": ["LIFELINE"]
+  },
+  {
+    "patch_version": "12.10",
+    "lifesteal": 7,
+    "passive_1": "When taking damage that would reduce you below 30% maximum health, gain a 250 – 630 (based on level) shield for 3 seconds and 15 – 35 (based on level) bonus attack damage for 8 seconds (90 second cooldown)."
+  },
+  {
+    "patch_version": "12.6",
+    "lifesteal": 8,
+    "passive_1": "When taking damage that would reduce you below 30% maximum health, gain a 275 – 700 (based on level) shield for 3 seconds and 15 – 35 (based on level) bonus attack damage for 8 seconds (90 second cooldown).",
+    "passive_4": "Empowers your other Legendary items with 5 bonus attack damage and 70 bonus health."
+  },
+  {
+    "patch_version": "12.1",
+    "ad": 50,
+    "passive_1": "When taking damage that would reduce you below 30% maximum health, gain a 275 – 650 (based on level) shield for 3 seconds and 15 – 35 (based on level) bonus attack damage for 8 seconds (90 second cooldown)."
+  },
+  {
+    "patch_version": "11.6",
+    "lifesteal": 10,
+    "passive_1": "When taking damage that would reduce you below 30% maximum health, gain a 300 – 800 (based on level) shield for 3 seconds and 15 – 35 (based on level) bonus attack damage for 8 seconds (90 second cooldown)."
+  },
+  {
+    "patch_version": "11.3",
+    "ad": 55,
+    "aspd": 20
+  },
+  {
+    "patch_version": "10.23",
+    "item_name": "Immortal Shieldbow",
+    "item_id": 6673,
+    "components": [6670, 1018, 1053],
+    "ad": 50,
+    "aspd": 15,
+    "crit_chance": 20,
+    "lifesteal": 12,
+    "gold_cost": 3400,
+    "passive_1_name": "LIFELINE",
+    "passive_1": "When taking damage that would reduce you below 30% maximum health, gain a 250 – 700 (based on level) shield for 3 seconds and 15% life steal for 8 seconds (90 second cooldown).",
+    "passive_4_name": "MYTHIC PASSIVE",
+    "passive_4": "Empowers your other Legendary items with 5 bonus attack damage and 50 bonus health.",
+    "buy_group": ["MYTHIC", "LIFELINE"]
+  }
+]

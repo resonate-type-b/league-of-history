@@ -1,0 +1,161 @@
+[
+  {
+    "patch_version": "25.04",
+    "gold_cost": 3450,
+    "ad": 65
+  },
+  {
+    "patch_version": "14.19",
+    "gold_cost": 3600,
+    "ad": 70
+  },
+  {
+    "patch_version": "14.11",
+    "passive_1": "+40% critical strike damage."
+  },
+  {
+    "patch_version": "14.10",
+    "gold_cost": 3400,
+    "ad": 80,
+    "crit_chance": 25,
+    "buy_group": null,
+    "motd": "Note: The ability to purchase multiple identical legendary items has been removed since season 11, so players are still limited to 1 Infinity Edge."
+  },
+  {
+    "patch_version": "14.6",
+    "passive_1": "+50% critical strike damage."
+  },
+  {
+    "patch_version": "14.1",
+    "gold_cost": 3300,
+    "passive_1": "+40% critical strike damage.",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": ["UNBOUNDED"]
+  },
+  {
+    "patch_version": "13.14",
+    "ad": 65,
+    "passive_1": "+45% critical strike damage."
+  },
+  {
+    "patch_version": "13.10",
+    "ad": 70,
+    "crit_chance": 20,
+    "gold_cost": 3400,
+    "passive_1_name": null,
+    "passive_1": "+35% critical strike damage.",
+    "passive_4_name": "MYTHIC PASSIVE",
+    "passive_4": "Empowers other Legendary items with 5 bonus attack damage.",
+    "buy_group": ["MYTHIC"]
+  },
+  {
+    "patch_version": "13.1b",
+    "passive_1": "Gain 35% bonus critical strike damage if you have at least 40% critical strike chance."
+  },
+  {
+    "patch_version": "10.25",
+    "passive_1": "Gain 35% bonus critical strike damage if you have at least 60% critical strike chance."
+  },
+  {
+    "patch_version": "10.23",
+    "reworked": true,
+    "icon_version": 2,
+    "ad": 70,
+    "crit_chance": 20,
+    "passive_1_name": "PERFECTION",
+    "passive_1": "Gain 0.4% bonus critical strike damage for every 1% critical strike chance.",
+    "buy_group": ["CRIT MODIFIER"]
+  },
+  {
+    "patch_version": "9.3",
+    "components": [1038, 1037, 1018],
+    "ad": 80,
+    "crit_chance": 25,
+    "passive_1": "+25% critical strike damage.",
+    "passive_2_name": null,
+    "passive_2": null
+  },
+  {
+    "patch_version": "8.15",
+    "components": [1038, 1037],
+    "ad": 70,
+    "gold_cost": 3400,
+    "passive_2": "When critically striking enemy champions, converts 10% of critical strike damage to true damage."
+  },
+  {
+    "patch_version": "8.12",
+    "gold_cost": 3600
+  },
+  {
+    "patch_version": "8.11",
+    "reworked": true,
+    "icon_version": 1,
+    "components": [1038, 1038],
+    "gold_cost": 3700,
+    "ad": 80,
+    "crit_chance": null,
+    "passive_1": "Doubles your critical strike chance.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "When critically striking enemy champions, converts 15% of critical strike damage to true damage."
+  },
+  {
+    "patch_version": "7.9",
+    "gold_cost": 3400
+  },
+  {
+    "patch_version": "6.12",
+    "ad": 70
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 3600,
+    "ad": 65
+  },
+  {
+    "patch_version": "5.1",
+    "crit_chance": 20
+  },
+  {
+    "patch_version": "4.10",
+    "ad": 80
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "gold_cost": 3800,
+    "ad": 70
+  },
+  {
+    "patch_version": "1.0.0.115",
+    "gold_cost": 3830,
+    "ad": 80,
+    "crit_chance": 25,
+    "motd": "Note: Patch notes claim that gold cost was reduced from 4080."
+  },
+  {
+    "patch_version": "1.0.0.107",
+    "ad": 75
+  },
+  {
+    "patch_version": "20090418",
+    "passive_1_name": "UNIQUE"
+  },
+  {
+    "patch_version": "20090411",
+    "gold_cost": 4075
+  },
+  {
+    "patch_version": "alpha6",
+    "gold_cost": 4050
+  },
+  {
+    "patch_version": "initial",
+    "item_id": 3031,
+    "item_name": "Infinity Edge",
+    "components": [1038, 1037, 1018],
+    "gold_cost": 3450,
+    "ad": 80,
+    "crit_chance": 20,
+    "passive_1": "+50% critical strike damage."
+  }
+]
