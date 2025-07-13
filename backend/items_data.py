@@ -1,15 +1,15 @@
 from sqlalchemy import insert, update
 from pydantic_model import ItemModel
-from typing import Sequence
+from typing import Sequence, cast
 from sqlalchemy import select
 from collections import defaultdict
 from pydantic import ValidationError
 
 from conn import session_factory
-from orm_model import Item
+from orm_model import Item, Patch
 
 
-type StatDictType = dict[str, str | int | float | None]
+type StatDictType = dict[str, str | int | float | list[str] | None]
 
 
 def format_item_from_json(data: list[StatDictType], patch_versions: list[str]) -> list[ItemModel]:
@@ -92,20 +92,41 @@ def insert_items_data(items: Sequence[ItemModel]):
         )
 
 
+# This function does two things:
+# 1. If an item does not build into anything else,
+#    and is not manually given a category (of either Boots or Transforms), it is categorised as Final.
+# 2. If an item is a Final item, and is built from component items (to filter out starter items/consumables),
+#    it is given a buy_group of its own name after patch 10.23, if one has not been manually set.
+# TODO: add a warning if such an item costs less than e.g. 2000 gold, in case it's not a legendary
 def categorise_final_items():
     components_by_patch: dict[str, set[int]] = defaultdict(set)
-    update_list: list[dict[str, str | int]] = []
+    update_list: list[StatDictType] = []
     with session_factory.begin() as session:
-        all_items = session.execute(select(Item.item_id, Item.category, Item.components, Item.patch_version)).all()
+        all_items = session.execute(
+            select(Item.item_id, Item.patch_version, Item.category, Item.components, Item.item_name, Item.buy_group)
+        ).all()
 
-        for item_id, category, components, patch_version in all_items:
+        # all patches since the one legendary item limit was introduced in 10.23
+        post_unique_legendary_patches = session.execute(
+            select(Patch.patch_version)
+            .where(Patch.patch_date >= "2020-11-11")
+        ).scalars().all()
+        post_unique_legendary_patches = set(post_unique_legendary_patches)
+
+        for item_id, patch_version, category, components, item_name, buy_group in all_items:
             if components is not None and category != "Transforms":
                 components_by_patch[patch_version].update(components)
 
-        for item_id, category, components, patch_version in all_items:
-            item_id = int(item_id)
+        for item_id, patch_version, category, components, item_name, buy_group in all_items:
+            # the type checker doesn't know how to unpack Row objects... Cast as necessary to shut it up
+            item_id = cast(int, item_id)
+            item_name = cast(str, item_name)
             if item_id not in components_by_patch[patch_version] and category == "":
-                update_list.append(dict(item_id=item_id, patch_version=patch_version, category="Final"))
+                item_definition: StatDictType = dict(item_id=item_id, patch_version=patch_version, category="Final")
+                # if it's a final item, and builds from something else, it's a legendary item
+                if components is not None and buy_group is None and patch_version in post_unique_legendary_patches:
+                    item_definition["buy_group"] = [item_name]
+                update_list.append(item_definition)
 
         if update_list:
             session.execute(update(Item), update_list)

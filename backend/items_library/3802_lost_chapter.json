@@ -2,7 +2,7 @@
   {
     "patch_version": "14.1",
     "gold_cost": 1200,
-    "components": [1052, 2017, 2022],
+    "components": [1052, 1027, 2022],
     "buy_group": null
   },
   {
@@ -22,7 +22,7 @@
     "patch_version": "8.9",
     "ap": 40,
     "gold_cost": 1300,
-    "components": [1052, 2017, 1052]
+    "components": [1052, 1027, 1052]
   },
   {
     "patch_version": "8.4",
@@ -35,7 +35,7 @@
     "gold_cost": 900,
     "item_id": 3802,
     "item_name": "Lost Chapter",
-    "components": [1052, 2017],
+    "components": [1052, 1027],
     "ap": 25,
     "mp": 300,
     "passive_1_name": "UNIQUE",

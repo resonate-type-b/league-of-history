@@ -7,7 +7,7 @@
   },
   {
     "patch_version": "14.6",
-    "components": [1029, 2017, 2022]
+    "components": [1029, 1027, 2022]
   },
   {
     "patch_version": "10.23",
@@ -29,7 +29,7 @@
   },
   {
     "patch_version": "4.5",
-    "components": [1029, 2017],
+    "components": [1029, 1027],
     "gold_cost": 950,
     "armor": 20,
     "mp": 250
@@ -59,7 +59,7 @@
     "patch_version": "1.0.0.82",
     "mp": 425,
     "armor": 45,
-    "components": [2017, 1031]
+    "components": [1027, 1031]
   },
   {
     "patch_version": "20090710",

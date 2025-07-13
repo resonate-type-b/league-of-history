@@ -18,7 +18,7 @@
     "passive_1": "Hitting an enemy champion with 2 separate attacks or abilities within 2 seconds deals bonus physical damage equal to [8%|4%] of target's maximum health and grants you a shield for [160|80] (+ [40%|20%] bonus AD) for 2 seconds (6 second cooldown).",
     "passive_4_name": null,
     "passive_4": null,
-    "buy_group": ["ECLIPSE"]
+    "buy_group": null
   },
   {
     "patch_version": "13.1b",

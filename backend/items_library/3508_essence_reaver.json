@@ -26,7 +26,7 @@
     "gold_cost": 3200,
     "passive_1_name": "ESSENCE DRAIN",
     "passive_1": "Basic attacks on-hit restore 15 (+ 10% bonus AD) mana.",
-    "buy_group": ["ESSENCE REAVER"],
+    "buy_group": null,
     "motd": "Hotfix: Attack damage increased to 70 from 65"
   },
   {
@@ -86,8 +86,7 @@
     "passive_1_name": "SPELLBLADE",
     "passive_1": "After using an ability, deal 100% base attack damage (+ 40% bonus AD) physical damage on-hit and restore 3% of your maximum mana (1.5 second cooldown).",
     "passive_2_name": null,
-    "passive_2": null,
-    "buy_group": ["ESSENCE REAVER"]
+    "passive_2": null
   },
   {
     "patch_version": "9.13",
@@ -133,7 +132,7 @@
   },
   {
     "patch_version": "8.11",
-    "components": [1038, 3133, 2017],
+    "components": [1038, 3133, 1027],
     "reworked": true,
     "ad": 70,
     "cdr": 20,

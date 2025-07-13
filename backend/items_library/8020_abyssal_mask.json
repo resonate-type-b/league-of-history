@@ -8,7 +8,7 @@
     "hp": 350,
     "magic_resist": 50,
     "passive_1": "Enemy champions within 700 units of you become cursed, causing them to receive 12% increased magic damage from all sources.",
-    "buy_group": ["ABYSSAL MASK"]
+    "buy_group": null
   },
   {
     "patch_version": "14.19",
@@ -38,7 +38,7 @@
     "magic_resist": 60,
     "haste": 10,
     "mp": null,
-    "buy_group": ["ABYSSAL MASK"],
+    "buy_group": null,
     "passive_2_name": null,
     "passive_2": null
   },
@@ -99,8 +99,7 @@
     "passive_1_name": "UNMAKE",
     "passive_1": "Immobilizing an enemy champion increases the damage they take by 10% for 4 seconds.",
     "passive_2_name": null,
-    "passive_2": null,
-    "buy_group": ["ABYSSAL MASK"]
+    "passive_2": null
   },
   {
     "patch_version": "8.9",

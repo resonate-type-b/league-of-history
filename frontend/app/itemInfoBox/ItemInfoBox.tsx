@@ -51,7 +51,7 @@ export function ItemInfoBox({ item, className = "" }: ItemInfoBoxProps) {
       <PassiveLine
         key={"buyGroup"}
         heading={"Limitation"}
-        body={`Limited to 1 ${item.buy_group.join("/")}`}
+        body={`Limited to 1 **${item.buy_group.join("/")}**`}
         className="italic"
       />
     );

@@ -1,0 +1,24 @@
+[
+  {
+    "patch_version": "14.19",
+    "hp_regen": 100,
+    "passive_1": "After not taking magic damage for 15 seconds, gain a shield that absorbs magic damage equal to 15% of maximum health until destroyed."
+  },
+  {
+    "patch_version": "14.3",
+    "passive_1": "After not taking magic damage for 15 seconds, gain a shield that absorbs magic damage equal to 18% of maximum health until destroyed."
+  },
+  {
+    "patch_version": "14.1",
+    "item_id": 2504,
+    "item_name": "Kaenic Rookern",
+
+    "components": [3211, 1057],
+    "hp": 400,
+    "magic_resist": 80,
+    "hp_regen": 150,
+    "gold_cost": 2900,
+    "passive_1_name": "MAGEBANE",
+    "passive_1": "After not taking magic damage for 12 seconds, gain a shield that absorbs magic damage equal to 20% of maximum health until destroyed."
+  }
+]

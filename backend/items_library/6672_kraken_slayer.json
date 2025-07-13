@@ -1,0 +1,81 @@
+[
+  {
+    "patch_version": "14.19",
+    "ad": 45,
+    "movespeed_percent": 4,
+    "passive_1": "Basic attacks on-hit grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal [150 – 200|120 – 160] (based on level) bonus physical damage on-hit, increased by 0% – 50% (based on target's missing health), for up to [225 – 300|180 – 240] (based on level) bonus physical damage."
+  },
+  {
+    "patch_version": "14.15",
+    "movespeed_percent": 5,
+    "passive_1": "Basic attacks on-hit grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal [140 – 310|112 – 248] (based on level) bonus physical damage on-hit, increased by 0% – 50% (based on target's missing health), for up to [210 – 465|168 – 372] (based on level) bonus physical damage."
+  },
+  {
+    "patch_version": "14.10",
+    "components": [6690, 3051, 1043],
+    "ad": 50,
+    "aspd": 40,
+    "movespeed_percent": 7,
+    "crit_chance": null,
+    "gold_cost": 3100,
+    "passive_1": "Basic attacks on-hit grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal 140 – 310 (based on level) bonus physical damage on-hit, increased by 0% – 50% (based on target's missing health), for up to 210 – 465 (based on level) bonus physical damage."
+  },
+  {
+    "patch_version": "14.3",
+    "passive_1": "Basic attacks on-hit grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal 140 – 310 (based on level) bonus physical damage on-hit. Consuming stacks on the same target within 6 seconds increases the damage by 50%, up to 100%."
+  },
+  {
+    "patch_version": "14.1",
+    "aspd": 35,
+    "passive_1": "Basic attacks on-hit grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal 35 – 85 (based on level) (+ 65% AD) (+ 60% AP) bonus physical damage on-hit. Consuming stacks on the same target within 6 seconds increases the damage by 50%, up to 100%."
+  },
+  {
+    "patch_version": "13.11",
+    "passive_1": "Basic attacks [on-hit|on-attack] grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal 35 – 85 (based on level) (+ 65% AD) (+ 60% AP) bonus physical damage on-hit. Consuming stacks on the same target within 6 seconds increases the damage by 50%, up to 100%."
+  },
+  {
+    "patch_version": "13.10",
+    "components": [6670, 1018, 1043],
+    "ad": 40,
+    "aspd": 30,
+    "gold_cost": 3000,
+    "passive_1": "Basic attacks [on-hit|on-attack] grant a stack for 3 seconds, up to 2 stacks. At 2 stacks, the next basic attack consumes all stacks to deal 20 (+ 60% AD) (+ 45% AP) bonus magic damage on-hit. Consuming stacks on the same target within 6 seconds increases the damage by 50%, up to 100%.",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": null
+  },
+  {
+    "patch_version": "12.11",
+    "passive_1": "Every third attack within 3 seconds deals 50 (+ 40% bonus AD) bonus true damage on-hit."
+  },
+  {
+    "patch_version": "11.8",
+    "motd": "BugFix: • When Kayle uses Starfire Spellblade as a third attack, she will now properly deal true damage.\n\n  • Jayce now properly deals true damage on his third attack with Mercury Cannon in all instances, not just when he crits."
+  },
+  {
+    "patch_version": "11.2",
+    "motd": "Change: True damage is now affected by the on-hit modifiers of Aphelios' Onslaught, Katarina's Death Lotus, and Urgot's Purge."
+  },
+  {
+    "patch_version": "10.24",
+    "ad": 65,
+    "passive_1": "Every third attack within 3 seconds deals 60 (+ 45% bonus AD) bonus true damage on-hit.",
+    "motd": "Bugfix: No longer interacts with Guinsoo's Rageblade's *Phantom Hit* for melee champions."
+  },
+
+  {
+    "patch_version": "10.23",
+    "item_name": "Kraken Slayer",
+    "item_id": 6672,
+    "components": [6670, 1018, 1037],
+    "ad": 60,
+    "aspd": 25,
+    "crit_chance": 20,
+    "gold_cost": 3400,
+    "passive_1_name": "BRING IT DOWN",
+    "passive_1": "Every third attack within 3 seconds deals 60 (+ 30% bonus AD) bonus true damage on-hit.",
+    "passive_4_name": "MYTHIC PASSIVE",
+    "passive_4": "Empowers your other Legendary items with 10% bonus attack speed.",
+    "buy_group": ["MYTHIC"]
+  }
+]

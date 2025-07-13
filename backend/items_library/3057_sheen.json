@@ -28,7 +28,7 @@
   },
   {
     "patch_version": "5.22",
-    "components": [2017],
+    "components": [1027],
     "mp": 250,
     "cdr": 10,
     "ap": null,
@@ -78,7 +78,7 @@
     "patch_version": "initial",
     "item_id": 3057,
     "item_name": "Sheen",
-    "components": [2017, 1052],
+    "components": [1027, 1052],
     "ap": 30,
     "mp": 275,
 

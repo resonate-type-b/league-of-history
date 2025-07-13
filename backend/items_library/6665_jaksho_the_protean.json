@@ -1,0 +1,51 @@
+[
+  {
+    "patch_version": "14.19",
+    "components": [1011, 1031, 1057],
+    "hp": 350,
+    "armor": 45,
+    "magic_resist": 45
+  },
+  {
+    "patch_version": "14.1",
+    "components": [1031, 1057, 1028],
+    "reworked": true,
+    "hp": 300,
+    "armor": 50,
+    "magic_resist": 50,
+    "haste": null,
+    "gold_cost": 3200,
+    "passive_1": "Entering combat with enemy champions grants a stack every second, up to 5 stacks. At maximum stacks, increase your bonus armor and bonus magic resistance by 30% until the end of combat.",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": null
+  },
+  {
+    "patch_version": "13.1",
+    "gold_cost": 3200,
+    "passive_1": "For each second in combat with champions, gain 2 bonus armor and bonus magic resistance for 6 seconds, stacking up to 8 times for a maximum of 16 bonus resistances. At maximum stacks, instantly deal 7% bonus health magic damage (minimum 80) to champions within 700 units,  heal for the same amount for each enemy damaged, and increase your bonus resistances by 20% until the end of combat (60 second cooldown)."
+  },
+  {
+    "patch_version": "12.23",
+    "gold_cost": 3100,
+    "passive_1": "For each second in combat with champions, gain 2 bonus armor and bonus magic resistance for 6 seconds, stacking up to 8 times for a maximum of 16 bonus resistances. At maximum stacks, instantly deal 3% maximum health magic damage to enemies within 700 units, reduced to 1% against non-champions,  heal for the same amount for each enemy damaged, and increase your total resistances by 15% until the end of combat (60 second cooldown).",
+    "motd": "Change: • No longer generates stacks of Voidborn Resilience while dead.\n\n  • Percentage resistances increase now properly calculates with other resistances increase modifiers."
+  },
+  {
+    "patch_version": "12.22",
+    "components": [3105, 3067, 1028],
+    "item_id": 6665,
+    "item_name": "Jak'Sho, the Protean",
+    "hp": 400,
+    "armor": 30,
+    "magic_resist": 30,
+    "haste": 20,
+    "gold_cost": 3000,
+    "passive_1_name": "VOIDBORN RESILIENCE",
+    "passive_1": "For each second in combat with champions, gain 3 bonus armor and bonus magic resistance for 6 seconds, stacking up to 8 times for a maximum of 24 bonus resistances. At maximum stacks, instantly deal 3% maximum health magic damage to enemies within 700 units, reduced to 1% against non-champions,  heal for the same amount for each enemy damaged, and increase your total resistances by 15% until the end of combat (60 second cooldown).",
+    "passive_4_name": "MYTHIC PASSIVE",
+    "passive_4": "Empowers other Legendary items with 5 bonus armor and 5 bonus magic resistance.",
+    "buy_group": ["MYTHIC"],
+    "motd": "Hotfix: Bonus resistances per stack increased to 3 from 2. Maximum resistances increased to 24 from 16. Increased resistances at max stacks increased to 15% from 10%."
+  }
+]

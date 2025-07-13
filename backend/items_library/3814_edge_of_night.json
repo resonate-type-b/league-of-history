@@ -23,8 +23,7 @@
     "lethality": 10,
     "passive_1_name": null,
     "passive_1": null,
-    "passive_2_name": "ANNUL",
-    "buy_group": ["EDGE OF NIGHT"]
+    "passive_2_name": "ANNUL"
   },
   {
     "patch_version": "9.24b",

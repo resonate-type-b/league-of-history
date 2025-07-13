@@ -76,8 +76,7 @@
     "passive_1_name": "CARVE",
     "passive_1": "Dealing physical damage to an enemy champion reduces their armor by 4% for 6 seconds, stacking up to 6 times for a maximum of 24%. Enemies with 6 stacks are *Shredded*.",
     "passive_2_name": "BUTCHER",
-    "passive_2": "Basic attacks (on-hit) and damaging abilities against fully *Shredded* enemies deal bonus physical damage equal to 5% of their missing health, reduced to 2% of their missing health for damage over time effects (0.5 second cooldown).",
-    "buy_group": ["BLACK CLEAVER"]
+    "passive_2": "Basic attacks (on-hit) and damaging abilities against fully *Shredded* enemies deal bonus physical damage equal to 5% of their missing health, reduced to 2% of their missing health for damage over time effects (0.5 second cooldown)."
   },
   {
     "patch_version": "9.19",

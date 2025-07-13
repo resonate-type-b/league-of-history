@@ -66,7 +66,6 @@
     "item_name": "Cosmic Drive",
     "passive_1_name": "SPELLDANCE",
     "passive_1": "Dealing damage with abilities grants 10 (+ 20% ability haste) bonus movement speed for 4 seconds.",
-    "buy_group": ["COSMIC DRIVE"],
     "gold_cost": 3000,
     "ap": 70,
     "hp": 200,

@@ -66,8 +66,7 @@
     "passive_1_name": "WINTER'S CARESS",
     "passive_1": "Reduces the attack speed of nearby enemies by 15% (700 range).",
     "passive_2_name": "ROCK SOLID",
-    "passive_2": "Reduces incoming damage from basic attacks by 5 per 1000 maximum health, capped at 40% of the attack's damage.",
-    "buy_group": ["FROZEN HEART"]
+    "passive_2": "Reduces incoming damage from basic attacks by 5 per 1000 maximum health, capped at 40% of the attack's damage."
   },
   {
     "patch_version": "10.2",

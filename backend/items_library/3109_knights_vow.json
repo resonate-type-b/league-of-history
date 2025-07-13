@@ -1,0 +1,121 @@
+[
+  {
+    "patch_version": "14.19",
+    "gold_cost": 2300
+  },
+  {
+    "patch_version": "14.11",
+    "motd": "Change: Sacrifice's damage redirect no longer triggers Celestial Opposition's Blessed"
+  },
+  {
+    "patch_version": "14.10",
+    "components": [3067, 1031, 1006],
+    "armor": 40,
+    "hp_regen": 100,
+    "hp": 200,
+    "haste": 10,
+    "passive_2": "While your *Worthy* ally is tethered to you and you are above 30% of your maximum health, redirect 12% of the pre-mitigation physical and magic damage they take to you as the respective damage type. Additionally, you heal for 10% of the damage dealt by your *Worthy* ally to champions.",
+    "motd": "Hotfix: Ability haste reduced to 10 from 15. Health reduced to 200 from 300"
+  },
+  {
+    "patch_version": "14.1",
+    "components": [3067, 1031],
+    "hp": 300,
+    "hp_regen": null,
+    "armor": 45
+  },
+  {
+    "patch_version": "13.10",
+    "components": [3023, 3801],
+    "armor": 25,
+    "hp_regen": 125,
+    "hp": 350,
+    "haste": 15,
+    "gold_cost": 2200,
+    "passive_2": "While your *Worthy* ally is nearby and you are above 30% of your maximum health, redirect 10% of the pre-mitigation physical and magic damage they take to you as true damage and heal for 10% of the damage dealt by your *Worthy* ally to champions. If they are below 30% maximum health, the damage redirection is increased to 20%."
+  },
+  {
+    "patch_version": "12.11",
+    "haste": 20
+  },
+  {
+    "patch_version": "12.10",
+    "passive_2": "While your *Worthy* ally is nearby and you are above 30% of your maximum health, redirect 10% of the post-mitigation physical and magic damage they take to you as true damage and heal for 7% of the damage dealt by your *Worthy* ally to champions. If they are below 30% maximum health, the damage redirection is increased to 20%."
+  },
+  {
+    "patch_version": "12.4",
+    "hp_regen": 200
+  },
+  {
+    "patch_version": "11.23",
+    "hp_regen": 150,
+    "passive_2": "While your *Worthy* ally is nearby and you are above 30% of your maximum health, redirect 10% of the post-mitigation physical and magic damage they take to you as true damage and heal for 8% of the damage dealt by your *Worthy* ally to champions. If they are below 30% maximum health, the damage redirection is increased to 20%."
+  },
+  {
+    "patch_version": "11.8",
+    "motd": "Bugfix: Sacrifice now properly redirects damage from allied Pledged champions to the user even when they're untargetable."
+  },
+  {
+    "patch_version": "10.23",
+    "components": [3801, 1006, 3067],
+    "hp": 400,
+    "hp_regen": 300,
+    "haste": 10,
+    "cdr": null,
+    "armor": null,
+    "gold_cost": 2300,
+    "passive_1_name": "PLEDGE",
+    "passive_1": "Designate the target allied champion as being *Worthy*, forming a tether between you and them. Champions can only be designated as *Worthy* by one Knight's Vow at a time. You cannot be designated as *Worthy* by an ally's Knight's Vow (60 second cooldown; 1250 range).",
+    "passive_2_name": "SACRIFICE",
+    "passive_2": "While your *Worthy* ally is nearby and you are above 30% of your maximum health, redirect 15% of the post-mitigation physical and magic damage they take to you as true damage. Additionally, if they are below 50% of their maximum health, gain 35% bonus movement speed while moving towards them.",
+    "passive_3_name": null,
+    "passive_3": null
+  },
+  {
+    "patch_version": "7.18",
+    "hp": 250,
+    "gold_cost": 2200
+  },
+  {
+    "patch_version": "7.15",
+    "hp": 350
+  },
+  {
+    "patch_version": "7.12",
+    "components": [3067, 1031],
+    "cdr": 10,
+    "hp_regen": null,
+    "gold_cost": 2300
+  },
+  {
+    "patch_version": "7.6",
+    "motd": "Bugfix: Healing now properly interacts with Forbidden Idol."
+  },
+  {
+    "patch_version": "7.4",
+    "components": [3801, 1031],
+    "armor": 40,
+    "passive_1": "Designate an allied champion as your *Partner* (90 second cooldown; 1000 range).",
+    "passive_2": "If your *Partner* is nearby, gain +20 armor, and +15% movement speed while moving toward them."
+  },
+  {
+    "patch_version": "7.2",
+    "gold_cost": 2300
+  },
+  {
+    "patch_version": "6.22",
+    "item_id": 3109,
+    "item_name": "Knight's Vow",
+    "components": [3801, 1029, 3801],
+    "hp": 400,
+    "hp_regen": 100,
+    "armor": 20,
+    "gold_cost": 2400,
+    "passive_1_name": "UNIQUE ACTIVE",
+    "passive_1": "Designate an allied champion as your *Partner* (90 second cooldown; 900 range).",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "If your *Partner* is nearby, gain +40 armor, and +15% movement speed while moving toward them.",
+    "passive_3_name": "UNIQUE",
+    "passive_3": "If your *Partner* is nearby, heal for [12%|6%] of the damage your *Partner* deals to champions and redirect [12%|6%] of the post-mitigation damage your *Partner* takes from champions to you as true damage)."
+  }
+]

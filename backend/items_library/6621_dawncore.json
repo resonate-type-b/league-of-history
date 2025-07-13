@@ -27,7 +27,6 @@
     "passive_1_name": "FIRST LIGHT",
     "passive_1": "Gain 3% heal and shield power and 5 ability power for every additional 100% base mana regeneration.",
     "passive_2_name": "RADIANCE",
-    "passive_2": "Gain 18 summoner spell haste.",
-    "buy_group": ["DAWNCORE"]
+    "passive_2": "Gain 18 summoner spell haste."
   }
 ]

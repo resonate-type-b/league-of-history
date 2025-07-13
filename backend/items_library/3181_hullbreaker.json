@@ -72,8 +72,7 @@
     "physical_vamp": null,
     "gold_cost": 2800,
     "passive_2_name": "BOARDING PARTY",
-    "passive_2": "While no allied champions are within 1400 units, gain 20 – 45 (based on level) bonus armor and bonus magic resistance and deal 20% bonus damage against structures. Nearby large allied minions gain 60 – 135 (based on level) bonus armor and bonus magic resistance and deal 200% bonus damage against structures.",
-    "buy_group": ["HULLBREAKER"]
+    "passive_2": "While no allied champions are within 1400 units, gain 20 – 45 (based on level) bonus armor and bonus magic resistance and deal 20% bonus damage against structures. Nearby large allied minions gain 60 – 135 (based on level) bonus armor and bonus magic resistance and deal 200% bonus damage against structures."
   },
   {
     "patch_version": "11.8",
@@ -88,8 +87,7 @@
     "lethality": 10,
     "passive_1_name": null,
     "passive_1": null,
-    "passive_2_name": "FRENZY",
-    "buy_group": ["SANGUINE BLADE"]
+    "passive_2_name": "FRENZY"
   },
   {
     "patch_version": "10.9",

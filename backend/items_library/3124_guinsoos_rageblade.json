@@ -20,7 +20,7 @@
     "passive_1": "Basic attacks deal 30 bonus magic damage on-hit.",
     "passive_3_name": null,
     "passive_3": null,
-    "buy_group": ["GUINSOO'S RAGEBLADE"]
+    "buy_group": null
   },
   {
     "patch_version": "13.10",

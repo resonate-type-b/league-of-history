@@ -63,7 +63,6 @@
     "ap": 100,
     "gold_cost": 3000,
     "passive_1_name": "HYPERSHOT",
-    "passive_1": "Damaging a champion with a non-targeted ability at more than 750 units away or immobilizing one reveals them and increases your damage dealt to them by 10% for 6 seconds.",
-    "buy_group": ["HORIZON FOCUS"]
+    "passive_1": "Damaging a champion with a non-targeted ability at more than 750 units away or immobilizing one reveals them and increases your damage dealt to them by 10% for 6 seconds."
   }
 ]

@@ -51,8 +51,7 @@
     "passive_3_name": null,
     "passive_3": null,
     "passive_1_name": "SANCTIFY",
-    "passive_1": "Healing and shielding an ally enhances you and affected allies with 10% – 30% (based on target's level) bonus attack speed and 5 – 20 (based on target's level) bonus magic damage on-hit for 6 seconds.",
-    "buy_group": ["ARDENT CENSER"]
+    "passive_1": "Healing and shielding an ally enhances you and affected allies with 10% – 30% (based on target's level) bonus attack speed and 5 – 20 (based on target's level) bonus magic damage on-hit for 6 seconds."
   },
   {
     "patch_version": "10.1",

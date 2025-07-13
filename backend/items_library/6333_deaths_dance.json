@@ -87,8 +87,7 @@
     "passive_1_name": "IGNORE PAIN",
     "passive_1": "Stores [35%|15%] of all post-mitigation physical damage received, which is successively taken as damage over time true damage instead, dealing one-third of the stored damage every second.",
     "passive_2_name": "DEFY",
-    "passive_2": "Champion takedowns grant you 30% bonus movement speed for 2 seconds, remove Ignore Pain's remaining damage, and heal you for 10% of your maximum health over the duration.",
-    "buy_group": ["DEATH'S DANCE"]
+    "passive_2": "Champion takedowns grant you 30% bonus movement speed for 2 seconds, remove Ignore Pain's remaining damage, and heal you for 10% of your maximum health over the duration."
   },
   {
     "patch_version": "10.13",

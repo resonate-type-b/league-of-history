@@ -52,7 +52,6 @@
     "item_name": "Chempunk Chainsword",
     "passive_1_name": "HACKSHORN",
     "passive_1": "Dealing physical damage to enemy champions inflicts them with 40% Grievous Wounds for 2 seconds, increased to 60% if the target is below 50% of their maximum health.",
-    "buy_group": ["CHEMPUNK CHAINSWORD"],
     "gold_cost": 2700,
     "ad": 45,
     "hp": 200,

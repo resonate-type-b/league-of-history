@@ -75,8 +75,7 @@
     "passive_1_name": "MIST'S EDGE",
     "passive_1": "Deal [10%|6%] of the target's current health bonus physical damage on-hit, capped at 60 bonus damage against minions and monsters.",
     "passive_2_name": "SIPHON",
-    "passive_2": "Attacking a champion 3 times deals 40 – 120 (based on level) magic damage on-hit and steals 25% of their movement speed for 2 seconds (20 second cooldown).",
-    "buy_group": ["BLADE OF THE RUINED KING"]
+    "passive_2": "Attacking a champion 3 times deals 40 – 120 (based on level) magic damage on-hit and steals 25% of their movement speed for 2 seconds (20 second cooldown)."
   },
   {
     "patch_version": "10.5",

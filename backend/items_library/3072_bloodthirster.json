@@ -58,8 +58,7 @@
     "passive_2_name": null,
     "passive_2": null,
     "passive_1_name": "BLOOD BARRIER",
-    "passive_1": "Life steal from basic attacks can now overheal you, converting the excess healing into a shield that absorbs up to 50 – 350 (based on level) damage and slowly decays if you haven't dealt or taken damage in the last 25 seconds.",
-    "buy_group": ["BLOODTHIRSTER"]
+    "passive_1": "Life steal from basic attacks can now overheal you, converting the excess healing into a shield that absorbs up to 50 – 350 (based on level) damage and slowly decays if you haven't dealt or taken damage in the last 25 seconds."
   },
   {
     "patch_version": "9.19",
