@@ -18,8 +18,7 @@
     "gold_cost": 3400,
     "ad": 80,
     "crit_chance": 25,
-    "buy_group": null,
-    "motd": "Note: The ability to purchase multiple identical legendary items has been removed since season 11, so players are still limited to 1 Infinity Edge."
+    "buy_group": null
   },
   {
     "patch_version": "14.6",

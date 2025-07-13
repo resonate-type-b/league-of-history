@@ -1,0 +1,138 @@
+[
+  {
+    "patch_version": "25.10",
+    "ap": 60
+  },
+  {
+    "patch_version": "14.20",
+    "passive_2": "Dealing ability damage burns enemies, causing them to take「 1% of the target's maximum health magic damage every 0.5 seconds over 3 seconds, capped at 20 per tick against monsters. 」"
+  },
+  {
+    "patch_version": "14.19",
+    "ap": 70
+  },
+  {
+    "patch_version": "14.10",
+    "gold_cost": 3000,
+    "components": [3147, 2508]
+  },
+  {
+    "patch_version": "14.1",
+    "item_name": "Liandry's Torment",
+    "components": [3147, 1026],
+    "hp": 300,
+    "ap": 90,
+    "mp": null,
+    "haste": null,
+    "gold_cost": 3000,
+    "passive_2": "Dealing ability damage burns enemies, causing them to take「 1% of the target's maximum health magic damage every 0.5 seconds over 3 seconds, capped at 25 per tick against monsters. 」",
+    "passive_3_name": "SUFFERING",
+    "passive_3": "For each second in combat with enemy champions, deal 2% increased damage, stacking up to 3 times for a total of 6%.",
+    "passive_4_name": null,
+    "passive_4": null,
+    "buy_group": null
+  },
+  {
+    "patch_version": "12.13",
+    "motd": "Change: Torment can now be stacked on a target when applied by multiple users, though not refreshing the debuff for all subsequent sources at a time."
+  },
+  {
+    "patch_version": "12.11",
+    "passive_2": "Dealing ability damage burns enemies, causing them to take 50 (+ 6% AP) (+ 4% target's maximum health) magic damage over 4 seconds."
+  },
+  {
+    "patch_version": "11.13",
+    "gold_cost": 3200
+  },
+  {
+    "patch_version": "11.6",
+    "passive_2": "Dealing ability damage burns enemies, causing them to take 60 (+ 6% AP) (+ 4% target's maximum health) magic damage over 4 seconds.",
+    "passive_3_name": "AGONY",
+    "passive_3": "Deal 0% – 12% (based on target's bonus health) bonus magic damage against enemy champions.",
+    "motd": "Hotfix-Bugfix: Bonus magic damage no longer applies to minions and monsters"
+  },
+  {
+    "patch_version": "10.24",
+    "passive_2": "Dealing ability damage burns enemies, causing them to take 60 (+ 6% AP) (+ 4% target's maximum health) magic damage over 4 seconds and the user to 5% of their magic resistance, increasing by 5% per second per second, up to 15%."
+  },
+  {
+    "patch_version": "10.23",
+    "icon_version": 1,
+    "item_name": "Liandry's Anguish",
+    "components": [3802, 3108],
+    "ap": 80,
+    "mp": 600,
+    "haste": 20,
+    "hp": null,
+    "gold_cost": 3400,
+    "passive_1_name": null,
+    "passive_1": null,
+    "passive_2": "Dealing ability damage burns enemies, causing them to take 60 (+ 10% AP) (+ 4% target's maximum health) magic damage over 4 seconds and the user to 5% of their magic resistance, increasing by 5% per second per second, up to 15%.",
+    "passive_4_name": "MYTHIC PASSIVE",
+    "passive_4": "Empowers your other Legendary items with 5 ability haste.",
+    "buy_group": ["MYTHIC"],
+    "motd": "Hotfix: Maximum magic penetration reduced to 15% from 25%."
+  },
+  {
+    "patch_version": "10.18",
+    "motd": "Bugfix: Now properly applies Torment on Baron Nashor regardless of distance."
+  },
+  {
+    "patch_version": "8.19",
+    "ap": 75,
+    "passive_2": "Dealing spell damage burns enemies for 1.5% of their maximum health as magic damage every second for 3 seconds. If their movement is impaired, they take 2.5% of their maximum health as damage instead. 300 max damage vs monsters."
+  },
+  {
+    "patch_version": "8.5",
+    "motd": "Bugfix: The Madness passive no longer modifies true damage, matching rules around other damage-amplifying effects."
+  },
+  {
+    "patch_version": "8.4",
+    "passive_1_name": "MADNESS",
+    "passive_1": "Damaging an enemy champion generates one stack every second for the next 4 seconds. Deal 2% increased damage for each stack, up to a maximum of 10%.",
+    "passive_2_name": "TORMENT",
+    "passive_2": "Dealing spell damage burns enemies for 1% of their maximum health as magic damage every second for 3 seconds. If their movement is impaired, they take double damage from this effect. 300 max damage vs monsters."
+  },
+  {
+    "patch_version": "6.24",
+    "gold_cost": 3100
+  },
+  {
+    "patch_version": "5.22",
+    "gold_cost": 3200
+  },
+  {
+    "patch_version": "5.13",
+    "components": [3147, 1026],
+    "ap": 80,
+    "gold_cost": 3000
+  },
+  {
+    "patch_version": "3.03",
+    "motd": "Bugfix: Fixed Liandry's Torment not dealing damage with damage over time effects or rapid spell damage."
+  },
+  {
+    "patch_version": "3.02",
+    "ap": 50,
+    "passive_2": "Dealing spell damage burns enemies for 6% of their current health as magic damage over 3 seconds. If their movement is impaired, they take double damage from this effect. 300 max damage vs monsters.",
+    "motd": "Bugfix: Fixed damage effect not being properly reapplied on targets that already have it."
+  },
+  {
+    "patch_version": "1.0.0.154",
+    "hp": 300,
+    "ap": 60
+  },
+  {
+    "patch_version": "1.0.0.152",
+    "hp": 200,
+    "ap": 70,
+    "gold_cost": 2900,
+    "item_id": 6653,
+    "item_name": "Liandry's Torment",
+    "components": [3147, 1052],
+    "passive_1_name": "EYES OF PAIN",
+    "passive_1": "+15 magic penetration.",
+    "passive_2_name": "UNIQUE",
+    "passive_2": "Dealing spell damage burns enemies for 5% of their current health as magic damage over 3 seconds. If their movement is impaired, they take double damage from this effect. Duration is halved for multi-target or periodic effects, 300 max damage vs monsters."
+  }
+]
