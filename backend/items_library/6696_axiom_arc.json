@@ -43,7 +43,6 @@
     "lethality": 10,
     "haste": 25,
     "passive_1_name": "FLUX",
-    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 25% of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds.",
-    "buy_group": ["AXIOM ARC"]
+    "passive_1": "Scoring a takedown against an enemy champion within 3 seconds of damaging them refunds 25% of your ultimate ability's total cooldown. Does not reduce cooldown below 0.5 seconds."
   }
 ]

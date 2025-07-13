@@ -21,8 +21,7 @@
     "icon_version": 2,
     "ad": 40,
     "passive_1_name": "REBIRTH",
-    "passive_1": "Upon taking lethal damage, resurrects and restores 50% of base health and 30% of maximum mana after 4 seconds of  stasis (300 second cooldown).",
-    "buy_group": ["GUARDIAN ANGEL"]
+    "passive_1": "Upon taking lethal damage, resurrects and restores 50% of base health and 30% of maximum mana after 4 seconds of  stasis (300 second cooldown)."
   },
   {
     "patch_version": "10.14",

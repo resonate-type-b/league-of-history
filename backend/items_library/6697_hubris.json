@@ -18,7 +18,6 @@
     "passive_1": "Scoring a champion takedown summons a Statue of yourself near the outer side of the spawn. For each takedown scored, gain a rank that upgrades your Statue.",
     "passive_2_name": "EMINENCE",
     "passive_2": "Scoring a takedown against an enemy champion within 3 seconds of damaging them grants you 15 (+ 2 per Statue rank) bonus attack damage for 90 seconds.",
-    "buy_group": ["HUBRIS"],
     "ad": 60,
     "haste": 15,
     "lethality": 18,

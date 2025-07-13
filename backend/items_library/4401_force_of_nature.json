@@ -47,8 +47,7 @@
     "hp5": null,
     "gold_cost": 2900,
     "passive_1_name": "ABSORB",
-    "passive_1": "Taking ability damage grants you 6 bonus movement speed and 4 bonus magic resistance for 5 seconds, stacks up to 5 times and each unique ability gives 1 stack.",
-    "buy_group": ["FORCE OF NATURE"]
+    "passive_1": "Taking ability damage grants you 6 bonus movement speed and 4 bonus magic resistance for 5 seconds, stacks up to 5 times and each unique ability gives 1 stack."
   },
   {
     "patch_version": "1.0.0.152",

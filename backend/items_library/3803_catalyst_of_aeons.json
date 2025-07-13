@@ -2,7 +2,7 @@
   {
     "patch_version": "25.07",
     "mp": 375,
-    "components": [1028, 1028, 2017],
+    "components": [1028, 1028, 1027],
     "passive_1": "Restore mana equal to 10% of pre-mitigation damage taken from champions, and health equal to 25% of mana spent, up to 20 health per cast. Toggled abilities can only heal for up to 20 per second."
   },
   {
@@ -79,7 +79,7 @@
     "gold_cost": 1325,
     "item_id": 3803,
     "item_name": "Catalyst the Protector",
-    "components": [2017, 1027],
+    "components": [1027, 1027],
     "hp": 425,
     "mp": 325,
     "passive_1_name": "VALOR'S REWARD",

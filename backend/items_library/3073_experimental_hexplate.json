@@ -25,7 +25,6 @@
     "passive_1_name": "HEXCHARGED",
     "passive_1": "Gain 30 ultimate haste.",
     "passive_2_name": "OVERDRIVE",
-    "passive_2": "Upon casting your ultimate ability, enter *Overdrive* to gain 35% bonus attack speed and 15% bonus movement speed for 8 seconds (30 second cooldown, starts on cast).",
-    "buy_group": ["EXPERIMENTAL HEXPLATE"]
+    "passive_2": "Upon casting your ultimate ability, enter *Overdrive* to gain 35% bonus attack speed and 15% bonus movement speed for 8 seconds (30 second cooldown, starts on cast)."
   }
 ]

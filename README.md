@@ -6,7 +6,7 @@
 - Only bugfixes that could constitute a meaningful change in gameplay is included. Blatant exploits (e.g. duplicating for free gold) are also excluded.
   - Examples included: attacking wards disabling out of combat bonuses, item giving the wrong amount of stats.
   - Examples excluded: tooltips, visual bugs, stat tracking, shop related, lifesteal incorrectly applying to wards (insignificant), auras sometimes fail to apply at edge of range (rare edge case)
-- Hotfixes on the same patch as another change are displayed as a message inside the parent patch. The infobox itself shows the item after hotfixes.
+- Hotfixes on the same patch as another change are displayed as a message inside the parent patch. The infobox itself shows the item after hotfixes. An item that is not changed in the main patch but is changed by a hotfix is not specially noted as an hotfix.
 - Exact formulae for effects such as 'based on missing health' aren't included.
 - Though best effort is made preserve the the exact wording of the passives, there is no guarantee of it being so. For example, tooltip updates without balance changes are frequently not tracked.
 - Modern League of Legends blurs the line between items and game systems for jungle & support. Their items in recent years function more as role markers that unlock specific systems than items in the traditional sense. As a general rule, only information reasonable for in-game item tooltips are included,underlying system changes are not tracked

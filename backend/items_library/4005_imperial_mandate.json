@@ -27,7 +27,7 @@
     "passive_1": "Abilities that slow or immobilize enemy champions deal 35 – 75 (based on level) bonus magic damage and mark them for 4 seconds. Allied champions that damage marked enemies consume the mark to deal 70 – 150 (based on ally's level) bonus magic damage and grant you and the triggering ally 20% bonus movement speed for 2 seconds (6 second cooldown per champion, starts upon mark application).",
     "passive_4_name": null,
     "passive_4": null,
-    "buy_group": ["IMPERIAL MANDATE"]
+    "buy_group": null
   },
   {
     "patch_version": "11.20",

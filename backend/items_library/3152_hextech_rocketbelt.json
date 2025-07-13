@@ -34,7 +34,7 @@
     "magic_pen_flat": null,
     "gold_cost": 2500,
     "passive_1": "Dash 275 units in the target direction, though not through terrain, unleashing an arc of 7 rockets in the same direction that deal 125 (+ 15% AP) magic damage to enemies hit (40 second cooldown). Supersonic resets the user's basic attack timer.",
-    "buy_group": ["HEXTECH PROTOBELT"]
+    "buy_group": null
   },
   {
     "patch_version": "11.23",

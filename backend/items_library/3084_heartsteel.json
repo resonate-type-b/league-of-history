@@ -25,7 +25,7 @@
     "passive_1": "While within 700 units of an enemy champion, generate a stack on them each second, stacking up to 3 times. Your next basic attack against a target with 3 stacks is empowered to consume them all to deal 100 (+ 10% bonus health from items) bonus physical damage on-hit and grant you permanent bonus health equal to「 12% of that amount 」 (30 second cooldown per target).",
     "passive_2_name": "GOLIATH",
     "passive_2": "For each 1000 maximum health, gain 3% increased size, up to 30%.",
-    "buy_group": ["HEARTSTEEL"],
+    "buy_group": null,
     "motd": "Hotfix: Health increased to 900 from 800."
   },
   {

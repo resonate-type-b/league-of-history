@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import React from "react";
 import { useSearchParams } from "react-router";
 import { z } from "zod/v4";
 import { Icon } from "~/Icon";
@@ -45,19 +46,17 @@ export default function PatchOverview() {
       <h1 className="text-5xl text-center p-10 font-medium">Patch {patch_version}</h1>
       {categories.map((category) => {
         return (
-          <>
+          <React.Fragment key={category}>
             <h2 className="text-center md:text-left text-3xl px-30 py-10 font-medium">
               {category}
             </h2>
-            <div
-              key={category}
-              className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:max-w-[96rem] mx-auto px-3 text-xs lg:text-sm 2xl:text-base">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:max-w-[96rem] mx-auto px-3 text-xs lg:text-sm 2xl:text-base">
               {Object.keys(itemObj).includes(category) &&
                 itemObj[category]!.map((item) => {
                   return <IconBox item={item} key={item.item_id} />;
                 })}
             </div>
-          </>
+          </React.Fragment>
         );
       })}
     </>
